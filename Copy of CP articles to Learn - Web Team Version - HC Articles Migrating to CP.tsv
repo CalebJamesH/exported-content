@@ -1,0 +1,62 @@
+Category	Article		Visibility	Translations	Move to One.liferay	Learn Location	Content Type	Needs Design	Learn Implementation Comments	URL Path	Tickets
+Customer Portal Help	Getting Started with your Liferay Project (Video Tutorials)	FALSE	Everyone	JP, ES, PT	no	Course (Onboarding)	Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	Getting Started with Liferay Enterprise Search	TRUE	Everyone	JP, ES, PT	no	Course (Onboarding)	Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How are support seats determined?	TRUE	Everyone	JP, ES, PT	no	Knowledge Base	How To	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	About Product Activation	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I activate my Liferay DXP / Portal product? (Video Tutorial)	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I activate my Liferay PaaS product? (Video Tutorial)	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I activate my Analytics Cloud product? (Video Tutorial)	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I activate my Liferay SaaS? (Video Tutorial)	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I activate my Enterprise Search product? (Video Tutorial)	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I activate my Commerce product? (Video Tutorial)	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How do I manage my Activation Keys when upgrading or replacing servers?	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+	How to Change Your Liferay Account Contact Information and Password	TRUE	Everyone	JP, ES, PT	no	Knowledge Base; Course (Onboarding)	How To; Lesson	FALSE	migrate as markdown to Learn Repo as all LMS content are already there		
+											
+Support Coverage	All articles in this Liferay Cloud Platform section	TRUE	Everyone		no	New Section	Release Note	TRUE	New Release Notes page that is like this; new content structure (Release Note); gate platform changelog, but ungate service changelog	New learn.liferay.com/w/updates/release-notes/cloud-infrastructure with sections or filters for platform changelog and service changelog	
+	Article in this Cloud Native Support Coverage section	FALSE	Everyone		no			TRUE			
+											
+Services & Comptability 	Activation Keys FAQ for Liferay DXP and Liferay Commerce	TRUE	Customers	JP	no	Docs (TBD), Course (Onboarding)	Learn Article; Lesson	FALSE	Integrate with (?) documentation; plan and draft new Onboarding course	learn.liferay.com/w//self-hosted-installation-and-upgrades/setting-up-liferay/activating-liferay-dxp; and course	
+	Troubleshooting Activation Key Issues	TRUE	Customers		no	Knowledge Base	Troubleshooting	FALSE			
+	Liferay DXP Source Code Access	TRUE	Customers	JP	no	Docs (Reference)	Learn Article	FALSE	Mostly keep in one.liferay, but add a note to docs that notes how to work with dxp code	learn.liferay.com/w/reference/contributing-to-liferay-development/building-liferay-source	
+	All articles in this Compatibility Matrix section	FALSE	Everyone	JP, CN	no	Docs (Reference)	Learn Article	FALSE	Create a new section within the Reference page that has sub sections for each compatability topic.	New learn.liferay.com/w/reference/compatability	
+	Liferay DXP Quarterly Release Process	TRUE	Customers	JP, PT, ES	no	Docs (NEW)	Learn Article	FALSE	Link to this article from the Release Notes page	New learn.liferay.com/w/updates/release-notes/release-process	
+	Liferay DXP Fix Delivery Method	TRUE	Customers	JP	no	Docs (NEW)	Learn Article	FALSE	Link to this article from the Release Notes page Refactor material and convert into child page of the Release Notes landing page; ensure to note legacy difference. Avoid duplicating this (or maybe relocate some of that article's content?).	New learn.liferay.com/w/updates/release-notes/dxp-fix-delivery	
+	Liferay Portal Fix Delivery Method	TRUE	Customers		no	Docs (NEW)	Learn Article	FALSE	Refactor material and convert into child page of the Release Notes landing page; ensure to note legacy difference. Avoid duplicating this (or maybe relocate some of that article's content?).	New learn.liferay.com/w/updates/release-notes/portal-fix-delivery	
+	Liferay Patching Overview	TRUE	Customers	JP	no	Docs (Patching Liferay)	Learn Article	FALSE	We have most of this information covered. But we need to fix broken links and probably migrate over some of the instructions on installing security fix packs, etc.	learn.liferay.com/w/dxp/self-hosted-installation-and-upgrades/maintaining-a-liferay-installation/patching-liferay	LRDOCS-17011
+	Anatomy of a Quarterly Release	FALSE	Everyone		no	Docs (Reference)	Learn Doc	FALSE			
+	Before Opening a Security Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting	'	Heavy refactoring of content.  1) Add general trouble-shooting articles for each major topic. This could be built on the work already done by the NA lead customer support engineers (decision trees). Create a new category for this content to help surface it.  2) Include some pointers about opening tickets in the Onboarding course.  3) Have a general Before you open a ticket article on one.liferay that addresses common guidelines.		
+	Before Opening a Liferay API Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a LAR/Staging Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Search/Indexing ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening an Authentication Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening an Accessibility Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening an Upgrade Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before opening a ticket related to VPN on Liferay PaaS	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening an Activation Key Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Portal Deployment Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Liferay Sync Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Document Library Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a User Interface (UI) Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Shutdown/Inoperable System Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Clustering Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Liferay Performance Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+	Before Opening a Web Content Management Ticket	TRUE	Customers	PT	no	Knowledge Base	Troubleshooting				
+											
+Announcements	Introducing the New DXP Release Notes Experience	TRUE	Customers	JP	no*	Course (Onboarding)	Lesson	FALSE	In the onboarding course, add a lesson on how to find and navigate Liferay release notes (DXP, Commerce, Cloud, etc.)		
+	Liferay is Updating the Names of Its Offerings	TRUE	Everyone	JP, PT, ES, CN	no	Docs (Reference)	Learn Article	FALSE	We could include the historical names in our Learn glossary once it is complete, like a parentheical, e.g.,  (formerly Liferay Experience cloud)	learn.liferay.com/w/reference/glossary	
+	All articles in this section	TRUE	Everyone		no	Docs (TBD)	Learn Article	FALSE	We'll need to address this material on a case-by-case basis; Some content is just for one.liferay; other material could be represented in docs.	TBD - Source URL 404	
+								FALSE			
+Liferay Enterprise Search	All articles in this section	TRUE	Customers		no	Docs (Search)	Learn Article	FALSE	Comb through this content and ensure all relevant material is addressed in the search documentation.	learn.liferay.com/w/dxp/search	
+											
+Security	Security Overview	TRUE	Customers	JP	no	Docs (NEW)	Learn Article	TRUE	Access this page from the Security Advisories page (e.g., Understand Liferay's Security Posture)	New learn.liferay.com/w/updates/security-advisories/security-posture	
+	Elastic Stack and Liferay Enterprise Search [LES] Security Advisories	TRUE	Customers		no	Docs (NEW)	Learn Article	TRUE	New Security Advisories page that looks like this. Maybe Gated (not always the best idea to list vulnerabilities?)	New learn.liferay.com/w/updates/security-advisories	
+	All articles in this Security Alert section (~90 articles)	TRUE	Customers		no	Docs (NEW)	Learn Article	TRUE	New Security Advisories page that looks like this. Maybe Gated (not always the best idea to list vulnerabilities?)	New learn.liferay.com/w/updates/security-advisories	
+	Security Vulnerability Page  		Customers		no	Docs (NEW)	Custom search Page - content comes from JIRA 	TRUE	New Security Advisories page that looks like this. Maybe Gated (not always the best idea to list vulnerabilities?)	New learn.liferay.com/w/updates/security-advisories	
+											
+Release Notes	All articles in this Liferay Cloud Platform section	TRUE	Everyone		no	Docs (NEW)	Release Note	TRUE	New Release Notes page that is like this; new content structure (Release Note); gate platform changelog, but ungate service changelog	New learn.liferay.com/w/updates/release-notes/cloud-infrastructure with sections or filters for platform changelog and service changelog	
+	All articles in this section	TRUE	Everyone		no	Docs (NEW)	??? (Gated?)	TRUE	New Release Notes page that is like this; gate platform changelog, but ungate service changelog	New learn.liferay.com/w/updates/release-notes/cloud-infrastructure/platform	
+	All articles in this section	TRUE	Everyone	Docs (NEW)	no	Docs (NEW)	???	TRUE	New Release Notes page that is like this; gate platform changelog, but ungate service changelog	New learn.liferay.com/w/updates/release-notes/cloud-infrastructure/services	
+	All articles in this section	FALSE	Everyone		no	Docs (NEW)	???	TRUE		New learn.liferay.com/w/updates/release-notes/analytics-cloud	
+	Current Quarterly Release Notes on support.liferay.com/release-notes plus old release notes, version comparison, module changes on customer.liferay	FALSE	Everyone		no	Docs (NEW)	???	TRUE	New Release Notes page that is like this	New learn.liferay.com/w/updates/release-notes/liferay-dxp	
+	Comparison Tool (DXP, Commerce)	FALSE	Customers		no	Docs (NEW)	???	TRUE		New learn.liferay.com/w/updates/release-notes/compare	
+	Downloads Page		Customers		no 	Docs (NEW)		TRUE	We should rebuild a page that points directly to release.lifreay.com 	http://learn.liferay.com/w/updates/release-notes#downloads	

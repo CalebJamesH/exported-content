@@ -1,0 +1,227 @@
+[
+  {
+    "title": "Getting Started with your Liferay Project (Video Tutorials)",
+    "friendlyUrlPath": "getting-started-with-your-liferay-project-video-tutorials",
+    "contentType": "Course (Onboarding)"
+  },
+  {
+    "title": "Getting Started with Liferay Enterprise Search",
+    "friendlyUrlPath": "getting-started-with-liferay-enterprise-search",
+    "contentType": "Course (Onboarding)"
+  },
+  {
+    "title": "How are support seats determined?",
+    "friendlyUrlPath": "how-are-support-seats-determined",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "About Product Activation",
+    "friendlyUrlPath": "about-product-activation",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I activate my Liferay DXP / Portal product? (Video Tutorial)",
+    "friendlyUrlPath": "how-do-i-activate-my-liferay-dxp-portal-product-video-tutorial",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I activate my Liferay PaaS product? (Video Tutorial)",
+    "friendlyUrlPath": "how-do-i-activate-my-liferay-paas-product-video-tutorial",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I activate my Analytics Cloud product? (Video Tutorial)",
+    "friendlyUrlPath": "how-do-i-activate-my-analytics-cloud-product-video-tutorial",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I activate my Liferay SaaS? (Video Tutorial)",
+    "friendlyUrlPath": "how-do-i-activate-my-liferay-saas-video-tutorial",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I activate my Enterprise Search product? (Video Tutorial)",
+    "friendlyUrlPath": "how-do-i-activate-my-enterprise-search-product-video-tutorial",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I activate my Commerce product? (Video Tutorial)",
+    "friendlyUrlPath": "how-do-i-activate-my-commerce-product-video-tutorial",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How do I manage my Activation Keys when upgrading or replacing servers?",
+    "friendlyUrlPath": "how-do-i-manage-my-activation-keys-when-upgrading-or-replacing-servers",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "How to Change Your Liferay Account Contact Information and Password",
+    "friendlyUrlPath": "how-to-change-your-liferay-account-contact-information-and-password",
+    "contentType": "Knowledge Base; Course (Onboarding)"
+  },
+  {
+    "title": "Activation Keys FAQ for Liferay DXP and Liferay Commerce",
+    "friendlyUrlPath": "activation-keys-faq-for-liferay-dxp-and-liferay-commerce",
+    "contentType": "Docs (TBD), Course (Onboarding)"
+  },
+  {
+    "title": "Troubleshooting Activation Key Issues",
+    "friendlyUrlPath": "troubleshooting-activation-key-issues",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Liferay DXP Source Code Access",
+    "friendlyUrlPath": "liferay-dxp-source-code-access",
+    "contentType": "Docs (Reference)"
+  },
+  {
+    "title": "Liferay DXP Quarterly Release Process",
+    "friendlyUrlPath": "liferay-dxp-quarterly-release-process",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Liferay DXP Fix Delivery Method",
+    "friendlyUrlPath": "liferay-dxp-fix-delivery-method",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Liferay Portal Fix Delivery Method",
+    "friendlyUrlPath": "liferay-portal-fix-delivery-method",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Liferay Patching Overview",
+    "friendlyUrlPath": "liferay-patching-overview",
+    "contentType": "Docs (Patching Liferay)"
+  },
+  {
+    "title": "Anatomy of a Quarterly Release",
+    "friendlyUrlPath": "anatomy-of-a-quarterly-release",
+    "contentType": "Docs (Reference)"
+  },
+  {
+    "title": "Before Opening a Security Ticket",
+    "friendlyUrlPath": "before-opening-a-security-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Liferay API Ticket",
+    "friendlyUrlPath": "before-opening-a-liferay-api-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a LAR/Staging Ticket",
+    "friendlyUrlPath": "before-opening-a-larstaging-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Search/Indexing ticket",
+    "friendlyUrlPath": "before-opening-a-searchindexing-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening an Authentication Ticket",
+    "friendlyUrlPath": "before-opening-an-authentication-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening an Accessibility Ticket",
+    "friendlyUrlPath": "before-opening-an-accessibility-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening an Upgrade Ticket",
+    "friendlyUrlPath": "before-opening-an-upgrade-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before opening a ticket related to VPN on Liferay PaaS",
+    "friendlyUrlPath": "before-opening-a-ticket-related-to-vpn-on-liferay-paas",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening an Activation Key Ticket",
+    "friendlyUrlPath": "before-opening-an-activation-key-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Portal Deployment Ticket",
+    "friendlyUrlPath": "before-opening-a-portal-deployment-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Liferay Sync Ticket",
+    "friendlyUrlPath": "before-opening-a-liferay-sync-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Document Library Ticket",
+    "friendlyUrlPath": "before-opening-a-document-library-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a User Interface (UI) Ticket",
+    "friendlyUrlPath": "before-opening-a-user-interface-ui-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Shutdown/Inoperable System Ticket",
+    "friendlyUrlPath": "before-opening-a-shutdowninoperable-system-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Clustering Ticket",
+    "friendlyUrlPath": "before-opening-a-clustering-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Liferay Performance Ticket",
+    "friendlyUrlPath": "before-opening-a-liferay-performance-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Before Opening a Web Content Management Ticket",
+    "friendlyUrlPath": "before-opening-a-web-content-management-ticket",
+    "contentType": "Knowledge Base"
+  },
+  {
+    "title": "Introducing the New DXP Release Notes Experience",
+    "friendlyUrlPath": "introducing-the-new-dxp-release-notes-experience",
+    "contentType": "Course (Onboarding)"
+  },
+  {
+    "title": "Liferay is Updating the Names of Its Offerings",
+    "friendlyUrlPath": "liferay-is-updating-the-names-of-its-offerings",
+    "contentType": "Docs (Reference)"
+  },
+  {
+    "title": "Security Overview",
+    "friendlyUrlPath": "security-overview",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Elastic Stack and Liferay Enterprise Search [LES] Security Advisories",
+    "friendlyUrlPath": "elastic-stack-and-liferay-enterprise-search-les-security-advisories",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Security Vulnerability Page",
+    "friendlyUrlPath": "security-vulnerability-page",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Current Quarterly Release Notes on support.liferay.com/release-notes plus old release notes, version comparison, module changes on customer.liferay",
+    "friendlyUrlPath": "current-quarterly-release-notes-on-supportliferaycomrelease-notes-plus-old-release-notes-version-comparison-module-changes-on-customerliferay",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Comparison Tool (DXP, Commerce)",
+    "friendlyUrlPath": "comparison-tool-dxp-commerce",
+    "contentType": "Docs (NEW)"
+  },
+  {
+    "title": "Downloads Page",
+    "friendlyUrlPath": "downloads-page",
+    "contentType": "Docs (NEW)"
+  }
+]
