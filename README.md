@@ -351,21 +351,6 @@ This separation means the extract step can be cached/re-run independently from t
 - `urls.json` — list of `friendlyUrlPath` values for partial migration
 - `content-types.json` — mapping of `friendlyUrlPath` → Content Type (KB / Docs / Course)
 
-**Environment variables** (use a `.env` file):
-```
-LIFERAY_BASE_URL=https://support.liferay.com
-LIFERAY_EMAIL=you@example.com
-LIFERAY_PASSWORD=yourpassword
-SITE_ID=2013383
-FOLDER_IDS=26095490,27408738,27461466,27494992,27495252,27461452,27495011,27495008,26936458,27408742,27408740,27408744,27408946,27494982,27494989,27111977
-URL_LIST_PATH=./urls.json
-CONTENT_TYPES_PATH=./content-types.json
-OUTPUT_DIR=./output
-LANGUAGES=en-US,es-ES,ja-JP,pt-BR
-```
-
----
-
 ## Open Questions (not yet confirmed)
 
 - James Garcia's conversion script: what input format does it expect?
