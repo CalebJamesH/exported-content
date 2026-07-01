@@ -17,7 +17,7 @@ Write a script that migrates web content articles from a Liferay instance (Custo
 **Full Migration** — export ALL articles in these folders (listed with their CP folder IDs):
 
 | Section | Folders | Folder ID(s) | Flatten |
-|---|---|---|
+|---|---|---|---|
 | Announcements | Product Releases, Customer Portal Upgrades | `26095490` | true |
 | Getting Started | 3 subfolders under Customer Portal Help > Getting Started | `27408738` | true |
 | Compatibility Matrix | 4 subfolders | `27461466` | true |
@@ -29,7 +29,7 @@ Write a script that migrates web content articles from a Liferay instance (Custo
 **Partial Migration** — export only selected articles from these folders (matched by URL list):
 
 | Section | Folder ID(s) | Count | Flatten |
-|---|---|---|
+|---|---|---|---|
 | DXP Activation | `27408742` | 7 of 16 | false |
 | Administration | `27408740` | 1 of 2 | false |
 | Overview | `27408744` | 1 of 5 | false |
