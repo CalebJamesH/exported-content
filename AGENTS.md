@@ -188,7 +188,7 @@ Each item in the folder listing response (`items[]`) is a summary — see the **
 
 ## Intermediate JSON Export
 
-Before converting to Markdown, export articles as JSON — one file per article per language. This is the raw extract that can be cached/reviewed independently.
+Before routing, export all articles as JSON — one file per article per language. This is the raw extract that can be cached/reviewed independently.
 
 **File structure:**
 ```
@@ -239,6 +239,8 @@ Each article in the migration spreadsheet has a **Content Type** column that det
 - KB articles are exported as **raw JSON** (no Markdown conversion) — the HTML body stays as-is for the Object Entry ingest
 - Docs articles go through the full HTML → Markdown pipeline
 - Pure Course articles are skipped by the export script; compound KB+Course articles get the JSON export and are flagged for Confluence
+
+---
 
 ## Output
 
