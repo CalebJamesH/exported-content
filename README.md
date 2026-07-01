@@ -81,8 +81,12 @@ GET /o/headless-delivery/v1.0/structured-content-folders/{folderId}/structured-c
 Accept-Language: es-ES
 ```
 - `data` always returns a single string (the active language) — there is no single-call way to get all languages at once
-- Must make one request per language per folder
-- Use each article's `availableLanguages` array to know which locales to fetch
+- **Must make one full folder listing request per language** — fetch the entire folder's articles with `Accept-Language: es-ES` etc., then match articles across languages by `id`/`friendlyUrlPath`
+- Use each article's `availableLanguages` array to know which language variants exist
+- **Workflow:**
+  1. Fetch folder with default `Accept-Language` (e.g. `en-US`) to get the baseline article list with `availableLanguages`
+  2. For each other language in scope, re-fetch the **entire folder** with the language's `Accept-Language` header
+  3. Only articles whose `availableLanguages` includes that language will contain translated content in that response
 
 ---
 
@@ -208,7 +212,7 @@ For **partial migration** folders, we are NOT exporting all articles — only th
 2. Match each article's `friendlyUrlPath` against the URL list (the last path segment of each URL)
 3. Only export matched articles
 
-Or we can just delete them manually. Here's the source of truth for articles to be exported: (docs)[https://docs.google.com/spreadsheets/d/1iu9UYUeBUe7Ru6gvtZan8stwkeCARN0T_lYhNBukDv4/edit?pli=1&gid=0#gid=0]
+Or we can just delete them manually. Here's the source of truth for articles to be exported: [docs](https://docs.google.com/spreadsheets/d/1iu9UYUeBUe7Ru6gvtZan8stwkeCARN0T_lYhNBukDv4/edit?pli=1&gid=0#gid=0)
 
 ## Output: Local MD Files
 
