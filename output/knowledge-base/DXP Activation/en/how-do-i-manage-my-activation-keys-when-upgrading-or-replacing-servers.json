@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>As your Liferay project evolves, servers running Liferay software may be decommissioned and replaced by other servers. This usually happens during a Liferay DXP version upgrade or infrastructure migration.&nbsp;</p>\n\n<p>Typically a server migration consists of 3 main stages:</p>\n\n<h3 id=\"h_01HFE6ADETZ1RG85S2GSCRZ650\">1. Initial Setup of New Instances</h3>\n\n<p>During the initial phase of a migration, new instances are created, configured and tested.</p>\n\n<p>The new servers can be activated with keys tied to an available subscription, as long as they are within the number and type of subscriptions purchased for your Liferay project. Team members with the Administrator role can follow this guide: <a href=\"http://support.liferay.com/w/how-do-i-activate-my-self-hosted-liferay-dxp-portal-product-video-tutorial\">Activate Liferay DXP</a>&nbsp;to use subscription options for their new activation keys.</p>\n\n<p>In case all of your subscriptions have already been allocated, Developer Activation Keys can be used for this purpose. Please follow this guide:&nbsp;<a href=\"https://support.liferay.com/w/how-do-i-download-a-developer-key\">How do I download a Developer Key?</a>.</p>\n\n<h3 id=\"h_01HFE6ADEVKJAGXMDX1WGQB66T\">2. Switch Over&nbsp;</h3>\n\n<p>At the end of the setup phase, the new instances are ready to replace the current ones.</p>\n\n<p>To ensure a seamless transition, you may want to keep both sets of instances running at the same time until the new ones are fully validated.&nbsp;</p>\n\n<p>Please note Developer Activation Keys will no longer be suitable for the new instances once they start serving live requests. If the previous instances were not decommissioned yet, and there are no remaining subscriptions, please contact your Liferay representative about the option of using temporary complimentary keys.&nbsp;</p>\n\n<h3 id=\"h_01HFE6ADEV1YBEG3CT6DQW9NQK\">3. Deactivation of Previous Instances</h3>\n\n<p>Once the previous instances have been shut down and are no longer in use, Administrators can free up that subscription slot by deactivating the activation keys, as described in this article: <a href=\"https://support.liferay.com/w/how-do-i-deactivate-an-activation-key\">Deactivate an Activation Key.</a></p>\n\n<p>If needed, new activation keys can now be created for any of the live instances that were activated with temporary or Developer Activation Keys.</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988299"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:44:14Z",
+  "dateModified": "2026-03-05T02:20:16Z",
+  "datePublished": "2023-10-16T15:20:00Z",
+  "description": "",
+  "externalReferenceCode": "20425297160845",
+  "friendlyUrlPath": "how-do-i-manage-my-activation-keys-when-upgrading-or-replacing-servers",
+  "id": 26146407,
+  "key": "26146405",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "mt",
+    "customer-portal",
+    "activation-key"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146407/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988299,
+      "taxonomyCategoryName": "DXP Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "d9bfd249-f5c7-d830-0fb9-fe5fb9082be4",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "How do I manage my Activation Keys when upgrading or replacing servers?",
+  "uuid": "8aee608b-e6db-e6b2-43e7-43c559b74c44"
+}

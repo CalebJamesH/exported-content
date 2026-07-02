@@ -1,0 +1,127 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p class=\"alert alert-warning\"><span class=\"wysiwyg-color-black\">Liferay DXP repositories are located at&nbsp;<a href=\"https://github.com/liferay/liferay-dxp\">https://github.com/liferay/liferay-dxp</a>.&nbsp;</span></p>\n\n<p class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\">This repository replaces source patching mode, which is no longer available for Liferay DXP 7.3+ and Liferay Commerce 3.0+&nbsp;&nbsp; </span></p>\n\n<p>Liferay subscribers can now access the Liferay DXP source code for our releases including GAs, fix packs, updates, and hotfixes in our private GitHub repository. The GitHub usernames for individual project team members need to be added in order to view the Liferay DXP source code repository.</p>\n\n<h2 id=\"h_01HGE6NJAN26Z74EFCSWJARSYD\">GET ACCESS</h2>\n\n<p>How to gain access to Liferay DXP source code:</p>\n\n<p><img alt=\"source_code_access_add.gif\" src=\"https://support.liferay.com/documents/d/customer-portal/360060408671-source_code_access_add\"></p>\n\n<ol>\n\t<li>Navigate to <a href=\"https://customer.liferay.com/project-details\" target=\"_self\">Project Details</a>\n\n\t<ul>\n\t\t<li>If you are added to multiple projects, select the desired one from the list</li>\n\t</ul>\n\t</li>\n\t<li>Open the Source Code Access tab</li>\n\t<li>Click on the “+” button</li>\n\t<li>Fill out the requested information:\n\t<ul>\n\t\t<li>First and last name</li>\n\t\t<li>Email address</li>\n\t\t<li>GitHub username</li>\n\t</ul>\n\t</li>\n\t<li>Submit</li>\n\t<li>The GitHub user will receive an invitation by email to access the Liferay DXP source code repository</li>\n</ol>\n\n<p>You can then continue to add multiple name entries to request on behalf of other project team members.</p>\n\n<p>Due to daily API processing limits, we may not be able to immediately invite every username submitted through the Source Code Access page. Rest assured, we will queue requests and add new users in the following hours or days, as soon as possible.</p>\n\n<p>The access to the Liferay DXP source code repository will be maintained as long as your Liferay DXP Subscription is active. Additionally, if one of the team members <a href=\"https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/changing-your-github-username\" target=\"_self\">changes their GitHub username</a>, they will lose access to the repository.</p>\n\n<p><strong>Misplaced Email Invitation?</strong></p>\n\n<p>If the invitation email was lost or misplaced, the invited user can view and accept the invitation in GitHub: <a href=\"https://github.com/liferay/liferay-dxp/invitations\" target=\"_self\">github.com/liferay/liferay-dxp/invitations</a></p>\n\n<h2 id=\"h_01J7GAV0PGHNTHY6RG0B7612RX\">CHANGE ACCESS</h2>\n\n<p>If your GitHub username changes it is necessary to reflect this change in Help Center. First, you need to first remove the existing username using the steps below, and then request access with the new username.</p>\n\n<h2 id=\"h_01HGE6NJAP463RTTC0864ZKXF7\">REMOVE ACCESS</h2>\n\n<p>You can remove team members who are no longer working on the Liferay DXP project with the following steps:</p>\n\n<ol>\n\t<li>Navigate to <a href=\"https://customer.liferay.com/project-details\" target=\"_self\">Project Details</a>\n\n\t<ul>\n\t\t<li>If you are added to multiple projects, select the desired one from the list</li>\n\t</ul>\n\t</li>\n\t<li>Open the Source Code Access tab</li>\n\t<li>Identify the team member to be removed</li>\n\t<li>Expand the team member’s GitHub information</li>\n\t<li>Click Delete</li>\n</ol>\n\n<p><img alt=\"source_code_access_delete.jpg\" src=\"https://support.liferay.com/documents/d/customer-portal/360060408711-source_code_access_delete\"></p>\n\n<p><strong>Note:</strong> Invitations remain active for 7 days and can be accepted even if the team member is removed from the Project Details page in Help Center. For example if the GitHub username had a typo, but existed in the system as someone else's account, an unknown person could receive access. To prevent this, the system checks weekly for new collaborators that are not listed on any active projects, to automatically revoke their access.</p>\n\n<h2 id=\"h_01HGE6NJAP5HFWKJN1Q5D7GK71\">FIX PACK SOURCE CODE LOOKUP</h2>\n\n<p class=\"wysiwyg-text-align-center\"><img alt=\"repo_tags.jpg\" height=\"399\" src=\"https://support.liferay.com/documents/d/customer-portal/360062339631-repo_tags\" width=\"427\"></p>\n\n<p>The Liferay DXP repository is updated with fix pack tags, which enables you to take a closer look at how code changes with each fix pack. Using these tags you can identify the fix pack changes that are relevant for your project and your custom code, or just view the source code at your existing fix pack baseline.</p>\n\n<p><strong>Important:</strong> For Liferay DXP 7.0 and 7.1 source code, fix pack tags are available only starting with these fix pack baselines:&nbsp;</p>\n\n<ul>\n\t<li>Liferay DXP 7.1 Fix Pack 19</li>\n\t<li>Liferay DXP 7.0 Fix Pack 96</li>\n</ul>\n\n<h2 id=\"h_01HGE6NJAPZKQ4VNPSJNZR618M\">BUILD FILES</h2>\n\n<p>Liferay DXP provides multiple extension points that allow developers to add functionality and customize their installation. If an extension point does not exist, you can submit a feature request to add the extension point or even the specific functionality.</p>\n\n<p>The use of extension points is the only supported way of customizing Liferay DXP, which is why build files are excluded from the source code repository.</p>\n\n<p>Please contact your Account Executive or Customer Experience Manager for assistance with your custom development or for making a feature request.</p>\n\n<h2 id=\"h_01HGE6NJAPW71DS1NJ9C37MGNY\">PERMISSIONS</h2>\n\n<p>Customers who access the Liferay DXP source code repository will have <em>Read</em> level access.</p>\n\n<p>The most relevant allowed actions are:</p>\n\n<ul>\n\t<li>Pull from the repository</li>\n\t<li>Fork the repository</li>\n\t<li>View published releases</li>\n</ul>\n\n<h2 id=\"h_01HGE6NJAPRMAS4PNAGX1FKMGA\">PRIVACY</h2>\n\n<p>Our customers’ privacy comes first. When getting access to Liferay DXP source code, you can rest assured that your username, name, email address and any forks remain private. Even though all our customers will get access to the same repository, by default they are not visible to each other.</p>\n\n<p>However, other actions allowed as part of the “<em>Read</em>” permission level <span class=\"wysiwyg-underline\">will</span> be visible to all other users. In order to maintain privacy, please avoid taking any of the listed actions in the Liferay DXP repository:</p>\n\n<ul>\n\t<li>Edit and delete own comments (1)</li>\n\t<li>Open issues (1)</li>\n\t<li>Close issues you opened (1)</li>\n\t<li>Reopen issues you closed (1)</li>\n\t<li>Have an issue assigned to you (1)</li>\n\t<li>Send pull requests from forks (2)</li>\n\t<li>Submit reviews on pull requests (2)</li>\n\t<li>Edit wikis (3)</li>\n</ul>\n\n<p>Please use one of these three official channels to accomplish any of the above tasks, instead:</p>\n\n<p><strong>(1) For Issues and Comments</strong><br>\nIf you would like to report issues with Liferay software, please contact the Liferay Support team by <a href=\"https://support.liferay.com\" target=\"_self\">creating a support ticket</a> in the Help Center. Issues raised in the source code repository will not be answered and will be closed by Liferay.</p>\n\n<p><strong>(2) For Code Contributions</strong><br>\nAs an open source company, Liferay values and thrives on community contributions. These can be submitted on the public Liferay Portal repository, and if approved will be included in the next release of Liferay DXP. If you would like to contribute to Liferay source code, please follow the <a href=\"https://discuss.liferay.com/\" target=\"_self\">community guidelines</a>.</p>\n\n<p><strong>(3) For Wikis</strong><br>\nLiferay DXP Documentation and its Knowledge Base are located in the Help Center. Liferay will not use the private repository’s wiki to store documentation. If you would like to suggest edits to one of our articles, or request a new topic to be documented, please use the article Feedback button or contact the Liferay Support team by <a href=\"https://support.liferay.com\" target=\"_self\">creating a support ticket</a> in Help Center.</p>\n\n<h2 id=\"h_01HGE6NJAQCSVCNWMR1R4DZ53E\">USEFUL RESOURCES</h2>\n\n<ul>\n\t<li><a href=\"https://support.liferay.com/release-notes\" target=\"_self\">Liferay DXP Release Notes</a></li>\n\t<li><a href=\"https://liferay.dev/open-source\" target=\"_self\">About Open Source at Liferay</a></li>\n\t<li><a href=\"https://help.github.com/en/github/getting-started-with-github\" target=\"_self\">Getting Started with GitHub and Git</a></li>\n\t<li><a href=\"https://help.github.com/en/github/searching-for-information-on-github\" target=\"_self\">Searching for information on GitHub</a></li>\n\t<li><a href=\"https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github\" target=\"_self\">Cloning a repository from GitHub</a></li>\n\t<li><a href=\"https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks\" target=\"_self\">Working with forks</a></li>\n\t<li><a href=\"https://guides.github.com/activities/forking/\" target=\"_self\">Forking Projects - GitHub Guide</a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T20:17:58Z",
+  "dateModified": "2026-03-26T20:40:13Z",
+  "datePublished": "2020-06-24T10:06:00Z",
+  "description": "",
+  "externalReferenceCode": "26107817",
+  "friendlyUrlPath": "liferay-dxp-source-code-access",
+  "id": 26107819,
+  "key": "26107817",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "dxp-7-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "cp",
+    "provisioning",
+    "migration-1"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "Patching and Release",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXP Source Code Access",
+  "uuid": "65c1e5f3-9c9a-2ace-f52f-d540bdfea593"
+}

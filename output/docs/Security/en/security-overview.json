@@ -1,0 +1,120 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2><a id=\"Background-Statement\"></a><a href=\"#Background-Statement\">Background Statement</a></h2>\n\n<p><strong>Liferay is committed to producing software products that are enterprise grade not only with respect to quality and features, but also as to security.&nbsp;</strong> We understand that for our enterprise-class customers, ensuring the software they implement into their IT stack is free of security vulnerabilities and similar concerns is of utmost importance.</p>\n\n<p>We strongly believe that our open source community development model provides us with the best opportunities and resources to address these concerns. This development model provides access to a global community of developers that find and fix bugs and vulnerabilities. Further, we have developed a set of internal policies and practices to ensure that we promptly discover and address all security-related issues for our Subscription customers.</p>\n\n<p>Liferay Digital Experience Platform and Liferay Portal utilize industry standard, government-grade encryption technologies, including advanced algorithms such as AES, 3-DES, and RSA.&nbsp; Additionally, Liferay Digital Experience Platform and Liferay Portal ship with robust user management and security features including password policies, user reminder settings, complete login security procedures and other varying layers of security controls that allow customizable access to sensitive information.</p>\n\n<p>Liferay also maintains a dedicated internal team of security experts who conduct regular \"white hat\" security evaluations. This ensures that the software provided to our users is as free of security vulnerabilities as possible.</p>\n\n<p>Liferay also recognizes the important role that independent security researchers play, and we encourage responsible reporting of vulnerabilities discovered in our products. For more information about reporting vulnerabilities to Liferay, please see the following sections.&nbsp;</p>\n\n<h2><a id=\"Reporting-Security-Issues\"></a><a href=\"#Reporting-Security-Issues\">Reporting Security Issues</a></h2>\n\n<p>Like many other open source projects, Liferay strongly encourages the community to&nbsp; practice&nbsp;<em>Responsible Disclosure</em>. This means that when you are reporting new issues related to security vulnerabilities, you report them to Liferay with appropriate time to respond (investigate, evaluate, resolve) to security issues before details are publicly and fully disclosed.</p>\n\n<p>Responsible Disclosure means that when you have discovered a possible security vulnerability, you <u><strong>do not</strong></u> do the following:</p>\n\n<ul>\n\t<li>Disclose possible exploits of the vulnerability.</li>\n\t<li>Disclose the details of the vulnerability on any&nbsp;public forums, including the Liferay Community forum, blogs, comment pages or other public locations</li>\n\t<li>Disclose the details of the vulnerability in other private channels&nbsp;<u>before</u> a fix is released.</li>\n</ul>\n\n<p><span>To notify Liferay of a vulnerability&nbsp;Subscribers can&nbsp;</span><a class=\"external-link\" href=\"https://support.liferay.com\" rel=\"nofollow noopener\" target=\"_blank\" title=\"Follow link\">create a support ticket</a></p>\n\n<p>You may test Liferay software source code for vulnerabilities, including through the utilization of third-party software. Any testing results and suspected vulnerabilities must be reported in accordance with the <em>Responsible Disclosure</em> policy, above.</p>\n\n<h2><a id=\"Liferay-Security-Policy\"></a><a href=\"#Liferay-Security-Policy\">Liferay Security Policy</a></h2>\n\n<p>Liferay has developed the following policy that applies to reported security issues in our software products:</p>\n\n<h4>Initial Report</h4>\n\n<p>Within 72 hours of discovering or being notified of a potential vulnerability, Liferay will attempt to reproduce the issue internally. If the vulnerability is reproducible and if a ticket does not already exist for the vulnerability, a private (non-public) ticket will be created. The ticket will be classified into one of the pre-defined severity levels (see below) and the details of the vulnerability will be documented in that ticket.&nbsp;</p>\n\n<h4>Triage and Classification</h4>\n\n<p>Security Vulnerabilities are classified by Liferay into various severity levels based on a number of factors, the most important of which is the perceived risk to Liferay deployments generally.</p>\n\n<ul>\n\t<li><strong>Severity Level 1 (SEV-1)</strong> - The most severe level, this includes vulnerabilities where complete system access is possible, including access to the underlying system's resources, the potential for data corruption or compromise, or the ability to execute arbitrary code by an attacker.</li>\n\t<li><strong>Severity Level 2 (SEV-2)</strong> - Vulnerabilities in this level do not allow complete system access, but can impact service levels and system reliability, or affect systems other than Liferay itself.&nbsp; This typically includes Denial-of-Service vulnerabilities and related vulnerabilities.</li>\n\t<li><strong>Severity Level 3 (SEV-3)</strong> - The least severe level used for minor vulnerabilities, including cross-site scripting, permission problems, and information leak.</li>\n</ul>\n\n<h4>Patch Availability &amp; Notifications</h4>\n\n<div>As a Liferay customer, it is important for you to be aware of and be notified when potential vulnerabilities are discovered. Liferay will notify you of vulnerability findings and security patch availability under the following guidelines:</div>\n\n<ul>\n\t<li><strong>Severity Level 1 or 2: </strong>After a security patch has undergone rigorous testing and is ready for release, details of the vulnerability, any potential workarounds, and pointers to patches or other fixes will be made public through a security bulletin and Help Center announcement. The fixes for issues will be available on the Security Advisories page in the Help Center.</li>\n\t<li><strong>Severity Level 3:</strong> Fixes for severity level 3 security vulnerabilities will be released in a fix pack for affected versions that are in the Premium Support Phase. These issues will be highlighted in a Help Center announcement.</li>\n</ul>\n\n<h2><a id=\"Disclosure-Policy\"></a><a href=\"#Disclosure-Policy\">Disclosure Policy</a></h2>\n\n<p>In following with the principles of Responsible Disclosure, Liferay will not disclose any information about security vulnerabilities beyond the details provided to all customers on the <a href=\"https://support.liferay.com/security-vulnerabilities\">Security Reports</a> page on Customer Portal, including the CVE ID*, and the CVSS (v.3.0) <em>Score</em> and&nbsp;<em>Vector String</em>.**</p>\n\n<p>This is for the safety and security of your Liferay deployment as well as the safety and security of all other Liferay customers. Specifically, Liferay will not provide any information about how to reproduce a security vulnerability or provide advance notice about critical patches or fixes to individual customers. Liferay reserves the right to not disclose any information about security vulnerabilities it believes in its sole judgment would either create additional risk to Liferay customers or would serve no material benefit to Liferay customers. These policies and practices mitigate, limit and control the risks of discovered vulnerabilities, protect the entire Liferay customer ecosystem and community, and provide the Liferay and community security experts the best environment for addressing security concerns. &nbsp;</p>\n\n<p><span class=\"wysiwyg-font-size-medium\">* Since May, 2020.&nbsp; CVE IDs are assigned to vulnerabilities with Severity Level 1 and 2<br>\n** Since 2019</span><br>\n&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988279"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:34Z",
+  "dateModified": "2026-03-24T22:44:25Z",
+  "datePublished": "2018-10-03T21:09:00Z",
+  "description": "",
+  "externalReferenceCode": "360016700231",
+  "friendlyUrlPath": "security-overview",
+  "id": 26098515,
+  "key": "26098513",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-2",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "portal-6-0",
+    "portal-6-1",
+    "portal-5-2"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27111977,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Security Overview",
+  "uuid": "3f23aef0-1152-b191-5a7d-49d16beb7a18"
+}

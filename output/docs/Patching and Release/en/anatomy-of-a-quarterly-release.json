@@ -1,0 +1,117 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span class=\"wysiwyg-font-size-medium\"><em>This article describes the content of the released archive files for Quarterly Releases and Patch Releases. To learn more about the different types of releases visit <a href=\"https://support.liferay.com/w/liferay-dxp-quarterly-release-process\">Liferay DXP Product Delivery Method</a></em></span></p>\n\n<p>Liferay DXP releases should occur every quarter and will be called a Quarterly Release. These releases contain product maintenance, enhancements and new features. Each Quarterly Release should be treated as a new minor version.</p>\n\n<p>Each Quarterly Release is a bundled release built from source and packaged with several additional elements.</p>\n\n<ul>\n\t<li>\n\t<p>Tomcat: a recent and compatible version of Tomcat is included in the archive file. Liferay DXP is deployed within the structure of Tomcat in order to provide an easy to start environment. Several files and Tomcat settings have been modified from their default in order to facilitate this deployment.</p>\n\t</li>\n\t<li>\n\t<p>Liferay Patching Tool: the latest compatible version of Liferay Patching Tool is included in order to facilitate quick hotfix installation. Liferay Patching Tool can be updated independent of the version of Liferay DXP</p>\n\t</li>\n\t<li>\n\t<p>Liferay Database Upgrade Client: a client program for upgrading the Liferay DXP databases offline without initiating a web server.</p>\n\t</li>\n</ul>\n\n<h2 id=\"source-code-changes\"><a href=\"#source-code-changes\">Source Code Changes Between Quarterly Releases and Updates </a></h2>\n\n<p>The DXP Quarterly Release source code is not longer distributed as a download in the Customer Downloads page in our Help Center. The source code is available on github in the liferay-dxp repository. For more information about accessing the liferay-dxp repository please see: <a href=\"https://support.liferay.com/w/liferay-dxp-source-code-access?p_l_back_url=%2Fsearch%3Fq%3DLiferay%2BDXP%2Bsource%2Bcode%2Baccess&amp;p_l_back_url_title=Search&amp;highlight=Liferay%20DXP%20source%20code%20access\">Liferay DXP Source Code Access</a></p>\n\n<h2 id=\"file-structure-changes\"><a href=\"#file-structure-changes\">Files Structure Changes Between Quarterly Releases and Updates</a></h2>\n\n<p>The file and folder structures are different between Quarterly Releases and Updates which could impact deployment and override scripts. Liferay DXP 7.4 Updates were released with jar files packaged in an lpkg file, however, the lpkg packaging has been removed with Quarterly Releases. Rather jar files are compiled and included individually. Below is a comparison table outlining the package or folder structure changes.</p>\n\n<p>&nbsp;</p>\n\n<table border=\"1\" cellpadding=\"3\" cellspacing=\"3\" class=\"fixed-table\">\n\t<tbody>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<th style=\"width: 26.0073%; height: 22px;\">File or Folder&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</th>\n\t\t\t<th style=\"width: 24.1553%; height: 22px;\">Quarterly Releases</th>\n\t\t\t<th style=\"width: 24.0375%; height: 22px;\">DXP 7.4 Updates</th>\n\t\t\t<th style=\"width: 26.2281%;\">DXP 7.3 Updates (starting from u36)*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td style=\"width: 26.0073%; height: 22px;\">Liferay Home</td>\n\t\t\t<td style=\"width: 24.1553%; height: 22px;\">/liferay-dxp</td>\n\t\t\t<td style=\"width: 24.0375%; height: 22px;\">/liferay-dxp-7.4.13.u[n]</td>\n\t\t\t<td style=\"width: 26.2281%;\">/liferay-dxp</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td style=\"width: 26.0073%; height: 22px;\">Tomcat Folder</td>\n\t\t\t<td style=\"width: 24.1553%; height: 22px;\">/tomcat</td>\n\t\t\t<td style=\"width: 24.0375%; height: 22px;\">/tomcat-[x.y.z]</td>\n\t\t\t<td style=\"width: 26.2281%;\">/tomcat</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td style=\"width: 26.0073%; height: 22px;\">/OSGi/marketplace files</td>\n\t\t\t<td style=\"width: 24.1553%; height: 22px;\">empty</td>\n\t\t\t<td style=\"width: 24.0375%; height: 22px;\">lpkg files</td>\n\t\t\t<td style=\"width: 26.2281%; height: 22px;\">empty</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td style=\"width: 26.0073%; height: 22px;\">/OSGi/modules files</td>\n\t\t\t<td style=\"width: 24.1553%; height: 22px;\">jar files</td>\n\t\t\t<td style=\"width: 24.0375%; height: 22px;\">empty</td>\n\t\t\t<td style=\"width: 26.2281%; height: 22px;\">jar files</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td style=\"width: 26.0073%; height: 22px;\">/OSGi/portal files</td>\n\t\t\t<td style=\"width: 24.1553%; height: 22px;\">jar files</td>\n\t\t\t<td style=\"width: 24.0375%; height: 22px;\">empty</td>\n\t\t\t<td style=\"width: 26.2281%; height: 22px;\">jar files</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>*Starting from DXP 7.3.10-u36+, the 7.3 releases have the same structure as the Quarterly Releases as described above.</p>\n\n<h2 id=\"Quarterly-Release-File-Structure\"><a href=\"#Quarterly-Release-File-Structure\">Quarterly Release File Structure </a></h2>\n\n<p>Bundled Release file name format: liferay-dxp-[year].[quarter].[build]-[build-time-stamp]</p>\n\n<p>File Structure:</p>\n\n<p><code>liferay-dxp</code></p>\n\n<ul>\n\t<li><code>I_ data</code>\n\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ document_library</code>\n\n\t\t<ul>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ 20096</code></li>\n\t\t</ul>\n\t\t</li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ elasticsearch[x_version]</code>\n\t\t<ul>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ indices</code></li>\n\t\t</ul>\n\t\t</li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ hypersonic</code>\n\t\t<ul>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ lportal.script</code></li>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ lportal.properties</code></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li><code>I_ deploy</code></li>\n\t<li><code>I_ elasticsearch_sidecar</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I__ [Elasticsearch x.y.z version]</code></li>\n\t</ul>\n\t</li>\n\t<li><code>I_ license</code></li>\n\t<li><code>I_ logs</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ companies</code>\n\t\t<ul>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ 0</code></li>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ 20096</code></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li><code>I_ osgi</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ war</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ static</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ state</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ portal</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ modules</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ marketplace</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ configs</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ client-extensions</code></li>\n\t</ul>\n\t</li>\n\t<li><code>I_ patching-tool</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ cache</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ lib</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ log</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ patches</code></li>\n\t</ul>\n\t</li>\n\t<li><code>I_ routes</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ default</code>\n\t\t<ul>\n\t\t\t<li class=\"wysiwyg-indent2\"><code>I_ dxp</code></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\t<li><code>I_ tomcat</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ bin</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ conf</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ lib</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ logs</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ temp</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ webapps</code></li>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ work</code></li>\n\t</ul>\n\t</li>\n\t<li><code>I_ tools</code>\n\t<ul>\n\t\t<li class=\"wysiwyg-indent1\"><code>I_ portal-tools-db-upgrade-client</code></li>\n\t</ul>\n\t</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-11T00:21:17Z",
+  "dateModified": "2026-03-26T20:04:40Z",
+  "datePublished": "2025-11-11T00:34:00Z",
+  "description": "",
+  "externalReferenceCode": "f8e05277-54b5-a2f5-f2ea-1241140ca95a",
+  "friendlyUrlPath": "anatomy-of-a-quarterly-release",
+  "id": 26946640,
+  "key": "26946638",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26946640/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "Patching and Release",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Anatomy of a Quarterly Release",
+  "uuid": "d47eac72-8ba5-3929-97f8-023cbc0aa030"
+}

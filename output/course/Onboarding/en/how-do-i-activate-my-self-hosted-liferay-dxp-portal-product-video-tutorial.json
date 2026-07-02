@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/YdDQKAokylo?si=AGbdun997vyITYW2\" title=\"YouTube video player\" width=\"100%\"></iframe></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">To activate your Self-Hosted Liferay DXP or Portal product Administrators should navigate to the Product Activation tab on the left sidebar navigation in <a href=\"https://support.liferay.com/\" rel=\"noopener noreferrer\" style=\"box-sizing: border-box; color: #0041be; text-decoration: underline; background-color: #ffffff; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;\" target=\"_blank\">Customer Portal</a> and select </span><strong>DXP </strong><span style=\"font-weight: 400;\">or </span><strong>Portal</strong><span style=\"font-weight: 400;\">.</span></p>\n\n<p><span style=\"font-weight: 400;\">Click on the </span><strong>Actions </strong><span style=\"font-weight: 400;\">button in the right corner and select </span><strong>Generate New.</strong></p>\n\n<p><span style=\"font-weight: 400;\">You will then be prompted to fill out the following:&nbsp;</span></p>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Product</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Version</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Key Type</span>\n\t<ul>\n\t\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Physical or Virtual Server Production, Non-Production, or Backup Key Types:</span>\n\t\t<ul>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Subscription Term&nbsp;</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">For each instance to be activated</span>\n\t\t\t<ul>\n\t\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Host-Name&nbsp;</span></li>\n\t\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">IP Address&nbsp;</span></li>\n\t\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">MAC Address</span></li>\n\t\t\t</ul>\n\t\t\t</li>\n\t\t</ul>\n\t\t</li>\n\t\t<li aria-level=\"2\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">For Virtual Cluster Key Types:</span>\n\t\t<ul>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Environment Name&nbsp;</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Description</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Cluster Nodes</span></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"font-weight: 400;\">Liferay SaaS and Liferay PaaS deployments do not require a separate product activation key to deploy. However, you can use <a href=\"https://support.liferay.com/w/how-do-i-download-a-developer-key\">Liferay Developer Keys</a> for local testing and development.</span></p>\n\n<h2 id=\"h_01HDKZTQS127SJPM2SDB24XJ4R\">Related Articles</h2>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-download-my-liferay-dxp-portal-activation-keys\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">How do I download my Liferay DXP/ Portal Activation Keys?&nbsp;</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-view-all-generated-liferay-dxp-portal-activation-keys\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">How do I view all Liferay DXP/Portal generated activation keys?&nbsp;</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/can-i-download-a-file-with-all-my-activation-keys\" rel=\"noopener\" target=\"_blank\">Can I download a file with all my activation keys?</a>&nbsp;</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://learn.liferay.com/kb-article/deploying-activation-keys\"><span style=\"font-weight: 400;\">Deploying Activation Keys</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/activation-keys-faq-for-liferay-dxp-and-liferay-commerce\">Activation Keys FAQ</a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988299"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:42:09Z",
+  "dateModified": "2026-03-20T22:44:37Z",
+  "datePublished": "2022-08-31T21:14:00Z",
+  "description": "",
+  "externalReferenceCode": "8835835104013",
+  "friendlyUrlPath": "how-do-i-activate-my-self-hosted-liferay-dxp-portal-product-video-tutorial",
+  "id": 26145744,
+  "key": "26145742",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "activate",
+    "customer-portal",
+    "provisioning",
+    "dxp",
+    "portal"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988299,
+      "taxonomyCategoryName": "DXP Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "d9bfd249-f5c7-d830-0fb9-fe5fb9082be4",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "How do I activate my Self-Hosted Liferay DXP / Portal product? (Video Tutorial)",
+  "uuid": "59f3af3b-8b2d-7f47-cbb1-1f32ecd18466"
+}

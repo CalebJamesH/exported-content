@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"font-weight: 400;\">On the left sidebar navigation of <a href=\"https://support.liferay.com/\" rel=\"noopener noreferrer\" style=\"box-sizing: border-box; color: #0041be; text-decoration: underline; background-color: #ffffff; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;\" target=\"_blank\">Customer Portal</a>, the Activation selection expands into a list of purchased products which can be activated. To activate a product please navigate to the appropriate product activation page.&nbsp;</span></p>\n\n<p><span style=\"font-weight: 400;\">To learn more about how to activate a specific product, please review the following articles:&nbsp;</span></p>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"/w/how-do-i-activate-my-liferay-saas-video-tutorial\">How do I activate my Liferay SaaS product?</a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"/w/how-do-i-activate-my-liferay-paas-product-video-tutorial\">How do I activate my Liferay PaaS product?&nbsp;</a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-self-hosted-liferay-dxp-portal-product-video-tutorial\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">How do I activate my DXP or Portal product?</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\"><a href=\"/w/how-do-i-activate-my-analytics-cloud-product-video-tutorial\" rel=\"noopener\" target=\"_blank\">How do I activate my Analytics Cloud product?</a>&nbsp;</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-commerce-product-video-tutorial\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">How do I activate my Commerce product?&nbsp;</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-enterprise-search-product-video-tutorial\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">How do I activate my Enterprise Search?&nbsp;</span></a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988307"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:50Z",
+  "dateModified": "2026-02-20T00:56:22Z",
+  "datePublished": "2022-08-31T18:54:00Z",
+  "description": "",
+  "externalReferenceCode": "8831682516621",
+  "friendlyUrlPath": "about-product-activation",
+  "id": 26099766,
+  "key": "26099764",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "liferay-paas",
+    "customer-portal",
+    "product-activation"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408744,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988307,
+      "taxonomyCategoryName": "Overview",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "cc952ee8-fd7f-e172-8bfe-169940ffee2e",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "About Activation",
+  "uuid": "30ebc789-f822-2122-8561-8734e0453ef2"
+}

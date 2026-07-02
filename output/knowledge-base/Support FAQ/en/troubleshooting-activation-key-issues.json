@@ -1,0 +1,136 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>For customers working on Liferay DXP, Liferay Commerce or Liferay Portal, this article serves as a troubleshooting guide for activation key issues.</p>\n\n<h3>​Table of Contents</h3>\n\n<ol>\n\t<li><a href=\"#ReadingFoldersandLogs\">Reading Folders and Logs</a>\n\n\t<ul>\n\t\t<li><a href=\"#ReadingLicenseManager\">Reading the License Manager</a></li>\n\t\t<li><a href=\"#CheckingtheDeployDir\">Checking the Deploy Directory </a></li>\n\t\t<li><a href=\"#liExists\">The *.li exists in data folder</a></li>\n\t\t<li><a href=\"#Searchingforli\">Searching for the *.li file</a></li>\n\t\t<li><a href=\"#Logs\">Reading the server logs</a></li>\n\t</ul>\n\t</li>\n\t<li><a href=\"#Deployment\">Deployment Issues</a>\n\t<ul>\n\t\t<li><a href=\"#IncorrectDeployDir\">Incorrect Deploy Directory</a></li>\n\t\t<li><a href=\"#ReadWrite\">Read-Write Permissions</a></li>\n\t\t<li><a href=\"#OrderID\"><span style=\"line-height: 1.5;\">Orde</span><span style=\"line-height: 1.5;\">r ID</span></a></li>\n\t</ul>\n\t</li>\n</ol>\n\n<p><img alt=\"Troubleshooting_Activation_Key_Issues.png\" src=\"https://support.liferay.com/documents/d/customer-portal/360014385632-troubleshooting_activation_key_issues\" style=\"border: #E9EBF0 1px solid;\"></p>\n\n<section id=\"resolution\">\n<div>\n<h2><a name=\"ReadingFoldersandLogs\"></a>1. Reading Folders and Logs</h2>\n\n<h3><a name=\"ReadingLicenseManager\"></a>Reading the License Manager</h3>\n\n<p>When an activation key fails, there will likely be an error on the screen. This section describes how to read the activation XML file you've just deployed and cross reference it with what the <em>License Manager</em>&nbsp;page says.</p>\n\n<ol>\n\t<li>View <em>License Manager</em> page at <code>{eg. localhost}/c/portal/license</code></li>\n\t<li>Cross reference recently deployed XML with XML being read by the server</li>\n\t<li><em>License Manager </em>page provides useful information about deployed keys:\n\t<ol type=\"a\">\n\t\t<li>Version of Liferay</li>\n\t\t<li>Server Details (MAC, IP, Host name)</li>\n\t\t<li>Activation Key Type (Production, Non-production, Developer)</li>\n\t\t<li>Lifetime of activation key (perpetual or trial)</li>\n\t</ol>\n\t</li>\n\t<li>If the information does not match with the recently deployed XML, please check the <em>Deploy / Directory</em> covered below.</li>\n</ol>\n\n<h3><a name=\"CheckingtheDeployDir\"></a>Checking the Deploy Directory</h3>\n\n<p><strong>Symptom:</strong>&nbsp;When first attempting to deploy your <code>.xml</code> activation key file, it's possible that the file is not deployed. A majority of the time, this issue is due to the <code>.xml</code> file not being placed in the correct directory.</p>\n\n<ol>\n\t<li>Start up your application server. The deploy/ directory will be created in <code>${liferay.home}</code> on the first startup\n\n\t<ol>\n\t\t<li>XML files should be placed in <code>${auto.deploy.deploy.dir}</code> directory (usually, <code>${liferay.home}/deploy</code>)</li>\n\t\t<li>XML files should not be placed in <code>${liferay.home}/data/license</code>&nbsp;</li>\n\t</ol>\n\t</li>\n\t<li>Once dropped, the XML will disappear while the server is running</li>\n\t<li>A <code>.li</code> file will be generated in&nbsp;<code>${liferay.home}/data/license</code>&nbsp;</li>\n</ol>\n\n<p>If the XML is still sitting in /deploy directory, check <a href=\"/w/troubleshooting-activation-key-issues#Deployment\">Deployment</a>.</p>\n\n<h3><a name=\"liExists\"></a>The *.li exists in <code>${liferay.home}/data/*</code></h3>\n\n<p><strong>Symptom:</strong>&nbsp;</p>\n\n<p><span class=\"wysiwyg-underline\">Conflict with existing activation keys</span></p>\n\n<p>If an activation key has been deployed in the past, you will have an *.li file in&nbsp;<code>${liferay.home}/data/license</code> . If the current key is not being deployed there may be conflicts with this file.</p>\n\n<ol>\n\t<li>Remove the .li file that resides in <code>${liferay.home}/data/*</code></li>\n\t<li>For Liferay DXP, remove any *.xml files from the <code>${liferay.home}/osgi/modules/*&nbsp;</code>folder</li>\n\t<li>Redeploy the provided key XML file by copying it into liferay deploy directory (see <code>auto.deploy.deploy.dir</code>)</li>\n</ol>\n\n<p>If the error reoccurs, proceed to the next step, Searching for the *.li file.</p>\n\n<p><span class=\"wysiwyg-underline\">Conflict with LCS</span></p>\n\n<p>Up to Liferay DXP 7.0 Fix Pack 53, activation through *.xml keys is not compatible with Liferay Connected Services activation. Therefore it is mandatory to uninstall the LCS client before deploying the activation key.</p>\n\n<ol>\n\t<li>Shut down the server</li>\n\t<li>Remove Liferay Connected Services Client.lpkg, located:\n\t<ol type=\"i\">\n\t\t<li>In the Tomcat bundle, in the <code>$ {liferay.home}/osgi/marketplace </code> folder</li>\n\t\t<li>In case of using another application server, in the <code>OSGi Dependencies/marketplace</code> folder</li>\n\t</ol>\n\t</li>\n\t<li>Start up Liferay</li>\n</ol>\n\n<p>These steps are optional for Liferay DXP 7.2, 7.1 and 7.0 Fix Pack 54 or higher.</p>\n\n<p>If the error reoccurs, proceed to the next step, Searching for the *.li file.</p>\n\n<h3><a name=\"Searchingforli\"></a>Searching for the *.li file</h3>\n\n<p><strong>Symptom:</strong> If there is no *.li in &nbsp;<code>${liferay.home}/data/license</code>, it is possible that the activation key has been deploying somewhere else. If this happens, there will be conflicts. This scenario will happen most with custom deployments of Liferay Portal.</p>\n\n<ol>\n\t<li>Run a search for .li files in any directory</li>\n\t<li>Remove any .li files found</li>\n\t<li>Redeploy the XML activation key file</li>\n</ol>\n\n<p>If the error reoccurs, proceed to <a href=\"https://help.liferay.com/hc/articles/360018150972\">Reading the Server Logs</a> article.</p>\n\n<h3><a name=\"Logs\"></a>Reading the Server Logs</h3>\n\n<p><strong>Symptom:</strong>&nbsp;If after removing all <code>.li</code> files an activation key error persists, please check the logs.</p>\n\n<ol>\n\t<li>Check the <code>${liferay.home}/logs</code> folder</li>\n\t<li>Locate the logs generated during deployment</li>\n</ol>\n\n<p>Common error logs that are generated:</p>\n\n<ul>\n\t<li><em>License has been deployed in the data/license folder</em></li>\n</ul>\n\n<pre>ERROR [LicenseManager:?] Failed to read license file C:\\Users\\Liferay\\Desktop\\liferay-portal-6.1.10-ee-ga1\\data\\license\\license-portaldevelopment-developer-6.1-liferaycom.xml\n\nERROR [LicenseManager:?] No binary licenses found</pre>\n\n<p>Please place the XML file into the <code>${auto.deploy.deploy.dir}</code> folder<span style=\"color: #000000;\">&nbsp;(</span>usually, <code>${liferay.home}/deploy</code>). If you have confirmed that the XML file has been dropped in <code>${auto.deploy.deploy.dir}</code>, please refer to <a href=\"https://help.liferay.com/hc/articles/360018424631\">Checking Deploy/ Directory</a> article.</p>\n\n<ul>\n\t<li><em>Read-write permissions must be configured</em></li>\n</ul>\n\n<pre>ERROR [AutoDeployDir:143] Unable to write license-portalproduction-production-6.1ga1-abc123.xml</pre>\n\n<p>If this error if found within your logs, please refer to <a href=\"https://help.liferay.com/hc/articles/360018150952\">Read/Write Permissions</a> article.</p>\n\n<h2><a name=\"Deployment\"></a>2. Deployment Issues</h2>\n\n<h3><a name=\"IncorrectDeployDir\"></a>Incorrect Deploy Directory</h3>\n\n<p><strong>Symptom:</strong>&nbsp;An activation error message is still received after clearing the data/license folder, removing all .li file, and confirming that the XML file has been dropped into <code>${liferay.home}/deploy</code> directory.</p>\n\n<p>There are two properties that control the directories involved in activation key deployment:</p>\n\n<ol>\n\t<li><code>liferay.home</code> is the root of some directories used by the portal, including the one where .li key files are copied as a result of the activation process. Its default value depends on the application server liferay is running on.</li>\n\t<li><code>auto.deploy.deploy.dir</code> defines where the portal will listen to in order to deploy new components, including .xml activation key files. This property defaults to <code>${liferay.home}/deploy</code></li>\n</ol>\n\n<p>Therefore, to check the involved directories,</p>\n\n<ol>\n\t<li>Check the <code>auto.deploy.deploy.dir</code> value. This directory is where a xml key file has to be copied to initiate the activation key deployment process.</li>\n\t<li>Check the <code>liferay.home</code> value. On activation key deployment, a .li file will be written into&nbsp;<code>${liferay.home}/data/license</code>&nbsp;</li>\n</ol>\n\n<p>Please note that you can configure these properties via <code>portal-ext.properties</code>. However, in case your portal was running before changing <em>liferay.home</em>, you should move old <em>liferay.home</em> contents to the new location.</p>\n\n<p>​If the activation error message is still received, please proceed with opening a <a href=\"https://support.liferay.com\">support ticket</a> and providing the following information:</p>\n\n<ul>\n\t<li>​A screenshot of the error on the <em>license manager</em>&nbsp;page</li>\n\t<li>The logs generated during the deployment process</li>\n\t<li>The <code>portal-ext.properties</code> file</li>\n</ul>\n\n<h3><a name=\"ReadWrite\"></a>Read-Write Permissions</h3>\n\n<p>One error that can occur in deploying activation keys is due to the permission settings on the operating system.</p>\n\n<p><strong>Symptoms:</strong></p>\n\n<ol>\n\t<li>The XML file sits in the<code>${liferay.home}/deploy</code>folder</li>\n\t<li>A .li file is not generated into the&nbsp;<code>${liferay.home}/data/license</code><span style=\"color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;\">&nbsp;</span></li>\n\t<li>The following error log is generated during deployment</li>\n</ol>\n\n<pre>ERROR [AutoDeployDir:xxx] Unable to write license-portalproduction-production-6.1ga1-abc123.xml</pre>\n\n<h4>Read/Write Permissions Must Be Configured</h4>\n\n<p><strong>Linux</strong></p>\n\n<ol>\n\t<li>To see what permissions files have, open a terminal,<code>cd</code> to the corresponding folder inside <code>${liferay.home}</code>, then run command <code>ls -l</code></li>\n\t<li>To change permissions, enter command<code>chmod -R 777 file</code> or <code>chmod -R a+rwx file </code>(where file is either the activation key file or some directory)</li>\n</ol>\n\n<p><strong>Windows</strong></p>\n\n<p>Even though your user may have read/write permissions on the directory and file, they may have the Windows “read only” flag set in place. This setting will cause Java to think that the file cannot be written to.</p>\n\n<p>To check the permissions and to change the flag:</p>\n\n<ol>\n\t<li>Right-click the activation key file, and select <em>Properties</em></li>\n\t<li>In the <em>General</em>&nbsp;tab, uncheck the <em>Read-only</em>&nbsp;checkbox if it is checked.</li>\n\t<li>Place the key file in the deploy folder to try again.</li>\n</ol>\n\n<h4>Open a Help Center Support Ticket:</h4>\n\n<p>​If the license error message is still received, please proceed with opening a <a href=\"https://support.liferay.com\">support ticket</a> and providing the following information:</p>\n\n<ul>\n\t<li>​A screenshot of the error on the <em>license manager</em>&nbsp;page</li>\n\t<li>The logs generated during the deployment process</li>\n\t<li>The <code>portal-ext.properties</code> file</li>\n</ul>\n\n<h3><a name=\"OrderID\"></a>Using an Order ID (Marketplace Applications)</h3>\n\n<p><strong>Symptom:</strong>&nbsp;For applications registered with an order ID and an error message is received</p>\n\n<ol>\n\t<li>No licenses available/server is already registered</li>\n\t<li>No external internet connectivity: <em>\"unable to find valid certification path to requested target\"</em></li>\n</ol>\n\n<p>Please open a <a href=\"https://support.liferay.com\">support ticket</a> and provide the following information:</p>\n\n<ul>\n\t<li>Server details (MAC address, IP address, and host name).</li>\n\t<li>If your server is running multiple JVM's or instances of Liferay.</li>\n\t<li>Server environment.</li>\n\t<li>Logs that are generated during the deployment process.</li>\n\t<li>Name of the Marketplace App to be activated</li>\n</ul>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "27753915"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T18:52:37Z",
+  "dateModified": "2026-04-14T23:09:28Z",
+  "datePublished": "2018-10-19T05:25:00Z",
+  "description": "",
+  "externalReferenceCode": "26099648",
+  "friendlyUrlPath": "troubleshooting-activation-key-issues",
+  "id": 26099650,
+  "key": "26099648",
+  "keywords": [
+    "ja",
+    "mt",
+    "dxp-7-2",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "knowledge-base",
+    "portal-6-0",
+    "portal-6-1",
+    "cp",
+    "provisioning",
+    "licence",
+    "migration-1",
+    "activation",
+    "license-deployment",
+    "licence-deployment",
+    "license"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099650/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494989,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 27753915,
+      "taxonomyCategoryName": "Activation Keys FAQs",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "de66e7ea-9d83-120b-afaa-c0868028331d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Troubleshooting Activation Key Issues",
+  "uuid": "f993773b-9d7d-0e0c-f7fb-77c2cf990c1d"
+}

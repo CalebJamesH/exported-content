@@ -1,0 +1,122 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"font-weight: 400;\">The number of Support Seats is determined by your project’s service level, number of DXP Prod instances (if higher than 4) and active Designated Contact subscriptions.&nbsp;</span></p>\n\n<p><span style=\"font-weight: 400;\">Only team members with either an Administrator or Requester role are accounted for in the Support seats calculation. </span><a href=\"https://support.liferay.com/w/account-support\"><span style=\"font-weight: 400;\">Learn more about Designated Contact roles.</span></a></p>\n\n<p><span style=\"font-weight: 400;\">On the Team Members page in <a href=\"https://support.liferay.com/\" rel=\"noopener noreferrer\" style=\"box-sizing: border-box; color: #0041be; text-decoration: underline; background-color: #ffffff; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;\" target=\"_blank\">Customer Portal</a>, you are able to see which team member is currently taking up a Support Seat by looking at the respective column and seeing if there’s a checked mark for that user. The top of the table also shows you how many seats are still available for this project.</span></p>\n\n<p><span style=\"font-weight: 400;\">For more support seats, please reach out to your Liferay Contact.</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988311"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:42:20Z",
+  "dateModified": "2026-03-24T17:30:29Z",
+  "datePublished": "2022-08-31T18:47:00Z",
+  "description": "",
+  "externalReferenceCode": "8831552484621",
+  "friendlyUrlPath": "how-are-support-seats-determined",
+  "id": 26145871,
+  "key": "26145869",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "customer-portal",
+    "support-seats"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145871/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408946,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988311,
+      "taxonomyCategoryName": "Team Members",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "4841156f-8339-16e7-c0bc-608ce8cf8fdd",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "How are support seats determined?",
+  "uuid": "fa7eac21-4e24-a4d8-9d51-e8e81ec0844c"
+}

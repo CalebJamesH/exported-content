@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\">Please note that this article has been ported to Liferay Learn <a href=\"https://learn.liferay.com/w/dxp/self-hosted-installation-and-upgrades/maintaining-a-liferay-installation/patching-liferay\">HERE</a>, and this version is no longer being maintained.</aside>\n\n<p id=\"aui_3_4_0_1_1609\">The Liferay Support Team creates and releases fixes to address product defects. These are released as zipped patch files, zipped bundled updates and deployable war files.</p>\n\n<p>Patch files can be installed by utilizing the <a href=\"https://learn.liferay.com/w/dxp/self-hosted-installation-and-upgrades/maintaining-a-liferay-installation/patching-liferay/installing-the-patching-tool\" target=\"_self\">Patching Tool</a> which is included in every Liferay bundle.&nbsp; More information on installing patches may be found here:<span class=\"wysiwyg-color-black20\"></span></p>\n\n<ul>\n\t<li><span> <a href=\"https://learn.liferay.com/w/dxp/self-hosted-installation-and-upgrades/maintaining-a-liferay-installation/patching-liferay/applying-a-hotfix\" rel=\"noopener\" target=\"_blank\">Installing Fix Packs and Hotfixes on Liferay DXP</a></span></li>\n</ul>\n\n<p>Bundles can be expanded and installed in the desired environment or used as part of a scripted deployment process. More information on installing bundles may be found here:</p>\n\n<ul>\n\t<li><a href=\"https://support.liferay.com/w/installing-a-bundled-update-or-patch-release\">Installing a Bundled Service Pack or Update</a></li>\n</ul>\n\n<p>The <a href=\"https://customer.liferay.com/dxp-release-notes\" target=\"_self\">DXP Version Comparison Tool</a> that makes it easy to compare all of the changes between different DXP releases, updates, or fix packs including module version changes.&nbsp; This is helpful in planning upgrades and identifying any potential impact to your customizations.</p>\n\n<p>Patch Releases, Updates, Fix Packs, and Services Packs can be downloaded from our <a href=\"https://customer.liferay.com/downloads\" target=\"_self\">Downloads</a> page. With each type of release, release notes are provided outlining important information, such as breaking changes, security fixes, and a changelog with detailed information for each fix. Hotfixes are not listed for public download. Hotfixes will be attached to customer tickets or can be requested through Liferay Support.</p>\n\n<p>Liferay delivers fixes through these three types of releases:</p>\n\n<h2 id=\"patch-releases\"><a href=\"#patch-releases\">Patch Releases</a></h2>\n\n<p>A Patch Release is a cumulative bundled release of a Quarterly Release which contains new fixes and all the fixes and features from previous updates. Patch Releases should not contain new features but only the features previously released in a Quarterly Release.</p>\n\n<p>All Patch Releases are built from source and bundled together with the most up-to-date:</p>\n\n<ol>\n\t<li>Patching Tool</li>\n\t<li>Tomcat Application server</li>\n\t<li>Latest fixes for the Quarterly Release</li>\n</ol>\n\n<h2 id=\"h_01HGEQ3G9XJJ6VQHNVQXF50XY4\"><a href=\"#updates\" id=\"updates\" target=\"_self\">Updates</a></h2>\n\n<p>An update is a cumulative bundled release which contains new fixes and all the fixes and features from previous updates. Updates may also contain new features depending on the version.</p>\n\n<ul>\n\t<li>Updates for DXP 7.4 contain the latest fixes and new features bundled together.</li>\n\t<li>Updates for DXP 7.3 contain the latest fixes and select new features bundled together.</li>\n</ul>\n\n<p>All Updates are built from source and bundled together with the most up-to-date:</p>\n\n<ol>\n\t<li>Patching Tool</li>\n\t<li>Tomcat Application server</li>\n\t<li>Latest DXP Update level</li>\n\t<li>Bundled Marketplace Apps</li>\n</ol>\n\n<h2 id=\"h_01HGESSZS6TTWVSE4X79FZRH5H\"><a href=\"#fix-pack\" id=\"fix-pack\">Fix Pack</a></h2>\n\n<section id=\"resolution\">\n<div>\n<p>A Fix Pack is a collection of the latest fixes bundled together. Fix Packs are cumulative and contain all the fixes from previous Fix Packs.&nbsp;</p>\n\n<p>Fix packs are released as a zipped patch file and can be downloaded from our <a href=\"https://customer.liferay.com/downloads\" target=\"_self\">Downloads</a> page.&nbsp; With each Fix Pack,&nbsp;release notes are provided outlining important information, such as Important Changes, security fixes, and a changelog with more detailed information for each fix.</p>\n\n<h2 id=\"h_01HGEQ3G9XQ8A158XRTV0R80A6\"><a href=\"#hotfix\" id=\"hotfix\">Hotfix</a></h2>\n\n<p>In cases when you encounter an issue which is not yet addressed in a patch release, you can create a <a href=\"https://support.liferay.com\" target=\"_self\">support ticket</a>&nbsp;to request a Hotfix. Liferay Support will work together with you to determine if the issue is with the product, and provide a fix for any unintended behavior.</p>\n\n<p>There are two types of hotfixes, standard and cumulative (see below). The Liferay version you are on determines the type of hotfix you will receive (Standard for DXP, Cumulative for Portal EE). These hotfixes are not publicly available for download, you need to contact our Liferay Support Team to obtain them. Hotfixes are installed with the Patching Tool and are specific to the individual customer. Applying hotfixes from other customers may lead to conflicts and create further issues. Hotfixes are available for gold and platinum customers.</p>\n\n<p><strong>Standard Hotfix</strong><br>\n(For versions DXP 7.0+)</p>\n\n<p>Standard hotfixes are built assuming a specific Fix Pack level, and must be installed with the corresponding Fix Pack present in the Patches folder. At any given moment one hotfix and one fixpack may be installed together.&nbsp; A&nbsp;standard hotfix may contain more than one fix and even a complete Fix Pack if necessary.</p>\n\n<p><strong>Cumulative Hotfix</strong><br>\n(For version Portal 6.2 EE)</p>\n\n<p>For Portal 6.2 EE, when a hotfix is created, all your currently installed Fix Packs are included in the hotfix. These hotfixes cannot be installed together with Fix Packs.</p>\n\n<p><strong>Note:</strong> Our engineers will need to know which patches are installed on your system. When you contact Liferay Support requesting a hotfix please share this information as it is essential to build a Hotfix. With the Patching Tool you can easily create a text file which contains all the necessary details using the <code>support-info</code> command.</p>\n\n<p><strong>Security Fixes</strong></p>\n\n<p>A security issue may be fixed with a hotifx, a security fix, or a fix pack.&nbsp; For more info on DXP security issues, please see: <a href=\"https://support.liferay.com/security-vulnerabilities\" target=\"_self\">Liferay Security Reports page</a></p>\n\n<p>For Portal 6.2 EE, security issues may be temporarily fixed with a hotfix.&nbsp; Security fixes are then released and delivered to all Portal 6.2 EE customers in the next Fix Pack release. This Fix Pack will include the latest security fixes along with other fixes, as well.</p>\n\n<p>If you are not planning to install all of the latest Fix Packs (or Security Fix Packs) but still need the security fix, please create a <a href=\"https://support.liferay.com\" target=\"_self\">support ticket</a>&nbsp;to request a hotfix.</p>\n\n<h2 id=\"h_01HGEQ3G9XRV4Z7H66GG6QMEPA\"><a href=\"#service-pack\" id=\"service-pack\">Service Packs</a></h2>\n\n<p><a href=\"/w/fix-pack-and-security-release-improvements-Fix-Pack-and-Security-Release-Improvements\" target=\"_self\">Periodically</a>, the latest fixes and Fix Packs are merged together into a Service Pack. Service Packs are built from source and bundled together with the most up-to-date:</p>\n\n<ol>\n\t<li>Patching Tool</li>\n\t<li>Fix Pack&nbsp;</li>\n\t<li>Bundled Marketplace Apps</li>\n\t<li>Tomcat Application server</li>\n</ol>\n\n<p>Service Packs can be downloaded from our <a href=\"https://customer.liferay.com/downloads\" target=\"_self\">Downloads</a> page. Service Packs are cumulative and contain all the fixes from previous Fix Packs and Service Packs.&nbsp;&nbsp;For existing installations, please follow the instructions on updating to the latest Service Pack level, here:&nbsp;</p>\n\n<ul>\n\t<li><a href=\"https://help.liferay.com/hc/en-us/articles/4415761553677\" rel=\"noopener\" target=\"_blank\">Installing a Bundled Service Pack or Update</a></li>\n</ul>\n\n<p><strong>Note:</strong> In previous versions of Liferay Portal (6.0.12, 6.1.10, 6.1.20) the Fix Packs were not compatible with different Service Packs, they can only be installed by rebuilding the portal environment from the new bundles. Fix Packs were only compatible with one Service Pack (or GA as they were called in 6.1 EE) so they couldn't be installed on other versions.</p>\n\n<p>&nbsp;</p>\n\n<h2 id=\"h_01HGEQ3G9XFZNHECZP3XBC3EZ0\">&nbsp;</h2>\n\n<hr>\n<h2 id=\"h_01HGEQ3G9XF2YHZH8Y4Q906TFW\"><a href=\"#patches-tested\" id=\"patches-tested\">How Patches are Tested</a></h2>\n\n<p>Liferay extensively tests all types of releases to ensure high quality. Fix Packs and Updates go through both automated regression testing and manual testing. Hotfixes receive similar automated testing, and the fix for the reported issue is tested by the support engineer who built the fix and the support engineer assigned to the Help Center ticket.</p>\n\n<p>Before releasing a bundle such as Service Pack or Update, additional test suites run on the packaged releases to ensure the quality of the packaging.</p>\n\n<h2 id=\"h_01HGEQ3G9YNW5SRK304CH93TSF\"><a href=\"#collisions\" id=\"collisions\">Conflicts Between Fix Packs and Hotfixes</a></h2>\n\n<p>A conflict happens when a fix modifies the same file which has already been modified by a Fix Pack. The Patching Tool is not able to decide how to handle these so the case has to be verified and resolved by an engineer (sometimes the logic has to be adjusted as well). This is called a merge because the new fix has to include the previous one as well. The Patching Tool looks for information in the patches so it knows how to install the various patches correctly.</p>\n\n<p>Previously with&nbsp;<a href=\"#standard-hotfix\">standard hotfixes</a>, many combinations of conflicts emerged and needed to be handled which lead to slower and more error prone resolutions. Also, every customer could have a completely different environment.</p>\n\n<p>By releasing fix packs more often the need to handle these conflicts occurs only once in the newer fix pack. This way we can reduce the number of different environments our customers may have. From versions 6.1.30 and 6.2.10 ideally only the fix packs are used in a Liferay installation. In case there is an urgent need to handle a malfunction a <a href=\"#cumulative-hotfix\">cumulative hotfix</a>&nbsp;can be requested. After releasing and installing a <a href=\"#cumulative-hotfix\">cumulative hotfix</a>&nbsp;there is still a possibility to go back to use fix packs if the fix is included in a fix pack later on.</p>\n\n<p><strong>Important:&nbsp;</strong>Make sure to <a href=\"https://help.liferay.com/hc/articles/360029124271-Backing-up-a-Liferay-DXP-Installation\" target=\"_self\">backup your Liferay DXP installation and database</a> regularly, especially before patching. The patching tool installs code changes and some of these make data changes (if necessary) automatically on startup.</p>\n\n<p>Certain fix packs (service packs) can include data/schema micro changes—they’re optional and revertible. Module upgrades and any micro changes they include are applied at server startup by default, or can be applied manually by <a href=\"https://help.liferay.com/hc/articles/360028711872-Configuring-the-Data-Upgrade#configuring-non-core-module-data-upgrades\" target=\"_self\">disabling the<code>autoUpgrade</code>property</a>. Server startup skips all Core micro changes. Instead, you can apply them using the <a href=\"https://help.liferay.com/hc/articles/360028711612-Introduction-to-Upgrading-to-Liferay-DXP-7-2\" target=\"_self\">upgrade tool</a> before server startup.</p>\n</div>\n</section>\n\n<section id=\"additionalInformation\">\n<h2 id=\"h_01HGEQ3G9YCPJ79Y52MHN173EY\"><a href=\"#additional\" id=\"additional\">Additional Information</a></h2>\n\n<div>\n<ul>\n\t<li><a href=\"https://help.liferay.com/hc/articles/360018121972\" target=\"_self\">Patch Management Best Practices</a></li>\n\t<li><a href=\"/w/fix-pack-and-security-release-improvements-Fix-Pack-and-Security-Release-Improvements\" target=\"_self\">Fix Pack and Security Release Schedules</a></li>\n\t<li><a href=\"https://help.liferay.com/hc/articles/360035038331-DXP-Security-Fix-Packs\" target=\"_self\">DXP Security Fix Packs</a></li>\n\t<li><a href=\"https://help.liferay.com/hc/en-us/articles/360037582092-Naming-Conventions-for-Liferay-Fix-Packs-and-Service-Packs\" target=\"_self\">Naming Conventions for Fix Packs and Service Packs</a></li>\n</ul>\n\n<p>Please subscribe to our <a href=\"https://www.subscribepage.com/liferay\" rel=\"undefined\" target=\"_self\">Liferay Support Updates</a>&nbsp;to stay informed on the latest releases.</p>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:10Z",
+  "dateModified": "2026-03-26T20:59:16Z",
+  "datePublished": "2018-10-12T21:36:00Z",
+  "description": "",
+  "externalReferenceCode": "360018160771",
+  "friendlyUrlPath": "liferay-patching-overview",
+  "id": 26107788,
+  "key": "26107786",
+  "keywords": [
+    "ja",
+    "supportability",
+    "portal-6-2",
+    "knowledge-base",
+    "portal-6-1",
+    "patching-tool"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107788/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "Patching and Release",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Patching Overview",
+  "uuid": "f435ef75-396f-dce2-951f-8303ae016abf"
+}

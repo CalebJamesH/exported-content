@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<style type=\"text/css\">.fixed-table {\n    width: 100% !important;\n    table-layout: fixed !important;\n  }\n  .fixed-table td {\n    white-space: normal !important;\n    word-break: break-word !important;\n    overflow-wrap: break-word !important;\n    vertical-align: top;\n  }\n  .w-20 { width: 20% !important; }\n  .w-30 { width: 30% !important; }\n  .w-40 { width: 40% !important; }\n  .w-50 { width: 50% !important; }\n  .w-60 { width: 60% !important; }\n  .w-70 { width: 70% !important; }\n</style>\n<ul>\n\t<li><a href=\"#h_149626eb-7b72-4cd8-a50d-f56a85b12d43\" target=\"_self\">What are the different types of activation keys?</a></li>\n\t<li><a href=\"#h_37d9a6cf-6240-4bbc-9389-41d9c38041d5\" target=\"_self\">How do I obtain an .xml activation key for my Liferay DXP instance?</a></li>\n\t<li><a href=\"#h_732db143-d3b3-4c68-b452-6e0f3f319953\" target=\"_self\">What information do I need to provide to request an activation key?</a></li>\n\t<li><a href=\"#h_01H3YAFQ7B5H1ZHCXZX7E64SJ1\" target=\"_self\">What is my Instance Sizing value?</a></li>\n\t<li><a href=\"#h_a339f9f3-b0a7-43c1-88aa-2ba36fb6d69f\" target=\"_self\">When do I need to request a new activation key?</a></li>\n\t<li><a href=\"#h_339e2a66-35c8-4420-98bb-5e3e89263bce\" target=\"_self\">Are there any differences between Liferay DXP and Liferay Commerce activation keys?</a></li>\n\t<li><a href=\"#h_339e2a66-35c8-4420-98bb-5e3e89263bcf\" target=\"_self\">How do I deploy my activation key?</a></li>\n\t<li><a href=\"#h_edd341a2-25db-4cd1-b022-6500f7cc8aaf\" target=\"_self\">I have my activation key but it's not working.&nbsp; What Should I do?</a></li>\n</ul>\n\n<hr>\n<section id=\"resolution\">\n<h2 id=\"h_149626eb-7b72-4cd8-a50d-f56a85b12d43\"><a href=\"#different-types\" id=\"different-types\">Q: What are the different types of activation keys?</a></h2>\n\n<p><strong>Developer</strong></p>\n\n<p><span style=\"font-weight: 400;\">Developer keys are intended for </span><em><span style=\"font-weight: 400;\">local developer workstations</span></em><span style=\"font-weight: 400;\"> only and are limited to five (5) concurrent user connections. This&nbsp;</span><span style=\"font-weight: 400;\">means the Liferay DXP or Liferay Commerce instance can only serve minimal requests and cannot handle traffic beyond this limit.</span></p>\n\n<p><span style=\"font-weight: 400;\">Developer keys are complementary with the purchase of a Liferay Enterprise Subscription. There is no limit to the number of Developer key copies.</span></p>\n\n<p><strong>Server</strong></p>\n\n<p><span style=\"font-weight: 400;\">Server keys are intended for a&nbsp;</span><span style=\"font-weight: 400;\">server environment that requires an unlimited number of concurrent user connections.</span></p>\n\n<p><span style=\"font-weight: 400;\">Server type activation keys are issued on an instance basis. Each installation of Liferay DXP or Liferay Commerce software (and, for clarity, each cluster node) will require one (1) activation key and is equivalent to 1 Liferay DXP or Liferay Commerce Instance.</span></p>\n\n<p><span style=\"font-weight: 400;\">Based on the environment, there are 2 types of server activation keys:</span></p>\n\n<p><strong>Physical or Virtual Server</strong></p>\n\n<ul>\n\t<li><span style=\"font-weight: 400;\">For instances when servers have static identifiers, such as a static IP address&nbsp;</span></li>\n</ul>\n\n<p><strong>Virtual Cluster</strong></p>\n\n<ul>\n\t<li>For highly virtualized environments where server identifiers cannot be predetermined&nbsp;</li>\n</ul>\n\n<p class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\">Virtual cluster activation keys are used for activating both a cluster of <span class=\"wysiwyg-underline\">multiple</span> Liferay DXP instances, and also for activating a <span class=\"wysiwyg-underline\">single</span> instance. In this second scenario it can be referred to as <em>virtual activation key</em>.</span></p>\n\n<p><span style=\"font-weight: 400;\">Based on the server's designated purpose, there are 3 types of server activation keys:</span></p>\n\n<ul>\n\t<li><strong>Production</strong>\n\n\t<ul>\n\t\t<li>Serves live user requests</li>\n\t</ul>\n\t</li>\n\t<li><strong>Backup</strong>\n\t<ul>\n\t\t<li>Does not serve live user requests</li>\n\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Can be used in a Production setting for a limited period of time, while the Production system is not functioning</span></li>\n\t</ul>\n\t</li>\n\t<li><strong>Non-Production</strong>\n\t<ul>\n\t\t<li>Does not serve live user requests</li>\n\t\t<li>It serves testing or integration purposes</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_37d9a6cf-6240-4bbc-9389-41d9c38041d5\"><a href=\"#xml-key\" id=\"xml-key\">Q: How do I obtain an .xml activation key for my Liferay DXP or my Liferay Commerce instance?</a></h2>\n\n<p><span>You can manage your projects and activate your products through Liferay's <a href=\"https://support.liferay.com\">Customer Portal</a>. Please refer to the following video tutorials for the exact steps:</span></p>\n\n<ul>\n\t<li><a href=\"https://support.liferay.com/w/how-do-i-activate-my-self-hosted-liferay-dxp-portal-product-video-tutorial\" rel=\"undefined\" style=\"background-color: #ffffff;\" target=\"_self\">Activate Liferay DXP / Portal </a></li>\n\t<li><a href=\"https://support.liferay.com/w/how-do-i-generate-a-virtual-cluster-key-video-tutorial\" rel=\"undefined\" style=\"background-color: #ffffff;\" target=\"_self\">Generate a Virtual Cluster Key</a></li>\n\t<li><a href=\"https://support.liferay.com/w/how-do-i-download-a-developer-key\" rel=\"undefined\" style=\"background-color: #ffffff;\" target=\"_self\">Download a Developer Key</a></li>\n</ul>\n</section>\n\n<section>\n<p><span>Check out more </span><a href=\"https://support.liferay.com/v/25988264\" rel=\"undefined\" target=\"_self\">video tutorials and documentation</a><span> to explore other Customer Portal features.&nbsp;&nbsp;</span></p>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_732db143-d3b3-4c68-b452-6e0f3f319953\"><a href=\"#what-info\" id=\"what-info\">Q: What information do I need to provide to request an activation key?</a></h2>\n\n<table border=\"1\" cellpadding=\"3\" cellspacing=\"3\" class=\"fixed-table\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td class=\"w-40\">&nbsp;</td>\n\t\t\t<td class=\"w-20\"><span class=\"wysiwyg-font-size-medium\"><strong>Developer</strong></span></td>\n\t\t\t<td class=\"w-20\"><span class=\"wysiwyg-font-size-medium\"><strong>Physical or Virtual Server</strong></span></td>\n\t\t\t<td class=\"w-20\"><span class=\"wysiwyg-font-size-medium\"><strong>Virtual Cluster</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay Project</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP Version</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><font size=\"2\">The Instance Sizing (*) associated with your subscription</font></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>&nbsp;not applicable</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top; height: 84px;\">X</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">X</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><font size=\"2\">For each Liferay DXP or Liferay Commerce instance, at least one of the following server identifiers: </font></p>\n\n\t\t\t<ul>\n\t\t\t\t<li><font size=\"2\">MAC Address</font></li>\n\t\t\t\t<li><font size=\"2\">IP Address</font></li>\n\t\t\t\t<li><font size=\"2\">Hostname</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>&nbsp;not applicable</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top; height: 84px;\">X</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">&nbsp;not applicable</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top;\">\n\t\t\t<p><font size=\"2\">The number of Liferay DXP or Liferay Commerce instances&nbsp; </font></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;not applicable</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top;\">&nbsp;not applicable</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">X</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2>&nbsp;</h2>\n\n<h2><a href=\"#different-types\" id=\"different-types\">Q: What is my Instance Sizing value?</a></h2>\n\n<p>Instance Sizing is selected when purchasing Liferay DXP subscriptions, based on the project architecture and resource needs. It determines the allowed number of processor cores, CPUs or vCPUs accessible to the Liferay instance.&nbsp;</p>\n\n<p>The number of Cores or vCPUs accessible by each Instance is as listed below:</p>\n\n<table style=\"width: 696px; margin-left: 0px; margin-right: auto;\">\n\t<tbody>\n\t\t<tr style=\"height: 44px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 44px;\"><strong>Instance Sizing</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 44px;\"><strong>Number of Cores or vCPUs that will be accessible by each Instance</strong></td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">1</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">Up to 8</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">2</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">Up to 12</td>\n\t\t</tr>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 21px;\">3</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 21px;\">Up to 16</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">4</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">17 or more</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_a339f9f3-b0a7-43c1-88aa-2ba36fb6d69f\"><a href=\"#when-request\" id=\"when-request\">Q: When do I need to request a new activation key?</a></h2>\n\n<p>New activation keys are free of charge, provided they are within the number and type of subscriptions purchased for your Liferay project.</p>\n\n<p>You will need to request one or several new activation keys if you want to accomplish one of these tasks:</p>\n\n<ul>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Upgrade to a major version of Liferay DXP</span></li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Add a new node to a Liferay DXP or Liferay Commerce cluster</span></li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Extend a temporary activation key that is about to expire</span></li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">In case of an activation key for physical or virtual servers:</span>\n\t<ul>\n\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Install a Liferay DXP or Liferay Commerce instance on a new server</span>\n\t\t<ul>\n\t\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Applies to cases when the Production system is no longer available and there is no Backup instance already activated</span></li>\n\t\t\t<li><span style=\"font-weight: 400;\">Migrate servers to a new environment&nbsp;</span><span style=\"font-weight: 400;\"></span></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"font-weight: 400;\">It is not necessary to request a new activation key if you need to:</span></p>\n\n<ul>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Upgrade to a new fix pack or service pack</span></li>\n\t<li><span style=\"font-weight: 400;\">Upgrade to a major version of Liferay Commerce</span><span style=\"font-weight: 400;\"></span></li>\n\t<li><span style=\"font-weight: 400;\">Temporarily replace the Production system with the Backup system</span></li>\n\t<li>Use a developer activation key to install a new instance or start up an existing one\n\t<ul>\n\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Previously generated Liferay DXP or Liferay Commerce developer keys can be used on any number of local environments</span></li>\n\t</ul>\n\t</li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">In case of virtual cluster activation keys:</span>\n\t<ul>\n\t\t<li><span style=\"font-weight: 400;\">Install a Liferay DXP or Liferay Commerce instance on a new server</span>\n\t\t<ul>\n\t\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Applies to cases when the Production system is no longer available and there is no Backup instance already activated</span></li>\n\t\t\t<li>Decommission existing servers to migrate them to a new environment&nbsp;<span style=\"font-weight: 400;\"></span></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_339e2a66-35c8-4420-98bb-5e3e89263bce\"><a href=\"#differences-commerce\" id=\"differences-commerce\">Q: Are there any differences between Liferay DXP and Liferay Commerce activation keys? </a></h2>\n\n<p>For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 FP3/SP2+, Commerce is activated using a portal property, while earlier versions use a Commerce activation key file. More details, please refer to <a href=\"https://support.liferay.com/w/how-do-i-activate-my-commerce-product-video-tutorial\" target=\"_self\">Activating Liferay Commerce Enterprise</a>.</p>\n\n<p>For Liferay DXP 7.3 and below, activation keys for Liferay DXP and Liferay Commerce are very similar. The only difference is that Liferay Commerce activation keys are not version specific. The same activation key can be used on all Liferay Commerce versions.</p>\n\n<p>On with Liferay DXP 7.3 and Liferay Commerce 3.0 (up until FP3/SP2), activation key on the same instance are required to be of the same type. For example, on the same instance you can use a Liferay DXP developer key and a Liferay Commerce developer key. However you cannot use a Liferay DXP production key and a Liferay Commerce developer key.&nbsp;</p>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_339e2a66-35c8-4420-98bb-5e3e89263bcf\"><a href=\"#how-deploy\" id=\"how-deploy\">Q: How do I deploy my activation key?</a></h2>\n\n<p>You can deploy your activation key by following the instructions in this&nbsp;Knowledge Base&nbsp;<a href=\"https://learn.liferay.com/kb-article/deploying-activation-keys\" target=\"_self\">article</a>.</p>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_edd341a2-25db-4cd1-b022-6500f7cc8aaf\"><a href=\"#not-working\" id=\"not-working\">Q: I have my activation key but it's not working. What should I do?</a></h2>\n\n<p>As the next step, please review our <a href=\"https://support.liferay.com/w/troubleshooting-activation-key-issues\" target=\"_self\">Troubleshooting Activation Key Issues</a>&nbsp;article or <a href=\"https://support.liferay.com\" target=\"_self\">submit a ticket</a>&nbsp;in Help Center for assistance from our Liferay Support team.</p>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "27753915"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:19:12Z",
+  "dateModified": "2026-04-14T23:10:21Z",
+  "datePublished": "2019-03-29T15:24:00Z",
+  "description": "",
+  "externalReferenceCode": "360025762932",
+  "friendlyUrlPath": "activation-keys-faq-for-liferay-dxp-and-liferay-commerce",
+  "id": 26131870,
+  "key": "26131868",
+  "keywords": [
+    "ja",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "knowledge-base",
+    "portal-6-0",
+    "portal-6-1",
+    "portal-5-2",
+    "cp",
+    "commerce",
+    "migration-1"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494989,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 27753915,
+      "taxonomyCategoryName": "Activation Keys FAQs",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "de66e7ea-9d83-120b-afaa-c0868028331d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Activation Keys FAQ for Liferay DXP and Liferay Commerce",
+  "uuid": "1727ca70-4ccd-8641-fcde-a7005dbf2def"
+}

@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay is committed to delivering the best possible experience with our product. This article contains important information about our DXP Platform versioning and release cadence.</p>\n\n<p><strong>Starting October 20th, 2023</strong> we will transition from our weekly release schedule to a quarterly one. We understand that change can sometimes raise questions, so we wanted to provide you with all the details and benefits behind this decision.</p>\n\n<h4 id=\"why-the-change\"><strong><a href=\"#why-the-change\">Why the Change?</a></strong></h4>\n\n<p>Our goal is to provide you with a more stable and feature-rich experience. Moving to a quarterly cadence, we can dedicate more time to rigorous testing and development, ensuring that each release is of the highest quality. This change will also allow us to incorporate your feedback and implement features that genuinely enhance your workflow.</p>\n\n<h4 id=\"what-to-expect\"><strong><a href=\"#what-to-expect\">What to Expect:</a></strong></h4>\n\n<ul>\n\t<li><strong>More Stable Product Releases:</strong> Quarterly releases mean more comprehensive testing, resulting in more reliable updates.</li>\n\t<li><strong>Exciting Features:</strong> Our upcoming releases are packed with exciting features that you'll appreciate.</li>\n\t<li><strong>Enhanced Customer Support:</strong> With fewer releases, our support team will be able to focus even more on assisting you with any questions or issues.</li>\n</ul>\n\n<p>To stay updated on the details of our October 20th release, please visit our <strong><a href=\"https://www.liferay.com/whats-new\" rel=\"noopener undefined\" target=\"_blank\">What’s New with Liferay?</a>&nbsp;</strong>page.</p>\n\n<p>&nbsp;</p>\n\n<h2 id=\"FAQ\"><strong><a href=\"#FAQ\">Frequently Asked Questions</a></strong></h2>\n\n<p>&nbsp;</p>\n\n<h4 id=\"why-quarterly\"><strong><a href=\"#why-quarterly\">Why is the product release cadence changing from weekly to quarterly?</a> </strong></h4>\n\n<p class=\"wysiwyg-indent1\">We are transitioning to a quarterly release cadence to enhance the quality and stability of our product releases. This change allows us to invest more time in testing and development, ensuring that each release is reliable and feature-rich.</p>\n\n<h4 id=\"quarterly-versioning\"><strong><a href=\"#quarterly-versioning\">What will the versioning format be for Quarterly Releases?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Each Quarterly Release will receive a new external version number in the format YEAR.QUARTER, for example, 2023.Q3 for the third quarter of 2023.&nbsp; Liferay DXP is based on the 7.4 source even though we are removing \"7.4\" from our packaging and documentation.</p>\n\n<h4 id=\"quarterly-format\"><a href=\"#quarterly-format\"><strong>What will the release format be for Quarterly Releases?</strong></a></h4>\n\n<p class=\"wysiwyg-indent1\">Quarterly Releases will be provided as a bundled release, a WAR file with OSGi dependencies, and a docker image. The file structure of the bundled release and our file packaging has changed. For more details about the technical changes please see: <a href=\"https://help.liferay.com/hc/articles/19600435780877\">Anatomy of a Quarterly Release</a>.</p>\n\n<h4 id=\"support-coverage\"><strong><a href=\"#support-coverage\">Do I need to update my environment every quarter in order to receive full support?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">No, you can update at your own pace if you are a DXP Self-Hosted or Liferay PaaS customer. However, Liferay SaaS customers will receive the latest quarterly release. For any quarterly release, hotfixes are available for the duration of 1 year from its release date.</p>\n\n<h4 id=\"customer-impact\"><strong><a href=\"#customer-impact\">How will this change affect me as a customer?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">You can expect more robust and well-tested releases. While you may receive updates less frequently, each update will come with a higher level of quality and performance. You can also expect better feature management with Beta and Release feature flags so you can control the feature rollout.</p>\n\n<h4 id=\"take-effect\"><strong><a href=\"#take-effect\">When will this change take effect?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">The first Quarterly Release will be available on October 20th, 2023. Going forward, all DXP 7.4 customers should be using a supported Quarterly Release in their production environments (either DXP 2023.Q3 or DXP 2023.Q4). Please refer to the below article in order to understand the important dates: <a href=\"/w/quarterly-release-transitional-support-coverage\">Quarterly Release Transitional Support Coverage</a>.</p>\n\n<h4 id=\"last-weekly-release\"><strong><a href=\"#last-weekly-release\">Which weekly release will be the last before the Quarterly Release?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Weekly release U92 will be the last weekly release for which you can receive support, and it will also be the last weekly release available on the Customer Portal. The detailed timeline for Support can be found in the <a href=\"/w/quarterly-release-transitional-support-coverage\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Quarterly Release Transitional Support Coverage</span></a> article. For continued updates and support you will need to move to our new Quarterly Release format.</p>\n\n<h4 id=\"release-notification\"><strong><a href=\"#release-notification\">How will I be notified about new releases under the quarterly cadence?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">For each new Quarterly Release, you will receive notifications via our usual communication channels. Make sure to subscribe to <a href=\"https://www.subscribepage.com/liferay\" rel=\"noopener\" target=\"_blank\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Support Announcements</span></a> in order to be notified by email. Additionally, you can check our release notes and update announcements on the Customer Portal.</p>\n\n<h4 id=\"prepare\"><strong><a href=\"#prepare\">What can I do to prepare for this change?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">To prepare for the transition, ensure that your workflows, deployment, and integration processes align with the new Quarterly Release schedule. Review our documentation and announcements for details on upcoming features, especially the <a href=\"https://support.liferay.com/w/liferay-dxp-product-delivery-method-1\">Liferay DXP Product Delivery Method</a>.</p>\n\n<h4 id=\"product-feedback\"><strong><a href=\"#product-feedback\">Can I still provide feedback or request features during this time?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Your feedback is precious to us. We encourage you to continue sharing your thoughts, suggestions, and feature requests through this <a href=\"https://liferay.dev/feedback/overview\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">page</span></a>. Your input will help shape the future of our product. You may also request new features through a Help Center ticket.</p>\n\n<h4 id=\"-weekly-update-support\"><strong><a href=\"#weekly-update-support\">Will product guidance or hotfixes be provided for weekly releases?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Our support and development efforts will be focused on the new Quarterly Release cadence, therefore product guidance or hotfixes will not be available for weekly releases. Product support, including guidance and defect resolution, will be provided exclusively for Quarterly Releases. <a href=\"/w/quarterly-release-transitional-support-coverage\">Transitional support coverage</a> will be offered for Liferay DXP 7.4 Update 92 and below.</p>\n\n<h4 id=\"h_01HCHE9BB57R1KTCTT8YTXH6NN\"><a href=\"#h_01HCHE9BB57R1KTCTT8YTXH6NN\"><strong>How long will I receive support for the quarterly releases?</strong></a></h4>\n\n<p class=\"wysiwyg-indent1\">You will be able to receive bug fixes for 1 year after the release date of each quarterly update. After that time, you will be required to upgrade to the latest quarterly release to continue receiving bug fixes. You can stay on versions after 1 year and will be able to open tickets to report issues, but updates will be required to receive solutions.&nbsp;</p>\n\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"><strong>Note:</strong> the maintenance period for customers to receive support is based on the release date of the corresponding Quarterly Release, rather than the release of the Patch Release version.</span></aside>\n\n<h4 id=\"h_01HCWCHR5E53TJ733Z2AXMEWHJ\"><a href=\"#h_01HCWCHR5E53TJ733Z2AXMEWHJ\"><strong>Will I be able to receive security patches outside of the 1 year maintenance window?</strong></a></h4>\n\n<p class=\"wysiwyg-indent1\">No, security patches will only be made available for the updates that are actively being maintained and patched. Liferay treats product security with the highest priority, and to allow us to properly focus and maintain that level of security, we need to focus our efforts on the latest releases.&nbsp; We encourage our customers to stay up to date with their updates to also ensure the security of their projects as well.&nbsp;</p>\n\n<h4 id=\"weekly-update-use\"><strong><a href=\"#weekly-release-use\">Can I continue to use weekly updates published in between the quarterly releases?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">You will be able to use weekly updates only to preview upcoming enhancements and new features. We recommend against using weekly updates in any production environment. Quarterly Releases have undergone more rigorous testing and are fully supported by Liferay. Product guidance and defect resolution will only be offered for Quarterly Releases.</p>\n\n<h4 id=\"release-info\"><strong><a href=\"#release-info\">Where can I find more information about the quarterly releases and their features?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Detailed information about Quarterly Releases, including feature highlights, will be available on our website and in our release notes. We recommend checking these resources regularly for the latest updates.</p>\n\n<h4 id=\"service-feedback\"><strong><a href=\"#service-feedback\">How can I provide feedback or report issues during the transition?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">You can continue to provide feedback or report issues by <a href=\"https://support.liferay.com\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">submitting a support ticket</span></a> or contacting us at customer-service@liferay.com. Additionally, feel free to contact your Customer Success Manager for any questions related to this change. We will be actively monitoring and addressing any issues that arise.</p>\n\n<h4 id=\"upgrade\"><strong><a href=\"#upgrade\">Will my existing integrations and configurations be affected by this change?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">In most cases, your existing integrations and configurations should continue to work seamlessly. However, we recommend reviewing our documentation and reaching out to our support team if you have any specific concerns about integrations.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:32:00Z",
+  "dateModified": "2026-03-26T20:20:14Z",
+  "datePublished": "2023-09-08T18:50:00Z",
+  "description": "",
+  "externalReferenceCode": "19324366505997",
+  "friendlyUrlPath": "liferay-dxp-quarterly-release-process",
+  "id": 26136904,
+  "key": "26136902",
+  "keywords": [
+    "cp-2-0",
+    "es",
+    "pt",
+    "ja",
+    "supportability",
+    "liferay-saas",
+    "liferay-paas",
+    "dxp-7-4",
+    "cp",
+    "quarterly-release"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "Patching and Release",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXP Quarterly Release Process",
+  "uuid": "dbe0088d-b5a8-344c-4144-28ce21c690a0"
+}
