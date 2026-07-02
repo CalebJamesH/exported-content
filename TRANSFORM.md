@@ -10,6 +10,8 @@ Once the export is done, we use a mapping file called `content-types.json` to fi
 
 From there, each article gets routed to a different transformation pipeline depending on its type. The rest of this document breaks down what happens for each one.
 
+It's also important to note that the migrated content can be multiple contents. For example, it can be a Knowledge Base Article AND part of a course. You'll have to send that article the pipeline for both KB and Courses.
+
 ---
 
 ## Knowledge Base → JSON Object
@@ -36,24 +38,6 @@ KB articles get transformed from the raw Liferay API response into a new JSON fo
 ### Locale Note
 
 The Object Entry format uses underscores: `en_US`, `es_ES`, `ja_JP`, `pt_BR`. The Liferay API uses hyphens: `en-US`. Convert when building `*_i18n` fields.
-
-### Example
-
-Source → Target mapping for a single-language article:
-
-```
-source.title           → target.title, target.name, target.title_i18n.en_US
-source.friendlyUrlPath → target.friendlyUrlPath, target.friendlyUrlPath_i18n.en_US
-source.description     → target.description_i18n.en_US
-contentField.data      → target.content, target.content_i18n.en_US, target.contentRawText
-source.keywords        → target.keywords
-source.creator.name    → target.authorName, target.authorName_i18n.en_US
-source.creator.email   → target.authorEmailAddress, target.authorEmailAddress_i18n.en_US
-category field data    → target.knowledgeArticleType
-                       → target.defaultLanguageId: "en_US"
-                       → target.legacy: false
-                       → target.showDisclaimerMessage: false
-```
 
 ---
 
