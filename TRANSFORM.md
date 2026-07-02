@@ -1,55 +1,31 @@
 # Transform
 
-Once articles are exported (see EXPORT.md), we need to decide what happens to each one based on its Content Type.
+## Overview
 
-## Content Type Routing
+The content we're migrating from Customer Portal doesn't all go to the same place. Some articles are documentation, some are knowledge base entries, and some are onboarding courses. Each type needs to be handled differently and end up in a different system.
 
-The Content Type isn't in the API response — we need a mapping file (`content-types.json`) that matches each article's `friendlyUrlPath` to its Content Type.
+The export step (see EXPORT.md) pulls everything from Customer Portal and dumps it all into raw JSON files — one file per article per language, stored in a single directory. No routing, no conversion. Just the raw data.
 
-| Content Type | Where it goes | Format | What to do |
-|---|---|---|---|
-| `Knowledge Base` | Liferay Object Entries | JSON | Keep the HTML body as-is. Export metadata + HTML as JSON. |
-| `Knowledge Base; Course (Onboarding)` | Object Entries + Confluence | JSON | Same JSON export as KB, but also flag it for Confluence. |
-| `Docs (TBD)`, `Docs (Reference)`, `Docs (Search)`, `Docs (NEW)`, `Docs (Patching Liferay)` | `liferay-learn/docs` | Markdown | Convert HTML to Markdown. Write `.md` files with frontmatter. |
-| `Course (Onboarding)` | Confluence | — | Not handled here. Goes through the Confluence course workflow. |
+Once the export is done, we use a mapping file called `content-types.json` as a lookup table to figure out what each article is. This file maps article titles (or friendly URL slugs) to their Content Type — things like "Knowledge Base", "Docs (Reference)", "Course (Onboarding)", or even compound types like "Knowledge Base; Course (Onboarding)".
 
-## Knowledge Base → JSON
+NOTE: The `content-types.json` only contains the content for the "Partial export" files, not the "Full export" files.
 
-KB articles get exported as JSON. No Markdown conversion. The HTML body stays raw for the Object Entry API.
+From there, each article gets routed to a different transformation pipeline depending on its type. The rest of this document breaks down what happens for each one.
 
-```
-/output/kb/{lang}/article-slug.json
-```
+---
 
-Schema:
-```json
-{
-  "externalReferenceCode": "360054766052",
-  "title": "Article Title",
-  "friendlyUrlPath": "article-slug",
-  "language": "en-US",
-  "availableLanguages": ["en-US", "es-ES"],
-  "htmlBody": "<h2>...</h2><p>...</p>",
-  "category": "25988291",
-  "folderId": 27408740,
-  "keywords": ["tag1", "tag2"],
-  "taxonomyCategoryBriefs": [ ... ],
-  "dateCreated": "2025-09-16T22:57:47Z",
-  "dateModified": "2026-03-20T22:27:31Z"
-}
-```
+## Knowledge Base → JSON Object
 
-## Docs → Markdown
+TBD.
 
-Docs get saved inside the `liferay-learn/docs/` directory. The exact path shoul be shown here in the docs
-![alt text](./assets/learn-path.png)
+---
 
-```
-/liferay-learn/docs/{lang}/article-slug.md
-```
+## Docs → Markdown (liferay-learn)
 
-**Content field**: match by `fieldReference: "content"` or `label` starting with `"Content"`. The body is in `contentFieldValue.data`.
+TBD.
 
-## Image Handling
+---
 
-TBD. Videos (YouTube iframes) should work as-is. Internal Liferay image paths need a strategy — download them or leave them hosted.
+## Course → Confluence
+
+TBD.
