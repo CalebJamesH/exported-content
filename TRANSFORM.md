@@ -59,10 +59,19 @@ category field data    → target.knowledgeArticleType
 
 ## Docs → Markdown (liferay-learn)
 
-TBD.
+Docs get converted from HTML to Markdown and placed into the `liferay-learn/docs` repo. The exact path inside the repo where each article lands is shown below:
+
+![Learn repo path structure](assets/learn-path.png)
+
+### HTML → Markdown
+
+Not exactly sure of the "how" and structure for the MD.
+
 
 ---
 
 ## Course → Confluence
 
-TBD.
+As per James Garcia, courses need to be added as a page placed in a [confluence page](https://liferay.atlassian.net/wiki/spaces/LRSE/folder/5081628709/Customer+Portal+Resources) becuase that's the current workflow for courses.
+
+How exactly, not sure. TBD.
