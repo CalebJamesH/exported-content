@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101520/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101520/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101520"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\"><strong>Note:</strong> please note that Liferay has renamed its Liferay Experience Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).</div>\n\n<h1 id=\"h_01HKA13K9VVQPWX8QK324K8AQP\">Introduction</h1>\n\n<p class=\"wysiwyg-text-align-justify\">This document provides a user manual for deploying client extensions on Liferay PaaS.</p>\n\n<aside class=\"alert alert-info\">Note: This is a temporary approach for deploying client extensions on PaaS. We are actively developing features that will enable PaaS users to utilize Liferay Cloud's CI/CD for this operation in the near future.</aside>\n\n<h1 id=\"h_01HKA13K9VZ4DKA39G3FR0W0CS\">Prerequisites</h1>\n\n<ul>\n\t<li>Access to <a href=\"https://console.liferay.cloud/projects\">Liferay PaaS</a></li>\n\t<li>Liferay Command Line Interface (LCP) <a href=\"https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">installed</span></a></li>\n</ul>\n\n<h1 id=\"h_01HKA13K9VD22FGPBCQ60811ZR\">Deployment Process Flow&nbsp;</h1>\n\n<p class=\"wysiwyg-text-align-justify\">The following is a high level overview of the deployment process, you will need to complete those steps in order to to configure your micro - service client extension on Liferay PaaS and Liferay Self-Hosted.</p>\n\n<p><img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/25368398050701-blobid0\"></p>\n\n<h1 id=\"h_01HKA13K9V6PY9PVPA8RAYZWBQ\">Create Client Extension Workspace</h1>\n\n<p class=\"wysiwyg-text-align-justify\">Liferay Workspace is a set of folders and Gradle scripts that represents the Liferay-opinionated way of handling a full development life cycle:</p>\n\n<ul>\n\t<li>Creating projects</li>\n\t<li>Building projects</li>\n\t<li>Deploying projects</li>\n\t<li>Testing projects</li>\n</ul>\n\n<p class=\"wysiwyg-text-align-justify\">Please refer to the the following documentation links in order to learn more about Liferay Workspaces and How to start a new one:</p>\n\n<ul>\n\t<li><a href=\"https://learn.liferay.com/en/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Learn More About Liferay Workspaces</span></a></li>\n\t<li><a href=\"https://learn.liferay.com/en/w/dxp/building-applications/tooling/liferay-workspace/creating-a-liferay-workspace\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Start Your Workspace</span></a></li>\n</ul>\n\n<h1 id=\"h_01HKA13K9WRWAAFX6FG1A8423J\">Configure Environment Variables “LCP.json”</h1>\n\n<p class=\"wysiwyg-text-align-justify\">The client extension needs to be deployed within your environment Liferay PaaS, encapsulated in a container. To configure your service, you'll retrieve the necessary settings from the container's environment variables. To achieve this, it's essential to identify the potential configuration keys and comprehend their usage within the microservice.</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #1155cc;\"><strong><span style=\"color: #ffffff;\">Variable Name</span></strong></td>\n\t\t\t<td style=\"background-color: #1155cc;\"><strong><span style=\"color: #ffffff;\">Value (Type / Default Value)</span></strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">COM_LIFERAY_LXC_DXP_DOMAINS</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">comma delimited string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">COM_LIFERAY_LXC_DXP_MAIN_DOMAIN</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">COM_LIFERAY_LXC_DXP_SERVER_PROTOCOL</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">LIFERAY_OAUTH_APPLICATION_EXTERNAL_REFERENCE_CODES</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">comma delimited string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"background-color: #999999;\"><strong><span style=\"color: #ffffff;\">OAuth Server Application(s) Configurations, the following configuration should be prefixed with your OAuth Server ERC “External Reference Code”</span></strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_AUTHORIZATION_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_HEADLESS_SERVER_AUDIENCE</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_HEADLESS_SERVER_CLIENT_ID</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_HEADLESS_SERVER_CLIENT_SECRET</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_HEADLESS_SERVER_SCOPES</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">comma delimited string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_INTROSPECTION_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_JWKS_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_TOKEN_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"background-color: #999999;\"><strong><span style=\"color: #ffffff;\">OAuth Agent Application(s) Configurations, the following configuration should be prefixed with your OAuth Server ERC “External Reference Code”</span></strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_AUTHORIZATION_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_INTROSPECTION_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_JWKS_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_REDIRECT_URIS</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_TOKEN_URI</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_USER_AGENT_AUDIENCE</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_USER_AGENT_CLIENT_ID</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">&lt;ERC&gt;_OAUTH2_USER_AGENT_SCOPES</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">comma delimited string</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"background-color: #999999;\"><strong><span style=\"color: #ffffff;\">The following are important keys if you are deploying the client extension on LXC</span></strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">LIFERAY_ROUTES_CLIENT_EXTENSION</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">/etc/liferay/lxc/extinitmetadata</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color: #1d1c1d;\">LIFERAY_ROUTES_DXP</span></td>\n\t\t\t<td><span style=\"color: #1d1c1d;\">/etc/liferay/lxc/dxpmetadata</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p>&nbsp;</p>\n\n<p class=\"wysiwyg-text-align-justify\">To add the required environment variable to your service, you will need to add them to the LCP.JSON file:</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #000000; text-align: justify;\"><span style=\"color: #a2fca2; background-color: #333333;\">&lt;workspace&gt;/&lt;client-extensions&gt;/&lt;client-extension-project&gt;/lcp.json</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p>&nbsp;</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #333333;\">\n\t\t\t<p><span style=\"color: #a2fca2; background-color: #333333;\">\"env\"</span><span style=\"color: #ffffff; background-color: #333333;\">: {</span><span style=\"color: #ffffff; background-color: #333333;\"></span><br>\n\t\t\t<span style=\"color: #ffffff; background-color: #333333;\"> \"&lt;Key 1&gt;\" : </span><span style=\"color: #a2fca2; background-color: #333333;\">\"&lt;Default Value&gt;\"</span><span style=\"color: #ffffff; background-color: #333333;\">,</span></p>\n\n\t\t\t<p><span style=\"color: #ffffff; background-color: #333333;\">&nbsp;\"&lt;Key 2&gt;\" : </span><span style=\"color: #a2fca2; background-color: #333333;\">\"&lt;Default Value&gt;\"</span><span style=\"color: #ffffff; background-color: #333333;\">,</span></p>\n\n\t\t\t<p><span style=\"color: #ffffff; background-color: #333333;\">&nbsp;\"&lt;Key 3&gt;\" : </span><span style=\"color: #a2fca2; background-color: #333333;\">\"&lt;Default Value&gt;\"</span><span style=\"color: #ffffff; background-color: #333333;\">,</span></p>\n\n\t\t\t<p><span style=\"color: #ffffff; background-color: #333333;\">&nbsp;…</span></p>\n\n\t\t\t<p><span style=\"color: #ffffff; background-color: #333333;\">&nbsp;\"&lt;Key n&gt;\" : </span><span style=\"color: #a2fca2; background-color: #333333;\">\"&lt;Default Value&gt;\"</span><span style=\"color: #ffffff; background-color: #333333;\"></span><br>\n\t\t\t<span style=\"color: #ffffff; background-color: #333333;\">}</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p>&nbsp;</p>\n\n<p class=\"wysiwyg-text-align-justify\"><em>If you're deploying to a Self-Hosted environment or prefer not to utilize environment variables, you have the flexibility to transmit the configuration to your client extension through a flat file configuration method of your choice as long as you make sure to pass the required keys with the standard naming convention.</em></p>\n\n<h1 id=\"h_01HKA13K9WZG5EFYMPT9S1EQRC\">Build Client Extension</h1>\n\n<p class=\"wysiwyg-text-align-justify\">In this phase, you'll be required to build the client extension using the Gradle tasks specified within the Liferay Workspace. To accomplish this, refer to the <a href=\"https://learn.liferay.com/en/w/dxp/building-applications/client-extensions/working-with-client-extensions#configuring-client-extensions-in-client-extension-yaml:~:text=Go%20to%20your%20workspace%E2%80%99s%20client%2Dextensions/%20folder%20and%20run\">documentation</a> provided on <a href=\"https://learn.liferay.com/\">Liferay Learn</a>. Please note that you should only build it and refrain from deploying at this stage.</p>\n\n<p class=\"wysiwyg-text-align-justify\">Go to your workspace’s client-extensions/ folder and run</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #000000; text-align: justify;\"><span style=\"color: #a2fca2; background-color: #333333;\">../gradlew clean build</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p>&nbsp;</p>\n\n<p class=\"wysiwyg-text-align-justify\">Once the build completed, you find your client extension built file under the following path:</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #000000; text-align: justify;\"><span style=\"color: #a2fca2; background-color: #333333;\">&lt;workspace&gt;/&lt;client-extensions&gt;/&lt;client-extension-project&gt;/dist/&lt;client-extension&gt;.ZIP</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<h1 id=\"h_01HKA13K9XQYN0WE9QMKZGT81T\">Deploy Client Extension “Service”</h1>\n\n<p class=\"wysiwyg-text-align-justify\">The subsequent step involves deploying your microservice either to your Liferay PaaS or a Self-Hosted Environment. The primary objective of this step is to initiate your microservice. Therefore, the procedures outlined below will vary based on your specific environment configuration.</p>\n\n<p class=\"wysiwyg-text-align-justify\">If you are using Liferay PaaS, then you will need to use the LCP Deploy Command line which will help you to create the docker image and container in your environment, read more about <a href=\"https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment:~:text=.lfr.cloud-,Deploying%20to%20Your%20Liferay%20Cloud%20Environment,-Use%20the%20lcp\"><span style=\"color: #0000ff;\">LCP Deploy</span></a> on <a href=\"https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool\"><span style=\"color: #0000ff;\">Liferay Learn</span></a><span style=\"color: #0000ff;\">.</span></p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #000000;\"><span style=\"color: #a2fca2; background-color: #333333;\">lcp deploy --extension [extension-zip-file]</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p>&nbsp;</p>\n\n<p class=\"wysiwyg-text-align-justify\"><em>If you're deploying the service within your environment “Self Hosted”, ensure it's accessible from your DXP server.</em></p>\n\n<h1 id=\"h_01HKA13K9XTE3ZMJ25DE6W036D\">Deploy Client Extension on DXP</h1>\n\n<p class=\"wysiwyg-text-align-justify\">In this phase, you'll set up the service within your DXP instance. However, note that this doesn't imply your service will be hosted or deployed on DXP. Instead, it focuses on establishing a connection between your microservice and the Liferay DXP instance. This connection is governed by the .YAML file you've generated in your microservice client extension.</p>\n\n<p class=\"wysiwyg-text-align-justify\">In order to deploy the client extension on Liferay PaaS you will need to copy the build file “.ZIP” into your Liferay PaaS github repo on the following path:</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #000000; text-align: justify;\"><span style=\"color: #ffffff;\">Liferay</span><span style=\"color: #c6b4f0;\">/Configs/</span><span style=\"color: #ffffff;\">&lt;Target Environment </span><span style=\"color: #a2fca2;\">\"PRD/UAT\"</span><span style=\"color: #ffffff;\">&gt;</span><span style=\"color: #c6b4f0;\">/OSGI/client-extensions/</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p class=\"wysiwyg-text-align-justify\">If you are deploying to DXP Self Hosted, you will need to copy the build file to the following path:</p>\n\n<div>\n<table style=\"width: 100%;\">\n\t<colgroup>\n\t\t<col>\n\t</colgroup>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"background-color: #000000; text-align: justify;\"><span style=\"color: #ffffff;\">&lt;Liferay Bundle&gt;</span><span style=\"color: #c6b4f0;\">/OSGI/client-extensions/</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p>&nbsp;</p>\n\n<h1 id=\"h_01HKA13K9XBKH8F1PCPTN2G3VW\">Update Environment Variables Values</h1>\n\n<p class=\"wysiwyg-text-align-justify\">In the preceding step, you've effectively deployed your microservice to Liferay DXP, which will automatically generate the essential OAuth Applications (Agent/Server). Upon creation, you'll have access to specific key values. For the Agent type, you should copy the client ID, while for the Server type, you'll need both the Client ID and Client Secret.</p>\n\n<p>&nbsp;</p>\n\n<p class=\"wysiwyg-text-align-justify\">Subsequently, replace these copied values with your service environment variables. If you're utilizing Liferay PaaS, you can accomplish this via the Liferay PaaS Console.</p>\n\n<p class=\"wysiwyg-text-align-center\"><img alt=\"\" height=\"229\" src=\"https://support.liferay.com/documents/d/customer-portal/22911187667725\" width=\"514.264448541558\"></p>\n\n<p class=\"wysiwyg-text-align-center\">Sample Server OAuth</p>\n\n<h1 class=\"wysiwyg-text-align-center\" id=\"h_01HKA13K9X5XS121VPFQDDJJGG\"><img alt=\"\" height=\"197\" src=\"https://support.liferay.com/documents/d/customer-portal/22911157464077\" width=\"501\"></h1>\n\n<p class=\"wysiwyg-text-align-center\">Sample Service Environment Variables Configuration Panel</p>\n\n<p>&nbsp;</p>\n\n<p>If you're deploying to a Self-Hosted DXP environment, you'll need to update the configuration values either within your managed container environment variables&nbsp; or within your flat configuration file.</p>\n\n<h1 id=\"h_01HKA13K9X8MBJCXMD47VJX8N2\">Restart Client Extension Service</h1>\n\n<p>To apply the configuration modifications, you'll need to restart your service and verify its connectivity.</p>\n\n<h1 id=\"h_01HKA13K9XW1AHZ4NZDV5Q57SN\">Sample Workspace</h1>\n\n<p>A prebuilt sample containing all the necessary configurations has been prepared for you. Please locate the sample code at the following URLs:</p>\n\n<ul>\n\t<li><a href=\"https://github.com/liferay/liferay-portal/tree/master/workspaces\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">All Sample Workspaces</span></a></li>\n\t<li><a href=\"https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-node\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Node Service With required configuration</span></a></li>\n</ul>\n\n<p>Please be aware that we've developed a <a href=\"https://www.npmjs.com/package/@rotty3000/config-node\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">configuration utility library</span></a> to simplify the process of retrieving configuration keys. This library ensures the implementation of a failover mechanism, searching for configurations both in environment variables and configuration files.</p>\n\n<h1 id=\"h_01HKA13K9X01Q0WD8C17PMXE8Z\">Conclusion</h1>\n\n<p class=\"wysiwyg-text-align-justify\">This user manual has provided a step-by-step guide for deploying microservice client extensions on Liferay PaaS / Self Hosted.</p>\n\n<p class=\"wysiwyg-text-align-justify\">By following these steps, you can successfully deploy your microservice and configure it with the necessary OAuth credentials, enabling secure communication with Liferay.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T19:32:45Z",
+  "dateModified": "2026-02-10T19:35:28Z",
+  "datePublished": "2024-01-04T10:58:00Z",
+  "description": "",
+  "externalReferenceCode": "26101518",
+  "friendlyUrlPath": "developing-client-extensions-in-liferay-paas",
+  "id": 26101520,
+  "key": "26101518",
+  "keywords": [
+    "liferay-paas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101520/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Developing Client Extensions in Liferay PaaS",
+  "uuid": "c82d7953-aa7b-c84e-8b01-e6f393779ff6"
+}

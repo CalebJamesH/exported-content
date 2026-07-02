@@ -1,0 +1,134 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2>Liferay Developer Studio</h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 726px; float: left;\">\n<thead>\n<tr style=\"height: 21px; background-color: #f7f8f9;\">\n<td style=\"width: 218px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Developer Studio Version</strong></span></td>\n<td style=\"width: 218px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Version</strong></span></td>\n<td style=\"width: 256px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Application Server</strong></span></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr>\n<td style=\"width: 218px; text-align: left; vertical-align: top;\">\n<p><span>3.9.6, 3.9.7, 3.9.8</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.4<br>Liferay DXP 7.3<br>Liferay DXP 7.2<br>Liferay DXP 7.1<br>Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top;\">\n<p><span>Tomcat 8.0.32, 8.5.57, 8.5.63, 9.0.6, 9.0.10, 9.0.17, 9.0.40, 9.0.43, 9.0.53, 9.0.56, 9.0.65, 9.0.68</span><br><span>JBoss EAP 6.4, 7.0, 7.1, 7.2, 7.3, 7.4</span><br><span>Wildfly 10.0, 11.0. 16.0, 17.0, 18.0, 20.0, 23.0</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 218px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.9.5</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.4<br>Liferay DXP 7.3<br>Liferay DXP 7.2<br>Liferay DXP 7.1<br>Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32, 8.5.57, 8.5.63, 9.0.6, 9.0.10, 9.0.17, 9.0.40, 9.0.43, 9.0.53, 9.0.56<br>JBoss EAP 6.4, 7.0<br>Wildfly 10.0, 11.0. 16.0, 17.0</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 218px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.9.2, 3.9.3, 3.9.4</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3<br>Liferay DXP 7.2<br>Liferay DXP 7.1<br>Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32, 8.5.57, 8.5.63, 9.0.6, 9.0.10, 9.0.17, 9.0.40, 9.0.43<br>JBoss EAP 6.4, 7.0<br>Wildfly 10.0, 11.0. 16.0, 17.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.8.x, 3.9.0-3.9.1</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3<br>Liferay DXP 7.2<br>Liferay DXP 7.1<br>Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32, 9.0.6, 9.0.10, 9.0.17, 9.0.33, 9.0.37<br>JBoss EAP 6.4, 7.0<br>Wildfly 10.0, 11.0. 16.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.6.x, 3.7.x</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2<br>Liferay DXP 7.1<br>Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32, 9.0.6, 9.0.10, 9.0.17<br>JBoss EAP 6.4, 7.0<br>Wildfly 10.0, 11.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.5.x</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span><br><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32, 9.0.6, 9.0.10</span><br><span class=\"wysiwyg-font-size-medium\">JBoss EAP 6.4, 7.0</span><br><span class=\"wysiwyg-font-size-medium\">Wildfly 10.0, 11.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.2.x, 3.3.x, 3.4.x</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span><br><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32, 9.06</span><br><span class=\"wysiwyg-font-size-medium\">JBoss EAP 6.4, 7.0</span><br><span class=\"wysiwyg-font-size-medium\">Wildfly 10.0, 11.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.1.x</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32</span><br><span class=\"wysiwyg-font-size-medium\">JBoss EAP 6.4, 7.0</span><br><span class=\"wysiwyg-font-size-medium\">Wildfly 10.0 </span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">3.0.x</span></p>\n</td>\n<td style=\"width: 218px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0 </span></p>\n</td>\n<td style=\"width: 256px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0.32</span><br><span class=\"wysiwyg-font-size-medium\">JBoss EAP 6.4</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>Liferay Faces </h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 727px; float: left;\">\n<thead>\n<tr style=\"height: 21px; background-color: #f7f8f9;\">\n<td style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Version</strong></span></td>\n<td style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>JSF Version</strong></span></td>\n<td style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Supported Environments</strong> </font> </span></td>\n<td style=\"width: 201px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Third Party</strong> </font> </span></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP</span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">2.3</font></span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat</span></p>\n</td>\n<td style=\"width: 201px; text-align: left; vertical-align: top;\">\n<div>\n<div><span class=\"wysiwyg-font-size-medium\">ICEfaces 4.3</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Alloy 4.1.1</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Portal 6.0.0</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Mojarra 2.3</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">PrimeFaces 11.0</span></div>\n<div id=\"aui_3_4_0_1_1705\"><span class=\"wysiwyg-font-size-medium\">RichFaces 4.6.8</span></div>\n</div>\n</td>\n</tr>\n<tr>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP</span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">2.2</font> </span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat</span></p>\n</td>\n<td style=\"width: 201px; text-align: left; vertical-align: top;\">\n<div><span class=\"wysiwyg-font-size-medium\">ICEfaces 4.3</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Alloy 4.1.1</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Portal 4.1.1, 5.0.0</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Mojarra 2.2</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">PrimeFaces 11.0</span></div>\n<div id=\"aui_3_4_0_1_1705\"><span class=\"wysiwyg-font-size-medium\">RichFaces 4.6.8</span></div>\n</td>\n</tr>\n<tr>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\" rowspan=\"3\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay Portal 6.2 EE</span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">2.2</font> </span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat</span></p>\n</td>\n<td style=\"width: 201px; text-align: left; vertical-align: top;\">\n<div><span class=\"wysiwyg-font-size-medium\">ICEfaces 4.1/4.2</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Alloy 2.x</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Portal 2.x</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Mojarra 2.2</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">PrimeFaces 6.0/6.1</span></div>\n<div id=\"aui_3_4_0_1_1705\"><span class=\"wysiwyg-font-size-medium\">RichFaces 4.5</span></div>\n</td>\n</tr>\n<tr>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">2.1</font> </span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat<br>JBoss<br>Weblogic<br></span><span class=\"wysiwyg-font-size-medium\">WebSphere </span></p>\n</td>\n<td style=\"width: 201px; text-align: left; vertical-align: top;\">\n<div>\n<div><span class=\"wysiwyg-font-size-medium\">ICEfaces 3.3</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Alloy 2.x</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Portal 2.x</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Mojarra 2.1</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">PrimeFaces 5.0/6.0</span></div>\n<div id=\"aui_3_4_0_1_1705\"><span class=\"wysiwyg-font-size-medium\">RichFaces 4.5</span></div>\n</div>\n</td>\n</tr>\n<tr>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">1.2</font> </span></p>\n</td>\n<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Tomcat</span></p>\n</td>\n<td style=\"width: 201px; text-align: left; vertical-align: top;\">\n<div><span class=\"wysiwyg-font-size-medium\">ICEfaces 1.8</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Alloy 1.x</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Liferay Faces Portal 1.x</span></div>\n<div><span class=\"wysiwyg-font-size-medium\">Mojarra 1.2</span></div>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176956"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "855681e7-e526-bc2e-b10a-d75f7abbf432",
+    "familyName": "Fong",
+    "givenName": "Amos",
+    "id": 2013333,
+    "name": "Amos Fong"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T22:57:24Z",
+  "dateModified": "2026-03-26T00:03:29Z",
+  "datePublished": "2018-09-27T21:15:00Z",
+  "description": "",
+  "externalReferenceCode": "360016472151",
+  "friendlyUrlPath": "developer-tools-and-frameworks-compatibility-matrix",
+  "id": 26095927,
+  "key": "26095925",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-2",
+    "dxp-7-3",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095927/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494979,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176956,
+      "taxonomyCategoryName": "Other Liferay Products Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "81cce681-7227-d0dd-ae57-4d1e4e5ebfbc",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Developer Tools and Frameworks Compatibility Matrix",
+  "uuid": "a17f0f07-f129-0598-f109-c3b73b10403b"
+}

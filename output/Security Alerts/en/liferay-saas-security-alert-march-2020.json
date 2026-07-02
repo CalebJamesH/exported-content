@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"h_01J01893X1MQ4BWP2ARVWST629\">Liferay SaaS Security Alert: March 2020</h2>\n\n<p><span>The following issue may compromise the security of your Liferay SaaS environment.</span></p>\n\n<h2 id=\"h_01J01893X184ZQH073G5S761VF\">Vulnerability Information</h2>\n\n<ul>\n\t<li><a href=\"https://help.liferay.com/hc/articles/360041305692\" target=\"_self\">29-VULN (LSV-545)</a>: Unauthenticated Remote code execution via JSONWS</li>\n</ul>\n\n<p>Please see the <span style=\"text-decoration: underline;\"><a href=\"https://help.liferay.com/hc/en-us/articles/360018875952#DXP-cloud\">Liferay SaaS Security Advisories</a></span> section for more information on the vulnerability.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:48Z",
+  "dateModified": "2026-03-05T21:48:30Z",
+  "datePublished": "2020-03-31T20:46:00Z",
+  "description": "",
+  "externalReferenceCode": "360041742031",
+  "friendlyUrlPath": "liferay-saas-security-alert-march-2020",
+  "id": 26101903,
+  "key": "26101901",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "liferay-saas",
+    "liferay-experience-cloud---self-managed",
+    "lxc-sm",
+    "dxp-cloud",
+    "lxc",
+    "liferay-experience-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101903/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay SaaS Security Alert: March 2020",
+  "uuid": "7544ec6e-4eda-36c2-bc58-1527e01b9328"
+}

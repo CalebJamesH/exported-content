@@ -1,0 +1,139 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>The following article outlines a short checklist of questions to ask and steps to take before opening a Liferay API ticket. By taking a moment to go through this checklist before opening a request, you are ensuring the fastest possible resolution for the particular issue.</p>\n<section id=\"resolution\">\n<h2>Resolution</h2>\n<div>\n<p>For each ticket, please attach your <code>portal-ext.properties</code> file as well as the output of the <em>patching-tool info</em> command specific to the environment.</p>\n<p>For Liferay API tickets specifically, <strong><em>please work through the following checklist and include the resulting information when you create a ticket:</em></strong></p>\n<ol>\n<li>Provide us with the API that you believe is not functioning correctly and include the intended behavior.</li>\n<li>Provide a test portlet or the source files from a project which will illustrate the issue</li>\n<li>Provide step-by-step test case.</li>\n<li>Inserting debug breakpoints is a great way to verify that the API is running through certain APIs</li>\n<li>If this project involves Maven:\n<ol type=\"a\">\n<li>Please attach the project files including a <code>pom.xml</code> configured to allow the CSE to compile and test the project.</li>\n<li>Please attach any errors received.</li>\n<li>What type of repository is being used (local or remote)?</li>\n<li>Which version of Maven is being utilized?</li>\n<li>Which phase of the build is failing?</li>\n</ol>\n</li>\n</ol>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:45Z",
+  "dateModified": "2026-03-10T20:47:55Z",
+  "datePublished": "2018-10-18T22:04:00Z",
+  "description": "",
+  "externalReferenceCode": "360018413571",
+  "friendlyUrlPath": "before-opening-a-liferay-api-ticket",
+  "id": 26108503,
+  "key": "26108501",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "knowledge-base",
+    "cp",
+    "tooling",
+    "development",
+    "developer-tools"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108503/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Support FAQ",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Before Opening a Liferay API Ticket",
+  "uuid": "e9b24922-c7eb-ca27-8a54-ef3cda271d32"
+}

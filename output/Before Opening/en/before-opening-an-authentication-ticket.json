@@ -1,0 +1,139 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<section class=\"description\">\n<p>The following article outlines a short checklist of questions to ask and steps to take before opening an authentication ticket in Help Center. By taking a moment to go through this checklist before opening a Help Center request, you ensure the fastest possible resolution for your particular issue.</p>\n</section>\n<section id=\"resolution\">\n<h2>Resolution</h2>\n<div>\n<p>For each ticket, please attach your portal-ext.properties file as well as the output of the <em>patching-tool support-info</em> command specific to the environment.</p>\n<p>For authentication tickets specifically, <strong><em>please work through the following checklist and include the resulting information when you create a ticket:</em></strong></p>\n<h3>Are you using an SSO?</h3>\n<ol>\n<li>If so, does the issue exist with the SSO disabled?</li>\n</ol>\n<h3>Is the issue with LDAP?</h3>\n<ol>\n<li>What LDAP solution is implemented?</li>\n<li>Please provide screenshots of the LDAP configuration or the portal-ext if LDAP is configured there.</li>\n<li>Does the issue exist when you are not using LDAP?</li>\n</ol>\n<h3>Is the issue with SAML?</h3>\n<ol>\n<li>\n<p>Which version of the SAML plugin are you using? If you're using a snapshot release, please attach the plugin to the ticket.</p>\n</li>\n<li>\n<p>If you have configured the SAML plugin through the UI instead of a properties file, please provide screenshots of all the tabs of the SAML Admin in Control Panel.</p>\n</li>\n<li>\n<p>Please provide a clear description of Liferay's role in the SAML process (IdP and/or SP). If Liferay only takes one of the two possible roles, please provide more details on what the other participant is.</p>\n</li>\n<li>\n<p>Please run through your SAML settings once again. Are there any typos in the virtual hosts? Are the Metadata URLs correct? etc.</p>\n</li>\n<li>\n<p>Please always attach a full liferay log.</p>\n</li>\n</ol>\n<h3>When did the issue start occurring? Were there any changes made to the portal around this time?</h3>\n<ol>\n<li>Provide Liferay with steps to reproduce.</li>\n<li>Provide Liferay with complete logs including full exceptions of when the issue is occurring.</li>\n<li>If the issue is reproducible only with a 3rd party technology, Liferay Support will need to build up an environment where the issue is reproducible. Please gather the necessary information for this as well.</li>\n</ol>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:30Z",
+  "dateModified": "2026-03-10T20:47:54Z",
+  "datePublished": "2018-10-19T05:18:00Z",
+  "description": "",
+  "externalReferenceCode": "360018151172",
+  "friendlyUrlPath": "before-opening-an-authentication-ticket",
+  "id": 26099274,
+  "key": "26099272",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "application-security",
+    "knowledge-base",
+    "portal-6-0",
+    "portal-6-1",
+    "cp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099274/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Support FAQ",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Before Opening an Authentication Ticket",
+  "uuid": "3f90c3c4-23b9-5de4-0fc5-ac32c1292971"
+}

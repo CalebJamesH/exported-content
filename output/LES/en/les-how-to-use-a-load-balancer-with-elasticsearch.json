@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"h_01JYHAM969PB98ZEV09BF5Y1JS\" style=\"color: #878787; font-family: Helvetica, Arial, sans-serif;\" data-aura-rendered-by=\"12:4669;a\"><span style=\"color: #000000;\">Environment</span></h2>\n<ul>\n<li style=\"color: #878787; font-family: Helvetica, Arial, sans-serif;\" data-aura-rendered-by=\"12:4669;a\"><span style=\"color: #000000;\">Liferay DXP 7.0-7.2</span></li>\n<li style=\"color: #878787; font-family: Helvetica, Arial, sans-serif;\" data-aura-rendered-by=\"12:4669;a\"><span style=\"color: #000000;\">Elasticsearch 6.x. 7.x</span></li>\n</ul>\n<h2 id=\"h_01JYHAM969PS14R8CVZWW156NW\" style=\"color: #878787; font-family: Helvetica, Arial, sans-serif;\" data-aura-rendered-by=\"12:4669;a\"><span style=\"color: #000000;\">Question</span></h2>\n<p data-aura-rendered-by=\"12:4669;a\">Are there any guidelines for using Elasticsearch* with a load balancer like F5?</p>\n<h2 id=\"h_01JYHAM9693DJG43B2MNXJGCYV\" data-aura-rendered-by=\"12:4669;a\">Answer</h2>\n<p data-aura-rendered-by=\"12:4669;a\">For load balancing, there are a few out of the box solutions available without having to use an external load balancer.</p>\n<ul data-aura-rendered-by=\"12:4669;a\">\n<li>Elasticsearch includes a lightweight load balancer, we call it a <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html#coordinating-only-node\" target=\"_blank\" rel=\"noopener\"><strong>coordinating node</strong></a>. It is a separate ES node that will join the cluster. It does not store any data, but it is aware of the cluster state and will automatically direct requests to the appropriate node(s) that store the data being requested. Once it receives the result set, it will reduce it and send it back to the requestor. Learn more about <a href=\"https://www.elastic.co/guide/en/kibana/7.5/production.html#load-balancing-es\" target=\"_blank\" rel=\"noopener\">configuring load balancing with coordinating nodes for Kibana</a>. </li>\n<li>If you are using the .NET client, you can use one of the <a href=\"https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/elasticsearch-net-getting-started.html#_connection_pools\" target=\"_blank\" rel=\"noopener\">available ConnectionPool types</a>. For example, within your application code, you can define a <span style=\"font-family: Courier New,Courier,monospace;\">SniffingConnectionPool</span> when you establish the ES connection. The .NET client will sniff the cluster state to determine the list of available nodes and round-robin requests automatically between them.</li>\n<li>If you are using the NEST client, you can similarly pass in the appropriate IConnectionPool type to your <a href=\"https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/connection-pooling.html#connection-pooling\" target=\"_blank\" rel=\"noopener\">ConnectionSettings</a> to achieve the same. This is a straightforward way to implement load balancing in Elasticsearch. </li>\n</ul>\n<p data-aura-rendered-by=\"12:4669;a\">That said, using a load balancer with the HTTP or Transport Client should not be a problem, but there are a few things to keep in mind.</p>\n<ul data-aura-rendered-by=\"12:4669;a\">\n<li>The HTTP client and <a href=\"https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/transport-client.html\" target=\"_blank\" rel=\"noopener\">Transport Client</a> connect to a single Elasticsearch node or a list of nodes using round-robin. That node will then coordinate the operation with the correct data node.  Most operations will be 2 hop, which means it doesn't matter which node you initially connect to. In your load balancer scenario, this is good. Simply give the IP or name of your load balancer to the client.</li>\n<li>With TLS security, if Elasticsearch is behind a load balancer you have 2 options:\n<ul>\n<li>Include the load balancer's DNS name in the SAN (<em>Subject Alternative Name</em>) of each node's certificate and pass-through TCP port 9200/9300</li>\n<li>Terminate SSL on the load balancer like a proxy, and use the Load Balancer's certificate</li>\n</ul>\n</li>\n<li>When using the Transport Client, do not enable <code>sniffing</code> (<a href=\"https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/transport-client.html\" target=\"_blank\" rel=\"noopener\">See the docs</a>), which will result in the Transport client attempting direct connections to each node</li>\n</ul>\n<p>* Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "855681e7-e526-bc2e-b10a-d75f7abbf432",
+    "familyName": "Fong",
+    "givenName": "Amos",
+    "id": 2013333,
+    "name": "Amos Fong"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T22:57:54Z",
+  "dateModified": "2026-03-10T22:31:11Z",
+  "datePublished": "2019-10-03T11:55:00Z",
+  "description": "",
+  "externalReferenceCode": "360034748091",
+  "friendlyUrlPath": "les-how-to-use-a-load-balancer-with-elasticsearch",
+  "id": 26096555,
+  "key": "26096553",
+  "keywords": [
+    "ja",
+    "mt",
+    "dxp-7-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "knowledge-base",
+    "load-balancer",
+    "enterprise-search",
+    "elasticsearch",
+    "search"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096555/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "[LES] How to use a load balancer with Elasticsearch?",
+  "uuid": "10b26d7c-2ad5-31a2-6f65-1409d8b5609f"
+}

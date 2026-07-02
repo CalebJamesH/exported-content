@@ -1,0 +1,136 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102146/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102146/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102146"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: Stack version 4 is no longer the latest version. Please see <a href=\"https://learn.liferay.com/liferay-cloud/latest/en/reference/liferay-cloud-version-5-changes.html\" target=\"_self\">Liferay Cloud Version 5 Changes</a> for the latest updates. </span></aside>\n<p>In this article, we'll go over the details of the Liferay PaaS Stack v4 which is currently in the Alpha phase. Please see the <a href=\"https://help.liferay.com/hc/en-us/articles/360041149752\" target=\"_self\">Upgrade Script</a> article, before starting the upgrade.</p>\n<h2 id=\"h_01HYXJ3KGSCGGHCMYCP6N6J403\"><a id=\"deploy-cli\" href=\"#deploy-cli\">Deploy using the CLI</a></h2>\n<p>In this new structure, the image version is declared into the<span> </span><code>LCP.json</code><span> </span>of each service instead of the<code>gradle.properties</code><span>  file</span>. Typically if you want to deploy one service, you can navigate to the service and run<span> </span><code>lcp deploy</code>. For example,<span> </span><code>cd webserver &amp;&amp; lcp deploy</code>. Things work slightly different for the liferay service because it needs to be built first. Use the following command to deploy Liferay:</p>\n<pre><code>cd liferay\n./gradlew clean deploy createDockerfile\ncp LCP.json build/docker\ncd build/docker\nlcp deploy</code></pre>\n<h2 id=\"h_01HYXJ3KGSSJJVA6E77EZDMFES\"><a id=\"backup-service\" href=\"#backup-service\">Backup Service</a></h2>\n<h3 id=\"h_01HYXJ3KGSZ51GRC19AEJ29Z81\"><strong>File Overrides</strong></h3>\n<h4 id=\"h_01HYXJ3KGSZVETR3TAGJK1CAHD\"><span class=\"wysiwyg-color-black60\">Custom Scripts</span></h4>\n<p>Place custom<span> </span><code>.sql</code><span> </span>scripts into<span> </span><code>backup/configs/{ENV}/scripts</code>. All<span> </span><code>.sql</code><span> </span>scripts will be copied into the backup service container. You can also compress large<span> </span><code>.sql</code><span> </span>files in the<span> </span><code>.tgz</code>,<span> </span><code>.gz</code>, or<span> </span><code>.zip</code><span> </span>format and place them in the<span> </span><code>scripts</code><span> </span>directory. You can include multiple<span> </span><code>.sql</code><span> </span>files in a single compressed file.</p>\n<p>The<span> </span><code>.sql</code><span> </span>scripts are executed after a backup restore process is finished. For example, when restoring from<span> </span><code>prd</code><span> </span>to<span> </span><code>dev</code>, the<span> </span><code>dev</code><span> </span>service is responsible for actually doing the restore. Therefore, if you want to truncate certain tables on the<span> </span><code>dev</code><span> </span>environment, then you could add them to<span> </span><code>backup/configs/dev/scripts</code>, and they would be executing only when restoring to the<span> </span><code>dev</code><span> </span>environment.</p>\n<h2 id=\"h_01HYXJ3KGSVCQ35P1AP9N1FCQ2\"><a id=\"ci-service\" href=\"#ci-service\">CI Service</a></h2>\n<h3 id=\"h_01HYXJ3KGSGZNNCHE3S3KRMSPN\"><strong>Default Jenkinsfile Extension Points</strong></h3>\n<p>The script to upgrade the structure of your Git repo copies the<span> </span><code>Jenkinsfile</code><span> </span>at the root to<span> </span><code>ci/#Jenkinsfile</code>, commenting it out. It is commented out because the Jenkins 4.0.0 image now contains a default pipeline, so a<span> </span><code>Jenkinsfile</code><span> </span>is no longer required at the root of the repository.</p>\n<p>In addition, four new files are added to the<span> </span><code>ci</code><span> </span>folder:</p>\n<ul>\n<li><code>ci/#Jenkinsfile-before-project-build</code></li>\n<li><code>ci/#Jenkinsfile-before-cloud-build</code></li>\n<li><code>ci/#Jenkinsfile-before-cloud-deploy</code></li>\n<li><code>ci/#Jenkinsfile-post-always</code></li>\n</ul>\n<p>These are commented out initially, but are included to show the different extension points. To see how they are used in the default pipeline, simply monitor the Jenkins service startup logs. The full default Jenkinsfile is printed out in the startup logs. In addition, the logs print out whether Jenkins is configured to use the default Jenkinsfile or a custom Jenkinsfile in your git repository.</p>\n<p>Here is a basic overview of the steps in the ci build process:</p>\n<ol>\n<li>Load<span> </span><code>ci/Jenkinsfile-before-project-build</code>, if it exists.</li>\n<li>Build all the services in the project.</li>\n<li>Load<span> </span><code>ci/Jenkinsfile-before-cloud-build</code>, if it exists.</li>\n<li>Create the DXP Cloud build that you see in console.</li>\n<li>Load<span> </span><code>ci/Jenkinsfile-before-cloud-deploy</code>, if it exists.</li>\n<li>Optionally deploy the build to an environment in the cloud, depending on if the current branch has been specified as the deploy branch. This is configured through the<span> </span><code>DEPLOY_BRANCH</code><span> </span>environment variable. The<span> </span><code>DEPLOY_TARGET</code><span> </span>environment variable specifies which environment to deploy to.</li>\n<li>Load<span> </span><code>ci/Jenkinsfile-post-always</code>, if it exists. This will run both when the build fails and when it succeeds.</li>\n</ol>\n<p>You will likely want a way to share code between these extension points. One basic way is to load a groovy script. For example, you could create a groovy file called<span> </span><code>ci/util.groovy</code><span> </span>with these contents:</p>\n<pre><code>def sendSlackMessage(message) {\n\tprintln(message)\n}\n\nreturn this\n</code></pre>\n<p>Then you could insert the following in<span> </span><code>ci/Jenkinsfile-before-cloud-build</code>:</p>\n<pre><code>def util = load(\"ci/util.groovy\")\n\nutil.sendSlackMessage(\"About to create DXP Cloud build...\")\n</code></pre>\n<h3 id=\"h_01HYXJ3KGT6WBE3DJ0GXMH20BQ\"><strong>Default Jenkinsfile Environment Variables</strong></h3>\n<p>The following environment variables are only used in the default Jenkinsfile. They are listed along with their default values. Although these environment variables are specific to Liferay, they correspond directly to Jenkins pipeline options. To see what they do please refer to<span> </span><a href=\"https://jenkins.io/doc/book/pipeline/syntax/#options\" rel=\"nofollow\">Jenkins documentation regarding pipeline options</a>;</p>\n<pre><code>JENKINS_BUILD_TIMEOUT_MINUTES\nJENKINS_PRESERVE_STASHES_BUILD_COUNT\nJENKINS_BUILD_NUM_TO_KEEP\nJENKINS_BUILD_DAYS_TO_KEEP\nJENKINS_ARTIFACT_NUM_TO_KEEP\nJENKINS_ARTIFACT_DAYS_TO_KEEP\n</code></pre>\n<h3 id=\"h_01HYXJ3KGT1M2DSHFVR15HN8GM\"><strong>Using a Jenkinsfile in Your Git Repository</strong></h3>\n<p>If using the default Jenkinsfile with its extension points does not meet your needs, please start by creating a feature request. Otherwise, you can opt out of using the default Jenkinsfile by setting the<span> </span><code>JENKINS_USE_DEFAULT_JENKINSFILE</code><span> </span>environment variable to<span> </span><code>false</code>. By default this environment variable is set to<span> </span><code>true</code>. You must create the custom Jenkinsfile in the<span> </span><code>ci</code><span> </span>folder in order for it to be read. Otherwise, there will be errors on startup because you configured the service to use a custom pipeline, but the service could not find it.</p>\n<p>You can use the default Jenkinsfile as a guideline when writing a custom Jenkinsfile. You will notice that in the 4.0.0 Liferay Jenkins image, the different stages have been encapsulated into a Jenkins plugin which provides an API, such that the default Jenkinsfile has been trimmed down considerably.</p>\n<h2 id=\"h_01HYXJ3KGTEE2XY3YA71VMW145\"><a id=\"liferay-service\" href=\"#liferay-service\">Liferay Service</a></h2>\n<h3 id=\"h_01HYXJ3KGTYEZ1KF1X4EV51HQH\"><strong>File Overrides</strong></h3>\n<h4 id=\"h_01HYXJ3KGTBKW48NEDS866EFJJ\"><span class=\"wysiwyg-color-black60\">Liferay Workspace</span></h4>\n<p>The 4.x Liferay PaaS image uses the<span> </span><a href=\"https://hub.docker.com/r/liferay/dxp\" rel=\"nofollow\">Liferay DXP image</a><span> </span>as its base image. The source code is located<span> </span><a href=\"https://github.com/liferay/liferay-docker\">here</a>.</p>\n<p>The original folder structures are no longer respected in the Liferay PaaS SM 4.x image:</p>\n<ul>\n<li><code>lcp/liferay/config/{ENV}</code></li>\n<li><code>lcp/liferay/deploy/{ENV}</code></li>\n<li><code>lcp/liferay/script/{ENV}</code></li>\n<li><code>lcp/liferay/hotfix/{ENV}</code></li>\n<li><code>lcp/liferay/license/{ENV}</code></li>\n</ul>\n<p>Instead, in the Liferay PaaS 4.x image, the<span> </span><code>liferay</code><span> </span>folder is a Liferay workspace. Please refer to<span> </span><a href=\"https://help.liferay.com/hc/articles/360029147471-Liferay-Workspace\" target=\"_self\" rel=\"undefined\">Liferay workspace documentation</a><span> </span>for how to develop Liferay locally using a Liferay workspace.</p>\n<p>All configurations should now be placed in<span> </span><code>liferay/configs/{ENV}</code>, which acts as a<span> </span><code>LIFERAY_HOME</code><span> </span>override. For the Liferay service, there are three steps to the override process. Look at the startup logs for details about what happens in the three steps.</p>\n<p>Step 1 is that our image copies defaults, which<span> </span><code>liferay/configs/{ENV}</code><span> </span>can still override. Look for this in the logs:</p>\n<pre><code>##\n## DXPCloud Liferay Defaults\n##\n</code></pre>\n<p>Step 2 is that<span> </span><code>liferay/configs/{ENV}</code><span> </span>will override the contents of<span> </span><code>LIFERAY_HOME</code>.</p>\n<p>Step 3 is that our image enforces certain files and configurations to be present. This steps overrides files copied in step 2. Look for this in the logs:</p>\n<pre><code>##\n## DXPCloud Liferay Overrides\n##\n</code></pre>\n<h4 id=\"h_01HYXJ3KGVM71EAJKK2PWDFWF0\"><span class=\"wysiwyg-color-black60\">Custom Scripts</span></h4>\n<p>Place custom<span> </span><code>.sh</code><span> </span>scripts in<span> </span><code>liferay/configs/{ENV}/scripts</code>.</p>\n<h4 id=\"h_01HYXJ3KGVMASMT0AWXGTTA9K2\"><span class=\"wysiwyg-color-black60\">Hotfixes</span></h4>\n<p>Hotfixes and patching tools should be placed in<span> </span><code>liferay/configs/{ENV}/patching</code>.</p>\n<p>Instead of committing large hotfix files directly to your git repo, you can rely on the CI service pulling in the hotfixes for you during its build process; this approach will not work with calling<span> </span><code>lcp deploy</code><span> </span>from the<span> </span><code>liferay/build/docker</code><span> </span>folder. To take advantage of this, you can actually add environment variables to the CI service. The env vars should have the name<span> </span><code>JENKINS_LIFERAY_DXP_HOTFIXES_{ENV}</code>. The value should be a comma-delimited list of hotfixes to apply. For example, you could have the following in your<span> </span><code>ci/LCP.json</code>. Leave off the<span> </span><code>.zip</code><span> </span>extension from the hotfix name.</p>\n<pre><code>\"env\": {\n   \"JENKINS_LIFERAY_DXP_HOTFIXES_COMMON\": \"liferay-hotfix-10-7210,liferay-hotfix-17-7210\"\n   \"JENKINS_LIFERAY_DXP_HOTFIXES_DEV\": \"liferay-hotfix-15-7210,liferay-hotfix-33-7210\",\n},\n</code></pre>\n<h2 id=\"h_01HYXJ3KGW2R536M1PCFPHX7EY\"><a id=\"search-service\" href=\"#search-service\">Search Service</a></h2>\n<h3 id=\"h_01HYXJ3KGXZT97HS510MD65EBN\"><strong>File Overrides</strong></h3>\n<p>All customizations of the search service should go in the<span> </span><code>search/configs</code><span> </span>folder in your git repo. In this folder, add new folders for environment-specific configs, for example<span> </span><code>prd</code>,<span> </span><code>dev</code>, etc.<span> </span><em>Every</em><span> </span><em>single</em><span> </span><em>file</em><span> </span>in<span> </span><code>search/configs/common</code><span> </span>will be copied into the<span> </span><code>/usr/share/elasticsearch</code><span> </span>folder in the container running in Liferay PaaS. This copying process overwrites files and folders. After the initial copying from<span> </span><code>search/configs/common</code>, environment-specific customizations will be copied in. For example, if the search service is being deployed in the<span> </span><code>prd</code><span> </span>environment and files exist in<span> </span><code>search/configs/prd</code>, those will be copied over, potentially overriding files that were copied from<span> </span><code>search/configs/common</code>.</p>\n<p>Configurations can be included in<span> </span><code>search/configs/{ENV}/config</code><span> </span>because Elasticsearch reads configs such as<span> </span><code>elasticsearch.yml</code><span> </span>from<span> </span><code>/usr/share/elasticsearch/config</code>. So if you create a custom<span> </span><code>elasticsearch.yml</code><span> </span>in<span> </span><code>/configs/common/config</code>, that will be copied to<span> </span><code>/usr/share/elasticsearch/config/elasticsearch.yml</code>, overriding the default<span> </span><code>elasticsearch.yml</code><span> </span>file that the Liferay Elasticsearch service provides.</p>\n<h4 id=\"h_01HYXJ3KGYWFZZESEVMAB6Y5X4\"><span class=\"wysiwyg-color-black60\">Custom Scripts</span></h4>\n<p>Place custom shell scripts into<span> </span><code>search/configs/{ENV}/scripts</code>. They will be copied to<span> </span><code>/usr/share/elasticsearch/scripts</code>. Any<span> </span><code>.sh</code><span> </span>scripts in<span> </span><code>/usr/share/elasticsearch/scripts</code><span> </span>will be executed.</p>\n<h4 id=\"h_01HYXJ3KGYEHHF50SZK0M8RTN5\"><span class=\"wysiwyg-color-black60\">Elasticsearch Licenses</span></h4>\n<p>An Elasticsearch<span> </span><code>.json</code><span> </span>license can be put in<span> </span><code>search/configs/{ENV}/license</code>, and it will be applied as part of the deployment process.</p>\n<h4 id=\"h_01HYXJ3KGYFJMNPR0FR9RPXPQC\"><span class=\"wysiwyg-color-black60\">File Overrides Summary</span></h4>\n<p>The main concept to grasp is that<span> </span><em>all</em><span> </span>files in<span> </span><code>search/configs/{ENV}</code><span> </span>are copied into<span> </span><code>/usr/share/elasticsearch</code>, but only certain folders are subject to additional processing by Liferay Cloud during service deployment. For the search service, the only folders that are processed by Liferay code specifically are the<span> </span><code>license</code><span> </span>and<span> </span><code>scripts</code><span> </span>folders.</p>\n<h3 id=\"h_01HYXJ3KGYE9TTXENMMXJS3VCA\"><strong>Elasticsearch Plugins</strong></h3>\n<p>To see the installed plugins, shell into the search service and run<span> </span><code>bin/elasticsearch-plugin list</code>.</p>\n<p>If you would like to install additional Elasticsearch plugins beyond the ones our image installs by default, you can set the<span> </span><code>LCP_SERVICE_SEARCH_ES_PLUGINS</code><span> </span>environment variable to a comma-delimited list of plugin names to be installed. They will be installed during the service's deployment.</p>\n<h2 id=\"h_01HYXJ3KGYCWFT42SRT2132YGG\"><a id=\"webserver-service\" href=\"#webserver-service\">Webserver Service</a></h2>\n<h3 id=\"h_01HYXJ3KGZKM41VK9PBP71X3B5\"><strong>File Overrides</strong></h3>\n<p>All customizations of the webserver service should go in the<span> </span><code>webserver/configs</code><span> </span>folder in your git repo. In this folder, add new folders for environment-specific configs, for example<span> </span><code>prd</code>,<span> </span><code>dev</code>, etc.<span> </span><em>Every</em><span> </span><em>single</em><span> </span><em>file</em><span> </span>in<span> </span><code>webserver/configs/common</code><span> </span>will be copied into the<span> </span><code>/etc/nginx</code><span> </span>folder in the container running in Liferay PaaS. This copying process overwrites files and folders. After the initial copying from<span> </span><code>webserver/configs/common</code>, environment-specific customizations will be copied in. For example, if the webserver service is being deployed in the<span> </span><code>prd</code><span> </span>environment and files exist in<span> </span><code>webserver/configs/prd</code>, those will be copied over, potentially overriding files that were copied from<span> </span><code>webserver/configs/common</code>.</p>\n<p>You can customize the root location by adding the file<span> </span><code>webserver/configs/{ENV}/conf.d/liferay.conf</code>. Make sure to name the file<span> </span><code>liferay.conf</code>; if you add a root location under a different file name, an error will be thrown when NGINX finds two root locations, the default one that Liferay Cloud provides plus your custom location. Shell into the webserver service and navigate to<span> </span><code>/etc/nginx/conf.d/liferay.conf</code><span> </span>to see what the default<span> </span><code>liferay.conf</code><span> </span>file looks like.</p>\n<p>Other<span> </span><code>*.conf</code><span> </span>files can be added to<span> </span><code>webserver/configs/{ENV}/conf.d/</code><span> </span>to specify additional locations.</p>\n<p>To completely override NGINX configuration, add the file<span> </span><code>webserver/configs/{ENV}/nginx.conf</code>. At this point you are writing the configuration of NGINX from scratch, so previous instructions about adding<span> </span><code>webserver/configs/{ENV}/conf.d/liferay.conf</code><span> </span>to customize the root location and specifying additional locations in<span> </span><code>webserver/configs/{ENV}/conf.d/</code><span> </span>do not apply. Shell into the webserver service and navigate to<span> </span><code>/etc/nginx/nginx.conf</code><span> </span>to see what the default<span> </span><code>nginx.conf</code><span> </span>file looks like.</p>\n<h4 id=\"h_01HYXJ3KGZFM3BJ191HS1A9HE0\"><span class=\"wysiwyg-color-black60\">The Public Directory</span></h4>\n<p>If you wish to add custom static content, places these files in<span> </span><code>webserver/configs/{ENV}/public</code>. Liferay Cloud will look for this<span> </span><code>public</code><span> </span>folder and copy all files inside of it to<span> </span><code>/var/www/html</code>. You will need to add additional locations to configure these resources. For example, add a html file<span> </span><code>index.html</code><span> </span>to<span> </span><code>webserver/configs/{ENV}/public/static</code><span> </span>and then add a configuration file such as<span> </span><code>static_location.conf</code><span> </span>to<span> </span><code>webserver/configs/{ENV}/conf.d</code><span> </span>with the following content:</p>\n<pre><code>location /static/ {\n  root /var/www/html;\n}\n</code></pre>\n<p>Refer to NGINX documentation for more complex use cases.</p>\n<h4 id=\"h_01HYXJ3KGZ8AB03GE0MR2HPQ1F\"><span class=\"wysiwyg-color-black60\">Custom Scripts</span></h4>\n<p>Place custom shell scripts into<span> </span><code>webserver/configs/{ENV}/scripts</code>. They will be copied to<span> </span><code>/etc/nginx/scripts</code>. Any<span> </span><code>.sh</code><span> </span>scripts in<span> </span><code>/etc/nginx/scripts</code><span> </span>will be executed.</p>\n<h4 id=\"h_01HYXJ3KGZ4SJ42R6STCC1F7ZY\"><span class=\"wysiwyg-color-black60\">File Overrides Summary</span></h4>\n<p>The main concept to grasp is that<span> </span><em>all</em><span> </span>files in<code>webserver/configs/{ENV}</code><span> </span>are copied into<span> </span><code>/etc/nginx</code>, but only certain folders are subject to additional processing by Liferay Cloud during service deployment. For the webserver service, the only folders that are processed by Liferay code specifically are the<span> </span><code>public</code><span> </span>and<span> </span><code>scripts</code><span> </span>folders.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:06:01Z",
+  "dateModified": "2025-11-13T23:40:09Z",
+  "datePublished": "2020-03-27T17:09:00Z",
+  "description": "",
+  "externalReferenceCode": "360041585331",
+  "friendlyUrlPath": "what-changed-in-the-liferay-paas-stack-version-4",
+  "id": 26102146,
+  "key": "26102144",
+  "keywords": [
+    "ja",
+    "mt",
+    "liferay-paas",
+    "liferay-experience-cloud---self-managed",
+    "lxc-sm",
+    "dxp-cloud",
+    "dont-index"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102146/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "What changed in the Liferay PaaS Stack version 4?",
+  "uuid": "f9360483-d568-b3a7-e361-3519ade8fc8c"
+}

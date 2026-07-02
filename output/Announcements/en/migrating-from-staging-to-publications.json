@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099039/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099039/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099039"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Staging has been a staple feature of Liferay for many years. With it, users can add content and make changes to a site in a working environment before publishing them to their production/live environment. However, with the new <strong>Publications</strong> feature, we've re-envisioned the process for managing and publishing changes to your site and its content. We’ve listened to your feedback and have designed <strong>Publications</strong> with you in mind. If you are currently using Staging, you could dramatically save time and improve your operational resiliency by migrating to <strong>Publications</strong> today!</p>\n<h2 id=\"01GQ0A6QKMRPM2XHWG8QB42NAD\">Resources</h2>\n<p>In addition to that, we've also prepared a variety of resources to empower you and your team to learn and take the next step with <strong>Publications</strong> on Liferay 7.4:</p>\n<p class=\"wysiwyg-text-align-center\"><iframe src=\"//www.youtube-nocookie.com/embed/cz8Fvw_U9tU\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"\"></iframe></p>\n<p><span style=\"font-weight: 400;\"><strong>*New*</strong> Documentation:</span></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><a href=\"https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/comparing-publishing-tools.html\" target=\"_blank\" rel=\"noopener\">Comparing Publishing Tools</a></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><a href=\"https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/publications/enabling-publications.html\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">Enabling Publications</span></a></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><a href=\"https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/publications/collaborating-on-publications.html\" target=\"_self\"><span style=\"font-weight: 400;\">Collaborating on Publications</span></a></li>\n</ul>\n<p><span style=\"font-weight: 400;\"><strong>*New*</strong> Videos:</span></p>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><a href=\"https://www.youtube.com/watch?v=zTrciOMwdmw&amp;list=PLm3_L1L-YueZDy1D3F4FpJsE7hWvrjKaQ&amp;index=2\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">What are Publications</span></a></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><a href=\"https://www.youtube.com/watch?v=xPVWyMrTa3k&amp;list=PLm3_L1L-YueZDy1D3F4FpJsE7hWvrjKaQ&amp;index=3\" target=\"_blank\" rel=\"noopener\"><span style=\"font-weight: 400;\">Staging vs Publications</span></a></li>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><a href=\"https://www.youtube.com/playlist?list=PLm3_L1L-YueZDy1D3F4FpJsE7hWvrjKaQ\" target=\"_blank\" rel=\"noopener\">And more...</a></li>\n</ul>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:08Z",
+  "dateModified": "2025-11-13T23:40:10Z",
+  "datePublished": "2023-01-11T20:24:00Z",
+  "description": "",
+  "externalReferenceCode": "12163771076109",
+  "friendlyUrlPath": "migrating-from-staging-to-publications",
+  "id": 26099039,
+  "key": "26099037",
+  "keywords": [
+    "ja",
+    "publications",
+    "staging"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099039/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Migrating from Staging to Publications",
+  "uuid": "6c4d12f1-e1bf-c065-b987-f3b56b581675"
+}

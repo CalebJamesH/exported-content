@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Users on Liferay Customer Portal can perform many tasks, but only administors can invite other team members and activate products.</p>\n\n<ol>\n\t<li>Determine which users will need which Customer Portal roles\n\t<ul>\n\t\t<li><strong>Administrators</strong>&nbsp;have the ability to manage product activation and team members. They also have access to Liferay Help Center and ability to create new tickets and comment on existing tickets.</li>\n\t\t<li><strong>Requesters</strong>&nbsp;have access to the Liferay Customer Portal and to the ticketing system.&nbsp; Within the ticketing system, support requesters have access to create new tickets and comment on existing tickets.</li>\n\t\t<li><strong>Users&nbsp;</strong>have access to the Liferay Customer Portal&nbsp;and can view&nbsp;issues within the ticketing system.</li>\n\t</ul>\n\n\t<p>&nbsp;</p>\n\t</li>\n\t<li>If you are using Liferay SaaS or PaaS you also need to identify incident contacts&nbsp;including phone numbers. There are team members who will be contacted for high priority incidents and&nbsp;can be&nbsp;duplicated from the general team members list or separate.\n\t<ul>\n\t\t<li>Critical Incident</li>\n\t\t<li>Security Incident</li>\n\t\t<li>Data Breach Incident</li>\n\t</ul>\n\n\t<p>&nbsp;</p>\n\t</li>\n\t<li>Invite your team to the Customer Portal&nbsp;by visiting the Team Members page\n\t<ul>\n\t\t<li>For a step-by-step tutorial on adding team members visit:&nbsp;<a href=\"/w/how-do-i-manage-my-team-members-video-tutorial\" target=\"_self\">How Do I Manage My Team Members?</a></li>\n\t\t<li>For a step-by-step tutorial on adding incident&nbsp;contacts visit:&nbsp;<a href=\"/w/how-do-i-manage-my-incident-contacts\" target=\"_self\">How Do I Manage My Incident Contacts?</a></li>\n\t\t<li>For details on role limitations please visit: <a href=\"/w/Learn-about-Customer-Portal-Roles\">Learn about Customer Portal Roles</a></li>\n\t</ul>\n\n\t<p>&nbsp;</p>\n\t</li>\n\t<li>Invite your team to view and access Liferay DXP source code\n\t<ul>\n\t\t<li>For a step-by-step guide see: <a href=\"/w/liferay-dxp-source-code-access\">Liferay DXP Source Code Access</a></li>\n\t</ul>\n\t</li>\n</ol>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988315"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "ce031deb-3c59-8452-a19a-2842745a5e14",
+    "familyName": "Garman",
+    "givenName": "Joel",
+    "id": 2028812,
+    "name": "Joel Garman"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-30T11:19:37Z",
+  "dateModified": "2026-02-20T00:43:05Z",
+  "datePublished": "2025-10-02T16:52:00Z",
+  "description": "",
+  "externalReferenceCode": "ecdd4584-1f79-8d7d-6ec9-3e330f96a860",
+  "friendlyUrlPath": "admin-invite-your-team",
+  "id": 26189083,
+  "key": "26189081",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26189083/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408730,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988303,
+      "taxonomyCategoryName": "Getting Started",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "0ee7fdcf-6e77-c20a-abd0-48daedbf319d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988315,
+      "taxonomyCategoryName": "Administrators",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "dedbc41f-7306-d204-363d-383bf4e7d5c7",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "1. Invite Your Team",
+  "uuid": "a5cb2fac-b3a3-759e-2644-79f1ae3ea1ce"
+}

@@ -1,0 +1,134 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099849/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099849/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099849"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>At Liferay, we strive to provide the best customer experience possible. Over the past few months, we have analyzed the way that support escalations are currently managed by looking at feedback data as well as discussing with many of you. One of the most common complaints is when an escalation is happening, it can be difficult to get timely updates and resolutions.</p>\n<p>To alleviate this pain point, we have rolled out a service that allows you to connect with a technical manager quickly. Our technical managers will assess the situation, create an escalation plan, and work directly on the issue. Ongoing updates will be provided by the technical manager and their team through the support ticket.</p>\n<p>If you would like to escalate an issue to one of our technical managers, please fill out this <a href=\"https://support.liferay.com/support-ticket-escalation\" target=\"_blank\" rel=\"noopener noreferrer\">form</a> and a technical manager will contact you within the next business day. </p>\n<p>Steps to access the Enhanced Support Escalation form: </p>\n<ol>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Log into<span> </span><a class=\"c-link\" href=\"https://support.liferay.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-stringify-link=\"https://support.liferay.com/\" data-sk=\"tooltip_parent\">https://support.liferay.com/</a>\n</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Click on<span> </span><code class=\"c-mrkdwn__code\" data-stringify-type=\"code\">Support</code>  at the top.</li>\n<li data-stringify-indent=\"0\" data-stringify-border=\"0\">Select<span> </span><code class=\"c-mrkdwn__code\" data-stringify-type=\"code\">Escalate a Ticket</code>\n</li>\n</ol>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/26173715994125\" alt=\"Escalation Tickets - without Beta.png\"></p>\n<p>While there is no limit to how many issues you can escalate, you can help us resolve your most pressing issues more quickly by being judicious in your escalations.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:01Z",
+  "dateModified": "2025-12-29T18:51:54Z",
+  "datePublished": "2023-12-20T19:50:00Z",
+  "description": "",
+  "externalReferenceCode": "22543843498893",
+  "friendlyUrlPath": "enhanced-support-escalation-workflow",
+  "id": 26099849,
+  "key": "26099847",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "mt",
+    "supportability",
+    "support-escalation"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099849/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Enhanced Support Escalation Workflow",
+  "uuid": "bb2c03a5-58fe-e2ee-c485-4f98d60e84e5"
+}

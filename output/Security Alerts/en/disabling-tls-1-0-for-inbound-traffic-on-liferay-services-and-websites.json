@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Published: November 1, 2018</p>\n<h2>Affected Version(s)</h2>\n<ul>\n<li>Liferay Systems and Services (see list in the linked article below)</li>\n<li>Liferay Digital Experience Platform 7.0</li>\n<li>Liferay Digital Experience Platform 7.1</li>\n<li>Liferay Portal 6.2 EE</li>\n<li>Liferay Portal 6.1 EE</li>\n<li>Liferay Marketplace portlet</li>\n<li>Liferay deployments and any applications running on Java 7 or below</li>\n</ul>\n<h2>General information</h2>\n<p>Due to vulnerabilities in the Transport Layer Security 1.0, Liferay will be disabling TLS 1.0 for inbound secure connections on all systems and services on <strong>November 30th</strong>, to follow the current industry practices.</p>\n<h2>Mitigation</h2>\n<p>Please navigate to the <a href=\"https://help.liferay.com/hc/articles/360019140811\">Knowledge Base</a> for list of affected Liferay systems and services, as well as mitigation instructions for deployments.</p>\n<p><strong>UPDATE (as of 11/30/18):</strong> This change has been delayed to occur on <strong>January 11, 2019.</strong> Please refer to this <a href=\"https://support.liferay.com/delayed-disabling-tls-1-0-for-inbound-traffic-on-liferay-services-and-websites\">updated article</a> for more information.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:41:46Z",
+  "dateModified": "2026-03-05T21:37:31Z",
+  "datePublished": "2018-11-29T15:55:00Z",
+  "description": "",
+  "externalReferenceCode": "360020121932",
+  "friendlyUrlPath": "disabling-tls-1-0-for-inbound-traffic-on-liferay-services-and-websites",
+  "id": 26145659,
+  "key": "26145657",
+  "keywords": [
+    "ja",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145659/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Disabling TLS 1.0 for Inbound Traffic on Liferay Services and Websites",
+  "uuid": "41171840-8780-6f8e-aa22-d5b0cc64fcfe"
+}

@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><a href=\"/w/elastic-stack-and-liferay-enterprise-search-les-security-advisories\" target=\"_self\">Published: January 15, 2021</a></aside>\n<p>The following issues may affect the functionality of your Liferay DXP and Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<h2 id=\"Deployments-which-might-be-impacted\"><a href=\"#Deployments-which-might-be-impacted\" target=\"_self\">Deployments which might be impacted</a></h2>\n<ul>\n<li>Liferay DXP 7.3 on Elastic Stack 7.9.x and before 7.10.2</li>\n<li>Liferay DXP 7.2 on Elastic Stack 7.7.x and before 7.10.2</li>\n</ul>\n<h2 id=\"Vulnerability-Information\"><a href=\"#Vulnerability-Information\" target=\"_self\">Vulnerability Information</a></h2>\n<div class=\"cooked\">\n<p><strong>Elasticsearch authorization-header storage issue (ESA-2021-01)</strong></p>\n<p>An information disclosure flaw was found in the Elasticsearch async search API. Users who execute an async search will store the HTTP headers. An Elasticsearch user with the ability to read the .tasks index could obtain sensitive request headers of other users in the cluster.</p>\n<p><strong>Affected Versions:</strong></p>\n<p>All Elasticsearch versions starting with 7.7.0 and before 7.10.2</p>\n<p><strong>Solutions and Mitigations:</strong></p>\n<p>Users should upgrade to Elasticsearch 7.10.2. There is no known workaround for this issue.</p>\n<p><strong>CVSSv3:</strong> 4.8 - AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:L/A:N</p>\n<p><strong>CVE ID:</strong> CVE-2021-22132</p>\n<h2 id=\"Additional-Information\"><a href=\"#Additional-Information\" target=\"_self\">Additional Information</a></h2>\n<p>Liferay's Elasticsearch connectors and out-of-the-box features are not using the Async Search APIs of Elasticsearch. In addition, communication between Liferay DXP and the Elasticsearch nodes happens through the Transport layer, not over HTTP in DXP 7.2 and prior versions. Please refer to this <a href=\"https://help.liferay.com/hc/en-us/articles/360046478452\" target=\"_self\">article</a> for a technical overview <span style=\"font-weight: 400;\">of the Elasticsearch connectors available for Liferay DXP.</span></p>\n</div>\n<h2 id=\"Search-Engine-Compatibility-Matrix\"><a href=\"#Search-Engine-Compatibility-Matrix\" target=\"_self\">Search Engine Compatibility Matrix</a></h2>\n<p>Reference the information <a href=\"/w/search-engine-compatibility-matrix\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<h2 id=\"Vendor-References\"><a href=\"#Vendor-References\" target=\"_self\">Vendor References</a></h2>\n<ul>\n<li>\n<p><a href=\"https://discuss.elastic.co/t/elasticsearch-7-10-2-security-update/261164\">https://discuss.elastic.co/t/elasticsearch-7-10-2-security-update/261164</a></p>\n</li>\n<li><a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/7.10/release-notes-7.10.2.html\">https://www.elastic.co/guide/en/elasticsearch/reference/7.10/release-notes-7.10.2.html</a></li>\n</ul>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:19:10Z",
+  "dateModified": "2026-03-05T21:42:02Z",
+  "datePublished": "2021-01-14T21:32:00Z",
+  "description": "",
+  "externalReferenceCode": "360055063912",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-january-15-2021",
+  "id": 26131917,
+  "key": "26131915",
+  "keywords": [
+    "ja",
+    "mt"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131917/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch and Liferay Enterprise Search Security Advisory: January 15, 2021",
+  "uuid": "8f83bad7-5eef-e8a6-b34c-8d7e88836de9"
+}

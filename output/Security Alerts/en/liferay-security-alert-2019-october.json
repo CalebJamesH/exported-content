@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>The following issue may compromise the security of your Liferay Portal Enterprise Edition (EE) or Liferay Digital Experience Platform implementation. This notification provides a description of the latest security vulnerability and recommended actions for Liferay Subscribers.</p>\n<h2 align=\"left\">Affected Version/s</h2>\n<ul>\n<li>Liferay Digital Experience Platform 7.2</li>\n<li>Liferay Digital Experience Platform 7.1</li>\n<li>Liferay Digital Experience Platform 7.0</li>\n<li>Liferay Portal 6.2 EE</li>\n</ul>\n<h2 align=\"left\">Vulnerability Information</h2>\n<ul>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360034762892\" target=\"_self\">LSV-399</a>: Security vulnerabilities in Apache Tika</li>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360035140471\" target=\"_self\">LSV-535:</a> SQL injection in asset framework</li>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360035141111\" target=\"_self\">LSV-545</a>: Unauthenticated Remote code execution via JSONWS</li>\n</ul>\n<h2 align=\"left\">Download</h2>\n<p>The listed vulnerabilities will be fixed under DXP Security Fix Pack: <em>201902</em>. Please read the <span style=\"color: #0b5fff;\"><a style=\"color: #0b5fff;\" href=\"https://help.liferay.com/hc/articles/360035038331\">DXP Security Fix Packs</a></span> article for more information and installation instructions for DXP Security Fix Packs.</p>\n<p>For more information on the vulnerabilities and affected versions for each issue, please visit the <span style=\"text-decoration: underline;\"><a href=\"https://help.liferay.com/hc/articles/360018875952\" rel=\" noopener\"><span style=\"color: #0b5fff; text-decoration: underline;\">Help Center Security Advisories</span></a></span> page. </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:28Z",
+  "dateModified": "2026-03-05T21:49:57Z",
+  "datePublished": "2019-10-09T17:32:00Z",
+  "description": "",
+  "externalReferenceCode": "360034624012",
+  "friendlyUrlPath": "liferay-security-alert-2019-october",
+  "id": 26108181,
+  "key": "26108179",
+  "keywords": [
+    "ja",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108181/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Security Alert: 2019 October",
+  "uuid": "07091f44-bd8c-fde7-72bb-39cefdff2675"
+}

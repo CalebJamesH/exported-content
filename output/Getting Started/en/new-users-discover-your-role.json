@@ -1,0 +1,117 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Users on Liferay Customer Portal can perform many tasks, but only administors can invite other team members and activate products. Since you are not an administrator you are either a Requester or a User</p>\n\n<ul>\n\t<li><strong>Requesters</strong>&nbsp;have access to the Liferay Customer Portal and to the ticketing system.&nbsp; Within the ticketing system, support requesters have access to create new tickets and comment on existing tickets.</li>\n\t<li><strong>Users&nbsp;</strong>have access to the Liferay Customer Portal&nbsp;and can view&nbsp;issues within the ticketing system.</li>\n\t<li>For details on role limitations please visit: <a href=\"/w/Learn-about-Customer-Portal-Roles\">Learn about Customer Portal Roles</a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988323"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "ce031deb-3c59-8452-a19a-2842745a5e14",
+    "familyName": "Garman",
+    "givenName": "Joel",
+    "id": 2028812,
+    "name": "Joel Garman"
+  },
+  "customFields": [],
+  "dateCreated": "2025-10-10T15:22:21Z",
+  "dateModified": "2026-02-20T00:43:05Z",
+  "datePublished": "2025-10-10T03:22:00Z",
+  "description": "",
+  "externalReferenceCode": "90b33788-fda9-2c9f-39dc-143f9d79bf94",
+  "friendlyUrlPath": "new-users-discover-your-role",
+  "id": 26235295,
+  "key": "26235293",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26235295/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408732,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988323,
+      "taxonomyCategoryName": "New Users",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "bcf7e081-5e06-2379-7d9e-6430f8dd7a78",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "1. Discover Your Role",
+  "uuid": "9701cc86-d07b-f2bb-8e10-3ac3da5c9c76"
+}

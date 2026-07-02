@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><strong>Published: October 25, 2019</strong></p>\n<p>The following issue may affect the functionality of your Liferay DXP and Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<h2>Deployments which might be impacted</h2>\n<ul>\n<li>Liferay DXP 7.0, 7.1 and 7.2 on Elastic Stack 6.7 or higher using X-Pack.</li>\n</ul>\n<h2>Vulnerability Information</h2>\n<p>(As provided by the vendor.)</p>\n<h3>Elasticsearch username disclosure flaw (ESA-2019-13)</h3>\n<p>A username disclosure flaw was found in Elasticsearch’s API Key service. An unauthenticated attacker could send a specially crafted request and determine if a username exists in the Elasticsearch native realm.</p>\n<p><strong>Affected Versions</strong></p>\n<p><span>The following Elasticsearch versions are affected by this flaw: 7.0.0, 7.0.1, 7.1.0, 7.1.1, 7.2.0, 7.2.1, 7.3.0, 7.3.1, 7.3.2 6.7.0, 6.7.1, 6.7.2, 6.8.0, 6.8.1, 6.8.2, 6.8.3</span></p>\n<p><strong>Solutions and Mitigations</strong></p>\n<p>Users should upgrade to Elasticsearch version 7.4.0 or 6.8.4. If users cannot upgrade, the API key service can be disabled by setting<span> </span><code>xpack.security.authc.api_key.enabled</code><span> </span>to false in the Elasticsearch configuration file.</p>\n<p><span>CVSSv3: 3.7 - AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N</span><br><span>CVE ID: CVE-2019-7619</span></p>\n<h2>Additional Mitigation Notes</h2>\n<p>Liferay's Enterprise Search connectors are not using API keys out-of-the-box.</p>\n<h2 id=\"Search-Engine-Compatibility-Matrix\">Search Engine Compatibility Matrix</h2>\n<p>Reference the information <a href=\"https://help.liferay.com/hc/articles/360016511651#Liferay-Enterprise-Search\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<p><strong>Vendor Reference</strong></p>\n<p><a href=\"https://discuss.elastic.co/t/elastic-stack-6-8-4-security-update/204908?utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz-_Cv0W8otMzWgSPFkBIQcGcY-mlfROMu7MbYteVp-2UnqzBcurGmI-XqZoGfBfN0RmDY-Jn\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">https://discuss.elastic.co/t/elastic-stack-6-8-4-security-update/204908</a></p>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:16:37Z",
+  "dateModified": "2026-03-05T21:42:02Z",
+  "datePublished": "2019-10-25T14:47:00Z",
+  "description": "",
+  "externalReferenceCode": "360035554471",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-october-2019",
+  "id": 26109408,
+  "key": "26109406",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109408/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch and Liferay Enterprise Search Security Advisory: October 2019",
+  "uuid": "86ba47a1-e307-3f78-c8d0-f547678a8f91"
+}

@@ -1,0 +1,140 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p class=\"alert alert-info\">This article is a <em>legacy article</em>. It applies to previous versions of the Liferay product. While the article is no longer maintained, the information may still be applicable.</p>\n<section class=\"description\">\n<p>The following article outlines a short checklist of questions to ask and steps to take before opening a portal deployment ticket in Help Center. By taking a moment to go through this checklist before opening a Help Center request, you're ensuring the fastest possible resolution for the particular issue.</p>\n</section>\n<section id=\"resolution\">\n<h2>Resolution</h2>\n<div>\n<p>For each ticket, please attach your portal-ext.properties file as well as the output of the <em>patching-tool info</em> command specific to the environment.</p>\n<p>For portal deployment tickets specifically, <strong><em>please work through the following checklist and include the resulting information when you create a ticket:</em></strong></p>\n<ol>\n<li>Please review <a href=\"https://www.liferay.com/documents/10182/1645493/Liferay+Portal+6_1+EE+Deployment+Checklist/13a6f5dd-0276-4e00-89eb-e96dd73cffdd\" target=\"_self\">Deployment Checklist</a>, if you haven’t done so</li>\n<li>This component includes the initial stages of deploying the portal</li>\n<li>Is this a new installation of Liferay or an upgrade?\n<ol type=\"a\">\n<li>If this is an upgrade please see the Upgrade section of this document.</li>\n</ol>\n</li>\n<li>Is this deployment a bundle obtained from the Customer Portal?</li>\n<li>Is the database, application server, and OS being utilized listed on the Support Matrix for this JDK version of Liferay?</li>\n<li>If not, what steps were taken to deploy the portal?</li>\n<li>Were the steps from the user guide for manual portal deployment with this application server followed? See <a href=\"https://help.liferay.com/hc/articles/360018425511\">Portal Best Practices</a>\n<ol type=\"a\">\n<li>See the Installation and Setup section of the user guide for the appropriate version of Liferay.</li>\n</ol>\n</li>\n</ol>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:20Z",
+  "dateModified": "2026-03-10T20:47:54Z",
+  "datePublished": "2018-10-19T02:51:00Z",
+  "description": "",
+  "externalReferenceCode": "360018145632",
+  "friendlyUrlPath": "before-opening-a-portal-deployment-ticket",
+  "id": 26100303,
+  "key": "26100301",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "knowledge-base",
+    "portal-6-0",
+    "migration-2",
+    "core-infrastructure",
+    "portal-6-1",
+    "cp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Support FAQ",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Before Opening a Portal Deployment Ticket",
+  "uuid": "19503ab6-194b-43f6-2549-d76b9c0a99ee"
+}

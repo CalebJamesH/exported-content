@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>The following issue may compromise the security of your Liferay Portal Enterprise Edition (EE) or Liferay Digital Experience Platform implementation. This notification provides a description of the latest security vulnerability and recommended actions for Liferay Subscribers.</p>\n<h2 align=\"left\">Affected Version/s</h2>\n<ul>\n<li>Liferay Digital Experience Platform 7.1</li>\n<li>Liferay Digital Experience Platform 7.0</li>\n<li>Liferay Portal 6.2 EE</li>\n<li>Liferay Portal 6.1 EE</li>\n</ul>\n<h2 align=\"left\">Vulnerability Information</h2>\n<ul>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360020526692\" target=\"_self\">LSV-383</a>: OS Command Injection in SendMailHook</li>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360020792971\" target=\"_self\">LSV-407</a>: Path traversal vulnerability in templates</li>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360020526952\" target=\"_self\">LSV-412</a>: Registered User RCE using JSON Deserialization</li>\n</ul>\n<h2 align=\"left\">Download</h2>\n<p>Please see the <a class=\"\" href=\"https://help.liferay.com/hc/articles/360018875952?utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz--D8luVBK17D8p54yKMIu72NcKmocz62Hno_0CawArwIVR6sB8zLc9EWqQbQc_4jKhHEccT\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">Help Center Security Vulnerability</a> page for more information on the vulnerabilities and affected versions for each issue.</p>\n<h2 align=\"left\">Additional Information - Disabling TLS 1.0</h2>\n<p>Liferay Portal 6.1 EE GA3 and 6.2 EE versions will have access to the fix for <a href=\"https://issues.liferay.com/browse/LPE-16580?utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz--D8luVBK17D8p54yKMIu72NcKmocz62Hno_0CawArwIVR6sB8zLc9EWqQbQc_4jKhHEccT\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">LPE-16580</a> (Outbound HTTPS connections do not honor https.protocols system property) in the upcoming fix packs. See further information <a href=\"https://help.liferay.com/hc/articles/360019140811?flash_digest=e35820fa4e0764f215f22f0260bd19420cff750b&amp;utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz--D8luVBK17D8p54yKMIu72NcKmocz62Hno_0CawArwIVR6sB8zLc9EWqQbQc_4jKhHEccT\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a>.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:31Z",
+  "dateModified": "2026-03-05T21:49:58Z",
+  "datePublished": "2018-12-18T16:37:00Z",
+  "description": "",
+  "externalReferenceCode": "360020854832",
+  "friendlyUrlPath": "liferay-security-alert-december-2018",
+  "id": 26101599,
+  "key": "26101597",
+  "keywords": [
+    "ja",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101599/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Security Alert: December 2018",
+  "uuid": "e24664f2-4f7b-b05b-14d6-39288cc32a6d"
+}

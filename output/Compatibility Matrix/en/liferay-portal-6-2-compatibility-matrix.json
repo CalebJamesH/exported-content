@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay Portal Enterprise Edition (EE) is only supported under the following configurations:</p>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 700px; float: left;\">\n<thead>\n<tr style=\"height: 21px;\">\n<td class=\"wysiwyg-text-align-left\" style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Type</strong></span></td>\n<td class=\"wysiwyg-text-align-left\" style=\"background-color: #f7f8f9; width: 388px; vertical-align: middle;\"><span class=\"wysiwyg-font-size-medium\"><strong>Certified</strong></span></td>\n<td class=\"wysiwyg-text-align-left\" style=\"background-color: #f7f8f9; width: 388px; vertical-align: middle;\"><span class=\"wysiwyg-font-size-medium\"><strong>Supported</strong></span></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Application Server</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">GlassFish v3.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">JBoss AS 7.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">JBoss EAP 6.0</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">JBoss EAP 6.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">JBoss EAP 6.4</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Tcat 7.0</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">tc Server 2.6</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Tomcat 7.0</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Weblogic 12c</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Websphere 8.5</font></span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">GlassFish 4.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 5.2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 6.2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 6.3</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Resin 4.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Tcat 6.4</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">tc Server 2.9</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">tc Server 3</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Tomcat 6.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Tomcat 8.0 (6.2 EE SP15+)</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Tomcat 8.5 (6.2 EE SP20+)***</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Weblogic 11g</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">WebSphere 7.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">WebSphere 8.0</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Database</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">DB2 10.1</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">MySQL 5.5</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle 11.2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 9.2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2012</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Sybase ASE 15.7</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">DB2 9.7</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">DB2 10.5</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">MariaDB 10.0</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">MySQL 5.6</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle 10.2</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle 11.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle 12c Release 1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle 19c</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">PostgreSQL 8.4</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">PostgreSQL 9.0</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">PostgreSQL 9.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">PostgreSQL 9.3</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">PostgreSQL 9.4</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">SQL Server 2005</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">SQL Server 2008</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">SQL Server 2008 R2</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">SQL Server 2014</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Sybase ASE 15.5</font></span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Operating System</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">CentOS 5</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">CentOS 6</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">IBM AIX 7.1</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise 5</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise 6</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Solaris 10</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Solaris 11</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2008</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2012</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">CentOS 7</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Debian 6.0</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">HP-UX 11i v3</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM AIX 6.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">openSUSE 13.1</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle Linux 6</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Red Hat Enterprise 7</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">SUSE Enterprise Linux 11</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Ubuntu 10</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Ubuntu 11</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Ubuntu 12</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Ubuntu 13</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Ubuntu 14.04</font></span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Desktop Browser*</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Chrome 28</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Firefox 22</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 8</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 9</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 10</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Safari 5</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Chrome (latest version)</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Firefox 20</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Firefox (latest version)</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 6*</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 7*</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 11</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Microsoft Edge</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Safari 6</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Safari 10</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Mobile Browser**</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Android Browser 4.3</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Safari 6.x</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Safari 7.x</font></span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Android Browser (latest version)</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Safari Browser (latest version)</font></span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">JDK</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM JDK 7</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle JDK 7</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle JRockit JDK 6</font></span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Azul Zulu JDK 8</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM JDK 6</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM JDK 8</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle JDK 6</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle JDK 8</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Oracle Open JDK 8</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">RedHat OpenJDK 8</font></span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Cloud Services</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\"> </td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">AWS Elastic Compute Cloud</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">AWS Relational Database Service</span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">AWS S3</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Azure Files</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Azure SQL Databases</font></span></li>\n<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Azure Virtual Machines</font></span></li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table>\n<p>For more information on configurations and limitations with Application Servers and Databases that are compatible with Liferay Portal, please refer to the <a href=\"https://help.liferay.com/hc/en-us/articles/360018183831\" target=\"_self\">Liferay User Guide</a>.</p>\n<p><strong><span class=\"wysiwyg-font-size-medium\">Certified vs. Supported Environments</span></strong><br><span class=\"wysiwyg-font-size-medium\">1. Certified: Products in the Certified list have undergone automated regression and certification testing by Liferay and are fully </span><span class=\"wysiwyg-font-size-medium\">supported with a Liferay Enterprise Subscription.</span><br><span class=\"wysiwyg-font-size-medium\">2. Supported: Products in the Supported list have undergone automated regression testing by Liferay and are fully supported with a Liferay Enterprise Subscription.</span></p>\n<p><strong><span class=\"wysiwyg-font-size-medium\">*Browser Support Exclusions:</span></strong><br><span class=\"wysiwyg-font-size-medium\">1. Versions of browsers that were released after a major Liferay version release have not been tested and support for these newer browser releases will be provided as commercially reasonable effort only and may be included in subsequent service releases at Liferay’s discretion.</span><br><span class=\"wysiwyg-font-size-medium\">2. Versions of browsers that were supported with an initial release of a Liferay version that have reached the end of their product lifecycle are no longer tested in subsequent service release and support for those older browser releases will be provided as a commercially reasonable effort only.</span><br><span class=\"wysiwyg-font-size-medium\">3. “Quirks mode” for all browsers is not supported.</span><br><span class=\"wysiwyg-font-size-medium\">4. Internet Explorer Compatibility modes for all relevant versions are not supported.</span><br><span class=\"wysiwyg-font-size-medium\">5. Limited support shall be provided for Internet Explorer 6 and 7 on a case-by-case basis. Internet Explorer 6 and 7’s performance limitations prohibit them from running the latest Internet technologies effectively without experiencing performance degradation.</span></p>\n<p><strong><span class=\"wysiwyg-font-size-medium\">**Mobile Browser Support Exclusions:</span></strong><br><span class=\"wysiwyg-font-size-medium\">1. Liferay will support access to information (e.g. reading content and navigation through pages), navigation menus, and basic responsiveness of modules for the latest versions of mobile browsers only. For more information on Liferay’s mobile support policy, please refer to the <a href=\"/w/support-faq-liferay-portal#mobile-support\" target=\"_self\">Liferay Help Center</a>. </span></p>\n<p><strong><span class=\"wysiwyg-font-size-medium\">***Tomcat 8.5 Support Exclusions:</span></strong><br><span class=\"wysiwyg-font-size-medium\">1. Tomcat 8.5 does not support Liferay Social Office and Liferay Chat because a required API was removed.</span><br><span class=\"wysiwyg-font-size-medium\">2. Tomcat 8.5 is only supported with JDK 8. </span></p>\n<p><span class=\"wysiwyg-font-size-small\">Liferay 6.2 Compatibility Matrix: Updated 03/30/2023</span></p>\n<p><a href=\"https://www.liferay.com/documents/10182/246659966/Liferay+Portal+6.2+EE+Compatibility+Matrix.pdf/7412fc1b-7652-d62c-6794-8ff0ed669e87?t=1584748573500\" target=\"_self\">Download PDF</a></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176948"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:34:51Z",
+  "dateModified": "2026-03-26T00:02:20Z",
+  "datePublished": "2018-10-01T17:43:00Z",
+  "description": "",
+  "externalReferenceCode": "360016362092",
+  "friendlyUrlPath": "liferay-portal-6-2-compatibility-matrix",
+  "id": 26138401,
+  "key": "26138399",
+  "keywords": [
+    "ja",
+    "supportability",
+    "portal-6-2",
+    "zh-cn"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26138401/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494732,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176948,
+      "taxonomyCategoryName": "Liferay Portal Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "41c34289-11dd-751b-1ed8-cc90e0f0c2ad",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Portal 6.2 Compatibility Matrix",
+  "uuid": "a9fad234-3ac8-79ed-0827-585bf935437b"
+}

@@ -1,0 +1,122 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><span style=\"font-weight: 400;\">Published: March 31, 2022</span><br />\n<span style=\"font-weight: 400;\">Updated: April 5, 2022 (edited to clarify affected versions and mitigation details)</span></aside>\n\n<h2 id=\"h_01J01R0PQV2XVZYTSJQFJRTSCP\"><strong>Vulnerability Summary</strong></h2>\n\n<p>On Mar 31, 2022, critical vulnerabilities <a href=\"https://tanzu.vmware.com/security/cve-2022-22963\" target=\"_self\">CVE-2022-22963</a> and <a href=\"https://tanzu.vmware.com/security/cve-2022-22965\" target=\"_self\">CVE-2022-22965</a> were published in the Spring Framework versions 5.3.17 and older. Spring is a project that develops and maintains libraries that are often used by Java-based applications.</p>\n\n<h2 id=\"h_01J01R0PQW59ERYV90P4S12J76\"><strong>What is the concern?</strong></h2>\n\n<p>The vulnerabilities outlined above can be used via HTTP request to trigger remote code execution. Liferay recommends all customers take immediate steps to address the issues.</p>\n\n<h2 id=\"h_01J01R0PQWSAJJC1VXJK0DT07Q\"><strong>How is Liferay impacted?</strong></h2>\n\n<p>While Liferay DXP and Liferay Portal contain the above-mentioned libraries there is no known way to exploit the vulnerabilities. Customers who are working with Liferay and have not deployed customizations will have no known ways to be affected by the exploit. However, customers who have written customizations that use the Spring MVC, Spring Webflux or Spring Cloud frameworks should review their code to ensure they are not exposed.</p>\n\n<p>Below is a table outlining the affected versions of Liferay DXP and Portal as well as available patches for remediation:</p>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 696px; float: left; height: 154px;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 221.422px; height: 44px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Affected Version</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 222.438px; height: 44px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Spring Web MVC Framework Affected Version</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 218.141px; height: 44px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Patched Version</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr style=\"height: 44px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 222.438px; height: 44px; vertical-align: middle;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">DXP 7.4</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 222.438px; height: 44px; vertical-align: middle;\">\n\t\t\t<p><font size=\"2\">5.2.10</font></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 218.141px; vertical-align: top; height: 44px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> 5.2.20<br />\n\t\t\t(Scheduled for U19) </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 221.422px; vertical-align: top; height: 22px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 222.438px; vertical-align: top; height: 22px;\">\n\t\t\t<p><font size=\"2\">5.2.10</font></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 218.141px; vertical-align: top; height: 22px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.2.20</font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 221.422px; vertical-align: top; height: 22px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">DXP 7.0, 7.1, 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 222.438px; vertical-align: top; height: 22px;\">\n\t\t\t<p><font size=\"2\">4.3.30</font></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 218.141px; vertical-align: top; height: 22px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.3.30.LIFERAY-PATCHED-1</font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 221.422px; vertical-align: top; height: 22px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Portal 6.1, 6.2</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 222.438px; vertical-align: top; height: 22px;\">\n\t\t\t<p><font size=\"2\">3.0.7</font></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 218.141px; vertical-align: top; height: 22px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">3.0.7.LIFERAY.PATCHED-1</font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<h2 id=\"h_01J01R0PQW1227ZSSDN6FJ6BQ1\"><strong>How can I check and mitigate my exposure?</strong></h2>\n\n<p>For Liferay installations that include custom code, please refer to the following announcements:</p>\n\n<ul>\n\t<li><a href=\"https://tanzu.vmware.com/security/cve-2022-22963\" target=\"_self\">CVE-2022-22963</a>: Remote code execution in Spring Cloud Function by malicious Spring Expression</li>\n\t<li><a href=\"https://tanzu.vmware.com/security/cve-2022-22965\" target=\"_self\">CVE-2022-22965</a>: Spring Framework RCE via Data Binding on JDK 9+</li>\n\t<li><a href=\"https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement\" target=\"_self\">Spring Organizational Announcement (including temporary work around)</a></li>\n</ul>\n\n<p>Liferay recommends any customer with custom plugins or in-flight extensions that leverage the Spring frameworks in question, to review the versions currently in use and, if necessary, upgrade their Spring libraries to patched versions.</p>\n\n<h2 id=\"h_01J01R0PQWDB8VA4ZYEX0AME8A\"><strong>Will there be a formal fix for this issue?</strong></h2>\n\n<p>Spring has released Spring Framework versions <strong>5.3.18</strong> and <strong>5.2.20</strong> which addresses this vulnerability. Any plugins that are deemed to be exposed should be updated to use the patched versions of the aforementioned Spring libraries.</p>\n\n<p>Emergency hotfixes of the patched or updated Spring Web MVC libraries are available now upon request. You can request a hotfix by submitting a support ticket <a href=\"https://help.liferay.com/hc/requests/new\" target=\"_self\"><strong>HERE</strong></a>.&nbsp;</p>\n\n<p>For unreleased versions of Liferay DXP or Liferay Portal which are in active service life, Liferay has patched or updated the Spring Web MVC library to be released in a future fix pack/update.</p>\n\n<h2 id=\"h_01J01R0PQW8XAT8FQCXFWJWEMH\"><strong>What if I am a Liferay SaaS customer?</strong></h2>\n\n<p>Customers on Liferay SaaS are recommended to apply the steps above to mitigate vulnerabilities on affected versions.</p>\n\n<h2 id=\"h_01J01R0PQW88N05BJ9MHX8EKT7\"><strong>Questions?</strong></h2>\n\n<p>Please contact Liferay Support or your Customer Success Manager for additional information.</p>\n\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:26Z",
+  "dateModified": "2026-03-05T21:50:20Z",
+  "datePublished": "2022-03-31T16:17:00Z",
+  "description": "",
+  "externalReferenceCode": "5202695113357",
+  "friendlyUrlPath": "spring4shell-and-spring-cloud-security-advisory",
+  "id": 26108134,
+  "key": "26108132",
+  "keywords": [
+    "ja"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108134/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Spring4Shell and Spring Cloud Security Advisory",
+  "uuid": "dcc87cda-cefd-55af-30a6-c2ed70e8dda9"
+}

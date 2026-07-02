@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146198/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146198/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146198"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n\n<p><span style=\"font-weight: 400;\"><strong>Published: September 08, 2022</strong></span></p>\n<p><span style=\"font-weight: 400;\"><strong>Update: Migrations can now be performed via restart. Please do so before Nov 10, 2022.</strong></span></p>\n<h2 id=\"h_01HYXHF3NQ2YPKDD1CG0JH1BME\">Summary</h2>\n<p>At Liferay, we take our Cloud customer's uptime and availability very seriously. This is why we are committed to a <span style=\"font-weight: 400;\">Monthly Infrastructure Availability (“MIA”) of 99.95% or greater. Liferay works with cloud providers to serve as our Cloud back-end and leverage their tools to ensure High Availability. </span>In our conversations with our cloud provider, we've been informed that our current High Availability setup (previously handled by failover replicas) has been deprecated and will soon be shut down. In its place, our provider offers High Availability via regional persistent disks that synchronously replicate data between zones. Because of this change, Liferay is working to migrate our Cloud customer's databases to the new system.</p>\n<h2 id=\"h_01HYXHF3NR3SDR3N5ENB29D4T3\">Benefits</h2>\n<p><span style=\"font-weight: 400;\">Regional persistent disk provides synchronous replication of data between two zones in a region while </span><em><span style=\"font-weight: 400;\">failover replica</span></em><span style=\"font-weight: 400;\"> provides semi synchronous replication. In the case of a failover event, the semi synchronous failover replica has additional latency because Cloud SQL waits for the failover replica to catch up to the primary instance’s state. According to our cloud provider, the </span><em><span style=\"font-weight: 400;\">regional HA mode</span></em><span style=\"font-weight: 400;\"> is 2.5 times faster than on average when compared to the replica mode strategy.</span></p>\n<p><span style=\"font-weight: 400;\">An added benefit of </span><em><span style=\"font-weight: 400;\">persistent disks</span></em><span style=\"font-weight: 400;\"> is the high-performance block storage for workload. Persistent disk performance scales with the size of the disk and with the number of vCPUs on your VM instance. </span></p>\n<p><span style=\"font-weight: 400;\">Aside from minimizing latency, a key factor for upgrading from the </span><em><span style=\"font-weight: 400;\">failover replica</span></em><span style=\"font-weight: 400;\"> mode is that our cloud provider will eventually deprecate the failover replica mode. We are in close contact with their team and they will support us during this transition.</span></p>\n<h2 id=\"h_01HYXHF3NRYSN2S8049YNA7MNT\">Details</h2>\n<p>For many customers, this process will be seamless. But for others, some additional steps will be required. All cloud environments will fall under one of the following three categories and will have corresponding actions that must be taken for the migration.</p>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: As the migration process does handle data, please be sure to perform a backup prior to restarting the service.</span><br><br><span class=\"wysiwyg-font-size-large\">The data migration process will involve a short downtime of 30min-1hr (depending on the database size) following the service restart.  Please plan accordingly. </span><br><br><span class=\"wysiwyg-font-size-large\">Please also be aware that, though the steps mention restarting the database service, a new deployment can also trigger the migration.</span></aside>\n<h3 id=\"h_01HYXHF3NR9KC8VGQQJSEBJN1F\"><strong>Category 1: Database Service Image Version ≥ 4.2.1</strong></h3>\n<p>Environments that have a database service image version of 4.2.1 or higher have the fewest steps and the process will be relatively seamless. Our team will be initiating the migration in the background. Only one step will be required to complete the process after our team has initiated the migration.</p>\n<p style=\"margin-left: 25px;\"><span class=\"wysiwyg-underline\"><strong>Steps:</strong></span></p>\n<ol>\n<li>Restart the database service</li>\n</ol>\n<h3 id=\"h_01HYXHF3NRW4AWFDBFNW36Y0CT\"><strong>Category 2: Database Service Image Version ≥ 4.0.0 but &lt; 4.2.1</strong></h3>\n<p>Environments that have a database service image version between 4.0.0 and 4.2.1 have one additional step then the process is the same as above.</p>\n<p style=\"margin-left: 25px;\"><span class=\"wysiwyg-underline\"><strong>Steps:</strong></span></p>\n<ol>\n<li>Update the database service version to 4.2.1 or higher</li>\n<li>Restart the database service</li>\n</ol>\n<h3 id=\"h_01HYXHF3NR9HB2XYAEMHXXFNNQ\"><strong>Category 3: Database Service Image Version &lt; 4.0.0</strong></h3>\n<p>Environments that have a database service image version below 4.0.0 have one further step then it will look the same as above.</p>\n<p style=\"margin-left: 25px;\"><span class=\"wysiwyg-underline\"><strong>Steps:</strong></span></p>\n<ol>\n<li>Upgrade all services from stack 3.x to stack 4.x</li>\n<li>Update the database service version to 4.2.1 or higher</li>\n<li>Restart the database service</li>\n</ol>\n<h2 id=\"h_01HYXHF3NRV0XS38RERBJ690ZF\">Timeline and Additional Instructions</h2>\n<aside class=\"alert alert-info\">\n<p><span class=\"wysiwyg-font-size-large\">Restarts can be performed on or after <span class=\"wysiwyg-underline\">September 30, 2022.</span></span></p>\n<p><span class=\"wysiwyg-font-size-large\">In order for environments to continue to function, environments must be updated to the regional HA mode by <span class=\"wysiwyg-underline\">November 10, 2022</span>.</span></p>\n</aside>\n<p><span style=\"font-weight: 400;\">This means that your </span><strong style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;\">database service</strong><span style=\"font-weight: 400;\"> must be on version 4.2.1+ and you must have performed a database restart by then.</span></p>\n<p>For customer environments that fall under Category 1 (≥4.2.1), the restart must be performed by the above date and no interaction with Liferay will be necessary.</p>\n<p>For customers whose environments fall under the other two categories, Liferay will reach out to the appropriate customer contact in order to make sure the requirements are clear and provide assistance where possible.</p>\n<h2 id=\"h_01HYXHF3NRDM1PNVZG0KK1YSXQ\">Additional Information</h2>\n<p><span style=\"font-weight: 400;\">Liferay will be communicating this information via multiple channels leading up to the dates mentioned above to ensure that the relevant parties are notified of the changes in advance.</span></p>\n<p><span style=\"font-weight: 400;\">As always, if you encounter any issues or have questions about these changes, please </span><a href=\"https://help.liferay.com/hc/requests/new\" target=\"_self\" rel=\"undefined\">submit a ticket</a><span style=\"font-weight: 400;\"> and Liferay Support will be happy to assist.</span></p>\n<p><a href=\"https://support.liferay.com/incidents-and-uptime-status\" target=\"_self\"><span style=\"font-weight: 400;\">Incidents and Uptime Status</span></a></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:43:31Z",
+  "dateModified": "2025-11-13T23:40:08Z",
+  "datePublished": "2022-07-22T18:39:00Z",
+  "description": "",
+  "externalReferenceCode": "7877823267213",
+  "friendlyUrlPath": "cloud-database-mode-migration-announcement",
+  "id": 26146198,
+  "key": "26146096",
+  "keywords": [
+    "liferay-cloud",
+    "liferay-paas",
+    "dxp-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146198/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Cloud Database Mode Migration Announcement",
+  "uuid": "4e3097df-7354-2cd9-5d43-36835d0223d9"
+}

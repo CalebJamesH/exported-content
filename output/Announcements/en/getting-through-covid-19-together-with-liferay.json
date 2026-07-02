@@ -1,0 +1,133 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108062/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108062/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108062"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><strong><em>With the global health and economic situation developing quickly, here is an update on how Liferay is responding to the crisis from Bryan Cheung - CEO.<br></em></strong></p>\n<p>In one of our company-wide meetings last year, I talked about how Liferay was born in the aftermath of the dotcom bubble bursting, and then pivoted to a subscription-driven business in the wake of the 2008 global financial crisis. I mused about what 2020 might have in store, but I admit I would have never imagined this.</p>\n<p>As we respond to the severity of the COVID-19 pandemic, our care and concern goes beyond our local communities or the impacts to our business. We here at Liferay truly wish all of you to stay healthy and safe.</p>\n<p>Although the pandemic has changed external circumstances, it will not affect our internal motivations and our dedication to helping enterprises build digital solutions to tackle their business challenges. We will continue to monitor the pandemic very closely and are rapidly updating processes and policies as things develop.</p>\n<p>So here are the steps Liferay is currently taking to do so:</p>\n<ol>\n<li>Liferay has always had infrastructure in place that allows our staff to work remotely, and we are fully equipped to maintain employee, partner, and customer support throughout this global challenge. We’re making a collective effort to slow the spread of the virus by working from home for the foreseeable future. Although our teams may not be able to physically enter into an office, this does not affect our commitment to serve our customers.<br><br><span style=\"font-weight: 400;\">Our technical support services are not affected by any change in work locations or office closures, and our day-to-day business and support of customer projects will not be interrupted by any of these changes. In fact, our Support teams are providing free 3-month activation keys to system administrators so that they can start new instances to expand their sites’ capacities quickly and prioritize support issues. </span><span style=\"font-weight: 400;\">For example, one of our Finnish customers in the healthcare industry has experienced a 130x surge in site traffic as a direct result of the pandemic and we have provided free subscriptions to the customer in order to empower their employees to respond more reliably to the Finnish public.<br><br></span>\n</li>\n<li>Even though our employees are all working from home, they are still actively finding ways to serve and provide aid in their communities.<br><br><span style=\"font-weight: 400;\">We provide our employees hours to volunteer every year through our Employee Volunteer Program (EVP), and many have been using their hours to sew face masks, aid seniors with their grocery shopping, and volunteering at various food banks.<br><br></span>\n</li>\n<li>We continue to monitor the current situation to evaluate our events schedule. Our team has already started working on moving many events online and free to the public. For example, our <a href=\"https://www.liferay.com/de/web/events-ldsf-dach?utm_source=facebook&amp;utm_medium=social&amp;utm_content=ldsf%202020%20dach&amp;utm_campaign=7010g000000nHhd&amp;fbclid=IwAR2ItdK9vUw4yNMHjzC5nNC2jb0S8b5bDBuLq_5uLDOoV36NVTTvn5yZtlc\" target=\"_self\">Liferay Digital Solutions Forum</a> will be hosted virtually. Although the majority of the event will be conducted in German, there will be a few sessions on B2B commerce, cloud strategies, and digital customer experience that will be in English.<br><br><span style=\"font-weight: 400;\">In the meantime, we are also producing a variety of digital content for anyone to access at home. We’re excited to announce <strong>Liferay@Home</strong>, a series of webinars to help empower users to make a bigger and quicker impact through Liferay solutions that will launch mid-April. To view all upcoming webinars and digital events, visit </span><a href=\"https://www.liferay.com/events\"><span style=\"font-weight: 400;\">https://www.liferay.com/events</span></a><span style=\"font-weight: 400;\">. </span>\n</li>\n</ol>\n<p>The situation is changing rapidly, and we continue to monitor the latest information so we can anticipate and respond appropriately to needs as they arise. If you have questions or concerns, do not hesitate to reach out to your Liferay Account Manager or Sales representative. These are strange times indeed, but I’m confident that we are going to get through this together.</p>\n<p class=\"wysiwyg-text-align-right\">Bryan Cheung<br>Chief Executive Officer</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:32Z",
+  "dateModified": "2025-11-13T23:40:08Z",
+  "datePublished": "2020-04-17T20:57:00Z",
+  "description": "",
+  "externalReferenceCode": "360042043192",
+  "friendlyUrlPath": "getting-through-covid-19-together-with-liferay",
+  "id": 26108062,
+  "key": "26108060",
+  "keywords": [
+    "ja",
+    "mt",
+    "covid-19",
+    "coronavirus"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108062/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Getting through COVID-19 Together with Liferay",
+  "uuid": "e5635a58-92d9-c6ef-db4e-196428571c95"
+}

@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101297/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101297/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101297"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h4 id=\"h_01JP3WPMA9WQ1241KCVJ4QM8VD\">Published: March 25, 2025</h4>\n<h2 id=\"h_01JP33EY33RAE6VZVM331BQ0WA\">Summary</h2>\n<p>The importance of the Backup service can easily fade into the background until the critical moment when data needs to be restored. If you've ever experienced a data integrity issue, you know how important it is to have an up-to-date backup and a well-functioning backup system. Today, Liferay Cloud's Backup service relies on manual builds and deployments to update the service image version. While this provides flexibility, it can lead to projects running outdated Backup versions, potentially missing out on critical fixes, performance enhancements, and security updates.<br>In order to keep the Backup service performing at its peak, we're introducing a new system that will automatically update it to a minimum version defined by Liferay Cloud.</p>\n<h2 id=\"h_01JP33FJ62R3R0KYNW4Q8PCT1G\">Details</h2>\n<p>Liferay Cloud will set a minimum required Backup service version from time to time. New deployments containing a Backup version below the minimum version will automatically be overridden. Existing deployments containing a Backup version below the minimum version will automatically be updated during a designated maintenance window. You can always deploy a different Backup version, provided it is equal to or higher than the minimum version.</p>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: Updates to existing deployments may cause disruptions to your backup operations. If this happens, the backup will show as failed in the Console. The next scheduled backup should initiate normally or you can restart the backup manually.</span></aside>\n<h2 id=\"h_01JP33GDM7TQB53Q47VYN4YFCA\">Benefits</h2>\n<ul>\n<li>\n<strong>Automatic Updates</strong>: Liferay Cloud will automatically update your Backup service to the latest minimum version, removing the need to manually manage your Backup service version.</li>\n<li>\n<strong>Enhanced Reliability</strong>: By automatically upgrading to the minimum version, you can rest easy knowing that your Backup service will always get critical fixes and security updates from Liferay Cloud.</li>\n<li>\n<strong>Rollback Flexibility</strong>: If there is a conflict with your specific environment, let us know. Liferay can adjust the minimum version per individual environment in the event of an issue. Please <a href=\"https://help.liferay.com/hc/requests/new\">submit a ticket</a> if you experience an issue with the minimum version and need it reverted.</li>\n</ul>\n<h2 id=\"h_01JP33H56Z02W0T2P5P7V3GWPM\">Schedule</h2>\n<p>This feature will be progressively rolled out to customers in two phases. Your environment can be updated at any time between the dates listed below.</p>\n<h3 id=\"h_01JP37VJHKM548RY80PK77QJQJ\">Phase 1 - May 13, 2025 to June 03, 2025</h3>\n<ul>\n<li>New deployments containing a Backup service image below the minimum version will automatically be overridden with the minimum version.</li>\n</ul>\n<h3 id=\"h_01JP37VNQ655YY7AZ7PZFDY2WS\">Phase 2 - June 05, 2025 to June 26, 2025.</h3>\n<ul>\n<li>Liferay will initiate the deployment of the minimum version to all environments containing a Backup service image below the minimum version.</li>\n</ul>\n<h2 id=\"h_01JP33HV36HH5B0VZ699Q89CB0\">Additional Information</h2>\n<p>If you encounter any issues, please <a href=\"https://help.liferay.com/hc/requests/new\">submit a ticket</a> and Liferay Support will be happy to assist.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:13Z",
+  "dateModified": "2025-11-13T23:40:07Z",
+  "datePublished": "2025-01-22T18:06:00Z",
+  "description": "<p>In order to keep the Backup service performing at its peak, Liferay is introducing a new system that will automatically update the Backup service to a minimum version defined by Liferay Cloud. Click for more details.</p>",
+  "externalReferenceCode": "33693411920013",
+  "friendlyUrlPath": "backup-service-update-model",
+  "id": 26101297,
+  "key": "26101195",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101297/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Backup Service Update Model",
+  "uuid": "d5344826-2128-9000-9115-be465e21d9a4"
+}

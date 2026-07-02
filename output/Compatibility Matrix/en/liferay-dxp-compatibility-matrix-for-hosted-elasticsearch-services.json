@@ -1,0 +1,137 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><strong>Table of Contents</strong></p>\n\n<ul>\n\t<li><a href=\"#general-compatibility-note\" target=\"_self\">General Compatibility Note</a></li>\n\t<li><a href=\"#Compatibility-Matrix\" target=\"_self\">Compatibility Matrix</a></li>\n\t<li><a href=\"#explanation\" target=\"_self\">Explanation</a></li>\n\t<li><a href=\"#Related-Articles\" target=\"_self\">Related Articles</a></li>\n</ul>\n\n<h2 id=\"general-compatibility-note\"><a href=\"#general-compatibility-note\">General Compatibility Note</a></h2>\n\n<p>The purpose of this article is to clarify the compatibility of Liferay DXP and the various hosted Elasticsearch options available on the market.</p>\n\n<p>Liferay as an OEM partner of <a href=\"https://www.elastic.co\">Elastic</a> aims to provide compatibility with Elastic's own Elasticsearch releases and services. Liferay DXP is not compatible with any other Elasticsearch provider or service.</p>\n\n<h2 id=\"Compatibility-Matrix\"><a href=\"#Compatibility-Matrix\">Compatibility Matrix</a></h2>\n\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Service/Cloud Provider Name</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.3-7.4</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.2</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.1</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.0</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><strong><a href=\"https://www.elastic.co/cloud\">Elasticsearch Service on Elastic Cloud*</a></strong></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><strong><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.3\">Yes**</a></strong></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.0-7.2\">Yes** (with Liferay restrictions)</a></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.0-7.2\">Yes** (with Liferay restrictions)</a></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.0-7.2\">Yes** (with Liferay restrictions)</a></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://aiven.io/elasticsearch\">Aiven for Elasticsearch</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://bonsai.io/\">Bonsai Hosted Elasticsearch</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://www.compose.com/databases/elasticsearch\">Compose Elasticsearch Hosting</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://www.ibm.com/cloud/databases-for-elasticsearch\">IBM Cloud Databases for Elasticsearch</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">No</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>* Also applies to Elastic Cloud subscriptions billed through the marketplace of the available cloud providers (<a href=\"https://aws.amazon.com/marketplace/pp/Elasticsearch-Inc-Elasticsearch-Service-on-Elastic/B01N6YCISK\">Amazon Web Services (AWS)</a>, <a href=\"https://console.cloud.google.com/marketplace/product/endpoints/elasticsearch-service.gcpmarketplace.elastic.co\">Google Cloud Platform (GCP)</a>, <a href=\"https://azuremarketplace.microsoft.com/en-us/marketplace/apps/elastic.elasticsearch_service?\">Microsoft Azure</a>) as these Elastic Cloud deployments are managed through <a href=\"https://cloud.elastic.co/\">Elastic's cloud console</a>.</p>\n\n<p>** There are additional <a href=\"https://www.elastic.co/guide/en/cloud/current/ec-restrictions.html\">restrictions and known issues</a> with Elastic Cloud to take into consideration when planning to host your Elastic Stack for Liferay DXP on Elastic Cloud. Please consult with the available <a href=\"https://www.elastic.co/guide/en/cloud/current/ec-add-user-settings.html#ec-es-elasticsearch-settings\">user settings</a> for the Elasticsearch Service and check <a href=\"https://learn.liferay.com/dxp/7.x/en/using-search/installing-and-upgrading-a-search-engine/elasticsearch.html\" rel=\"noopener\" target=\"_blank\">Liferay DXP documentation</a> to verify there are no conflicts between the Elasticsearch configuration or Elasticsearch-based features available in Elastic Cloud and those required by Liferay DXP. Some Liferay DXP use-cases may require configuration or features not available through Elastic Cloud.</p>\n\n<h2 id=\"explanation\"><a href=\"#explanation\">Explanation</a></h2>\n\n<p>Why is Elastic Cloud the only service compatible with Liferay DXP?</p>\n\n<ul>\n\t<li><strong>Feature disparity</strong>: Amazon's Elasticsearch service is built on <a href=\"https://opendistro.github.io/for-elasticsearch/\">Amazon's OpenSearch (previously Open Distro for Elasticsearch)</a>, a fork of the Open Source (OSS) version of Elastic's Elasticsearch 7.10 which does not include Elastic's X-Pack modules (<a href=\"https://www.elastic.co/subscriptions\">https://www.elastic.co/subscriptions</a>). This means, security and other (commercial) Elasticsearch features that Liferay DXP integrates with (like <a href=\"https://learn.liferay.com/dxp/7.x/en/using-search/liferay-enterprise-search/monitoring-elasticsearch.html\" target=\"_self\">Monitoring</a> -&gt; Kibana, or <a href=\"https://learn.liferay.com/dxp/7.x/en/using-search/liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.html\" target=\"_self\">Cross-Cluster Replication</a>) cannot be used with AWS's Elasticsearch service. In addition, Liferay DXP does not provide any vendor-specific integrations for security other than for Elastic's X-Pack Security. This feature incompatibility may also exist in other vendors' Elasticsearch services, therefore Liferay's connectors and features integrating with Elasticsearch are only tested with the binaries and services provided directly by Elastic.</li>\n\t<li><strong>Licensing restrictions</strong>: <a href=\"https://github.com/elastic/elasticsearch/tree/master/x-pack\">Elastic's X-Pack modules</a> are subject to the <a href=\"https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE.txt\">Elastic License</a> which prohibits cloud providers from building SaaS offerings using these products. Together with the feature disparity, this restriction significantly governs Liferay DXP's compatibility with Elasticsearch services.</li>\n\t<li><strong>Technical limitations</strong>:\n\t<ul>\n\t\t<li>Transport level connections are not supported in AWS and many other Elasticsearch services. This is required by Liferay DXP 7.2 and prior versions as they communicate with Elasticsearch over the Transport protocol only. Note: The Elasticsearch 7 connector that is bundled with Liferay DXP 7.3 and 7.4 by default uses the <a href=\"https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.9/java-rest-overview.html\">Java REST Client</a> which communicates with Elasticsearch over HTTP.</li>\n\t\t<li>JDK requirement for DXP 7.2 and prior versions: Elasticsearch and Liferay DXP must use the same Java version and distribution. This is because the <a href=\"https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html\">Transport Client</a> (used in these Liferay DXP version) relies on Java serialization. Note: The REST-client in Liferay DXP 7.3 and 7.4 uses HTTP. This communication protocol does not require Java serialization between DXP and Elasticsearch. Therefore, Liferay DXP 7.3 and 7.4 deployments are able run their Elasticsearch nodes on different JDKs.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2 id=\"Related-Articles\"><a href=\"#Related-Articles\">Related Articles</a></h2>\n\n<ul>\n\t<li><a href=\"https://help.liferay.com/hc/sections/360002103292\" rel=\"undefined\" target=\"_self\">Liferay DXP Compatibility Matrix</a></li>\n\t<li><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud\" target=\"_self\">Liferay DXP Compatibility with Elasticsearch Service on Elastic Cloud</a></li>\n\t<li><a href=\"https://help.liferay.com/hc/en-us/articles/360046478452\" target=\"_self\">Liferay DXP Elasticsearch Connectors: Technical Data Sheet </a></li>\n</ul>\n\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176952"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:22:19Z",
+  "dateModified": "2026-03-25T23:54:42Z",
+  "datePublished": "2020-10-02T09:48:00Z",
+  "description": "",
+  "externalReferenceCode": "360050021872",
+  "friendlyUrlPath": "liferay-dxp-compatibility-matrix-for-hosted-elasticsearch-services",
+  "id": 26133330,
+  "key": "26133328",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-2",
+    "dxp-7-3",
+    "dxp-7-1",
+    "dxp-7-0",
+    "zh-cn",
+    "elasticsearch",
+    "search",
+    "elastic-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27492454,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176952,
+      "taxonomyCategoryName": "Liferay DXP Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "7fb6a48c-585c-075f-5ad7-28fe4cd53a2d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXP Compatibility Matrix for Hosted Elasticsearch Services",
+  "uuid": "3884d4b0-4820-4931-d0d7-33a71ddf861e"
+}

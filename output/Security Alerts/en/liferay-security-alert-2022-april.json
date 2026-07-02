@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span>The following issue may compromise the security of your Liferay Digital Experience Platform (DXP) implementation. This notification provides a description of the latest security vulnerability and recommended actions for Liferay Subscribers.</span></p>\n<h2 align=\"left\">Affected Version/s</h2>\n<ul>\n<li>Liferay Digital Experience Platform 7.4</li>\n<li>Liferay Digital Experience Platform 7.3</li>\n<li>Liferay Digital Experience Platform 7.2</li>\n<li>Liferay Digital Experience Platform 7.1</li>\n<li>Liferay Digital Experience Platform 7.0</li>\n</ul>\n<h2 align=\"left\">Vulnerability Information</h2>\n<ul>\n<li>\n<a href=\"https://help.liferay.com/hc/articles/5327046151949\" target=\"_self\">LSV-980</a>: LDAP credentials exposed in URL</li>\n</ul>\n<h2 align=\"left\">Download</h2>\n<p>The listed vulnerabilities will be fixed under DXP Security Fix Pack: 202201. DXP Security Fix Packs require the latest released Fix Pack or can be built on a specific Fix Pack level<span> </span><a href=\"https://help.liferay.com/hc/articles/360035038331-DXP-Security-Fix-Packs#h_be07a4b8-d1fe-4b98-ad08-2a6af0797283\" target=\"_blank\" rel=\"noopener\" data-saferedirecturl=\"https://www.google.com/url?q=https://discover.liferay.com/e2t/tc/VX9Rly1Y5G7MW64Q2j0679HSqW6TYKFS49CJJTN1YBnvN3lGnpV1-WJV7CgPq3W23xcXc1Tq0MfW7ghjj_6vqffsN40Yt0cHCbfVW1gGF-F5yFxl3W66GqcJ5LyHWKW4pcsJR5W_hlvW7v60gc81vPYfN5H_Ydgmp4JhW5bX9sm9gGHG-W6Ffx2V5bzx6gW9bCmsw5bhSmXW3_Zfrp5yHzSPW1LhL4Q7Mtc_bW3NVxgT7x84W5W6WYs0M6xZrj_W377Ph12Q0DWYW8PVTVJ56cGBqW724gfT5sjRqZVq8WyK22HkJ9W2yhLQk8CTxmHW3NcKfM8Vf3vsW79bYDS5g-GDQW8nt9S_4CvS9qN6M4BPFV0420W8pbFSw34sWNxW8bd5z91NDYy13mfq1&amp;source=gmail&amp;ust=1649264831845000&amp;usg=AOvVaw2QuuqOrBebJFLtYBjv3jdN\">upon request</a>. Please read the<span> </span><a href=\"https://help.liferay.com/hc/articles/360035038331-DXP-Security-Fix-Packs\" target=\"_blank\" rel=\"noopener\" data-saferedirecturl=\"https://www.google.com/url?q=https://discover.liferay.com/e2t/tc/VX9Rly1Y5G7MW64Q2j0679HSqW6TYKFS49CJJTN1YBnv93lGmQV1-WJV7CgDV7V5nLJB2Qg1QgW2tZNs_1BLMTfW5m5-Kr2_95XPN1CzvvHVTB0QW73hvFr89LhNsW3kQrqZ8bBtDLVJrc_m8zqCPzW4rvpV3395qjyVPs7Y392CrG1W8Mt-n3867drZW1SJWz59fk-CsVdcLVH3zY0w1W17njnB1F1hS7W6yWtcY6w7lhrV9Ylb44f6s9_V1YV-D8qzDYZW31bBtS7g9t61TDQCr1ZVK9-W7qlBf45Y55kYW4yqqgl3X69dXW4mXjXg54Wqg1VZky1v3rTpd439HY1&amp;source=gmail&amp;ust=1649264831845000&amp;usg=AOvVaw2ZHxTJ0SZbVKLXxNiZ1Y4v\">DXP Security Fix Packs</a><span> </span>article for more information and installation instructions.</p>\n<p>For more information on the vulnerability and affected versions for the issue, please visit the<span> </span><a href=\"https://help.liferay.com/hc/articles/360018875952\" target=\"_blank\" rel=\"noopener\" data-saferedirecturl=\"https://www.google.com/url?q=https://discover.liferay.com/e2t/tc/VX9Rly1Y5G7MW64Q2j0679HSqW6TYKFS49CJJTN1YBnv93lGmQV1-WJV7CgG4-W3R8v_K4ndZ_BW6gHbkf91FsK6W5KbdZ98fD475W6h2R4710QbgxW5JnQ0R11RZm9W6-Z4VT4x_ySNW4vVzyn31_xRfW7kWGyZ6HS3sgW2h2zLN3JhxTHW133x9z8g6p3jW2vT_P03dQWBJW5F2c3f8XgPCfVdVBc39475dkW2yjBYB6S-1dnW3Tt0Z050gnJWW8WLF8g76_t0QW7V2JBq63DqM8VflJDx2tZdGtW7m8kFF5yTbmJVwq8gw4HwsMbW9gJs_f8PrPStW3Rrcts93Bjdy3jZT1&amp;source=gmail&amp;ust=1649264831845000&amp;usg=AOvVaw0OWeWH8oroW1VKUNQEwcy9\">Help Center Security Advisories</a><span> </span>page.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:35Z",
+  "dateModified": "2026-03-05T21:49:56Z",
+  "datePublished": "2022-04-05T21:22:00Z",
+  "description": "",
+  "externalReferenceCode": "5326928422797",
+  "friendlyUrlPath": "liferay-security-alert-2022-april",
+  "id": 26101660,
+  "key": "26101658",
+  "keywords": [
+    "es",
+    "pt",
+    "ja",
+    "supportability",
+    "cn"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101660/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Security Alert: 2022 April",
+  "uuid": "f7ae3d06-7f14-c09e-6d52-50dbe5cc36cb"
+}

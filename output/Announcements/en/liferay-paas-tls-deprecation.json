@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099291/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099291/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099291"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h1 id=\"h_01HQXSP7W9FQMX5XFYF90PAHAE\">Summary</h1>\n\n<p>In order to align with industry security and data integrity best practices, and due to known vulnerabilities found in TLS versions &lt;1.2, Liferay has decided to deprecate TLS 1.0 and 1.1.</p>\n\n<h1 id=\"h_01HQXSNYYPC2YMDSDD2XCS95VK\">Details</h1>\n\n<p>In order to address the following 3 main concerns, Liferay PaaS will only support TLS 1.2 or later for all connections.</p>\n\n<ul>\n\t<li>Security Vulnerabilities\n\t<ul>\n\t\t<li>TLS 1.0 and 1.1 contain several security flaws that, if exploited, render data transmitted over the network vulnerable to attackers.</li>\n\t</ul>\n\t</li>\n\t<li>Interoperability\n\t<ul>\n\t\t<li>Many industry leading software companies have set TLS 1.2 as the minimum requirement to connect to their servers, endpoints, and applications.</li>\n\t</ul>\n\t</li>\n\t<li>Credibility\n\t<ul>\n\t\t<li>Leveraging outdated security protocols undermines the credibility of our business and yours. End users will begin to lose trust in the security of sites that are not updated to TLS 1.2 or above.</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h1 id=\"h_01HQXSVSETKMA8H0MX59SK43BE\">Resolution</h1>\n\n<p>No action is needed on your end to complete this deprecation and migration process to TLS 1.2. Environments running TLS 1.0 and 1.1 will be updated to TLS 1.2 by Liferay starting on the date below. Please be sure that any integrated software you have in place is compatible with TLS 1.2 before the migration. If you need to delay the migration, please <a href=\"https://help.liferay.com/hc/requests/new\">submit a ticket</a> to Liferay Support.</p>\n\n<h1 id=\"h_01HQXSWQKDBXTSHT3C50RB6V1H\">Timeline</h1>\n\n<ul>\n\t<li><strong>March 26, 2024</strong>\n\n\t<ul>\n\t\t<li>TLS 1.0 and 1.1 will no longer be supported</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h1 id=\"h_01HQXSZ43VGHC2DEE8T7KW5XPC\">Additional Information</h1>\n\n<p>If you encounter any issues or have questions about these changes, please <a href=\"https://help.liferay.com/hc/requests/new\">submit a ticket</a> and Liferay Support will be happy to assist.</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:32Z",
+  "dateModified": "2025-11-13T23:40:07Z",
+  "datePublished": "2024-03-02T02:06:00Z",
+  "description": "<p>Liferay has deprecated TLS 1.0 and 1.1 as of March 26, 2024</p>",
+  "externalReferenceCode": "24622764629389",
+  "friendlyUrlPath": "liferay-paas-tls-deprecation",
+  "id": 26099291,
+  "key": "26099289",
+  "keywords": [
+    "ja"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099291/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay PaaS TLS Deprecation",
+  "uuid": "fa769daa-30c8-c05f-9a81-c1e4b4c614f2"
+}

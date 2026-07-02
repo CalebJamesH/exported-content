@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100602/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100602/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100602"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n\n<p><span style=\"font-weight: 400;\"><strong>Published: November 17, 2022</strong></span></p>\n<h2 id=\"h_01HYXH8A7A6240WMS3SNKTRP2X\">Summary</h2>\n<p>Some Liferay Cloud customers have noticed an activation key expiration warning in their Liferay instances (shown below). If you have noticed this  warning in your instance, please do not be alarmed as our team has already addressed the issue.</p>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/27075882560525\" alt=\"activationWarning.png\" width=\"562\" height=\"69\"></p>\n<h2 id=\"h_01HYXH8A7ABR7BP0PMW6JRP39D\">Details</h2>\n<p>As of today, our team has updated the activation keys in the platform. The keys are automatically recognized and deployed to the Liferay instance. No additional action is needed if the liferay service version is 4.2.0 or higher. If it is lower than 4.2.0, there is only one step that must be taken in order to leverage the new keys.</p>\n<p style=\"margin-left: 25px;\"><span class=\"wysiwyg-underline\"><strong>Steps(&lt;4.2.0)</strong></span></p>\n<ol>\n<li>Restart the liferay service</li>\n</ol>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: In order to avoid any disruption in you Liferay instance, please perform the restart before December 15th.</span></aside>\n<h2 id=\"h_01HYXH8A7AJQGGSTQD5929DCB9\">Additional Information</h2>\n<p><span style=\"font-weight: 400;\">As always, if you encounter any issues or have questions about these changes, please </span><a href=\"https://help.liferay.com/hc/requests/new\" target=\"_self\" rel=\"undefined\">submit a ticket</a><span style=\"font-weight: 400;\"> and Liferay Support will be happy to assist.</span></p>\n<p><a href=\"https://status.liferay.cloud/\" target=\"_self\"><span style=\"font-weight: 400;\">Status Page</span></a></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T19:02:02Z",
+  "dateModified": "2026-02-10T19:02:02Z",
+  "datePublished": "2022-11-17T19:06:00Z",
+  "description": "",
+  "externalReferenceCode": "26100600",
+  "friendlyUrlPath": "cloud-activation-key-expiration-announcement",
+  "id": 26100602,
+  "key": "26100600",
+  "keywords": [
+    "liferay-paas",
+    "lxc-sm",
+    "activation-key"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100602/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Cloud Activation Key Expiration Announcement",
+  "uuid": "5ec153ec-dd9c-cf48-1881-d4d99a39e0f6"
+}

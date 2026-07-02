@@ -1,0 +1,120 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span id=\"cke_bm_11707S\" style=\"display: none;\">&nbsp;</span><em>Published in March, 2025 | Last Updated: Nov 4, 2025 - This article is relevant to anyone using Elastic Stack versions 7.17 or earlier (including Elasticsearch &amp; Kibana) or Elastic Stack versions 8.x. </em></p>\n\n<p>The information below is based on updates provided by the vendor (Elastic) and extended with relevant details from Liferay to cover the implications for customers with Liferay Enterprise Search (LES) subscriptions.</p>\n\n<h2 id=\"Summary\"><a href=\"#Summary\"><strong>Summary</strong></a></h2>\n\n<p id=\"docs-internal-guid-989f4a9e-7fff-81f1-7c3c-ac3264772077\"><strong>With the release of Liferay DXP 2025.Q2, we will deprecate compatibility with Elasticsearch 7 due to the upcoming end-of-maintenance and<a href=\"https://www.elastic.co/support/eol\" rel=\"noopener noreferrer\" target=\"_blank\">&nbsp;EOL of Elastic Stack 7.17</a>. Liferay strongly recommends all customers with 7.17.x or earlier deployments to upgrade to the latest compatible version of Elasticsearch 8.x.</strong></p>\n\n<p><strong>Elasticsearch 8 compatibility is <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\" rel=\"noopener noreferrer\" target=\"_blank\">available</a> on DXP 7.3 Update 31+, DXP 7.4 Update 81+ and on all DXP Quarterly Releases. Docker images are also <a href=\"https://hub.docker.com/r/liferaycloud/elasticsearch/tags\">provided</a> for Liferay PaaS projects in Liferay Cloud.</strong></p>\n\n<h3 id=\"Details\"><a href=\"#Details\"><strong>Details</strong></a></h3>\n\n<p>This update is a direct continuation of previous notices added to the <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\" rel=\"noopener noreferrer\" target=\"_blank\">Search Engine Compatibility Matrix</a>, the <a href=\"https://support.liferay.com/e/release-notes/all-features/20004/25543044?r=25543044&amp;Product%20Capabilities=24588488\" rel=\"noopener noreferrer\" target=\"_blank\">Liferay DXP 2024.Q3</a> Release Notes (<em>Elasticsearch 7.17 EOL in 2025 &amp; Updates</em>), and the<a href=\"https://support.liferay.com/e/release-notes/all-features/20004/25734713?r=25734713&amp;Product%20Capabilities=24588488\" rel=\"noopener noreferrer\" target=\"_blank\"> Liferay DXP 2025.Q1</a> Release Notes (<em>Compatibility with Elasticsearch 8.17</em>).</p>\n\n<p>The following are the highlights:</p>\n\n<ul>\n\t<li><strong>End-of-Maintenance</strong>: The <strong>Elasticsearch</strong>&nbsp;<strong>7.17</strong> and Elastic Stack 7.17 versions will be <em>maintained</em> by Elastic until <strong>April 15, 2025</strong>.</li>\n\t<li><strong>In-Product Notices in Liferay DXP</strong>:&nbsp;With the release of <strong>Liferay DXP 2025.Q2</strong>, <a href=\"https://liferay.atlassian.net/browse/LPD-48646\" rel=\"noopener noreferrer\" target=\"_blank\">warning</a> messages appear in the console and in the Search Admin when Liferay is connecting to Elasticsearch 7, recommending to <a href=\"https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-8\" rel=\"noopener noreferrer\" target=\"_blank\">upgrade to Elasticsearch 8</a>.</li>\n\t<li><strong>Upcoming Removal of Compatibility</strong>: After <strong>Elasticsearch 7 </strong>reaches <strong>EOL</strong> (<strong>Jan 15, 2026</strong>), it will be removed from the list of compatible versions from Liferay DXP's compatibility matrix.</li>\n</ul>\n\n<h3 id=\"Elastic-Stack-7.17-and-8.x-Maintenance-and-Support-Timelines\"><a href=\"#Elastic-Stack-7.17-and-8.x-Maintenance-and-Support-Timelines\"><strong>Elastic Stack 7.17 and 8.x Maintenance and Support Timelines</strong></a></h3>\n\n<p><strong>All version and timeline information mentioned about Elasticsearch and Elastic Stack are tentative and subject to change by the vendor (Elastic).</strong></p>\n\n<p>While Elastic does not provide specific release dates for future releases, Liferay was informed that Elastic has tentatively scheduled the release of 9.0 at the end of March 2025 (earliest).</p>\n\n<aside class=\"alert alert-info\"><em>Update (April 16, 2025)- Elasticsearch 8.18 and 9.0 were released on April 15, 2025. The <a href=\"https://www.elastic.co/support/eol#prior-versions\" rel=\"noopener noreferrer\" target=\"_blank\">EOL information for the Prior Versions</a> has been updated accordingly:</em>\n\n<ul>\n\t<li><em>Elasticsearch, Kibana 7.17.x End of Maintenance Term: April 15, 2025</em></li>\n\t<li><em>Elasticsearch, Kibana 7.17.x End of Support Term: January 15, 2026</em></li>\n</ul>\n</aside>\n\n<p>This diagram shows the maintenance and support timelines of 7.17 and 8.x releases, as provided by Elastic:</p>\n\n<p>​​​<img alt=\"\" data-fileentryid=\"27150417\" src=\"/documents/d/customer-portal/elastic-stack-7-17-8-x-9-x-timeline-updated-july-2025-png\">&nbsp;</p>\n\n<p>Liferay strongly recommends customers to begin the planning phase for an upgrade project to the latest compatible Elastic Stack 8.x version (currently, 8.18).</p>\n\n<h3 id=\"Liferay-Elasticsearch-Compatibility-and-Connectors-Roadmap\"><a href=\"#Liferay-Elasticsearch-Compatibility-and-Connectors-Roadmap\"><strong>Liferay Elasticsearch Compatibility and Connectors Roadmap</strong></a></h3>\n\n<p><strong>All version and availability information in this table are tentative and subject to change by Liferay.</strong></p>\n\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%; height: 213px;\">\n\t<tbody>\n\t\t<tr style=\"height: 67px;\">\n\t\t\t<td style=\"text-align: center; width: 25%; height: 67px;\"><strong>DXP Quarterly Release</strong></td>\n\t\t\t<td style=\"text-align: center; width: 25%; height: 67px;\"><strong>Bundled Connector</strong></td>\n\t\t\t<td style=\"text-align: center; width: 25%; height: 67px;\"><strong>Compatible Elasticsearch Major Versions</strong></td>\n\t\t\t<td style=\"text-align: center; width: 25%; height: 67px;\"><strong>Bundled (Sidecar) Elasticsearch Version</strong><sup>2</sup></td>\n\t\t</tr>\n\t\t<tr style=\"height: 31px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 31px;\">2025.Q1</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" rowspan=\"4\" style=\"width: 25%; height: 93px;\">Connector to Elasticsearch 7 (Compatibility+)</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" rowspan=\"2\" style=\"width: 25%; height: 62px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;Elasticsearch 8</strong><sup>1</sup></p>\n\n\t\t\t<p class=\"wysiwyg-text-align-center\">&nbsp;Elasticsearch 7 (Deprecated)</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 31px;\">Elasticsearch 7.17.26</td>\n\t\t</tr>\n\t\t<tr style=\"height: 31px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 31px;\">2025.Q2</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 31px;\">Elasticsearch 7.17.28</td>\n\t\t</tr>\n\t\t<tr style=\"height: 31px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 31px;\">2025.Q3</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" rowspan=\"2\" style=\"width: 25%; height: 62px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;Elasticsearch 8</strong><sup>1</sup></p>\n\n\t\t\t<p class=\"wysiwyg-text-align-center\">&nbsp;Elasticsearch 7 (Deprecated)</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" rowspan=\"2\" style=\"width: 25%; height: 62px;\"><a href=\"https://liferay.atlassian.net/browse/LPD-11344\" rel=\"noopener noreferrer\" target=\"_blank\">Elasticsearch 8.x</a></td>\n\t\t</tr>\n\t\t<tr style=\"height: 31px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 31px;\">2025.Q4</td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 22px;\">2026.Q1</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%;\">Connector to Elasticsearch 8</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 22px;\"><strong>&nbsp;Elasticsearch 8</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 25%; height: 22px;\">Elasticsearch 8.x</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><sup>1</sup> The Elasticsearch 8.x compatibility is provided through the bundled Elasticsearch 7 connector (Compatibility+) and <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/8.17/rest-api-compatibility.html#request-rest-api-compatibility\" rel=\"noopener noreferrer\" target=\"_blank\">Elasticsearch 8’s REST API compatibility</a> mode.</p>\n\n<p><sup>2</sup> The Elasticsearch server (aka. Sidecar Elasticsearch) included in Liferay DXP Tomcat Bundles and Docker Images is neither suitable nor supported for production operation.</p>\n\n<p><em>Last Updated (Nov 4, 2025) - Updated the tentative timeline and plans.</em></p>\n\n<h2 id=\"FAQ\"><a href=\"#FAQ\"><strong>Frequently Asked Questions</strong></a></h2>\n\n<p><strong>Liferay</strong> is <strong>providing</strong> <em>compatibility</em> with certain Elasticsearch versions. You can integrate Liferay with compatible Elasticsearch versions using Liferay’s Elasticsearch connectors, bundled inside Liferay or released on Marketplace.</p>\n\n<p><strong>Elastic</strong>, as the <strong>vendor</strong> of <strong>Elasticsearch</strong>, <strong>Kibana</strong> and the Elastic Stack, defines the <a href=\"https://www.elastic.co/support/eol#prior-versions\" rel=\"noopener noreferrer\" target=\"_blank\">maintenance, support and EOL policies</a> for their products.</p>\n\n<p><strong>Compatibility</strong> with a given search engine version is <strong>considered</strong> an <strong>Liferay</strong> <strong>DXP</strong> <strong>integrated technology</strong>. As such it can be transitioned from GA to Maintenance/Deprecated or Removed/Archived status over time, in order to reflect the EOL of the integrated product and to phase it out from our compatibility matrix. These statuses determine the available coverage provided by Liferay Support.</p>\n\n<h3 id=\"FAQ-2\"><a href=\"#FAQ-2\">What happens when a release is no longer maintained by Elastic?</a></h3>\n\n<p>Once a release is no longer maintained, Elastic will not provide maintenance releases or address security vulnerabilities for the version.</p>\n\n<h3 id=\"FAQ-2a\"><a href=\"#FAQ-2a\">I have LES; what happens when a release is no longer maintained by Liferay?</a></h3>\n\n<p>As the Elasticsearch server runtime (including its plugins and libraries) cannot be patched or updated through Liferay hotfixes without newer maintenance releases for the Elastic Stack 7.17, LES subscribers should be aware that Liferay Support’s assistance will be limited when issues affect Elasticsearch or Kibana 7.17.</p>\n\n<h3 id=\"FAQ-4\"><a href=\"#FAQ-4\">How long will Elastic Stack 7.17 be maintained by Elastic?</a></h3>\n\n<p>According to the<a href=\"https://www.elastic.co/support/eol#prior-versions\" rel=\"noopener noreferrer\" target=\"_blank\"> Elastic Product End of Life Dates for Prior Versions</a>, Elastic Stack 7.17 versions are maintained until April 15, 2025.</p>\n\n<h3 id=\"FAQ-3\"><a href=\"#FAQ-3\">I have LES; what happens when a release is no longer supported by Elastic?</a></h3>\n\n<p>Once a release is unsupported, Elastic will only provide support for upgrading to a supported release. Liferay Support's assistance will also be limited even for subscribers with the LES add-on subscription when using unsupported Elasticsearch versions (e.g., Elasticsearch 7).</p>\n\n<h3 id=\"FAQ-5\"><a href=\"#FAQ-5\">I have LES, how long will Elastic Stack 7.17 be supported by Elastic?</a></h3>\n\n<p>Elastic has extended the Support of Elastic Stack 7.17 to 9 months after the next Major Release (9.0) to better support customers in their upgrade journey. During this period, Liferay subscribers with LES can also contact Liferay Support for assistance with upgrading their Elastic Stack to a supported release in accordance with Liferay's<a href=\"https://support.liferay.com/w/liferay-enterprise-search\" rel=\"noopener noreferrer\" target=\"_blank\"> Support Coverage for LES</a>.</p>\n\n<p><em>Update (April 16, 2025)- Elasticsearch 8.18 and 9.0 were released on April 15, 2025. The <a href=\"https://www.elastic.co/support/eol#prior-versions\" rel=\"noopener noreferrer\" target=\"_blank\">EOL information for the Prior Versions</a> has been updated accordingly: </em><em>Elasticsearch, Kibana 7.17.x End of Support Term is on January 15, 2026.</em></p>\n\n<h3 id=\"FAQ-6\"><a href=\"#FAQ-6\">How long will Elasticsearch 7.17 be supported by Liferay?</a></h3>\n\n<p>Once Elasticsearch 7.17 reaches EOL, it will be removed from Liferay's list of compatible versions for the very next DXP quarterly release.</p>\n\n<p><strong>It is anticipated that Liferay DXP 2026.Q1 will no longer support Elasticsearch 7</strong>. This is subject to change as it also depends on external factors like the finalized EOL date as decided by Elastic.</p>\n\n<h3 id=\"FAQ-7\"><a href=\"#FAQ-7\">What will happen to the Elasticsearch 7 compatibility in earlier versions of Liferay DXP?</a></h3>\n\n<p>The technical ability to connect previously released Liferay DXP versions to Elasticsearch 7 will not change.&nbsp;</p>\n\n<h3 id=\"FAQ-8\"><a href=\"#FAQ-8\">What will happen to the Elasticsearch 7 bundled with Liferay DXP?</a></h3>\n\n<p>The Elasticsearch 7 server runtime included in Liferay DXP Tomcat Bundles and Docker Images (aka.<a href=\"https://learn.liferay.com/web/guest/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/using-the-sidecar-or-embedded-elasticsearch\" rel=\"noopener noreferrer\" target=\"_blank\"> Sidecar Elasticsearch</a>, located under <span style=\"color: #188038;\">[Liferay-Home]/elasticsearch-sidecar</span>) is neither suitable nor supported for production. It is provided as a convenience for local development and testing only. Instead, <a href=\"https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch\" rel=\"noopener noreferrer\" target=\"_blank\">configure Liferay to connect to Elasticsearch</a> as a self-managed, standalone server or cluster of server nodes.</p>\n\n<p>Due to the Elasticsearch 7's upcoming EOL, Liferay will <a href=\"https://liferay.atlassian.net/browse/LPD-11344\" rel=\"noopener noreferrer\" target=\"_blank\">switch to Elasticsearch 8</a> as the version for the sidecar server in future DXP Quarterly Releases.&nbsp;</p>\n\n<p>Note: The Sidecar Elasticsearch (including all of its bundled plugins and libraries) cannot be patched or updated through Liferay hotfixes.&nbsp;</p>\n\n<h3 id=\"FAQ-9\"><a href=\"#FAQ-9\">What will happen to the Elasticsearch 7 Connector currently bundled with Liferay DXP?</a></h3>\n\n<p>Tentatively starting with Liferay DXP 2025.Q3, continuing to operate Liferay DXP with Elasticsearch 7 will require installing the deprecated Elasticsearch 7 Connector, released separately on Marketplace.</p>\n\n<p>It will be replaced by a <a href=\"https://liferay.atlassian.net/browse/LPD-11372\" rel=\"noopener noreferrer\" target=\"_blank\">native Elasticsearch 8 Connector</a> supporting both Elasticsearch 8 and 9 (via REST API compatibility mode). This will become the default, bundled connector in a future Liferay DXP Quarterly Release.</p>\n\n<h3 id=\"FAQ-10\"><a href=\"#FAQ-10\">Which Elastic Stack 8.x version should I upgrade to?</a></h3>\n\n<p><a href=\"https://learn.liferay.com/w/dxp/using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-8\" rel=\"noopener noreferrer\" target=\"_blank\">Upgrade</a> to the latest compatible minor release in the 8.x series as indicated in the <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\" rel=\"noopener noreferrer\" target=\"_blank\">Search Engine Compatibility Matrix</a> (currently, 8.17). If you are on 7.x, first move to 7.17 (latest) where you can upgrade your Elasticsearch cluster/Elastic Stack to the latest compatible 8.x version. Consulting with <a href=\"https://www.elastic.co/docs/deploy-manage/upgrade/deployment-or-cluster/elasticsearch\" rel=\"noopener noreferrer\" target=\"_blank\">Elastic's upgrade documentation</a> is also recommended.</p>\n\n<p>Note: The Elasticsearch 8.x compatibility is provided through the bundled Elasticsearch 7 connector and <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/8.15/rest-api-compatibility.html#request-rest-api-compatibility\" rel=\"noopener noreferrer\" target=\"_blank\">Elasticsearch’s 8 REST API compatibility</a> on versions <a href=\"https://liferay.dev/blogs/-/blogs/operating-liferay-7-4-ga-update-81-with-elasticsearch-8\" rel=\"noopener noreferrer\" target=\"_blank\">DXP 7.4 U81+</a> since 2023.</p>\n\n<h3 id=\"FAQ-11\"><a href=\"#FAQ-11\">Will Liferay provide compatibility with Elasticsearch 8.18 and 8.19?</a></h3>\n\n<p>Liferay cannot guarantee immediate support for new minor versions until compatibility testing is completed. Testing of Liferay DXP with newer minor Elasticsearch releases is usually conducted quarterly.</p>\n\n<p>The <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\" rel=\"noopener noreferrer\" target=\"_blank\">Release Notes</a> for DXP Quarterly Releases and the <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\" rel=\"noopener noreferrer\" target=\"_blank\">Search Engine Compatibility Matrix</a> will include the most up-to-date, detailed information about Elasticsearch compatibility, including the compatible connector versions and required quarterly release/update versions and patch levels.</p>\n\n<h3 id=\"FAQ-12\"><a href=\"#FAQ-12\">Will Liferay provide compatibility with Elasticsearch 9?</a></h3>\n\n<p>We recognize the importance of enabling our customers to operate on the most up-to-date deployment stack, even though adding support for a major new release of Elasticsearch typically represents a significant investment.</p>\n\n<p>We are tentatively planning to provide compatibility with Elasticsearch 9 starting with the Liferay DXP 2027.Q1 release.</p>\n\n<p>Please note that this timeline is subject to change and is contingent upon the official End-of-Life (EOL) date announced by Elastic for Elasticsearch 8.</p>\n\n<hr>\n<p>Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:41:13Z",
+  "dateModified": "2026-03-10T22:31:13Z",
+  "datePublished": "2025-03-17T13:59:00Z",
+  "description": "",
+  "externalReferenceCode": "35072800462733",
+  "friendlyUrlPath": "elasticsearch-7-17-end-of-life-eol-timeline-and-liferay-dxp-elasticsearch-compatibility-update-faq",
+  "id": 26145627,
+  "key": "26145625",
+  "keywords": [
+    "ja",
+    "supportability",
+    "elasticsearch",
+    "kibana",
+    "elasticsearch-7",
+    "elasticsearch-8",
+    "eol"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145627/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch 7.17 End of Life (EOL) Timeline and Liferay DXP Elasticsearch Compatibility Update & FAQ",
+  "uuid": "1ba27d5c-5695-8382-6104-f0db896a5f1d"
+}

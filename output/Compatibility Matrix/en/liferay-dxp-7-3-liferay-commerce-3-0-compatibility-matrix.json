@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay Digital Experience Platform 7.3 and Liferay Commerce 3.0 are only supported under the following certified configurations:&nbsp;</p>\n\n<h2 id=\"01H7T063WSNQHWTMRT3CQ66FG6\"><a href=\"#application-server\" id=\"application-server\">Application Server</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.3</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.4</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Tomcat 9.0</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Websphere 9.0</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Weblogic 12c Release 2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Weblogic 14c</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Wildfly 14.0</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Wildfly 17.0</span></li>\n\t\t\t\t<li><font size=\"2\">Wildfly 18.0</font></li>\n\t\t\t\t<li><font size=\"2\">Wildfly 23.0</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>For more information on configurations and limitations with Application Servers that are compatible with Liferay DXP, please refer to the <a href=\"https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing_liferay.html\" rel=\"undefined\" target=\"_self\">Liferay User Guide</a>&nbsp;and our <a href=\"https://support.liferay.com/w/Application-Servers\" rel=\"undefined\" target=\"_self\">Support Policy</a>.</p>\n\n<h2 id=\"01H7T063WS1YP8HZCRAN0VVNVZ\"><a href=\"#database\" id=\"database\">Database</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Aurora</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">DB2 11.5</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Maria DB 10.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Maria DB 10.4</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Maria DB 10.6</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MySQL 5.7</span></li>\n\t\t\t\t<li><font size=\"2\">MySQL 8.0</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle 19c</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Postgres 11</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Postgres 12</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Postgres 13</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Postgres 14</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2017</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2019</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>For more information on configurations and limitations with Databases compatible with Liferay DXP, please refer to the <a href=\"https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing_liferay.html\" rel=\"undefined\" target=\"_self\">Liferay User Guide</a>&nbsp;and our <a href=\"https://support.liferay.com/w/Databases\" rel=\"undefined\" target=\"_self\">Support Policy</a>.</p>\n\n<h2 id=\"01H7T063WSRXSC5N8DZX6QN00G\"><a href=\"#operating-system\" id=\"operating-system\">Operating System</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Alpine Linux 3.10</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Linux 2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Linux 2023</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">CentOS 7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">CentOS 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Debian 10</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Debian 11</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">IBM AIX 7.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Linux 7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Linux 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Solaris 11</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise Linux 7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise Linux 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SUSE Enterprise Linux 12</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SUSE Enterprise Linux 15</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 18.04</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 20.04</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 22.04</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2016</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2019</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2022</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2 id=\"01H7T063WS5FXH36KX5G7M9FAB\"><a href=\"#desktop-browser\" id=\"desktop-browser\">Desktop Browser</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Chrome 65</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Chrome (Latest)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Edge (Latest)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Firefox (Latest)</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Firefox ESR (Latest)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 11 (Limited)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Safari 12</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Safari 13</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Safari (Latest)</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>For more information on configurations and limitations with Desktop Browsers that are compatible with Liferay DXP, please refer to the <a href=\"https://support.liferay.com/w/Browsers\" target=\"_self\">Support Policy</a>.</p>\n\n<h2 id=\"01H7T063WSRSCZKVE3ZFQAEF2X\"><a href=\"#mobile-browser\" id=\"mobile-browser\">Mobile Browser</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Chrome (Latest)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Safari (Latest)</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Liferay will support access to information (e.g. reading content and navigation through pages), navigation menus, and basic responsiveness of modules for the latest versions of mobile browsers only. For more information on Liferay’s mobile support policy, please refer to the <a href=\"https://support.liferay.com/w/mobile-device-support-policy\" target=\"_self\">Help Center</a>.</p>\n\n<h2 id=\"01H7T063WSRQ3F2S444Y2KPFR8\"><a href=\"#jdk\" id=\"jdk\">JDK</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">IBM J9 JDK 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 11&nbsp;</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span style=\"font-size: small;\">All Java Technical Compatibility Kit (TCK) compliant builds of Java 11 and Java 8</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>JDK Certification is for runtime only. JDK 8 is required to build or compile Liferay DXP Projects.</p>\n\n<h2 id=\"01H7T063WSBZG2R2QV5SP2VKJZ\"><a href=\"#cloud-services\" id=\"cloud-services\">Cloud Services</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Elastic Compute Cloud (EC2)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Relational Database Service (RDS)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon S3 (Object Storage)</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Azure Files</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Azure SQL Databases</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Azure Virtual Machines</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Google Cloud Compute</span></li>\n\t\t\t\t<li><font size=\"2\">Google Cloud SQL</font></li>\n\t\t\t\t<li><font size=\"2\">Google Cloud Object Storage</font></li>\n\t\t\t\t<li><font size=\"2\">IBM Cloud File Storage</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Amazon EC2 and RDS are only supported with environments on the Liferay DXP 7.3 Compatibility Matrix.</p>\n\n<h2 id=\"01H7T063WS7K45C00GKXHCQGTC\"><a href=\"#search-engines\" id=\"search-engines\">Search Engines</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Elasticsearch 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Elasticsearch 7</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Solr 8</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>Refer to the <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\" target=\"_self\">Search Engine Compatibility Matrix</a> for the detailed compatibility including the compatible connector versions and required patch levels.</p>\n\n<h2 id=\"01H7T063WSJPZK0P6NDQTF4QTJ\"><a href=\"#notes\" id=\"notes\">Notes</a></h2>\n\n<p>Liferay DXP does not restrict the use of VM/Container strategy as long as the Application Server, Database, JDK, and Operating System are certified for use as indicated on the Compatibility Matrix above. Subscribers will be responsible for configuring the VM/Container appropriately.</p>\n\n<p>&nbsp;</p>\n\n<p><span class=\"wysiwyg-font-size-small\">Updated 09/5/2024</span></p>\n\n<p><span class=\"wysiwyg-font-size-medium\"><a href=\"https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.3+Compatibility+Matrix.pdf/30fb6a1e-431d-7c84-e211-f2a0590013bf?t=1599262379630\" target=\"_self\">Download PDF</a></span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176952"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:42:57Z",
+  "dateModified": "2026-03-25T23:53:19Z",
+  "datePublished": "2020-09-04T23:16:00Z",
+  "description": "",
+  "externalReferenceCode": "360049238151",
+  "friendlyUrlPath": "liferay-dxp-7-3-liferay-commerce-3-0-compatibility-matrix",
+  "id": 26145947,
+  "key": "26145945",
+  "keywords": [
+    "ja",
+    "mt",
+    "dxp-7-3",
+    "zh-cn"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145947/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27492454,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176952,
+      "taxonomyCategoryName": "Liferay DXP Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "7fb6a48c-585c-075f-5ad7-28fe4cd53a2d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXP 7.3 & Liferay Commerce 3.0 Compatibility Matrix",
+  "uuid": "3e2c4de9-0bf7-9207-38a6-41d28c877a7b"
+}

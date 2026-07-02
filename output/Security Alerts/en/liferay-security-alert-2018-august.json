@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>The following issue may compromise the security of your Liferay Portal Enterprise Edition (EE) or Liferay Digital Experience Platform implementation. This notification provides a description of the latest security vulnerability and recommended actions for Liferay Subscribers.</p>\n<h2 align=\"left\">Security Alerts: LSV-391, LSV-393, LSV-397</h2>\n<h2 align=\"left\">Affected Version(s)</h2>\n<ul>\n<li>Liferay Digital Experience Platform 7.1</li>\n<li>Liferay Digital Experience Platform 7.0</li>\n<li>Liferay Portal 6.2 EE</li>\n<li>Liferay Portal 6.1 EE</li>\n</ul>\n<h2 align=\"left\">Vulnerability Information</h2>\n<ul>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360017527612\" target=\"_self\">LSV-391</a>: Pingback vulnerability in blogs</li>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360017529112\" target=\"_self\">LSV-393</a>: Users without proper permissions can add pages</li>\n<li>\n<a href=\"https://help.liferay.com/hc/en-us/articles/360017812811\" target=\"_self\">LSV-397</a>: XXE vulnerability in XSL Content &amp; Web Content</li>\n</ul>\n<h2 align=\"left\">Download</h2>\n<p>Additional information and security patches are available on the <a href=\"https://help.liferay.com/hc/articles/360018875952\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">Security Advisories page</a>.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:44Z",
+  "dateModified": "2026-03-05T21:49:56Z",
+  "datePublished": "2018-11-29T16:10:00Z",
+  "description": "",
+  "externalReferenceCode": "360020122672",
+  "friendlyUrlPath": "liferay-security-alert-2018-august",
+  "id": 26098619,
+  "key": "26098617",
+  "keywords": [
+    "ja",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098619/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Security Alert: 2018 August",
+  "uuid": "ad134d14-4666-6638-fa16-b4538c5a6c1d"
+}

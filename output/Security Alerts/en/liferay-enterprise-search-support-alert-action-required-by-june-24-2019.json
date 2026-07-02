@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\">This content is available to customers with active <a href=\"https://help.liferay.com/hc/en-us/articles/360014400932\" target=\"_self\">Liferay Enterprise Search (LES)</a> subscriptions</span></p>\n<p>Published: June 7, 2019</p>\n<p>The following issue may affect the functionality of your Liferay Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<p><strong>If you’re running an Elasticsearch cluster version 2.2.x or 2.4.x, AND utilize AWS S3 for snapshots, you will need to prepare for Amazon’s deprecation of the S3 Sigv2 API.</strong></p>\n<p><strong>Deployments which might be impacted by this change</strong></p>\n<ul>\n<li>Liferay DXP 7.0 on Elastic Stack 2.2.x and 2.4.x using S3 snapshots</li>\n</ul>\n<p><strong>Compatibility Change Information</strong></p>\n<ul>\n<li><a href=\"https://link.elastic.co/f009p2e0pA01BA3xMBMRQ0j?utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz-8BF_tL0ZonhuGU3F3-2WDDlAOaHxCb4Yqxp1cXwU8e5QrSbcHUMCkNvUTeGkH20CuFr0Bc\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">AWS service changes to go into effect on June 24, 2019</a></li>\n<li><a href=\"https://help.liferay.com/hc/en-us/articles/360028942772?utm_source=hs_email&amp;utm_medium=email&amp;_hsenc=p2ANqtz-8BF_tL0ZonhuGU3F3-2WDDlAOaHxCb4Yqxp1cXwU8e5QrSbcHUMCkNvUTeGkH20CuFr0Bc\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">Liferay Knowledge Base article</a></li>\n</ul>\n<p><strong>Liferay Enterprise Search Compatibility Matrix</strong></p>\n<p>Reference the information <a href=\"/w/search-engine-compatibility-matrix\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span> </span>to learn more about the supported configurations for Liferay Enterprise Search.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "855681e7-e526-bc2e-b10a-d75f7abbf432",
+    "familyName": "Fong",
+    "givenName": "Amos",
+    "id": 2013333,
+    "name": "Amos Fong"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T22:57:30Z",
+  "dateModified": "2026-03-05T21:48:03Z",
+  "datePublished": "2019-10-29T13:39:00Z",
+  "description": "",
+  "externalReferenceCode": "360035279872",
+  "friendlyUrlPath": "liferay-enterprise-search-support-alert-action-required-by-june-24-2019",
+  "id": 26096119,
+  "key": "26096117",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096119/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Enterprise Search Support Alert: Action Required by June 24 2019",
+  "uuid": "939e6da4-1807-5645-e550-ffbe119ff697"
+}

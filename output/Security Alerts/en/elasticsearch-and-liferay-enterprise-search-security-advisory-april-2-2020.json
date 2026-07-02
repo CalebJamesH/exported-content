@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><strong>Published: April 2, 2020</strong></p>\n<p>The following issue may affect the functionality of your Liferay DXP and Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<h2>Deployments which might be impacted</h2>\n<ul>\n<li>Liferay DXP 7.0, 7.1 and 7.2 on Elastic Stack 6.7 or 7.x or higher.</li>\n</ul>\n<h2>Vulnerability Information</h2>\n<p>(As provided by the vendor.)</p>\n<p><strong>Elasticsearch authentication API key privilege escalation (ESA-2020-02)</strong></p>\n<p>Elasticsearch versions from 6.7.0 to 6.8.7 and 7.0.0 to 7.6.1 contain a privilege escalation flaw if an attacker is able to create API keys. An attacker who is able to generate an API key can perform a series of steps that result in an API key being generated with elevated privileges.</p>\n<p><strong>Affected Versions</strong><br>All versions from 6.7.0 to 6.8.7 and 7.0.0 to 7.6.1 are vulnerable to this issue.</p>\n<p><strong>Solutions and Mitigations</strong><br>Users should upgrade to Elasticsearch version 7.6.2 or 6.8.8. Users who are unable to upgrade can mitigate this flaw by disabling API keys by setting <code>xpack.security.authc.api_key.enabled</code> to false in the elasticsearch.yml file.</p>\n<p><strong>CVE ID: <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7009\">CVE-2020-7009 </a></strong></p>\n<h2>Additional Mitigation Notes</h2>\n<p>Liferay's Enterprise Search connectors are not using API keys out-of-the-box.</p>\n<h2 id=\"Search-Engine-Compatibility-Matrix\">Search Engine Compatibility Matrix</h2>\n<p>Reference the information <a href=\"https://help.liferay.com/hc/articles/360016511651#Liferay-Enterprise-Search\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<h2>Vendor References</h2>\n<p><a href=\"https://discuss.elastic.co/t/elastic-stack-6-8-8-and-7-6-2-security-update/225920\" target=\"_self\">https://discuss.elastic.co/t/elastic-stack-6-8-8-and-7-6-2-security-update/225920</a></p>\n<p><a class=\"external-link\" title=\"Follow link\" href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-7.6.2.html\" rel=\"nofollow\">https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-7.6.2.html</a><br><a class=\"external-link\" title=\"Follow link\" href=\"https://www.elastic.co/guide/en/kibana/current/release-notes-7.6.2.html\" rel=\"nofollow\">https://www.elastic.co/guide/en/kibana/current/release-notes-7.6.2.html</a></p>\n<p><a class=\"external-link\" title=\"Follow link\" href=\"https://www.elastic.co/guide/en/elasticsearch/reference/6.8/release-notes-6.8.8.html\" rel=\"nofollow\">https://www.elastic.co/guide/en/elasticsearch/reference/6.8/release-notes-6.8.8.html</a><br><a class=\"external-link\" title=\"Follow link\" href=\"https://www.elastic.co/guide/en/kibana/6.8/release-notes-6.8.8.html\" rel=\"nofollow\">https://www.elastic.co/guide/en/kibana/6.8/release-notes-6.8.8.html</a></p>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:51Z",
+  "dateModified": "2026-03-05T21:42:03Z",
+  "datePublished": "2020-04-01T10:46:00Z",
+  "description": "",
+  "externalReferenceCode": "360041766171",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-april-2-2020",
+  "id": 26108569,
+  "key": "26108567",
+  "keywords": [
+    "ja",
+    "supportability",
+    "elasticsearch",
+    "search",
+    "les"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108569/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch and Liferay Enterprise Search Security Advisory: April 2, 2020",
+  "uuid": "8c86b863-04cb-9f86-32bc-f9457d1bd912"
+}

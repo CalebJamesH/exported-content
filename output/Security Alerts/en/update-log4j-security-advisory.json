@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><a target=\"_self\">Published: December 13, 2021</a></aside>\n\n<p><span style=\"font-size: 18px;\">Log4j 2.0+, <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2021-44228\" rel=\"noopener\" target=\"_blank\">CVE-2021-44228</a></span></p>\n\n<h2 id=\"h_01J01RHPY8DEE2P81VEMW3ZAJY\">Vulnerability Summary</h2>\n\n<p>On Dec. 9, 2021 a critical vulnerability was identified in Log4j 2.0+. Log4j is a Java logging library&nbsp;used by many Java based applications worldwide.</p>\n\n<p>It is important to note that not all customers are affected by this vulnerability. Please read the&nbsp;details below to determine whether or not you are impacted by this security issue.</p>\n\n<h2 id=\"h_01J01RHPY8T9DFQCWBEAV3CTTD\">What is the concern?</h2>\n\n<p>The primary concern is that the vulnerability could be used via a simple HTTP request. In some&nbsp;cases the vulnerability is believed to provide attackers with the opportunity to execute program&nbsp;code remotely. Liferay recommends all customers take immediate steps to address the issue.</p>\n\n<h2 id=\"h_01J01RHPY8BZ96978770AW627N\">How is Liferay impacted?</h2>\n\n<p>Liferay 7.3 and lower use an older version of Log4j that does not expose this vulnerability. However,&nbsp;the majority of Liferay customers also leverage Elasticsearch, which uses the affected Log4j library&nbsp;for its logging. In general, a dedicated Elasticsearch cluster being used by Liferay is not publicly&nbsp;exposed, which means that access to the search infrastructure is proxied through Liferay&nbsp;functionality. In this <strong>standard configuration</strong> of Liferay, the affected library exists, but it is highly&nbsp;unlikely that the vulnerability could be leveraged by an attacker, and thus the risk of exposure is&nbsp;low.</p>\n\n<h2 id=\"h_01J01RHPY80G49C64KZY5VNRP2\">How can I mitigate my exposure?</h2>\n\n<p>This vulnerability only directly exposes customers using DXP Portal version 7.4 GA1. However, in&nbsp;order to mitigate potential use of the affected library in custom code, Liferay recommends that <strong>all&nbsp;customers</strong> add the following JVM option to your start-up parameters:</p>\n\n<p><code>-Dlog4j2.formatMsgNoLookups=true</code></p>\n\n<p>This preventative measure will help to mitigate risk of exposure due to an environment having&nbsp;been changed from the Liferay stock bundle configuration, or any plug-in that may be utilizing&nbsp;Log4j 2.0+.</p>\n\n<h2 id=\"h_01J01RHPY8B0HCQTBX9HCK93RK\">Will there be a formal fix for this issue?</h2>\n\n<p>There is no formal patch expected from Liferay at this time. Elasticsearch is working on changes to&nbsp;address the vulnerability in their product and any fixes they provide will be included in the next&nbsp;fixpack/update.</p>\n\n<h2 id=\"h_01J01RHPY9M7FT22098FB474F1\">What if I am a Liferay SaaS customer?</h2>\n\n<p>Liferay SaaS applications and infrastructure are not impacted by the vulnerability, however it is Liferay’s position that <strong>all customers</strong> should follow any instructions provided by Elasticsearch as&nbsp;well as modify their JVM parameters as outlined above.</p>\n\n<h2 id=\"h_01J01RHPY9CPAXFAN6WMGH9P4H\">Questions?</h2>\n\n<p>Have more questions about the vulnerability? Don’t hesitate to reach out to Liferay Support or your&nbsp;Customer Success Manager.</p>\n\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:14:42Z",
+  "dateModified": "2026-03-05T21:51:10Z",
+  "datePublished": "2021-12-14T21:58:00Z",
+  "description": "",
+  "externalReferenceCode": "4416616554381",
+  "friendlyUrlPath": "update-log4j-security-advisory",
+  "id": 26107364,
+  "key": "26107362",
+  "keywords": [
+    "ja",
+    "mt",
+    "liferay-saas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107364/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Update: Log4j Security Advisory",
+  "uuid": "01f327e6-ac3b-10ae-c749-641de6aa3d2e"
+}

@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><a href=\"/w/elastic-stack-and-liferay-enterprise-search-les-security-advisories\" target=\"_self\">Published: March 9, 2021</a></aside>\n<p>The following issues may affect the functionality of your Liferay DXP and Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<h2 id=\"Deployments-which-might-be-impacted\"><a href=\"#Deployments-which-might-be-impacted\" target=\"_self\">Deployments which might be impacted</a></h2>\n<ul>\n<li>Liferay DXP 7.2-7.3 on Elastic Stack 7.x* before 7.11.0</li>\n<li>Liferay DXP 7.0-7.2 on Elastic Stack 6.x before 6.8.14</li>\n</ul>\n<p>* see below under each vulnerability entry the actual affected versions.</p>\n<h2 id=\"Vulnerability-Information\"><a href=\"#Vulnerability-Information\" target=\"_self\">Vulnerability Information</a></h2>\n<div class=\"cooked\">\n<h3>Elasticsearch field disclosure flaw (ESA-2021-05)</h3>\n<p>A document disclosure flaw was found in Elasticsearch when Document or Field Level Security is used. Get requests do not properly apply security permissions when executing a query against a recently updated document. This affects documents that have been updated and not yet refreshed in the index. This could result in the search disclosing the existence of documents and fields the attacker should not be able to view. A mitigating factor to this flaw is an attacker must know the document ID to run the get request.</p>\n<p><strong>Affected Versions</strong>:</p>\n<p>All versions of Elasticsearch after 7.6.0 and before 7.11.0 are affected by this flaw</p>\n<p><strong>Solutions and Mitigations</strong>:</p>\n<p>Anyone using Document or Field Level Security should upgrade to Elasticsearch version 7.11.0. There is no known workaround for this flaw.</p>\n<p>CVSSv3 - 2.6: AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N</p>\n<p>CVE ID: CVE-2021-22134</p>\n<h3>Elasticsearch information disclosure (ESA-2021-03)</h3>\n<p>Elasticsearch versions before 7.10.0 and 6.8.14 have an information disclosure issue when audit logging and the emit_request_body option is enabled. The Elasticsearch audit log could contain sensitive information such as password hashes or authentication tokens. This could allow an Elasticsearch administrator to view these details.</p>\n<p><strong>Affected Versions</strong>:</p>\n<p>All versions of Elasticsearch before 7.10.0 and 6.8.14 are affected by this flaw</p>\n<p><strong>Solutions and Mitigations:</strong></p>\n<p>Anyone using audit logging with the xpack.security.audit.logfile.events.emit_request_body enabled should upgrade to Elasticsearch version 7.10.0 or 6.8.14. This issue can be worked around by disabling the emit_request_body option in the elasticsearch.yml file.</p>\n<p>CVSSv3 - 1.9: AV:L/AC:H/PR:H/UI:N/S:U/C:L/I:N/A:N</p>\n<p>CVE ID: CVE-2020-7021</p>\n<h3>Kibana visualization XSS (ESA-2021-04)</h3>\n<p>The Kibana “Vega” visualization type is susceptible to both stored and reflected XSS via a vulnerable version of the Vega library. Users who can create these visualizations or craft a vulnerable URL describing this visualization can execute arbitrary JavaScript in the victim’s browser.</p>\n<p><strong>Affected Versions</strong>:</p>\n<p>All versions of Kibana before 7.10.2 and 6.8.14 are affected by this flaw</p>\n<p><strong>Solutions and Mitigations</strong>:</p>\n<p>Users should upgrade to Kibana version 7.10.2 or 6.8.14. Users unable to upgrade can disable Vega visualizations by setting ‘vega.enabled: false’ in the kibana.yml file.</p>\n<p>CVSSv3 - 8.7: AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N</p>\n<p>CVE ID: CVE-2020-26296</p>\n<h2 id=\"Additional-Information\"><a href=\"#Additional-Information\" target=\"_self\">Additional Information</a></h2>\n<p>Liferay's Elasticsearch connectors and out-of-the-box features are not using <span style=\"font-weight: 400;\">Document or Field Level Security (ESA-2021-05).<br></span></p>\n</div>\n<h2 id=\"Search-Engine-Compatibility-Matrix\"><a href=\"#Search-Engine-Compatibility-Matrix\" target=\"_self\">Search Engine Compatibility Matrix</a></h2>\n<p>Reference the information <a href=\"/w/search-engine-compatibility-matrix\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<h2 id=\"Vendor-References\"><a href=\"#Vendor-References\" target=\"_self\">Vendor References</a></h2>\n<ul>\n<li>\n<p><a href=\"https://discuss.elastic.co/t/elastic-stack-7-11-0-and-6-8-14-security-update/263915\" target=\"_self\" rel=\"undefined\">https://discuss.elastic.co/t/elastic-stack-7-11-0-and-6-8-14-security-update/263915</a></p>\n</li>\n<li><a href=\"https://discuss.elastic.co/t/elastic-stack-7-11-0-security-update/265835\">https://discuss.elastic.co/t/elastic-stack-7-11-0-security-update/265835</a></li>\n</ul>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:34:01Z",
+  "dateModified": "2026-03-05T21:42:03Z",
+  "datePublished": "2021-03-09T14:27:00Z",
+  "description": "",
+  "externalReferenceCode": "360057676252",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-march-9-2021",
+  "id": 26137786,
+  "key": "26137784",
+  "keywords": [
+    "ja",
+    "mt"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137786/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch and Liferay Enterprise Search Security Advisory: March 9, 2021",
+  "uuid": "257eea97-7174-2a87-ea9a-48b8916d4696"
+}

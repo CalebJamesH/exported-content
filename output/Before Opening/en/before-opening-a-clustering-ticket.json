@@ -1,0 +1,143 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>This article provides a short checklist of questions to ask and steps to take before opening a clustering ticket in Help Center. By taking a moment to go through this checklist before opening a Help Center request, you ensure the fastest possible resolution for your particular issue.</p>\n<section id=\"resolution\">\n<h2>Resolution</h2>\n<div>\n<p>For each ticket, please attach your portal-ext.properties file, as well as the output of the <em>patching-tool support-info</em> command specific to the environment.</p>\n<p>For clustering tickets specifically, please work through the following checklist and include the resulting information when you create a Help Center ticket.</p>\n<h3>Users Working on Liferay DXP</h3>\n<ol>\n<li>Are you using Multicast or Unicast?</li>\n<li>Have you followed the basic clustering instructions provided in our Knowledge Base?\n<ol>\n<li><a href=\"https://help.liferay.com/hc/articles/360017801591\">Installing Liferay DXP in a Clustered Environment</a></li>\n<li>\n<a href=\"https://help.liferay.com/hc/articles/360018175191-Liferay-DXP-Clustering-\">Liferay DXP Clustering</a> <em><strong>Note:</strong> For users familiar with Portal, but now working on DXP, there is a noticeable difference in how clustering is configured. Be sure to check the <a href=\"https://help.liferay.com/hc/en-us/articles/360018175191-Liferay-DXP-Clustering-#unicast-over-tcp\">Unicast over TCP</a> section, specifically step 3.</em>\n</li>\n</ol>\n</li>\n<li>Do you have a cluster license?</li>\n<li>Provide us with the complete portal-ext.properties file from all nodes.\n<ol>\n<li>Do you have cluster.link.enabled=true in your portal-ext.properties?</li>\n</ol>\n</li>\n<li>Our main objective will be to help troubleshoot a basic cluster of your Liferay DXP environment.</li>\n<li>\n<strong>*</strong>Have you tried setting up Unicast clustering?</li>\n</ol>\n<h3>Users Working on Liferay Portal</h3>\n<ol>\n<li>Are you using Multicast or Unicast?</li>\n<li>Have you followed the basic clustering instructions provided in our Knowledge Base?\n<ol>\n<li><a href=\"https://help.liferay.com/hc/articles/360018491931\">Installing Liferay Portal in a Clustered Environment</a></li>\n<li><a href=\"https://help.liferay.com/hc/articles/360018151252\">Managing Liferay Portal's Distributed Cache</a></li>\n</ol>\n</li>\n<li>Do you have a cluster license?</li>\n<li>Have you installed the <a href=\"https://www.liferay.com/marketplace/-/mp/application/15099166\">Ehcache plugin</a>?\n<ol>\n<li>Verify it is the correct version for this portal.</li>\n<li>If caching has been customized, please provide the XML files.</li>\n</ol>\n</li>\n<li>Provide us with the complete portal-ext.properties file from all nodes.\n<ol>\n<li>Do you have cluster.link.enabled=true in your portal-ext.properties?</li>\n</ol>\n</li>\n<li>Our main objective will be to help troubleshoot a basic cluster of your Liferay Portal environment.</li>\n<li>\n<strong>*</strong>Have you tried setting up Unicast clustering?</li>\n</ol>\n<p><strong>*Please Note:</strong> By default, the Liferay platform is tailored for enabling Multicast clustering. Yet, for some users whose environment is not setup to handle Multicast communication—even with Multicast clustering enabled—clustering may not work properly. In this case, we suggest setting up your Liferay cluster using the Unicast option.</p>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:02Z",
+  "dateModified": "2026-03-10T20:47:53Z",
+  "datePublished": "2018-10-18T17:45:00Z",
+  "description": "",
+  "externalReferenceCode": "360018122552",
+  "friendlyUrlPath": "before-opening-a-clustering-ticket",
+  "id": 26098942,
+  "key": "26098940",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "dxp-7-0",
+    "knowledge-base",
+    "migration-2",
+    "core-infrastructure",
+    "portal-6-1",
+    "cp",
+    "provisioning",
+    "licence",
+    "clustering"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098942/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Support FAQ",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Before Opening a Clustering Ticket",
+  "uuid": "d0046552-fbe8-3f0e-a570-6642b943c74b"
+}

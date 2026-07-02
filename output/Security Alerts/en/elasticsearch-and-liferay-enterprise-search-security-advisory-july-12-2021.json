@@ -1,0 +1,123 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><a href=\"/w/elastic-stack-and-liferay-enterprise-search-les-security-advisories\" target=\"_self\">Published: July 12, 2021</a></aside>\n<p>The following issues may affect the functionality of your Liferay DXP, Liferay Enterprise Search environment and your Elastic Stack.</p>\n<h2 id=\"Deployments-which-might-be-impacted\"><a href=\"#Deployments-which-might-be-impacted\" target=\"_self\">Deployments which might be impacted</a></h2>\n<ul>\n<li>Elasticsearch 6.x before 6.8.17</li>\n<li>Elasticsearch 7.x before 7.13.3</li>\n</ul>\n<h2 id=\"Vulnerability-Information\"><a href=\"#Vulnerability-Information\" target=\"_self\">Vulnerability Information</a></h2>\n<div class=\"cooked\">\n<p><strong>Elasticsearch Denial of Service issue (ESA-2021-15)</strong></p>\n<p>An uncontrolled recursion vulnerability that could lead to a denial of service attack was identified in the Elasticsearch Grok parser. A user with the ability to submit arbitrary queries to Elasticsearch could create a malicious Grok query that will crash the Elasticsearch node.</p>\n<p><strong>Affected Versions:</strong></p>\n<p>Elasticsearch versions prior to 7.13.3 and 6.8.17</p>\n<p><strong>Solutions and Mitigations:</strong></p>\n<p>Users should update their version of Elasticsearch to 7.13.3 or 6.8.17.</p>\n<p>CVSSv3: 5.7 - AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H</p>\n<p>CVE ID: CVE-2021-22144</p>\n<p>CWE: CWE-674: Uncontrolled Recursion</p>\n<h2 id=\"Additional-Information\"><a href=\"#Additional-Information\" target=\"_self\">Additional Information</a></h2>\n<p>Liferay DXP and Liferay Commerce products are not using Elasticsearch's Grok capabilities out-of-the-box.</p>\n</div>\n<h2><a href=\"#Search-Engine-Compatibility-Matrix\" target=\"_self\">Search Engine Compatibility Matrix</a></h2>\n<p>Reference the information <a href=\"/w/search-engine-compatibility-matrix\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<h2 id=\"Vendor-References\"><a href=\"#Vendor-References\" target=\"_self\">Vendor References</a></h2>\n<p><a href=\"https://discuss.elastic.co/t/elasticsearch-7-13-3-and-6-8-17-security-update/278100\" target=\"_self\" rel=\"undefined\">https://discuss.elastic.co/t/elasticsearch-7-13-3-and-6-8-17-security-update/278100</a></p>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:20:23Z",
+  "dateModified": "2026-03-05T21:42:02Z",
+  "datePublished": "2021-07-12T13:06:00Z",
+  "description": "",
+  "externalReferenceCode": "4404847604365",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-july-12-2021",
+  "id": 26132541,
+  "key": "26132539",
+  "keywords": [
+    "ja",
+    "mt"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132541/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch and Liferay Enterprise Search Security Advisory: July 12, 2021",
+  "uuid": "5b76beb1-4e58-e33b-cb3c-8ec0e5e63507"
+}

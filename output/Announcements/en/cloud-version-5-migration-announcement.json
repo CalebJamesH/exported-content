@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145887/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145887/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145887"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n<p><strong>Published: May 3, 2023</strong></p>\n<h1 id=\"h_01HYXH09M6EZPJ3QWRG0V8XH4C\">Summary</h1>\n<p>As you may know, Liferay released a new major version of the Cloud Service Stack last year(<a href=\"https://support.liferay.com/12-08-2022-service-update-2022-49-1\" target=\"_self\">12/08/2022 Service Update 2022.49.1</a>). Version 5 has numerous valuable enhancements meant to improve the experience for every Liferay PaaS customer. In order to ensure that all Liferay PaaS customers benefit from these new features and to allow our teams to focus new development on this version, we want to share our plan to assist customers in updating to version 5.</p>\n<h1 id=\"h_01HYXH09M66Q57EP648QAHHTR9\">What is Version 5?</h1>\n<p>Version 5 is the latest major image update for all 5 of the Cloud services. This means that backup, database, liferay, search, and webserver all have new 5.0.0 versions which include various fixes and improvements.</p>\n<h1 id=\"h_01HYXH09M6V3ACVPF5XQDH6PA1\">Version 5 Benefits</h1>\n<p>There are numerous benefits of the version 5 stack. The key features relate to backups, database, and webserver. These are highlighted below.</p>\n<h4 id=\"h_01HYXH09M6ZX95FZC09RF62CXT\"><strong>Backups - Prepare and Swap Restore Strategy</strong></h4>\n<p>With prepare and swap enabled, your site is no longer taken down while a backup is being restored. Instead, the backup is restored into a separate volume and db instance. If the restore completes successfully, the restored volume and db instance is swapped with the current one. The site should only be down as long as it takes for the liferay service to restart.</p>\n<h4 id=\"h_01HYXH09M6JKW684HHH2T3NKVE\"><strong>Database - Regional Database by Default<br></strong></h4>\n<p>Database reliability and performance are significantly improved with regional databases. These databases are replicated and synchronized to additional zones to improve resilience and minimize latency in the event or a zone failure.</p>\n<h4 id=\"h_01HYXH09M7TFBWVDEPF33N86HY\"><strong>Webserver - Improved WAF Support</strong></h4>\n<p>The new webserver service now includes the latest version of ModSecurity Web Application Firewall(WAF). Enabling ModSecurity helps to prevent XSS and SQL injection attacks by inspecting requests in real time.</p>\n<h1 id=\"h_01HYXH09M7XEWNH9S25ZPE1YRY\">Version 5 Update Steps</h1>\n<p>Updating to version 5 is as easy as updating to any minor version. Simply update the \"image\" property in your &lt;service&gt;/LCP.json files to version 5.0.0 or higher.</p>\n<ol>\n<li>Update the ci service using the CLI(see <a href=\"https://learn.liferay.com/web/guest/w/liferay-cloud/build-and-deploy/deploying-changes-via-the-cli-tool\" target=\"_self\">Deploying Changes via the CLI Tool</a>)</li>\n<li>Edit the LCP.json files for all remaining services(backup, database, liferay, search, and webserver) to images version 5.0.0 or higher\n<ul>\n<li>You can find the version options in our <a href=\"https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog\" target=\"_self\">Services Changelog</a>\n</li>\n</ul>\n</li>\n<li>Commit the changes to your repository using these git commands(commands provided as an example, please use your normal SDLC process)<br>\n<ul>\n<li>\n<pre>git add .</pre>\n</li>\n<li>\n<pre>git commit -m \"Update dxp cloud stack to XXX\"</pre>\n</li>\n<li>\n<pre>git push origin branchname</pre>\n</li>\n</ul>\n</li>\n<li>Deploy to your environment\n<ul>\n<li>The deploy option can be found on the Builds page of the <a href=\"https://console.liferay.cloud/\" target=\"_self\">Cloud Console</a> (3 dot menu -&gt; deploy build to...)</li>\n</ul>\n</li>\n</ol>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: Once you've updated your services, be sure to take a look at <a href=\"https://learn.liferay.com/w/liferay-cloud/reference/liferay-cloud-version-5-changes\" target=\"_self\">Liferay Cloud Version 5 Changes</a> for steps to leverage the improvements of version 5.</span></aside>\n<p>In order to leverage all of the features of version 5, it is best to update all services to 5.0.0 or higher. There is no expected downtime associated with this update aside from the amount of time it takes for the services to start up.</p>\n<h1 id=\"h_01HYXH09M730VJ78EN408Y4Z7V\">Schedule</h1>\n<p>In order to focus development on version 5 and increase adoption of version 5, Liferay has established an end of life schedule for previous versions of the Cloud Service Stack(version 4).</p>\n<ul>\n<li>\n<strong>August 31st, 2023</strong> - End of Life\n<ul>\n<li>End of bug fixes for version 4</li>\n</ul>\n</li>\n<li>\n<strong>December 31st, 2023</strong> - End of Service Life\n<ul>\n<li>End of Subscription Services support for version 4</li>\n</ul>\n</li>\n<li>\n<strong>December 2nd, 2024</strong> - End of Availability\n<ul>\n<li>Version 4 images removed</li>\n<li>New builds containing version 4 images will fail</li>\n</ul>\n</li>\n<li>\n<strong>January 14th, 2025</strong> - End of Functionality\n<ul>\n<li>Existing builds containing version 4 images will fail</li>\n</ul>\n</li>\n</ul>\n<h1 id=\"h_01HYXH09M7TECP10CEQ27BYPZ4\">Additional Information</h1>\n<p>If you have any questions about this update or encounter any issues performing the update, <span style=\"font-weight: 400;\">please </span><a href=\"https://help.liferay.com/hc/requests/new\" target=\"_self\" rel=\"undefined\">submit a ticket</a><span style=\"font-weight: 400;\"> and Liferay Support will be happy to assist.</span></p>\n<ul>\n<li><a href=\"https://learn.liferay.com/w/liferay-cloud/reference/liferay-cloud-version-5-changes\" target=\"_self\">Liferay Cloud Version 5 Changes</a></li>\n<li><a href=\"https://learn.liferay.com/w/liferay-cloud/reference/understanding-service-stack-versions\" target=\"_self\">Understanding Stack Versions</a></li>\n<li><a href=\"https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog\" target=\"_self\">Services Changelog</a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:42:27Z",
+  "dateModified": "2025-11-13T23:40:08Z",
+  "datePublished": "2023-04-13T21:31:00Z",
+  "description": "",
+  "externalReferenceCode": "14828940495245",
+  "friendlyUrlPath": "cloud-version-5-migration-announcement",
+  "id": 26145887,
+  "key": "26145885",
+  "keywords": [
+    "ja",
+    "liferay-paas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145887/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Cloud Version 5 Migration Announcement",
+  "uuid": "d3b078da-ac63-9690-5056-c91bf3b17758"
+}

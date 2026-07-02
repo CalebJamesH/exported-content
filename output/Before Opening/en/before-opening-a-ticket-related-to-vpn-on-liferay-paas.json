@@ -1,0 +1,141 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span>The following article outlines a short checklist of questions to ask and steps to take before opening a ticket related to VPN on Liferay PaaS. By taking a moment to go through this checklist before opening a request, you are ensuring the fastest possible resolution for your particular issue.</span></p>\n\n<h2 id=\"h_01HZTBTBWG09F4E29CPBDS74GB\">If you can't get a \"Connected\" status:</h2>\n\n<ol>\n\t<li>Make sure you are using one of the supported protocols: OpenVPN or IPsec (IKEv2).</li>\n\t<li>Are you sure your VPN is <strong>Client-to-Site</strong>? We do <strong>not</strong> support a Site-to-Site VPN in shared clusters.\n\t<ol>\n\t\t<li>Site-to-Site VPNs are only supported with subscriptions that include a <a href=\"https://learn.liferay.com/w/liferay-cloud/configuring-the-cloud-network/vpn-integration-overview#liferay-cloud-ip-ranges-for-private-cluster\" rel=\"noopener noreferrer\" target=\"_blank\">private cluster</a>, and can only be <a href=\"https://learn.liferay.com/w/liferay-cloud/reference/platform-limitations#vpn\">configured with Google Cloud VPN</a>.&nbsp;</li>\n\t</ol>\n\t</li>\n\t<li>Can you connect to this VPN server using a Linux VPN client? If you can't, you most likely won't be able to connect to the VPN server using our Liferay Experience Cloud SM client.</li>\n\t<li>Do you have any Firewall role that might prevent the Liferay Experience Cloud SM client from connecting to your VPN server? You can check your firewall log to see if the Liferay PaaS client connection request is getting through.&nbsp;</li>\n</ol>\n\n<h2 id=\"h_01HZTBTBWGEW2X6AWYKB138K7Q\">If you get a \"Connected\" status but the VPN still does not seem to be working:</h2>\n\n<ol>\n\t<li>Are you using <code>&lt;vpn:port&gt;</code> instead of <code>&lt;ip_address:port&gt;</code>? After mapping an IP address and port on Liferay Experience Cloud SM, you must refer to it using <code>VPN:mapped_port</code>.&nbsp;<br />\n\tLet's say you have mapped 192.168.0.0:8080 to vpn:8080. After that, if you need to use this IP+port on Liferay DXP, for example, you need to use the VPN:8080 terminology instead of&nbsp;192.168.0.0:8080.</li>\n\t<li>Do you have any HTTP service running on your private network? If yes, a good test is to map this service into a Liferay Experience Cloud SM port and try to run a <code>curl</code> command from the Liferay Service shell to check the results.</li>\n\t<li>Are you mapping the same IP and port combination to multiple Liferay Experience Cloud SM ports? If so, it is not possible to have a successful result. Each combination IP+port should be mapped into a unique Liferay Experience Cloud SM port.&nbsp;</li>\n</ol>\n\n<h2 id=\"h_01HZTBTBWGECSZM8VBSD87N6ZW\">Additional Information</h2>\n\n<ul>\n\t<li><a href=\"https://help.liferay.com/hc/articles/360043427372\" target=\"_self\">Support Tickets - Best Practices</a></li>\n\t<li><a href=\"https://learn.liferay.com/dxp-cloud/latest/en/index.html\">Liferay PaaS Official Documentation</a></li>\n</ul>\n\n<p> </p>\n\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:37Z",
+  "dateModified": "2026-03-10T20:47:54Z",
+  "datePublished": "2020-05-29T00:21:00Z",
+  "description": "",
+  "externalReferenceCode": "360044232091",
+  "friendlyUrlPath": "before-opening-a-ticket-related-to-vpn-on-liferay-paas",
+  "id": 26108260,
+  "key": "26108258",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "liferay-paas",
+    "liferay-experience-cloud---self-managed",
+    "lxc-sm",
+    "dxp-cloud",
+    "knowledge-base",
+    "migration-2",
+    "core-infrastructure",
+    "cp",
+    "vpn"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108260/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Support FAQ",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Before opening a ticket related to VPN on Liferay PaaS",
+  "uuid": "1eabe490-80e8-29a3-9b88-f79ee0903dfa"
+}

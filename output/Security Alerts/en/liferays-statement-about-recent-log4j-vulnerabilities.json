@@ -1,0 +1,122 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><a target=\"_self\">Updated on: February 3, 2022  |  Originally Published: December 20, 2021</a></aside>\n<p><span style=\"font-weight: 400;\">Reference: </span><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2021-44228\"><span style=\"font-weight: 400;\">https://nvd.nist.gov/vuln/detail/CVE-2021-44228</span></a><br><span style=\"font-weight: 400;\">Reference: </span><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2021-4104\"><span style=\"font-weight: 400;\">https://nvd.nist.gov/vuln/detail/CVE-2021-4104</span></a><span style=\"font-weight: 400;\"> </span><br><span style=\"font-weight: 400;\">Reference: </span><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2021-45046\"><span style=\"font-weight: 400;\">https://nvd.nist.gov/vuln/detail/CVE-2021-45046</span></a><br><span style=\"font-weight: 400;\">Reference: </span><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2021-45105\"><span style=\"font-weight: 400;\">https://nvd.nist.gov/vuln/detail/CVE-2021-45105</span></a></p>\n<h2 id=\"h_01HEBCE8484J0F8N915RE662CB\"><strong>Executive Summary</strong></h2>\n<p><span style=\"font-weight: 400;\">A few critical flaws were announced in Log4j &amp; Log4j2 versions from Dec 10th to Dec 18th. Liferay identified that only the 7.4 versions of Liferay Portal or DXP are vulnerable to the referenced advisories, namely to </span><a href=\"https://nvd.nist.gov/vuln/detail/CVE-2021-44228\"><span style=\"font-weight: 400;\">CVE-2021-44228</span></a><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">For more information please see detailed Liferay advisories  at </span><a href=\"https://help.liferay.com/hc/en-us/sections/360002102392-Security-Alert\"><span style=\"font-weight: 400;\">https://help.liferay.com/hc/en-us/sections/360002102392-Security-Alert</span></a></p>\n<h2 id=\"h_01HEBCE848ZXCMQCNT3CEYX8PB\"><strong>Liferay DXP</strong></h2>\n<p>Log4j2 libraries were replaced with Reload4j in the product. Customers can either request a patch with this change or update to the next release (7.3 SP4 &amp; all other versions TBD).</p>\n<p>Customers should not attempt to update Log4j[1] to 2.17.1 as it requires code changes and a recompile, which nullifies the support of Log4j.</p>\n<h2 id=\"h_01HEBCE848NAJ392BJK21R53KM\"><strong>Elasticsearch / Liferay Enterprise Search Customers</strong></h2>\n<p><span style=\"font-weight: 400;\">Elasticsearch downloads for versions </span><a href=\"https://www.elastic.co/downloads/elasticsearch\"><span style=\"font-weight: 400;\">7.16.2 and 6.8.22</span></a><span style=\"font-weight: 400;\"> are now available. These releases include the most recent version of Log4j (2.17.0).</span></p>\n<p><span style=\"font-weight: 400;\">Please reference this LES advisory </span><a href=\"/w/elasticsearch-and-liferay-enterprise-search-security-advisory-dec-11-2021-log4j2-cve-2021-44228-cve-2021-45046-cve-2021-45105\"><span style=\"font-weight: 400;\">article</span></a><span style=\"font-weight: 400;\"> for more details and ongoing updates.</span></p>\n<h2 id=\"h_01HEBCE848MJC4Z8W814EQCPCM\"><strong>Customers on Solr</strong></h2>\n<p><span style=\"font-weight: 400;\">Solr 8.11.x is now added as compatible on the </span><a href=\"/w/search-engine-compatibility-matrix\"><span style=\"font-weight: 400;\">Search Engine Compatibility Matrix</span></a><span style=\"font-weight: 400;\"> for Liferay DXP 7.1-7.3.</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:22Z",
+  "dateModified": "2026-03-05T21:49:59Z",
+  "datePublished": "2021-12-20T21:57:00Z",
+  "description": "",
+  "externalReferenceCode": "4417225930893",
+  "friendlyUrlPath": "liferays-statement-about-recent-log4j-vulnerabilities",
+  "id": 26107986,
+  "key": "26107984",
+  "keywords": [
+    "ja"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107986/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay’s Statement about recent Log4j vulnerabilities",
+  "uuid": "95ee46e8-cf05-0783-b680-1d4beffa9a80"
+}

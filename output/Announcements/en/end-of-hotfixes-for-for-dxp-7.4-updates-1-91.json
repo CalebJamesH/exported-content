@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27290067/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27290067/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27290067"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<blockquote type=\"cite\">As of August 31, 2025, hotfixes for Liferay DXP 7.4 Updates 1-91 are no longer available*. This is in accordance with the policy previously announced in this article: <a data-sk=\"tooltip_parent\" href=\"https://support.liferay.com/w/quarterly-release-transitional-support-coverage\" rel=\"noopener noreferrer\" target=\"_blank\" url=\"https://support.liferay.com/w/quarterly-release-transitional-support-coverage\">Quarterly Release Transitional Support Coverage</a>.<br>\n<br>\nHotfixes will continue to be available for Liferay DXP 7.4 Update 92 until Sept 1, 2027.<br>\n<br>\n<b>Additional Information</b></blockquote>\n\n<ul data-border=\"1\" data-border-radius-bottom-cap=\"0\" data-border-radius-top-cap=\"0\" data-indent=\"0\" data-list-tree=\"true\">\n\t<li><a data-sk=\"tooltip_parent\" href=\"https://support.liferay.com/w/quarterly-release-transitional-support-coverage\" rel=\"noopener noreferrer\" target=\"_blank\" url=\"https://support.liferay.com/w/quarterly-release-transitional-support-coverage\">Quarterly Release Transitional Support Coverage</a></li>\n\t<li><a data-sk=\"tooltip_parent\" href=\"https://support.liferay.com/w/liferay-dxp-quarterly-release-process\" rel=\"noopener noreferrer\" target=\"_blank\" url=\"https://support.liferay.com/w/liferay-dxp-quarterly-release-process\">Liferay DXP Quarterly Release Process</a></li>\n\t<li><a data-sk=\"tooltip_parent\" href=\"https://support.liferay.com/w/liferay-dxp-product-delivery-method-1\" rel=\"noopener noreferrer\" target=\"_blank\" url=\"https://support.liferay.com/w/liferay-dxp-product-delivery-method-1\">Liferay DXP 7.4 Product Delivery Method</a></li>\n</ul>\n\n<hr>\n<p>* Liferay may still provide existing hotfixes on the customer's version or recommend updates/upgrades to address product issues</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": ""
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-09T21:58:25Z",
+  "dateModified": "2026-02-13T16:06:26Z",
+  "datePublished": "2026-02-09T21:58:00Z",
+  "description": "",
+  "externalReferenceCode": "d8ba1f14-2a94-17cd-14ae-fc64b34b40b1",
+  "friendlyUrlPath": "end-of-hotfixes-for-for-dxp-7.4-updates-1-91",
+  "id": 27290067,
+  "key": "27290065",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27290067/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "End of Hotfixes for DXP 7.4 Updates 1-91",
+  "uuid": "e9787fe1-1c91-a69c-e205-3577a9be3750"
+}

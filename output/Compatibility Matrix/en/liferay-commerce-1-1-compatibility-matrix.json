@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay Commerce 1.1 is supported under the following configurations:</p>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 700px; float: left;\">\n<thead>\n<tr style=\"height: 21px;\">\n<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Type</strong></span></td>\n<td style=\"background-color: #f7f8f9; width: 388px; vertical-align: middle;\" colspan=\"2\"><span class=\"wysiwyg-font-size-medium\"><strong>Compatible Environments</strong></span></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr>\n<td style=\"width: 122px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay Version</span></p>\n</td>\n<td style=\"width: 388px; text-align: left; vertical-align: top;\" colspan=\"2\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1 Fix Pack 11+</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Application Server</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.1</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">tcServer 4.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Tomcat 9.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Weblogic 12c Release 2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Websphere 8.5.5 (Fix Pack 11+)</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Websphere 9.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Wildfly 10.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Wildfly 11.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Wildfly 14.0</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Wildfly 16.0</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Database</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Amazon Aurora</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">DB2 10.5</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">DB2 11.1</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">MariaDB 10.2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">MySQL 5.7</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle Database 12c Release 2</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle Database 19c</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 9.6</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 10</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2016</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2017</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Sybase ASE 16</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Operating System</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Alpine Linux 3.8</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Amazon Linux 2</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">CentOS 7</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Debian 9</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">IBM AIX 7.1</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle Linux 6</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li>\n<span class=\"wysiwyg-font-size-medium\">Oracle Linux 7</span><span class=\"wysiwyg-font-size-medium\"></span>\n</li>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle Solaris 11</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">RedHat Enterprise Linux 7</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">RedHat Enterprise Linux 8</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">SUSE Enterprise Linux 12</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 16.04</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2016</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Desktop Browser*</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Chrome (Latest)</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Edge (Latest)</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Firefox ESR 52</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Internet Explorer 11</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Safari 11</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Mobile Browser**</span></p>\n</td>\n<td style=\"width: 388px; text-align: left; vertical-align: top; height: 84px;\" colspan=\"2\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Chrome (Latest)</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Safari (Latest)</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">JDK****</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">IBM J9 JDK 8</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 8 </span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 11</span></li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">All Java Technical Compatibility Kit (TCK) compliant builds of Java 11 and Java 8</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Cloud Services</span></p>\n</td>\n<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Amazon Elastic <br>Compute Cloud***</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Amazon Relational <br>Database Service***</span></li>\n<li>\n<span class=\"wysiwyg-font-size-medium\">Amazon S3</span><span class=\"wysiwyg-font-size-medium\"></span>\n</li>\n</ul>\n</td>\n<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Azure Files</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Azure SQL Databases</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Azure Virtual Machines</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Google Cloud Compute Engine</span></li>\n<li><span class=\"wysiwyg-font-size-medium\">Google Cloud SQL</span></li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n<p><span class=\"wysiwyg-font-size-medium\">Search Engine</span></p>\n</td>\n<td style=\"width: 388px; text-align: left; vertical-align: top; height: 84px;\">\n<ul>\n<li><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x</span></li>\n<li>\n<span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x <br></span><span class=\"wysiwyg-font-size-medium\">(DXP 7.1 Fix Pack 5+)</span>\n</li>\n</ul>\n</td>\n<td style=\"width: 388px; text-align: left; vertical-align: top; height: 84px;\"> </td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<p><span class=\"wysiwyg-font-size-medium\">* Desktop Browser support exclusions:</span><br> <span class=\"wysiwyg-font-size-medium\">1. Versions of browsers that were released after a major Liferay version release have not been tested and support for these newer browser releases will be provided as a commercially reasonable effort only and may be included in subsequent service releases at Liferay's discretion.</span><br> <span class=\"wysiwyg-font-size-medium\">2. Versions of browsers that were supported with an initial release of a Liferay version that have reached the end of their product lifecycle are no longer tested in subsequent service releases and support for those older browser releases will be provided as a commercially reasonable effort only.</span><br> <span class=\"wysiwyg-font-size-medium\">3. Internet Explorer Compatibility modes for all relevant versions are not supported.</span><br> <span class=\"wysiwyg-font-size-medium\">4. Customers may experience a memory leak when using the latest version of IE 11 and Edge. Please see the <a href=\"https://help.liferay.com/hc/en-us/articles/360018191072\" target=\"_self\">Customer Knowledge Base</a> for more information.</span></p>\n<p><span class=\"wysiwyg-font-size-medium\">** Mobile Browser support exclusions:</span><br> <span class=\"wysiwyg-font-size-medium\">1. Liferay will support access to information (e.g. reading content and navigation through pages), navigation menus, and basic responsiveness of modules for the latest versions of mobile browsers only. For more information on Liferay's mobile support policy, please refer to the <a href=\"/w/mobile-device-support-policy\" target=\"_self\">Help Center</a>.</span></p>\n<p><span class=\"wysiwyg-font-size-medium\">*** Amazon EC2 and RDS are only supported with environments on the Liferay DXP 7.1 Compatibility Matrix</span></p>\n<p><span class=\"wysiwyg-font-size-medium\">**** All version 11 JDKs require Liferay DXP 7.1 Fix Pack 5+<br>Liferay Commerce does not restrict the use of VM/Container strategy as long as the Application Server/Database/JDK/Operating System are supported within our compatibility matrix. Customers will be responsible for configuring the VM/Container appropriately.</span></p>\n<p><a href=\"https://www.liferay.com/documents/10182/246659966/Liferay+Commerce+1.1+Compatibility+Matrix.pdf/2920fa12-91cd-8ba2-ac1a-dbe2c8223291?t=1584987643026\" target=\"_self\">Download PDF</a></p>\n<p><span class=\"wysiwyg-font-size-small\">Liferay Commerce 1.1 Matrix Updated 2020/08/14</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176960"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:31:35Z",
+  "dateModified": "2026-03-25T23:58:55Z",
+  "datePublished": "2018-09-25T18:10:00Z",
+  "description": "",
+  "externalReferenceCode": "360016349591",
+  "friendlyUrlPath": "liferay-commerce-1-1-compatibility-matrix",
+  "id": 26136673,
+  "key": "26136671",
+  "keywords": [
+    "ja",
+    "supportability",
+    "commerce",
+    "commerce-1-0"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136673/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461469,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176960,
+      "taxonomyCategoryName": "Liferay Commerce Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "61db96b5-3658-d349-88eb-e0c5be268384",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Commerce 1.1 Compatibility Matrix",
+  "uuid": "335c9577-c4a1-7548-506c-2561c403f308"
+}

@@ -1,0 +1,122 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>This article explains the Elasticsearch node types that are charged as part of the Liferay Enterprise Search subscription.</p>\n<section id=\"resolution\">\n<h2 id=\"h_01JYHAH34ZTFHPFCHVBD20V097\">Resolution</h2>\n<div>\n<p>The following Elasticsearch nodes count towards your Liferay Enterprise Search subscription:</p>\n<ul>\n<li><span>Data nodes</span></li>\n<li><span>Master nodes (including “voting-only”)</span></li>\n<li><span>Tribe nodes</span></li>\n<li><span>Cross Cluster Search nodes</span></li>\n<li><span>Machine Learning nodes</span></li>\n</ul>\n<p><span>The following node types do NOT count against your subscription:</span></p>\n<ul>\n<li><span>Dedicated Coordinating nodes</span></li>\n<li><span>Dedicated Ingest nodes</span></li>\n</ul>\n<p><span>In addition, you may have one dedicated 1-node monitoring cluster as part of your subscription which will NOT count against your total amount, with the following restrictions:</span></p>\n<ul>\n<li><span>This cluster may only be used for monitoring data from the production cluster</span></li>\n<li><span>This monitoring node should have the <strong>non-production</strong> license applied to it</span></li>\n<li><span>The only plugins which may be used, besides Monitoring itself, are Security and Watcher (to allow alerting on monitoring data). </span></li>\n</ul>\n<p><span>Please note that if a node combines multiple roles, you will need a license for that node if any of the roles require a license. However, if more than one role requires a license, you don't need multiple licenses for that node. Each node requires at most one license for all the roles it carries.</span></p>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:06Z",
+  "dateModified": "2026-03-10T22:31:10Z",
+  "datePublished": "2020-07-08T17:08:00Z",
+  "description": "",
+  "externalReferenceCode": "360045551312",
+  "friendlyUrlPath": "les-which-node-types-are-charged-as-part-of-the-liferay-enterprise-search-subscription",
+  "id": 26097981,
+  "key": "26097979",
+  "keywords": [
+    "ja",
+    "mt",
+    "dxp-7-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "knowledge-base",
+    "enterprise-search",
+    "elasticsearch",
+    "search"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097981/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "[LES] Which node types are charged as part of the Liferay Enterprise Search Subscription",
+  "uuid": "bb4672e3-8e71-e1b1-20e8-f68a8c639da2"
+}

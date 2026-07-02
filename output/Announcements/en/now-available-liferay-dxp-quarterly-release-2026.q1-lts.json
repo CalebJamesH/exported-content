@@ -1,0 +1,134 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27631546/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27631546/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27631546"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>We are pleased to announce that Liferay DXP Quarterly Release 2026.Q1 LTS is now available for download.<br>\n&nbsp;</p>\n\n<p>The key highlights for this Quarterly Release are:</p>\n\n<ul>\n\t<li>New Liferay Headless CMS - <span class=\"ml-rte-link-wrapper\"><a href=\"https://support.liferay.com/e/release-notes/release-highlights/20004/27626917?r=27626917#:~:text=Management%20System%20(CMS)-,New%20Liferay%20Headless%20CMS,-Easier%20Content%20Management\">Learn More</a></span></li>\n\t<li>Hubspot Lead Capture - <a href=\"https://support.liferay.com/e/release-notes/release-highlights/20004/27626917?r=27626917#:~:text=Marketplace-,HubSpot%20Lead%20Capture,-Eliminate%20Data%20Silos\">Learn More</a></li>\n\t<li>Promote Content Among Environments - <a href=\"https://support.liferay.com/e/release-notes/release-highlights/20004/27626917?r=27626917#:~:text=Platform-,Promote%20Content%20Among%20Environments,-Easily%20Promote%20Content\">Learn More</a></li>\n</ul>\n\n<p>To learn more about all the new features available in 2026.Q1 LTS Quarterly Release, please review the <a href=\"https://support.liferay.com/e/release-notes/release-highlights/20004/27626917?r=27626917\">Release Notes</a>.</p>\n\n<h3><a href=\"https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&amp;_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=122235468&amp;_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=122235708\">View Available Downloads</a></h3>\n\n<p>&nbsp;</p>\n\n<hr>\n<p><a href=\"https://support.liferay.com/w/anatomy-of-a-quarterly-release\"><strong><u>Anatomy of a Quarterly Release</u></strong></a><br>\nLearn more about the file and folder structures for Quarterly Releases.</p>\n\n<p><a href=\"https://support.liferay.com/w/liferay-dxp-quarterly-release-process\"><strong><u>Frequently Asked Questions</u></strong></a><br>\nSee more important information about our DXP Platform versioning and release cadence.</p>\n\n<p><u><strong><a href=\"https://support.liferay.com/w/liferay-dxp-2026.q1-lts-compatibility-matrix\">DXP 2026.Q1 LTS Compatibility Matrix</a></strong></u><br>\nCheck compatibility here to ensure a smooth and&nbsp;supported upgrade</p>\n\n<p><a href=\"https://learn.liferay.com/w/dxp/self-hosted-installation-and-upgrades\"><strong><u>Installation Instructions</u></strong></a><br>\nLearn how to install DXP Quarterly Releases.</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "27043863"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2026-03-18T16:30:45Z",
+  "dateModified": "2026-03-19T22:08:54Z",
+  "datePublished": "2025-11-19T13:43:00Z",
+  "description": "",
+  "externalReferenceCode": "27631044",
+  "friendlyUrlPath": "now-available-liferay-dxp-quarterly-release-2026.q1-lts",
+  "id": 27631546,
+  "key": "27631044",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/27631546/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973433,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 27043863,
+      "taxonomyCategoryName": "Product Releases",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "35c1a54d-5084-ff36-e685-7895f1db0091",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Now Available: Liferay DXP Quarterly Release 2026.Q1 LTS",
+  "uuid": "88229b90-1375-e3be-6782-979eaf22d0b8"
+}

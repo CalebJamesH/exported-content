@@ -1,0 +1,118 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"h_01JYHAFQ380J1V8PXAEWF573TW\" class=\"test-id__field-label-container slds-form-element__label\" data-aura-rendered-by=\"16:271;a\"><span class=\"test-id__field-label\" data-aura-rendered-by=\"17:271;a\">Introduction</span></h2>\n<div class=\"slds-form-element__control slds-grid itemBody\" data-aura-rendered-by=\"19:271;a\">\n<div class=\"slds-rich-text-editor__output uiOutputRichText forceOutputRichText\" dir=\"ltr\" data-aura-rendered-by=\"11:271;a\" data-aura-class=\"uiOutputRichText forceOutputRichText\">\n<p>Elasticsearch* instances running in VM infrastructures can present unique challenges. This article describes some common issues we may see with different VM software.</p>\n<h2 id=\"h_01JYHAFQ39QYJ9NX8NX7V0G5CJ\">VMware</h2>\n<p>vSphere is a very widely deployed VM infrastructure. It consists of physical hosts running VMware vSphere ESXi, management systems running vCenter, and a huge number of ancillary packages that handle things like backups, shipping copies of VMs to redundant datacenters, handling deployment of software on virtual infrastructure and converting physical machines to virtual instances. It's very handy for managing a datacenter because all storage and networking infrastructure can be managed through the vSphere management package. Admins can allocate storage and networking to the physical nodes and parcel out CPU, memory, disk and network bandwidth as needed with tight controls on allocation for each.</p>\n<h3 id=\"h_01JYHAFQ39EYWTVWYDZAGBKD6F\">CPU issues</h3>\n<p>The primary CPU problem on a VMware virtual infrastructure is overallocation. The physical machine has a certain number of cores available to it, and each virtual machine is given a certain number of vCPUs. If the number of vCPU's allocated to VM's on that host exceeds the number of physical cores, the VM system will have to have some requests for cycles wait while other VM's are using the CPU. This is called overcommitting and can cause CPU response to be slower than expected.</p>\n<p>The problem of overcommitted CPU resources gets worse when a system has many vCPU's. Since the OS believes it has many cores to work with, it will be scheduling operations assuming they will be handled immediately, and other operations on other CPU's may depend on results from many operations that were supposed to be running in parallel. The scheduler on the physical host may have to wait until 4 or 8 cores (for example) are available in order to process for 4 or 8 vCPU's. This can take longer than waiting for fewer cores. In many cases, this can cause a system that has more vCPU's allocated to it to run slower than one with fewer vCPU's. vSphere lets admins allocate clock ticks per VM, so some VM's can be capped to not exceed a certain speed, and others can run as fast as possible. That's why fewer vCPU's can sometimes run faster than more vCPU's. Two vCPU's could grab clock cycles whenever they are available, where four or eight might get tripped up waiting for enough cores to come available to handle the work. For java applications, it's a good idea to have a minimum of two vCPU's. One handles garbage collection operations and other JVM administration, and the other handles the bulk of the application processing. If there is only one vCPU available, GC will tend to block regular operation more than it should.</p>\n<h3 id=\"h_01JYHAFQ39G3Z6DYGSY6M60MG7\">Memory Issues</h3>\n<p>Memory can be overcommitted on a physical host. This happens when the memory allocated to the VM's running on the host exceeds the total amount of memory available on the host. This isn't a big problem until all of the VMs' operating systems have claimed all available memory on the physical host. To handle requests for memory, the physical host has to start swapping out pages to disk. This is invisible to the VM's, except that operations that normally would be pulling from main memory are actually pulling data from disk without the VM's OS' knowledge. One symptom of this can be high %sys CPU usage in top. If the OS itself was swapping out the memory, you'd see high %iowait and high swap use. If the swapping is happening at the physical host, those indicators will not be present. If this is happening, the admin needs to get some VM's off the physical machine or set a memory reservation for the ES node. A memory reservation guarantees that there will always be physical memory available for the VM and it will not be swapped out, at the expense of the other VM's on the system.</p>\n<h3 id=\"h_01JYHAFQ39EG25H09MZ2TXA826\">Disk Utilization</h3>\n<p>Physical storage from the physical host will be presented as a virtual disk. Much like memory, if disks are being overutilized you might see slow responses from the disk when the ES node's VM is not using it very heavily itself.</p>\n<p>Many virtual infrastructures use large-scale storage arrays to provide virtual disks to many VM's. If a large number of ES nodes are using the same storage array for their data paths, this can quickly become a bottleneck. The storage architecture must be carefully considered when designing a virtualized Elasticsearch infrastructure. Some of these problems can be avoided by ensuring there are multiple storage arrays available for Elasticsearch to use as a back-end, or using a virtualized storage architecture like VMware vSAN or another converged infrastructure solution.</p>\n<p>Another consideration when designing a storage infrastructure for Elasticsearch in a virtualized environment is the impact of data protection. VM snapshots are not recommended. As documented <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshot-restore.html\" target=\"_self\">here</a>, you cannot back up an Elasticsearch cluster by simply snapshotting the data directories of all of its nodes. Elasticsearch may be making changes to the contents of its data directories while it is running; snapshotting its data directories cannot be expected to capture a consistent picture of their contents. If you try to restore a cluster from such a backup, it may fail and report corruption and/or missing files. Alternatively, it may appear to have succeeded though it silently lost some of its data. The only reliable way to back up a cluster is by using the <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshot-restore.html\" target=\"_self\">snapshot and restore</a> functionality.</p>\n<h3 id=\"h_01JYHAFQ39VDAVJV3MSTPD7R7B\">Network Utilization</h3>\n<p>Network overutilization on the physical host is similar to overutilization of disk. Network operations on the VM will be slow for no apparent reason.</p>\n<h3 id=\"h_01JYHAFQ39KKVNXDWAEC5RYQV7\">Migration with vMotion</h3>\n<p>Live migration of VMs with vMotion will pause the VM for a period of time. While the VM is paused any running Elasticsearch nodes will not respond to requests, including health checks. If a node does not respond to health checks for long enough then it is deemed unhealthy and removed from the cluster. To avoid any disruption caused by a temporarily unresponsive node, we recommend following the <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/restart-cluster.html#restart-cluster-rolling\" target=\"_self\">rolling restart</a> procedure and performing the VM migration while the node is stopped.</p>\n<p>* Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>\n</div>\n</div>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:58Z",
+  "dateModified": "2026-03-10T22:31:12Z",
+  "datePublished": "2020-12-10T15:12:00Z",
+  "description": "",
+  "externalReferenceCode": "360053595031",
+  "friendlyUrlPath": "les-elasticsearch-virtual-machine-considerations",
+  "id": 26101007,
+  "key": "26101005",
+  "keywords": [
+    "ja",
+    "mt",
+    "elasticsearch",
+    "les",
+    "vmware"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101007/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "[LES] Elasticsearch Virtual Machine Considerations",
+  "uuid": "bf2a5da2-67e7-bb3b-1ca4-6bf39842d91d"
+}

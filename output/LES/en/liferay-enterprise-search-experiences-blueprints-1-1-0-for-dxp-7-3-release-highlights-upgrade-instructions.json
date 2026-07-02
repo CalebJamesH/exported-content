@@ -1,0 +1,119 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\">\n<p><img id=\"e_717\" class=\"emoji\" src=\"https://www.webfx.com/wp-content/themes/fx/assets/img/tools/emoji-cheat-sheet/graphics/emojis/information_source.png\" width=\"15\" height=\"15\"> <span style=\"font-weight: 400;\">If you aren’t familiar with Search Experiences, visit </span><a href=\"/w/easily-customize-liferay-s-search-behavior-with-blueprints\"><span style=\"font-weight: 400;\">our knowledge base article</span></a><span style=\"font-weight: 400;\"> for a quick overview.</span></p>\n</aside>\n<section id=\"environment\">\n<h2 id=\"Environment\"><a href=\"#Environment\" target=\"_self\">Environment</a></h2>\n<div>\n<ul>\n<li>Liferay DXP 7.3 Update 14</li>\n<li>Liferay Enterprise Search Experiences v1.1.0</li>\n</ul>\n</div>\n</section>\n<h2 id=\"Release-Highlights\"><a href=\"#Release-Highlights\" target=\"_self\">Release Highlights</a></h2>\n<p><span style=\"font-weight: 400;\">With this application release, the following enhancements and bug fixes are available in</span><a href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences.html\"><span style=\"font-weight: 400;\"> Liferay Enterprise Search Experiences: Blueprints</span></a><span style=\"font-weight: 400;\"> on </span><strong>DXP 7.3 Update 14+</strong><span style=\"font-weight: 400;\">:</span></p>\n<h3>Enhancements</h3>\n<p><a id=\"key-val\" class=\"issue-link\" href=\"https://issues.liferay.com/browse/LPS-150724\" rel=\"1016266\" data-issue-key=\"LPS-150724\">LPS-150724</a> : <span style=\"font-weight: 400;\">Improves the Blueprint Creation Experience by adding JSON autocomplete when </span><a href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/creating-and-managing-elements.html\"><span style=\"font-weight: 400;\">editing an Element</span></a><span style=\"font-weight: 400;\">, using the </span><a href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/creating-and-managing-elements/creating-elements.html#using-the-custom-json-element\"><span style=\"font-weight: 400;\">Custom JSON Element</span></a><span style=\"font-weight: 400;\">, and in the</span><a href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/search-blueprints-configuration-reference.html\"><span style=\"font-weight: 400;\"> Blueprints Configuration</span></a><span style=\"font-weight: 400;\"> editors.</span></p>\n<p><a href=\"https://issues.liferay.com/browse/LPS-150879\" target=\"_self\">LPS-150879</a> : Introduces the following important service and database layer changes to Blueprints and Elements:</p>\n<ol>\n<li>Both SXP entities (SXPBlueprint and SXPElement) gain two new fields: \"externalReferenceCode\" (ERC) and \"version\".\n<ul>\n<li>Out-of-the-box (aka. system) elements are populated with unique, deterministic ERCs derived from their default (en_US) titles (for example, BOOST_ALL_KEYWORDS_MATCH).</li>\n<li>Custom elements receive a randomly-generated ERC.</li>\n<li>Each Element instance inside a Blueprint includes its ERC.</li>\n</ul>\n</li>\n<li>The fields are set automatically when a new entry is created. The version is incremented with each save.</li>\n<li>Why do we need the ERC in Elements?\n<ul>\n<li>The ERC enables finding and updating specific system Elements (for example, fixing bugs or adding features) throughout the system, even if the JSON is embedded in a Blueprint.</li>\n</ul>\n</li>\n<li>Why do we need the ERC and version in Blueprints?\n<ul>\n<li>The Element ERC and version fields make it possible to ship upgradeable out-of-the-box Blueprints with SXP in the future. These could be Blueprints that solve a particular common use case or Blueprints required to build a specific functionality.</li>\n</ul>\n</li>\n</ol>\n<h3>Bug Fixes</h3>\n<ol>\n<li><a class=\"issue-link\" title=\"Incorrect and missing JSON autocomplete properties\" href=\"https://issues.liferay.com/browse/LPS-152791\" data-issue-key=\"LPS-152791\"><del>LPS-152791</del></a></li>\n<li><a class=\"issue-link\" title=\"Searching with capitalization in the predefined variable search bar yields no results\" href=\"https://issues.liferay.com/browse/LPS-152073\" data-issue-key=\"LPS-152073\"><del>LPS-152073</del></a></li>\n<li><a class=\"issue-link\" title=\"Failed upgrade process for module com.liferay.search.experiences.service and Blueprints UI is broken when there are Custom JSON Element instances in a Blueprint\" href=\"https://issues.liferay.com/browse/LPS-158782\" data-issue-key=\"LPS-158782\"><del>LPS-158782</del></a></li>\n<li><a class=\"issue-link\" title=\"Query Builder empty for a Blueprint that was upgraded with certain elements\" href=\"https://issues.liferay.com/browse/LPS-158873\" data-issue-key=\"LPS-158873\"><del>LPS-158873</del></a></li>\n<li><a class=\"issue-link\" title=\"Nested sort translation in a Blueprint doesn't work\" href=\"https://issues.liferay.com/browse/LPS-162591\" data-issue-key=\"LPS-162591\"><del>LPS-162591</del></a></li>\n</ol>\n<h3>Localization</h3>\n<ol>\n<li><a class=\"issue-link\" title=\"Add Japanese translations to OOTB SXP Elements\" href=\"https://issues.liferay.com/browse/LPS-162299\" data-issue-key=\"LPS-162299\"><del>LPS-162299</del></a></li>\n</ol>\n<section id=\"resolution\">\n<h2 id=\"Installation-and-Upgrade-Instructions\"><a href=\"#Installation-and-Upgrade-Instructions\" target=\"_self\">Installation and Upgrade Instructions</a></h2>\n<p>This version requires <a href=\"https://customer.liferay.com/downloads/-/download/liferay-dxp-7-3-update-14-download\" target=\"_self\">DXP 7.3 Update 14</a> or higher.</p>\n<aside class=\"alert alert-warning\">When installing this application version, you must also run the <a class=\"external-link\" title=\"Follow link\" href=\"https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/reference/database-upgrade-options.html\" target=\"_blank\" rel=\"nofollow noopener\">Upgrade Process</a> for Search Experiences to propagate the necessary database changes to <em>SXPBlueprint</em> and <em>SXPElement</em> entries. After the upgrade, reindex each entity through in Search Admin. Before running the upgrade, create a backup of your existing blueprints and any custom elements using the <a href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/creating-and-managing-search-blueprints.html#importing-and-exporting-blueprints\" target=\"_self\"><em>Export/Import</em></a> functionality.<strong><br></strong></aside>\n<p>A log message prompting you to run the upgrade process also appears in the console on startup or upon deploying the app LPKG:</p>\n<div class=\"code panel\" style=\"border-width: 1px;\">\n<div class=\"codeContent panelContent\">\n<pre class=\"code-java\">2022-10-21 15:51:03.626 WARN  [main][MainServlet:451] Required upgrades in modules are pending. Run the upgrade process or type upgrade:checkAll in the Gogo shell to get more information.\n</pre>\n</div>\n</div>\n<p><span style=\"font-weight: 400;\">If you don’t execute the module upgrade, you may experience </span><a href=\"https://help.liferay.com/hc/en-us/articles/7644842091021\"><span style=\"font-weight: 400;\">errors</span></a><span style=\"font-weight: 400;\"> when opening the Blueprints or Elements pages from the Product Menu.</span></p>\n<p><span style=\"font-weight: 400;\">A convenient way to run the upgrade process is to enter the following command in the </span><a href=\"https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.html\"><span style=\"font-weight: 400;\">Gogo Shell</span></a><span style=\"font-weight: 400;\">:</span></p>\n<div class=\"code panel\" style=\"border-width: 1px;\">\n<div class=\"codeContent panelContent\">\n<pre class=\"code-java\">upgrade:execute com.liferay.search.experiences.service\n</pre>\n</div>\n</div>\n<p>When the upgrade process was executed successfully you'll see log output like this <img class=\"emoticon\" src=\"https://issues.liferay.com/images/icons/emoticons/check.png\" alt=\"\" width=\"16\" height=\"16\" align=\"absmiddle\" border=\"0\">:</p>\n<div class=\"code panel\" style=\"border-width: 1px;\">\n<div class=\"codeContent panelContent\">\n<pre class=\"code-java\">2022-10-21 15:56:05.588 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:108] Upgrading com.liferay.search.experiences.internal.upgrade.v1_1_0.SXPElementUpgradeProcess\n2022-10-21 15:56:06.008 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:122] Completed upgrade process com.liferay.search.experiences.internal.upgrade.v1_1_0.SXPElementUpgradeProcess in 420 ms\n2022-10-21 15:56:06.021 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:108] Upgrading com.liferay.search.experiences.internal.upgrade.v1_1_0.SXPBlueprintUpgradeProcess\n2022-10-21 15:56:06.354 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:122] Completed upgrade process com.liferay.search.experiences.internal.upgrade.v1_1_0.SXPBlueprintUpgradeProcess in 333 ms\n2022-10-21 15:56:06.366 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:108] Upgrading com.liferay.search.experiences.internal.upgrade.SXPUpgradeStepRegistrator$1\n2022-10-21 15:56:06.367 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseExternalReferenceCodeUpgradeProcess:58] Upgrade table SXPBlueprint\n2022-10-21 15:56:06.532 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:83] Starting com.liferay.portal.kernel.upgrade.BaseExternalReferenceCodeUpgradeProcess#upgradeExternalReferenceCode\n2022-10-21 15:56:06.558 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:44] Completed com.liferay.portal.kernel.upgrade.BaseExternalReferenceCodeUpgradeProcess#upgradeExternalReferenceCode in 26 ms\n2022-10-21 15:56:06.559 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseExternalReferenceCodeUpgradeProcess:58] Upgrade table SXPElement\n2022-10-21 15:56:06.772 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:83] Starting com.liferay.portal.kernel.upgrade.BaseExternalReferenceCodeUpgradeProcess#upgradeExternalReferenceCode\n2022-10-21 15:56:07.034 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:44] Completed com.liferay.portal.kernel.upgrade.BaseExternalReferenceCodeUpgradeProcess#upgradeExternalReferenceCode in 262 ms\n2022-10-21 15:56:07.035 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:122] Completed upgrade process com.liferay.search.experiences.internal.upgrade.SXPUpgradeStepRegistrator$1 in 669 ms\n2022-10-21 15:56:07.047 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradePro<a href=\"https://customer.liferay.com/downloads/-/download/liferay-dxp-7-3-update-13-download\">https://customer.liferay.com/downloads/-/download/liferay-dxp-7-3-update-13-download</a> cess:108] Upgrading com.liferay.search.experiences.internal.upgrade.v2_0_0.SXPBlueprintUpgradeProcess\n2022-10-21 15:56:07.054 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:83] Starting com.liferay.portal.kernel.upgrade.UpgradeProcess#alter\n2022-10-21 15:56:07.262 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:44] Completed com.liferay.portal.kernel.upgrade.UpgradeProcess#alter in 208 ms\n2022-10-21 15:56:07.559 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:83] Starting com.liferay.portal.kernel.upgrade.UpgradeProcess#alter\n2022-10-21 15:56:07.717 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:44] Completed com.liferay.portal.kernel.upgrade.UpgradeProcess#alter in 158 ms\n2022-10-21 15:56:07.821 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][UpgradeProcess:122] Completed upgrade process com.liferay.search.experiences.internal.upgrade.v2_0_0.SXPBlueprintUpgradeProcess in 775 ms\n2022-10-21 15:56:07.838 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:83] Starting com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes <span class=\"code-keyword\">for</span> com.liferay.search.experiences.service\n2022-10-21 15:56:08.015 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseDB:713] Dropping stale indexes\n2022-10-21 15:56:08.022 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseDB:783] drop index IX_F6C6095A on SXPBlueprint\n2022-10-21 15:56:08.049 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseDB:75] Adding indexes\n2022-10-21 15:56:08.049 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseDB:99] create unique index IX_7A27FEA3 on SXPBlueprint (companyId, externalReferenceCode);\n2022-10-21 15:56:08.094 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][BaseDB:99] create unique index IX_D4D87BCC on SXPElement (companyId, externalReferenceCode);\n2022-10-21 15:56:08.152 INFO  [pipe-upgrade:execute com.liferay.search.experiences.service][LoggingTimer:44] Completed com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes <span class=\"code-keyword\">for</span> com.liferay.search.experiences.service in 314 ms\n\n</pre>\n</div>\n</div>\n<p>Refer to <a class=\"external-link\" title=\"Follow link\" href=\"https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/reference/database-upgrade-options.html\" target=\"_blank\" rel=\"nofollow noopener\">https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/reference/database-upgrade-options.html</a> for details on running module upgrades.</p>\n<p>After the upgrade is complete, reindex the SXP entities by opening the global Product Menu and navigating to Control Panel - Search - Index Actions <img class=\"emoticon\" src=\"https://issues.liferay.com/images/icons/emoticons/check.png\" alt=\"\" width=\"16\" height=\"16\" align=\"absmiddle\" border=\"0\">:</p>\n<div class=\"code panel\" style=\"border-width: 1px;\">\n<div class=\"codeContent panelContent\">\n<pre class=\"code-java\">com.liferay.search.experiences.model.SXPBlueprint\ncom.liferay.search.experiences.model.SXPElement\n</pre>\n<p> </p>\n<h2 id=\"Downloads\"><a href=\"#Downloads\" target=\"_self\">Downloads</a></h2>\n<ul>\n<li>DXP 7.3 Update 14 <a href=\"https://customer.liferay.com/downloads/-/download/liferay-dxp-7-3-update-14-download\">https://customer.liferay.com/downloads/-/download/liferay-dxp-7-3-update-14-download  </a>\n</li>\n<li>LES Experiences app: <a href=\"https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3\">https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3</a>\n</li>\n</ul>\n<h2 id=\"Quick-Start\"><a href=\"#Quick-Start\" target=\"_self\">Quick Start</a></h2>\n<p><span style=\"font-weight: 400;\">To get a testing environment up and running with the new Search Experiences,</span></p>\n<ol>\n<li>Create a local folder structure that can be bind mounted to the DXP container’s system folders for providing the application binary and configuration files:\n<ul>\n<li>\n<pre>dxp<br>├── data<br>├── deploy<br>├── files/portal-ext.properties<br>├── Liferay Enterprise Search Experiences 1.1.0.lpkg</pre>\n</li>\n</ul>\n</li>\n<li>\n<span style=\"font-weight: 400;\">Pull DXP's Docker image (make sure it’s 7.3 U14+):</span><br>\n<ul>\n<li><code>docker pull liferay/dxp:7.3.10-u14</code></li>\n</ul>\n</li>\n<li>Run DXP and mount Search Experiences:\n<ul>\n<li>\n<pre>docker run -it --network=\"host\" -p 8080:8080 \\<br>-v \"$(pwd)/data:/opt/liferay/data\" \\<br>-v \"$(pwd)/files:/mnt/liferay/files\" \\<br>-v \"$(pwd)/deploy:/mnt/liferay/deploy\" \\<br>-v \"$(pwd)/Liferay Enterprise Search Experiences 1.1.0.lpkg:/opt/liferay/osgi/marketplace/Liferay Enterprise Search Experiences 1.1.0.lpkg\" \\<br>liferay/dxp:7.3.10-u14</pre>\n</li>\n</ul>\n</li>\n</ol>\n<p> </p>\n</div>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:19:58Z",
+  "dateModified": "2026-03-10T22:31:12Z",
+  "datePublished": "2022-09-19T14:37:00Z",
+  "description": "",
+  "externalReferenceCode": "9270880983949",
+  "friendlyUrlPath": "liferay-enterprise-search-experiences-blueprints-1-1-0-for-dxp-7-3-release-highlights-upgrade-instructions",
+  "id": 26132425,
+  "key": "26132423",
+  "keywords": [
+    "ja",
+    "mt",
+    "dxp-7-3",
+    "enterprise-search",
+    "les",
+    "sxp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132425/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Enterprise Search Experiences (Blueprints) 1.1.0 for DXP 7.3 Release Highlights & Upgrade Instructions",
+  "uuid": "92d44c9f-0db1-6ca2-672b-0201b6bb7ffc"
+}

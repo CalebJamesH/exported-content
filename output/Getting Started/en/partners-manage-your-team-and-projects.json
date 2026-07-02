@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2>&nbsp;</h2>\n\n<h2>Projects</h2>\n\n<p>If a partner account is part of the sales process, then at least one support contact from the partner account should be added the to project automatically. These support contacts should receive a New Liferay Project Invitation as part of the account creation process. If the Partner Manager has not been added to any necessary projects:</p>\n\n<ol>\n\t<li>Contact your Channels Account Manager or Sales Contact and request to be added to the new account</li>\n\t<li>If your customer has been added as an Administrator, then the Administrator for the account can add you or other partner members.</li>\n\t<li>If your csutomer has been added as a Requester, then they can open a Help Center ticket in order to request the addition of partner or other users</li>\n</ol>\n\n<p>&nbsp;</p>\n\n<h2>Partner Members</h2>\n\n<p>Only Partner Managers are able to invite, remove and change a team member’s role. In order to learn more about partner roles and team management please see&nbsp;<a href=\"/w/partners-how-do-i-manage-my-team-members\">Partners: How Do I Manage My Team Members?</a></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988319"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "ce031deb-3c59-8452-a19a-2842745a5e14",
+    "familyName": "Garman",
+    "givenName": "Joel",
+    "id": 2028812,
+    "name": "Joel Garman"
+  },
+  "customFields": [],
+  "dateCreated": "2025-10-30T11:14:47Z",
+  "dateModified": "2026-02-20T00:43:05Z",
+  "datePublished": "2025-10-30T11:14:00Z",
+  "description": "",
+  "externalReferenceCode": "55daa95b-126e-9ae6-bf68-218652c17745",
+  "friendlyUrlPath": "partners-manage-your-team-and-projects",
+  "id": 26662003,
+  "key": "26662001",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26662003/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408734,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988303,
+      "taxonomyCategoryName": "Getting Started",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "0ee7fdcf-6e77-c20a-abd0-48daedbf319d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988319,
+      "taxonomyCategoryName": "Partners",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "0295457d-a620-e69b-27d1-bf998e63cfdf",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "1. Manage Your Team and Projects",
+  "uuid": "75a108a9-1afc-5a31-b981-0477c5a51c46"
+}

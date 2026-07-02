@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100730/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100730/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100730"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><strong>Announced</strong> June 04, 2024</p>\n<p>We wanted to let you know about an issue affecting the storage values displayed in the Plans &amp; Usage section of the Liferay Cloud console. Some customers have noticed that the displayed storage usage for their environments might not be accurate. For example, storage values for the Development environment may incorrectly show \"0 GB\" even though the actual usage is higher.</p>\n<p><img src=\"\"></p>\n<h4 id=\"h_01HZJPMFEWBYWERPFJJP8HGAT1\"><span style=\"color: #666666;\">What You Need to Know:</span></h4>\n<ul>\n<li>No Service Impact: This issue is purely informational and does not affect your actual storage or system performance. There is no risk to your business continuity.</li>\n<li>Possible Causes: The discrepancies could be due to data sync delays, configuration differences, or query errors.</li>\n</ul>\n<h4 id=\"h_01HZJPMFEWRYKJAJKR1XYME5MT\"><span style=\"color: #666666;\">Possible Root Causes:</span></h4>\n<ol>\n<li>Data Sync Delays: There might be delays or errors in synchronizing data between our storage systems and the reporting interface.</li>\n<li>Configuration Differences: Specific configurations or custom setups in certain <strong>projects could cause mismatches in the reported storage values</strong>.</li>\n<li>Query Errors: Errors in the queries used to fetch storage data might lead to inaccurate information being displayed.</li>\n</ol>\n<h4 id=\"h_01HZJPMFEWVCZ37F2VDD8N1KAJ\"><span style=\"color: #666666;\">Our Response:</span></h4>\n<p>We are actively investigating these root causes and working diligently to develop a fix. Our goal is to resolve these inconsistencies as quickly as possible to ensure that the Plans &amp; Usage section accurately reflects your storage usage.</p>\n<h4 id=\"h_01HZJPMFEWWXT9VM6291NB3FP2\"><span style=\"color: #666666;\">What to Do:</span></h4>\n<ul>\n<li>Stay Tuned: We will keep you updated on our progress and notify you once the fix is in place.</li>\n<li><strong>No Immediate Action Needed: There's no need to worry about your current storage usage or system performance. This issue is informational only.</strong></li>\n</ul>\n<p>We apologize for any confusion this might cause and appreciate your understanding. Your feedback is important to us, and we're committed to providing you with accurate and reliable information.</p>\n<p>If you have any questions or need further assistance, our support team is here to help.</p>\n<p>Thank you for your continued support.</p>\n<p> </p>\n<p>Best regards,</p>\n<p>The Liferay Cloud Team</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:45Z",
+  "dateModified": "2026-01-14T20:33:54Z",
+  "datePublished": "2024-06-04T22:42:00Z",
+  "description": "",
+  "externalReferenceCode": "27302190745613",
+  "friendlyUrlPath": "storage-information-display-issue-in-plans-usage-section",
+  "id": 26100730,
+  "key": "26100728",
+  "keywords": [
+    "ja",
+    "mt"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100730/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Storage Information Display Issue in Plans & Usage Section",
+  "uuid": "acbe82a1-7bd3-68f7-cdfa-efecd550e684"
+}

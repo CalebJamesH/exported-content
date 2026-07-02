@@ -1,0 +1,117 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><em>Originally shared on July 5, 2022. Last updated on October 21, 2024.</em></p>\n\n<h3 id=\"h_01JAQGTAQC0ATJK6ACHJQVEAVH\">The Search Experiences application is now available for DXP 7.3*; use its Search Blueprints feature to customize the search query and personalize your digital experiences just like you can on DXP 7.4**</h3>\n\n<p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 150%;\">Boost, hide, or filter results by various factors like proximity, categories, tags, user segment, and much more.</p>\n\n<h2 id=\"h_01JAQGTAQCA69Z0Y1EM9AW6JEH\"><img alt=\"\" data-fileentryid=\"27255469\" src=\"/documents/d/customer-portal/sxp-showcase-v1\">&nbsp;<br>\n&nbsp;</h2>\n\n<h2 id=\"h_01JAQGTAQCFHEVNEQQQD020J7T\">How can Search Blueprints help your organization?</h2>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\"><span><a data-link-id=\"990335183\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences.html#search-blueprints\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Search Blueprints</a></span> is the first feature of the Search Experiences toolset. Some of the capabilities you'll gain:</p>\n\n<ul style=\"margin-top: 0px; margin-bottom: 10px;\">\n\t<li style=\"margin-top: 0px; margin-bottom: 5px;\">Blueprints extends Liferay DXP's low-code/no-code capabilities by providing useful <span><a data-link-id=\"990335185\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/search-blueprints-elements-reference.html\" rel=\"noopener\" style=\"font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">query elements out-of-the-box</a></span>, allowing business users to compose customized searches without having to write a single line of code or wait for developers to build solutions for them.</li>\n\t<li style=\"margin-top: 0px; margin-bottom: 5px;\">Users who already know how to build Elasticsearch queries can leverage the <span><a data-link-id=\"990335188\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/search-blueprints-elements-reference.html#paste-any-elasticsearch-query\" rel=\"noopener\" style=\"font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Paste Any Elasticsearch Query</a></span> element. Just paste any Elasticsearch query body into the element as-is and specify the occur clause. That's it.</li>\n\t<li style=\"margin-top: 0px; margin-bottom: 5px;\">If your use-case requires something that is not covered by the default elements, you can <span><a data-link-id=\"990335190\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/creating-and-managing-elements.html\" rel=\"noopener\" style=\"font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">create Custom Elements</a></span> to personalize your search.</li>\n</ul>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\">These items are all accomplished with the Search Blueprints visual query builder. In addition, you can customize other aspects of the search request with <span><a data-link-id=\"990335195\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/search-blueprints-configuration-reference.html\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Blueprints Configurations</a></span> and the <span><a data-link-id=\"990335202\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/creating-and-managing-search-blueprints.html#choosing-which-liferay-assets-to-search\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Query Settings</a></span>.</p>\n\n<h2 id=\"h_01JAQGTAQC0RY5XNF1BPZFR3TG\">Need to build different search pages for different purposes?</h2>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\">We’ve got you covered! Use the <span><a data-link-id=\"990335209\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences/using-a-search-blueprint-on-a-search-page.html\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Blueprints Options</a></span> widget to configure a blueprint for your page.</p>\n\n<h2 id=\"h_01JAQGTAQCEJMXPXJ25XNZG52A\">Ready to try?</h2>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\">To get started:</p>\n\n<ol style=\"margin-top: 0px; margin-bottom: 10px;\">\n\t<li style=\"margin-top: 0px; margin-bottom: 5px;\">[On DXP 7.3] Download the <a href=\"https://www.liferay.com/web/marketplace/p/liferay-enterprise-search-experiences\" target=\"_self\">Search Experiences application</a> from the <span><a data-link-id=\"990335217\" href=\"https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3\" rel=\"noopener\" style=\"font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Customer Portal</a></span> and deploy it on Liferay DXP 7.3*</li>\n\t<li style=\"margin-top: 0px; margin-bottom: 5px;\">[On DXP 7.4] Start the latest Liferay DXP 7.4 Update**</li>\n\t<li style=\"margin-top: 0px; margin-bottom: 5px;\">Open the Blueprints application by clicking Blueprints from Global Menu → Applications (Search Experiences).</li>\n</ol>\n\n<h2 id=\"h_01JAQGTAQCMX28Z2638SHYEGJ3\">Want to learn more?</h2>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\">View the <span><a data-link-id=\"990335225\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/search-experiences.html\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">documentation </a></span>on learn.liferay.com.</p>\n\n<h2 id=\"h_01JAQGTAQCEQS2T8WWDN51ZNJH\">Have feedback you would like to share with us or need help?</h2>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\">Reach out to us through a <span><a data-link-id=\"990335234\" href=\"https://help.liferay.com/hc/en-us/requests/new\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Support Ticket</a></span>. We’d love to hear from you.</p>\n\n<h2 id=\"h_01JAQGTAQC66EXVEE33GE1JMKD\">Get the most out of your Liferay Enterprise Search subscription</h2>\n\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\">Your subscription grants you access to other exclusive applications like <span><a data-link-id=\"990335243\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/cross-cluster-replication.html\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Cross-Cluster Replication</a></span> and <span><a data-link-id=\"990335254\" href=\"https://learn.liferay.com/dxp/latest/en/using-search/liferay-enterprise-search/learning-to-rank.html\" rel=\"noopener\" style=\"word-break: break-word; font-family: 'Poppins', sans-serif; color: #0b5fff; text-decoration: none;\" target=\"_blank\">Learning to Rank</a></span>.</p>\n\n<hr>\n<p style=\"margin-top: 0px; margin-bottom: 10px; line-height: 150%;\"><span style=\"font-size: 12px;\">* v1.0.0 requires DXP 7.3 Update 6+, v1.1.0 requires DXP 7.3 Update 14+. Future updates will be delivered with application releases, similar to other LES applications available for DXP 7.3.</span></p>\n\n<p style=\"margin-top: 0px; margin-bottom: 0px; line-height: 150%;\"><span style=\"font-size: 12px;\">** Search Experiences is available on Liferay DXP 7.4 Update 5+ as a bundled app, no extra installation required. Bug fixes and enhancements are delivered through Updates.</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:31Z",
+  "dateModified": "2026-03-10T22:31:12Z",
+  "datePublished": "2022-09-19T15:04:00Z",
+  "description": "",
+  "externalReferenceCode": "9271803727501",
+  "friendlyUrlPath": "easily-customize-liferay-s-search-behavior-with-blueprints",
+  "id": 26108047,
+  "key": "26108045",
+  "keywords": [
+    "ja",
+    "mt",
+    "enterprise-search",
+    "sxp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108047/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Easily customize Liferay's search behavior with Blueprints",
+  "uuid": "ae700641-d96a-db71-8510-7a4f26c48ed4"
+}

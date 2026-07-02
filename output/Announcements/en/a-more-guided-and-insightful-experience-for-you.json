@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921899/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921899/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921899"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"color: #1b1c1d;\">We’re excited to share that we’re introducing a new product experience management capability to better serve your needs and designed to help you and your administrative team get even more from our product. Currently this only applies to Liferay DXPs running on our SaaS and PaaS deployment options.</span></p>\n\n<p><span style=\"color: #1b1c1d;\">This new capability will allow us to offer <strong>more personalized in-app support, such as guides and announcements</strong>, to help your team navigate key features and workflows. In addition, it will give your team the ability to <strong>provide direct feedback</strong> to us from within the product.</span></p>\n\n<h3 id=\"h_01K5EP8T81HCJ39XTT5MQ3VH61\"><span style=\"color: #1b1c1d;\"><strong>How We’re Improving the Product for You</strong></span></h3>\n\n<p><span style=\"color: #1b1c1d;\">This change is about delivering a more focused and effective experience. The insights we gather will help us make <strong>faster and better-informed decisions</strong> about our product roadmap. By understanding how our product's operational side is being used, we can prioritize enhancements that are most valuable to you. This ensures we are continuously improving the product and providing the greatest possible value.</span></p>\n\n<h3 id=\"h_01K5EP8T84TW9EF5BKXB3D9NWF\"><span style=\"color: #1b1c1d;\"><strong>Your Privacy and Consent</strong></span></h3>\n\n<p><span style=\"color: #1b1c1d;\">As part of this update, we want to be completely transparent about our data practices. We have updated our </span><a href=\"https://www.liferay.com/privacy-policy\"><span style=\"color: #1b1c1d;\"><strong>Privacy Policy</strong></span></a><span style=\"color: #1b1c1d;\"> and </span><a href=\"https://www.liferay.com/privacy-policy\"><span style=\"color: #1b1c1d;\"><strong>Cookie Policy</strong></span></a><span style=\"color: #1b1c1d;\"> to reflect these changes.</span></p>\n\n<p><span style=\"color: #1b1c1d;\">When your administrators log in for the first time they will see a <strong>cookie consent banner</strong>. This banner is our way of ensuring your team has full control over their data. By choosing to accept, you enable us to collect usage data that is essential for delivering these new guided experiences and improving the product.</span></p>\n\n<p><span style=\"color: #1b1c1d;\">We're confident this will lead to a more intuitive and valuable experience for you and your team. We appreciate your partnership and are excited about this next step.</span></p>\n\n<p><span style=\"color: #1b1c1d;\">If you have any questions, please reach out to your account manager or customer success manager.</span></p>\n\n<p><img alt=\"\" data-fileentryid=\"26921885\" height=\"568\" src=\"/documents/d/customer-portal/banner-png\" width=\"900\">&nbsp;<br>\n&nbsp;</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": ""
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-05T00:38:02Z",
+  "dateModified": "2025-11-13T23:40:06Z",
+  "datePublished": "2025-11-05T00:38:00Z",
+  "description": "",
+  "externalReferenceCode": "93e0b2a9-5f67-86d5-78d3-9d162d71239d",
+  "friendlyUrlPath": "a-more-guided-and-insightful-experience-for-you",
+  "id": 26921899,
+  "key": "26921897",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921899/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "A More Guided and Insightful Experience for You",
+  "uuid": "93e0b2a9-5f67-86d5-78d3-9d162d71239d"
+}

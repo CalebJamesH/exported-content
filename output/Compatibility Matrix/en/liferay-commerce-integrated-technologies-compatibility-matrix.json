@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 943px; float: left;\">\n<thead>\n<tr style=\"height: 21px;\">\n<td style=\"background-color: #f7f8f9; width: 165.455px;\" rowspan=\"2\"><span class=\"wysiwyg-font-size-medium\"><strong>Technology</strong></span></td>\n<td style=\"background-color: #f7f8f9; width: 246.364px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Commerce 3.0</strong></span></td>\n<td style=\"background-color: #f7f8f9; width: 262.727px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Commerce 2.0.7+, 2.1.x</strong></span></td>\n<td style=\"background-color: #f7f8f9; width: 223.636px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Commerce 1.1.x, 2.0.x, 2.1.x</strong></span></td>\n</tr>\n<tr style=\"height: 21px;\">\n<td style=\"background-color: #f7f8f9; width: 246.364px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay DXP 7.3</strong></span></td>\n<td style=\"background-color: #f7f8f9; width: 262.727px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay DXP 7.2</strong></span></td>\n<td style=\"background-color: #f7f8f9; width: 223.636px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay DXP 7.1</strong></span></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr>\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Document Conversion</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">LibreOffice 6.2.1</span><br><span class=\"wysiwyg-font-size-medium\">OpenOffice 4.1.7</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">LibreOffice 6.2.1</span><br><span class=\"wysiwyg-font-size-medium\">OpenOffice 4.1.6</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">LibreOffice 5.3.5<br>Microsoft Word 2010, 2013, 2016</span><br><span class=\"wysiwyg-font-size-medium\">OpenOffice 4.1.1</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">External Repository Connectors</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Sharepoint 2013<br>Sharepoint 2016 (Online)</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Alfresco 5.2</span><br><span class=\"wysiwyg-font-size-medium\">Nuxeo 9.x</span><br><span class=\"wysiwyg-font-size-medium\">Sharepoint 2013</span><br><span class=\"wysiwyg-font-size-medium\">Sharepoint 2016 (Online)</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Alfresco 5.2<br>Documentum 6.6<br></span> <span class=\"wysiwyg-font-size-medium\">Nuxeo 8.x, 9.x</span><br><span class=\"wysiwyg-font-size-medium\">Sharepoint 2010, 2013, 2016</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Enterprise Search</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay Enterprise Search 3.0</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay Enterprise Search 2.0, 3.0</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Liferay Enterprise Search 2.0</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">File Stores</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">AdvancedFileSystemStore<br>DBStore<br>FileSystemStore<br>S3Store</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">AdvancedFileSystemStore</span><br><span class=\"wysiwyg-font-size-medium\">DBStore</span><br><span class=\"wysiwyg-font-size-medium\">FileSystemStore</span><br><span class=\"wysiwyg-font-size-medium\">S3Store</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">AdvancedFileSystemStore</span><br><span class=\"wysiwyg-font-size-medium\">DBStore</span><br><span class=\"wysiwyg-font-size-medium\">FileSystemStore</span><br><span class=\"wysiwyg-font-size-medium\">S3Store</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">File Stores <br>(non-production)</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p> </p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p> </p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">CMISStore</span><br><span class=\"wysiwyg-font-size-medium\">JCRStore</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Auto Tagging</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"> TensorFlow 2.0.12<br>Google Cloud Vision<br>Google Cloud Natural Language<br></span><span class=\"wysiwyg-font-size-medium\">MS Cognitive<br>OpenNLP</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">TensorFlow 1.10</span><br><span class=\"wysiwyg-font-size-medium\">Google Cloud Vision<br></span>Google Cloud Natural Language<br><span class=\"wysiwyg-font-size-medium\">MS Cognitive<br>OpenNLP</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p> </p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">LDAP Servers</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Apache Directory Server<br>Microsoft Active Directory Server<br>Novell eDirecrtory<br>OpenLDAP</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Apache Directory Server</span><br><span class=\"wysiwyg-font-size-medium\">Microsoft Active Directory Server</span><br><span class=\"wysiwyg-font-size-medium\">Novell eDirecrtory</span><br><span class=\"wysiwyg-font-size-medium\">OpenLDAP</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Apache Directory Server</span><br><span class=\"wysiwyg-font-size-medium\">Microsoft Active Directory Server</span><br><span class=\"wysiwyg-font-size-medium\">Novell eDirecrtory</span><br><span class=\"wysiwyg-font-size-medium\">OpenLDAP</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Node Discovery</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">JGroups 4.1.7</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">TCPPing</span><br><span class=\"wysiwyg-font-size-medium\">JDBC_Ping</span><br><span class=\"wysiwyg-font-size-medium\">S3_Ping</span><br><span class=\"wysiwyg-font-size-medium\">UDPPing</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">TCPPing</span><br><span class=\"wysiwyg-font-size-medium\">JDBC_Ping</span><br><span class=\"wysiwyg-font-size-medium\">S3_Ping</span><br><span class=\"wysiwyg-font-size-medium\">UDPPing</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Preview Generation</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Ghostscript 9.5<br>ImageMagick 7.0.10-29<br>PDFBox 2.0.21<br>HTML5<br>Gifsicle 1.92</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Ghostscript 9.26</span><br><span class=\"wysiwyg-font-size-medium\">ImageMagick 7.0.8-34</span><br><span class=\"wysiwyg-font-size-medium\">PDFBox 2.0.13</span><br><span class=\"wysiwyg-font-size-medium\">Xuggler 5.4</span><br><span class=\"wysiwyg-font-size-medium\">HTML5</span><br><span class=\"wysiwyg-font-size-medium\">Gifsicle 1.90+</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Ghostscript 9.23</span><br><span class=\"wysiwyg-font-size-medium\">ImageMagick 7.0.7-24</span><br><span class=\"wysiwyg-font-size-medium\">PDFBox 2.0.4</span><br><span class=\"wysiwyg-font-size-medium\">Xuggler 5.4</span><br><span class=\"wysiwyg-font-size-medium\">HTML5</span><br><span class=\"wysiwyg-font-size-medium\">Gifsicle 1.90+</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">SAML Identity Providers (IdP)</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">ADFS<br>Liferay DXP<br>Liferay Portal EE<br>Okta<br>OpenAM 13+<br>PingFederate<br>Shibboleth<br>Siteminder</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">ADFS</span><br><span class=\"wysiwyg-font-size-medium\">Liferay DXP<br>Liferay Portal EE</span><br><span class=\"wysiwyg-font-size-medium\">OpenAM 13+</span><br><span class=\"wysiwyg-font-size-medium\">PingFederate</span><br><span class=\"wysiwyg-font-size-medium\">Shibboleth</span><br><span class=\"wysiwyg-font-size-medium\">Siteminder</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">ADFS</span><br><span class=\"wysiwyg-font-size-medium\">Liferay DXP<br>Liferay Portal EE</span><br><span class=\"wysiwyg-font-size-medium\">OpenAM 13+</span><br><span class=\"wysiwyg-font-size-medium\">PingFederate</span><br><span class=\"wysiwyg-font-size-medium\">Shibboleth</span><br><span class=\"wysiwyg-font-size-medium\">Siteminder</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">SAML Identity Providers (IdP)<br>(non-production)</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p> <span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Search/Indexing</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p>Elasticsearch 7.9+ Remote</p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p> <span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x Remote<br> Elasticsearch 7.3.x - 7.9.x Remote<br></span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x Remote</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">Search/Indexing <br>(non-production)</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 7.9+ Sidecar or Remote</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x Embedded or Remote<br>Elasticsearch 7.3.x - 7.9.x Embedded or Remote</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x <br>Embedded or Remote</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">SSO Standards &amp; Solutions</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">OpenID Connect<br>SAML 2.0<br>Facebook Connect<br>Kerberos<br>OpenAM 13<br>Oracle Access Manager<br>Token-based (Siteminder)</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">SAML 2.0</span><br><span class=\"wysiwyg-font-size-medium\">Facebook</span><br><span class=\"wysiwyg-font-size-medium\">Kerberos</span><br><span class=\"wysiwyg-font-size-medium\">OpenID Connect</span><br><span class=\"wysiwyg-font-size-medium\">OpenAM 13</span><br><span class=\"wysiwyg-font-size-medium\">Oracle Access Manager</span><br><span class=\"wysiwyg-font-size-medium\">Siteminder</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">SAML 2.0</span><br><span class=\"wysiwyg-font-size-medium\"> Facebook</span><br><span class=\"wysiwyg-font-size-medium\"> Kerberos<br>NTLM v2</span><br><span class=\"wysiwyg-font-size-medium\"> Central Authentication Service (CAS) 3.3.x</span><br><span class=\"wysiwyg-font-size-medium\"> OpenID Connect</span><br><span class=\"wysiwyg-font-size-medium\"> OpenAM 13</span><br><span class=\"wysiwyg-font-size-medium\"> Oracle Access Manager</span><br><span class=\"wysiwyg-font-size-medium\"> Siteminder</span></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">SSO Standards &amp; Solutions<br>(non-production)</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Central Authentication Service (CAS)<br>OpenAM 12</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Central Authentication Service (CAS) 3.3.x</span><br><span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><font size=\"2\"> OpenID<br>OpenAM 12 </font></p>\n</td>\n</tr>\n<tr style=\"height: 84px;\">\n<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n<p><strong><span class=\"wysiwyg-font-size-medium\">WebDav Client OS</span></strong></p>\n</td>\n<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">Windows 10</span></p>\n</td>\n<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\"> Windows 10</span></p>\n</td>\n<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n<p><span class=\"wysiwyg-font-size-medium\">OSX<br>Windows 7, 8, and 10<br>Ubuntu 16</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p><span class=\"wysiwyg-font-size-small\"> Updated 2020/09/14</span></p>\n<p> </p>\n<p> </p>\n<p> </p>\n<p> </p>\n<p> </p>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176960"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:37Z",
+  "dateModified": "2026-03-26T00:00:11Z",
+  "datePublished": "2019-04-01T16:28:00Z",
+  "description": "",
+  "externalReferenceCode": "360026127291",
+  "friendlyUrlPath": "liferay-commerce-integrated-technologies-compatibility-matrix",
+  "id": 26098562,
+  "key": "26098560",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "commerce"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461469,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Services and Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176960,
+      "taxonomyCategoryName": "Liferay Commerce Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "61db96b5-3658-d349-88eb-e0c5be268384",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Commerce Integrated Technologies Compatibility Matrix",
+  "uuid": "192042f9-cfa6-0d5d-bfd4-1d8681bdaf0b"
+}

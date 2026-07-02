@@ -1,0 +1,134 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102538/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102538/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102538"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n<p><strong>Published: February 25, 2022</strong></p>\n<h2 id=\"h_01HYXHY99E4METQRSM0VT4WFPC\"><span style=\"font-weight: 400;\">Summary</span></h2>\n<p><span style=\"font-weight: 400;\">In preparation for an upcoming major image release, Liferay Cloud has published an update to the API that may impact the way you use Liferay PaaS. The upcoming release will bring significant improvements to the backup and database services and increase the reliability of the database itself and the restore process. We will share more on these improvements in an upcoming communication.</span></p>\n<section id=\"resolution\">\n<h2 id=\"h_01HYXHY99EDMXY7C6T6EQSYN74\"><span style=\"font-weight: 400;\">Workflow Changes</span></h2>\n<div>\n<p><span style=\"font-weight: 400;\">In order to prepare the infrastructure for the image release, some changes to the way the underlying API functions needed to be made that may impact your workflow. The following workflows are impacted:</span></p>\n<ol>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">It will no longer be possible to “reset” your environment by deleting the Database service. The same data will be present when the service is redeployed.</span></li>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"2\"><span style=\"font-weight: 400;\">Manually dropping the Database and deleting the Document Library via the Liferay service shell is the recommended replacement workflow. Steps to achieve this can be found <a href=\"https://help.liferay.com/hc/en-us/articles/4508246282381\" target=\"_self\">here</a>.<br></span></li>\n</ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">It will no longer be possible to alter the volume configuration for the Document Library.</span></li>\n<ul>\n<li style=\"font-weight: 400;\" aria-level=\"2\"><span style=\"font-weight: 400;\">The Document Library volume configuration is now reserved for the restore process but other volumes will continue to be configurable.</span></li>\n</ul>\n<li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">The Backup service will restart after a restore is completed.</span></li>\n</ol>\n<h2 id=\"h_01HYXHY99EATFZ79FWC8X6V10V\"><span style=\"font-weight: 400;\">Details</span></h2>\n<p><span style=\"font-weight: 400;\">The upcoming image release will include a feature that utilizes additional resources during the restore process for an improved experience. These resources will be permanently associated with your environment and made available as of February 25, 2022. Because of this change, any processes that disassociated the backup or database services from the back end resources, must also change.</span></p>\n<h2 id=\"h_01HYXHY99EZ659AK2JD6DY2F02\"><span style=\"font-weight: 400;\">Additional Information</span></h2>\n<p><span style=\"font-weight: 400;\">These changes will impact all Liferay PaaS customers starting February 25, 2022. If you encounter any issues or have questions about these changes, please </span><a href=\"https://help.liferay.com/hc/requests/new\" target=\"_self\" rel=\"undefined\">submit a ticket</a><span style=\"font-weight: 400;\"> and Liferay Support will be happy to assist.</span></p>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:06:27Z",
+  "dateModified": "2025-11-13T23:40:11Z",
+  "datePublished": "2022-02-25T19:10:00Z",
+  "description": "",
+  "externalReferenceCode": "4505832008461",
+  "friendlyUrlPath": "api-update-release-announcement",
+  "id": 26102538,
+  "key": "26102536",
+  "keywords": [
+    "liferay-paas",
+    "liferay-experience-cloud---self-managed",
+    "lxc-sm",
+    "dxp-cloud",
+    "api"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102538/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "API Update Release Announcement",
+  "uuid": "05e9793f-afa4-f2d6-6678-cfdf9c42e6c4"
+}

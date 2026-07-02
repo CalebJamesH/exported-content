@@ -1,0 +1,119 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>This articles explains how to acquire and run the support diagnostics utility for your Elasticsearch cluster.</p>\n<div class=\"slds-rich-text-editor__output uiOutputRichText forceOutputRichText\" dir=\"ltr\" data-aura-rendered-by=\"11:1079;a\" data-aura-class=\"uiOutputRichText forceOutputRichText\">\n<h1 id=\"h_01JYHAKDAX9PKRSJ41WN95HKQB\" data-aura-rendered-by=\"12:1079;a\">Overview</h1>\n<p data-aura-rendered-by=\"12:1079;a\">When submitting a ticket for Liferay Enterprise Search (LES) you will often be asked to provide a full set of diagnostics from the running Elasticsearch cluster. While all the commands to obtain this information can be run manually, it will be much simpler and easier to run the diagnostic utility provided by Elastic. It has no dependencies other than a JRE or JDK version 1.7 or greater. The diagnostic utility works against all supported versions of Elasticsearch (and from Logstash 5.0+).</p>\n<p data-aura-rendered-by=\"12:1079;a\">Diagnostic utility releases, as well as Instructions for installing and running the utility can be found in the public Github repository. Please consult the README file on the landing page.<br><a href=\"https://github.com/elastic/support-diagnostics\" target=\"_blank\" rel=\"noopener\">https://github.com/elastic/support-diagnostics</a></p>\n<h1 id=\"h_01JYHAKDAXH258HWHHW0T27ECR\" data-aura-rendered-by=\"12:1079;a\">Download</h1>\n<p data-aura-rendered-by=\"12:1079;a\"><a href=\"https://github.com/elastic/support-diagnostics/releases/latest\">https://github.com/elastic/support-diagnostics/releases/latest</a></p>\n<h1 id=\"h_01JYHAKDAXTDGJB4H1A53QR14B\" data-aura-rendered-by=\"12:1079;a\">Usage</h1>\n<p data-aura-rendered-by=\"12:1079;a\">Please consult the <a href=\"https://github.com/elastic/support-diagnostics#support-diagnostics-utility\" target=\"_self\">README</a> file on the landing page.</p>\n</div>\n<h1 id=\"h_01JYHAKDAXE4W690XEK41B58VJ\">Examples</h1>\n<h2 id=\"h_01JYHAKDAX5G9BFXG1A3R4Q5RH\">Getting help</h2>\n<pre>./diagnostics.sh --help\n</pre>\n<h2 id=\"h_01JYHAKDAX8RR5ZH3BV1AX2GVE\">Using X-Pack Authentication:</h2>\n<pre>./diagnostics.sh --host 192.168.1.10 -u &lt;username&gt; -p\n</pre>\n<h2 id=\"h_01JYHAKDAXM9FH91031MTBHDQP\">Using X-Pack Authentication With SSL:</h2>\n<pre><code>./diagnostics.sh --host localhost --port 9200 --noVerify -u &lt;username&gt; -p --ssl</code></pre>\n<h2 id=\"h_01JYHAKDAYPG545VAT0JHKWVZ9\">Specifying an output directory:</h2>\n<pre>./diagnostics.sh --host 192.168.1.10 -o &lt;full path to output directory&gt;</pre>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988273"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:02Z",
+  "dateModified": "2026-03-10T22:31:13Z",
+  "datePublished": "2019-10-08T16:31:00Z",
+  "description": "",
+  "externalReferenceCode": "360034567992",
+  "friendlyUrlPath": "-les-how-to-install-and-run-the-elastic-support-diagnostics-troubleshooting-utility",
+  "id": 26101069,
+  "key": "26101067",
+  "keywords": [
+    "ja",
+    "mt",
+    "knowledge-base",
+    "enterprise-search",
+    "search",
+    "les"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101069/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495252,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988273,
+      "taxonomyCategoryName": "Liferay Enterprise Search",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e41d4618-e612-9920-138d-b0864397927d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "[LES]: How to install and run the Elastic Support Diagnostics Troubleshooting Utility",
+  "uuid": "50f9d48e-d076-919d-28b3-ad8e17124ec3"
+}

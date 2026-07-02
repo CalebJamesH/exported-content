@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146052/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146052/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146052"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n\n<h1 id=\"h_01HTG8BJEC7QNR3MV1BTXM2QEH\">Summary</h1>\n<p>Moving from one version of search to another in a Liferay PaaS environment takes a few more steps than simply updating the LCP.json. This article covers the additional steps needed to complete a smooth search upgrade.</p>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: Elasticsearch 6 is no longer supported. When upgrading, be sure to target versions 7.17.13 or 8.9.2 and above. See <a href=\"https://support.liferay.com/w/liferay-paas-elasticsearch-6-deprecation\">Liferay PaaS Elasticsearch 6 Deprecation</a> for more information. </span></aside>\n<h1 id=\"h_01HTG5RGC2TB7YPQMBWMHDZX1B\">DXP 7.2</h1>\n<p>By default, DXP 7.2 is set up to work with Elasticsearch 6. This means that the bundled connector application and APIs are for Elasticsearch 6. These must be disabled before installing the Elasticsearch 7 connector.</p>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: This example is specific to Elasticsearch 7 but the steps are applicable to Elasticsearch 8(Only step 1 and step 5) as well.</span></aside>\n<h2 id=\"h_01HTGACP3C7SH0ZTRWRPKJXX9V\">Step 1: Update LCP.json</h2>\n<p>Update <code>search/LCP.json</code> to the new ES 7.x version and follow the below steps. (eg: <code>\"image\": \"liferaycloud/elasticsearch:7.17.18-5.3.0\"</code>)</p>\n<pre># search/LCP.json<br>{<br>  \"kind\": \"StatefulSet\",<br>  \"id\": \"search\",<br>  \"image\": \"liferaycloud/elasticsearch:7.17.18-5.3.0\",<br>  [...]<br>}</pre>\n<h2 id=\"h_01HTFVCAE2E4CRBJ8ND2G5AR7D\">Step 2: Blacklisting the Elasticsearch 6 connector</h2>\n<p>Create a .config file with the following name</p>\n<pre>com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config</pre>\n<p>Add the following content to the .config file and place it in the <code>liferay/configs/[ENV]/osgi/configs/</code> filepath</p>\n<pre>blacklistBundleSymbolicNames=[ \\<br><span class=\"Apple-tab-span\" style=\"white-space: pre;\"> </span> \"com.liferay.portal.search.elasticsearch6.api\", \\<br><span class=\"Apple-tab-span\" style=\"white-space: pre;\"> </span> \"com.liferay.portal.search.elasticsearch6.impl\", \\<br><span class=\"Apple-tab-span\" style=\"white-space: pre;\"> </span> \"com.liferay.portal.search.elasticsearch6.spi\", \\<br><span class=\"Apple-tab-span\" style=\"white-space: pre;\"> </span> \"com.liferay.portal.search.elasticsearch6.xpack.security.impl\", \\<br><span class=\"Apple-tab-span\" style=\"white-space: pre;\"> </span> \"Liferay Connector to X-Pack Security [Elastic Stack 6.x] - Impl\", \\<br><span class=\"Apple-tab-span\" style=\"white-space: pre;\"> </span> \"Liferay Enterprise Search Security - Impl.lpkg\" \\<br>]</pre>\n<h2 id=\"h_01HTFVFNSK6VYSW18RMV6W8693\">Step 3: Install the Elasticsearch 7 Connector</h2>\n<p>Download the Liferay Connector to Elasticsearch 7 according to Liferay DXP 7.2 and Elasticsearch server version(<a href=\"https://support.liferay.com/search-engine-compatibility-matrix#Liferay-DXP-7.2\">Compatibility Matrix</a>). Unzip the downloaded lpkg file and place the extracted lpkg files in <code>liferay/configs/[ENV]/osgi/marketplace/</code> filepath.</p>\n<h2 id=\"h_01HTFVHHTEPDDRH2HNBR53ZNHP\">Step 4: Configure the Connector for Liferay 7.2</h2>\n<p>Create a .config file with the following name</p>\n<pre>com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config</pre>\n<p>Add the following content to the .config file and place it in the <code>liferay/configs/[ENV]/osgi/configs/</code> filepath</p>\n<pre>operationMode=\"REMOTE\"<br>indexNamePrefix=\"liferay-\"<br>transportAddresses=\"search:9300\"<br>clusterName=\"liferay_cluster\"</pre>\n<p id=\"h_01HTFW4QRMEY48ZFR0VQFZTJ78\">The <code>liferay/configs/[ENV]/</code> folder should now look like this</p>\n<pre>|- osgi<br>| |- configs<br>| | |- com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config<br>| | |- com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config<br>| |- marketplace<br>| | |- Liferay Connector to Elasticsearch 7 - API.1pkg <br>| | |- Liferay Connector to Elasticsearch 7 - Impl.lpkg<br>| | |- Liferay Connector to Elasticsearch 7 - SPI.lpkg</pre>\n<h2 id=\"h_01HTFW4VA9229GX7A10B8CVXG7\">Step 5: Startup and Reindex</h2>\n<p>Perform the following steps to confirm that the installation completed successfully and the site is indexed.</p>\n<ol>\n<li>Confirm that the following blacklisted bundle messages appear in the startup logs\n<ol>\n<li>\n<pre>INFO [ModuleFramework-Static-Bundles-2][BundleBlacklist:188] Stopping blacklisted bundle com.liferay.portal.search.elasticsearch6.impl_3.0.101<br>INFO [ModuleFramework-Static-Bundles-2][BundleBlacklist:188] Stopping blacklisted bundle com.liferay.portal.search.elasticsearch6.api_3.1.15 [512]<br>INFO [ModuleFramework-Static-Bundles-2][BundleBlacklist:188] Stopping blacklisted bundle com.liferay.portal.search.elasticsearch6.spi_4.0.1 [843]</pre>\n</li>\n</ol>\n</li>\n<li>Navigate to Control Panel → Configuration → Search → Index Actions and verify the Elasticsearch version is updated</li>\n<li>In the same section of the Control Panel, click the Execute button to Reindex all search indexes and then Reindex all spell check indexes one by one to reindex the portal completely</li>\n</ol>\n<h1 id=\"h_01HTG9VHXCDGYE58TC1TR63G4M\">DXP 7.3 and 7.4</h1>\n<p>Only step 1 and step 5 from the above section are needed when upgrading Elasticsearch on 7.3 and 7.4.</p>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-font-size-large\"><strong>Note</strong>: It is important to test the above changes in a lower environment before applying them in production.</span></aside>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:43:01Z",
+  "dateModified": "2025-11-13T23:40:08Z",
+  "datePublished": "2024-04-02T20:15:00Z",
+  "description": "",
+  "externalReferenceCode": "25562689704333",
+  "friendlyUrlPath": "upgrading-elasticsearch-on-liferay-paas",
+  "id": 26146052,
+  "key": "26146050",
+  "keywords": [
+    "ja",
+    "liferay-paas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146052/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Upgrading Elasticsearch on Liferay PaaS",
+  "uuid": "10c41ed1-4956-c013-e011-6418ca7d9d6c"
+}

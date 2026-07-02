@@ -1,0 +1,127 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><strong>Published: June 4, 2020</strong></p>\n<p>The following issues may affect the functionality of your Liferay DXP and Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<h2 id=\"h_b024835e-0b24-4ced-a984-d04582f4ea81\"><a href=\"#h_b024835e-0b24-4ced-a984-d04582f4ea81\" target=\"_self\">Deployments which might be impacted</a></h2>\n<ul>\n<li>Liferay DXP 7.0, 7.1 and 7.2 on Elastic Stack 6.7 or 7.x or higher.</li>\n</ul>\n<h2 id=\"h_612af77a-b771-4782-b7d5-45571ec067e4\"><a href=\"#h_612af77a-b771-4782-b7d5-45571ec067e4\" target=\"_self\">Vulnerability Information</a></h2>\n<p>(As provided by the vendor.)</p>\n<h3 id=\"h_479a3291-9c16-4f0e-b631-43771d75add7\"><strong><a href=\"#h_479a3291-9c16-4f0e-b631-43771d75add7\" target=\"_self\">Kibana upgrade assistant prototype pollution flaw (ESA-2020-05)</a></strong></h3>\n<p>Kibana versions between 6.7.0 to 6.8.8 and 7.0.0 to 7.6.2 contain a prototype pollution flaw in the Upgrade Assistant. An authenticated attacker with privileges to write to the Kibana index could insert data that would cause Kibana to execute arbitrary code. This could possibly lead to an attacker executing code with the permissions of the Kibana process on the host system.</p>\n<p><strong>Affected Versions</strong><br>All versions of Kibana from 6.7.0 to 6.8.8 and 7.0.0 to 7.6.2</p>\n<p><strong>Solutions and Mitigations</strong><br>Users should upgrade to Kibana version 7.7.0 or 6.8.9. Users unable to upgrade can disable the Upgrade Assistant using the instructions below.</p>\n<p>Upgrade Assistant can be disabled by setting the following options in Kibana:</p>\n<p>Kibana versions 6.7.0 and 6.7.1 can set ‘upgrade_assistant.enabled: false’ in the kibana.yml file</p>\n<p>Kibana versions starting with 6.7.2 can set ‘xpack.upgrade_assistant.enabled: false’ in the kibana.yml file</p>\n<p>This flaw is mitigated by default in all Elastic Cloud Kibana versions.</p>\n<p><strong>CVSSv3: 6.6 - AV:A/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H</strong><br><strong>CVE ID: <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7012\">CVE-2020-7012</a></strong></p>\n<h3 id=\"h_3c6322c7-e673-4988-9dc3-f2a15e1fd5b0\"><a href=\"#h_3c6322c7-e673-4988-9dc3-f2a15e1fd5b0\" target=\"_self\">Kibana TSVB prototype pollution flaw (ESA-2020-06)</a></h3>\n<p>Kibana versions before 6.8.9 and 7.7.0 contain a prototype pollution flaw in TSVB . An authenticated attacker with privileges to create TSVB visualizations could insert data that would cause Kibana to execute arbitrary code. This could possibly lead to an attacker executing code with the permissions of the Kibana process on the host system.</p>\n<p><strong>Affected Versions</strong><br>All versions of Kibana before 7.7.0 and 6.8.9</p>\n<p><strong>Solutions and Mitigations</strong><br>Users should upgrade to Kibana version 7.7.0 or 6.8.9. Users unable to upgrade can disable TSVB by setting \"metrics.enabled: false\" in the kibana.yml file.</p>\n<p>This flaw is mitigated by default in all Elastic Cloud Kibana versions.</p>\n<p><strong>CVSSv3: 6.6 - AV:A/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H</strong><br><strong>CVE ID: <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7013\">CVE-2020-7013</a></strong></p>\n<div class=\"cooked\">\n<h3 id=\"h_74fbd937-d10b-4e97-9bc6-e846881fea65\"><a href=\"#h_74fbd937-d10b-4e97-9bc6-e846881fea65\" target=\"_self\">Kibana cross site scripting (XSS) issue (ESA-2020-08)</a></h3>\n<p>The TSVB visualization in Kibana contains a stored XSS flaw. An attacker who is able to edit or create a TSVB visualization could allow the attacker to obtain sensitive information from, or perform destructive actions, on behalf of Kibana users who edit the TSVB visualization.</p>\n<p><strong>Affected Versions</strong><br>All versions of Kibana after 5.4.0 are affected by this flaw</p>\n<p><strong>Solutions and Mitigations</strong><br>Users should upgrade to Kibana version 7.7.1 or 6.8.10. Users unable to upgrade can disable TSVB by setting \"metrics.enabled: false\" in the kibana.yml file.</p>\n<p><strong>CVSSv3: 6.7 - AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:L</strong><br><strong>CVE ID: <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7015\">CVE-2020-7015</a></strong></p>\n</div>\n<h3 id=\"h_6e2a4594-d6e5-46fc-8552-3280dbe5d9fe\"><a href=\"#h_6e2a4594-d6e5-46fc-8552-3280dbe5d9fe\" target=\"_self\">Elasticsearch authentication API key privilege escalation (ESA-2020-07)</a></h3>\n<p>The fix for <a href=\"/w/elasticsearch-and-liferay-enterprise-search-security-advisory-april-2-2020\" target=\"_self\">ESA-2020-02 (CVE-2020-7009)</a> was found to be incomplete.</p>\n<p>Elasticsearch versions from 6.7.0 to 6.8.7 and 7.0.0 to 7.6.1 contain a privilege escalation flaw if an attacker is able to create API keys and also authentication tokens. An attacker who is able to generate an API key and an authentication token can perform a series of steps that result in an authentication token being generated with elevated privileges.</p>\n<p><strong>Affected Versions</strong><br>All versions from 6.7.0 to 6.8.8 and 7.0.0 to 7.6.2 are vulnerable to this issue.</p>\n<p><strong>Solutions and Mitigations</strong><br>Users should upgrade to Elasticsearch version 7.7.0 or 6.8.9. Users who are unable to upgrade can mitigate this flaw by disabling API keys by setting ‘xpack.security.authc.api_key.enabled’ to false in the elasticsearch.yml file.</p>\n<p><strong>CVSSv3: 6.4 - AV:A/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H</strong><br><strong>CVE ID: <a href=\"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7014\">CVE-2020-7014</a></strong></p>\n<h2 id=\"h_f1d9cceb-4979-4861-ad8b-419f6bda2d36\"><a href=\"#h_f1d9cceb-4979-4861-ad8b-419f6bda2d36\" target=\"_self\">Additional Mitigation Notes</a></h2>\n<p>Liferay's Elasticsearch and Enterprise Search connectors are not using API keys out-of-the-box.</p>\n<h2 id=\"Search-Engine-Compatibility-Matrix\"><a href=\"#Search-Engine-Compatibility-Matrix\" target=\"_self\">Search Engine Compatibility Matrix</a></h2>\n<p>Reference the information <a href=\"/w/search-engine-compatibility-matrix#Liferay-Enterprise-Search\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<h2 id=\"h_4a037078-181b-47ed-95f9-ed2e556561e5\"><a href=\"#h_4a037078-181b-47ed-95f9-ed2e556561e5\" target=\"_self\">Vendor References</a></h2>\n<ul>\n<li><a href=\"https://discuss.elastic.co/t/elastic-stack-6-8-9-and-7-7-0-security-update/235571/1\">https://discuss.elastic.co/t/elastic-stack-6-8-9-and-7-7-0-security-update/235571/1</a></li>\n<li><a href=\"https://discuss.elastic.co/t/elastic-stack-7-7-1-and-6-8-10-security-update/235573/1\" target=\"_self\">https://discuss.elastic.co/t/elastic-stack-7-7-1-and-6-8-10-security-update/235573/1</a></li>\n<li><a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/6.8/release-notes-6.8.10.html\">https://www.elastic.co/guide/en/elasticsearch/reference/6.8/release-notes-6.8.10.html</a></li>\n<li><a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/7.7/release-notes-7.7.1.html\">https://www.elastic.co/guide/en/elasticsearch/reference/7.7/release-notes-7.7.1.html</a></li>\n</ul>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:42:09Z",
+  "dateModified": "2026-03-05T21:42:04Z",
+  "datePublished": "2020-06-03T14:45:00Z",
+  "description": "",
+  "externalReferenceCode": "360043996632",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-june-4-2020",
+  "id": 26141118,
+  "key": "26141116",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "enterprise-search",
+    "les",
+    "kibana"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26141118/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": " Elasticsearch and Liferay Enterprise Search Security Advisory: June 4, 2020 ",
+  "uuid": "b74d8060-0446-3dd6-c807-1850590f4a48"
+}

@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><a href=\"/w/elastic-stack-and-liferay-enterprise-search-les-security-advisories\" target=\"_self\">Published: January 16, 2020</a></aside>\n<p>The following issue may affect the functionality of your Liferay DXP and Enterprise Search environment. This notification provides a description of the latest compatibility change and required actions for Liferay Enterprise Search Subscribers.</p>\n<h2>Deployments which might be impacted</h2>\n<ul>\n<li>Liferay DXP 7.0, 7.1 and 7.2 on Elastic Stack 6 or 7 using Kibana</li>\n</ul>\n<h2>Vulnerability Information</h2>\n<p>(As provided by the vendor.)</p>\n<h3>Kibana XSS (ESA-2019-17)</h3>\n<p>Kibana versions before 6.8.6 and 7.5.1 contain a cross site scripting (XSS) flaw in the coordinate and region map visualizations. An attacker with the ability to create coordinate map visualizations could create a malicious visualization. If another Kibana user views that visualization or a dashboard containing the visualization it could execute JavaScript in the victim’s browser.</p>\n<p>Please note that Kibana has Content Security Policy (CSP) enabled by default since versions 6.7.0 and 7.0.0. Most browsers supported by Kibana honor the CSP settings. CSP prevents attackers from executing arbitrary JavaScript using this flaw, however an attacker can still inject arbitrary HTML into the page. The ‘csp.strict: true’ can be set in kibana.yml to disallow browsers that do not enforce CSP rules.</p>\n<p><strong>Affected Versions</strong><br>Kibana versions before 7.5.1 and 6.8.6</p>\n<p><strong>Solutions and Mitigations</strong>:<br>Users should upgrade to Elasticsearch version 7.5.1 or 6.8.6. Users who are unable to upgrade can set <code>xpack.maps.enabled: false</code>, <code>region_map.enabled: false</code>, and <code>tile_map.enabled: false</code>in kibana.yml to disable map visualizations.</p>\n<p>CVSSv3: 7.3 - AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N</p>\n<p>CVE ID: <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2019-7621\" target=\"_self\">CVE-2019-7621</a></p>\n<h2 id=\"Search-Engine-Compatibility-Matrix\">Search Engine Compatibility Matrix</h2>\n<p>Reference the information <a href=\"/w/search-engine-compatibility-matrix#Liferay-Enterprise-Search\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">here</a><span></span><span style=\"font-weight: 400;\"> for the detailed Elasticsearch compatibility including the compatible connector versions and required patch levels.</span></p>\n<h3>Vendor Reference</h3>\n<p><a href=\"https://discuss.elastic.co/t/elastic-stack-6-8-6-and-7-5-1-security-update/212390\" target=\"_self\">https://discuss.elastic.co/t/elastic-stack-6-8-6-and-7-5-1-security-update/212390</a></p>\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988342"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:20:15Z",
+  "dateModified": "2026-03-05T21:42:04Z",
+  "datePublished": "2020-01-14T15:29:00Z",
+  "description": "",
+  "externalReferenceCode": "360038410132",
+  "friendlyUrlPath": "elasticsearch-and-liferay-enterprise-search-security-advisory-january-16-2020",
+  "id": 26132612,
+  "key": "26132610",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26132612/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461452,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988342,
+      "taxonomyCategoryName": "Security Alert",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "2da259f6-4ccd-04a8-b88e-19ed011425a8",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Elasticsearch and Liferay Enterprise Search Security Advisory: January 16, 2020",
+  "uuid": "77f683ca-313c-e1f7-b807-9249139bdade"
+}
