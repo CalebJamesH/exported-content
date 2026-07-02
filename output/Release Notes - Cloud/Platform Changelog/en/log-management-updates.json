@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span>We’re excited to announce a key update to our Liferay Cloud platform, aimed at improving your user experience and streamlining the way you interact with logs. </span></p>\n<h2>\n<span class=\"c-mrkdwn__br\" style=\"height: 8px;\" aria-label=\"\" data-stringify-type=\"paragraph-break\"></span><span>New Log Management UI</span>\n</h2>\n<p><span> In response to your feedback, we've upgraded our log display system to better aid in troubleshooting. The updated system comes with an improved reading interface that includes a new tabular view and cleaner interface, and </span><span>expanded search and filtering capabilities. Now you can search for specific text within log entries and filter logs by specific services, pods, or time frames. Plus, we've made sure the new system can handle large volumes of logs seamlessly. </span></p>\n<p> </p>\n<p><img src=\"\"></p>\n<h2>Further updates</h2>\n<p><span>Updates will not stop there! We will soon release new changes to the Logs interface the will allow users to inspect logs and better troubleshoot issues. Improvents include a new log inspection sidebar with the ability to expand or collapse individual log entries for detailed viewing, log indentation and text highlighting.</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:40Z",
+  "dateModified": "2026-03-10T21:45:10Z",
+  "datePublished": "2023-06-18T20:06:00Z",
+  "description": "",
+  "externalReferenceCode": "16861006136845",
+  "friendlyUrlPath": "log-management-updates",
+  "id": 26108292,
+  "key": "26108290",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108292/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Log Management Updates ",
+  "uuid": "5ad61967-8f6d-3173-3024-cf7532d6247e"
+}

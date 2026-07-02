@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HWK8GQXP0QG4R45BD1W257BJ\"><span style=\"color: #434343;\">Tasks</span></h3>\n<ul>\n<li>\n<strong>MongoDB Sanitizer Text Package Update: </strong>Updated the MongoDB sanitizer to address a vulnerability in the text package, enhancing security by moving to a version that resolves CVE-2022-32149. This change ensures the safety and integrity of text processing within our services. </li>\n<li>\n<span class=\"wysiwyg-underline\" style=\"color: #1155cc;\"></span><strong>MongoDB Sanitizer Busybox Security Update:</strong> Fixed a critical security issue by updating the busybox package in the MongoDB sanitizer to version 1.4.2, addressing CVE-2022-48174. This update helps to maintain the security standards of our Docker environments. </li>\n<li>\n<strong>Crypto-JS Library Vulnerability Fix: </strong>Upgraded the crypto-js library used in the console from version 3.1.9-1 to 4.2.0 to mitigate known vulnerabilities, specifically addressing CVE-2023-46233. This upgrade ensures that our cryptographic practices remain secure and up to date.</li>\n</ul>\n<h3 id=\"h_01HWK8GQXPVJBJVNF0Z06VTG6Y\"><span style=\"color: #434343;\">Bugs</span></h3>\n<ul>\n<li>\n<strong>Console Loop Due to Unsupported Scopes:</strong> Fixed an issue where new console pages were stuck in a loop due to unsupported scopes not being validated. This fix involves adding necessary validations for supported roles, enhancing reliability and user experience.</li>\n<li>\n<span class=\"wysiwyg-underline\" style=\"color: #1155cc;\"></span><strong>UI Consistency in Log and Metric Access Buttons: </strong>Corrected the font color inconsistency in the 'Go to Logs' and 'Go to Metrics' buttons across different console versions to match the light gray specified in the design mockups, ensuring UI consistency and clarity.</li>\n<li>\n<strong> Race Condition in Database Restore Operations:</strong> Addressed a race condition that could cause database restore operations to fail, improving the robustness and reliability of our database services by ensuring proper synchronization during restores.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "855681e7-e526-bc2e-b10a-d75f7abbf432",
+    "familyName": "Fong",
+    "givenName": "Amos",
+    "id": 2013333,
+    "name": "Amos Fong"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T22:57:04Z",
+  "dateModified": "2026-03-10T21:02:07Z",
+  "datePublished": "2024-04-28T21:08:00Z",
+  "description": "",
+  "externalReferenceCode": "26277988915597",
+  "friendlyUrlPath": "2023-11-16-release-updates",
+  "id": 26095700,
+  "key": "26095698",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26095700/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.11.16 - Release Updates",
+  "uuid": "25fc1f71-baa9-7bd3-e01a-838f850fc35f"
+}

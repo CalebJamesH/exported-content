@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p id=\"h_01HBF5YFH60ZWSM5TH8SH9S9V0\"><a href=\"https://support.liferay.com/09-21-2023-release-updates\">Released 09/21/2023</a></p>\n<h2 id=\"h_01HBF70BC5S6RHWT7TYRREH4F6\">Introduction</h2>\n<p>In alignment with our continued commitment to versatility and adaptability, Liferay Cloud now supports the integration of Azure Git repositories via Azure DevOps with <span>Jenkins (CI) service</span>. This new feature is specifically beneficial for users who rely on AzureDevOps as their Git repository provider.</p>\n<h2 id=\"h_01HBF70BC6PE5YPRB8FWQYYVYS\">Step-by-Step Configuration Guide:</h2>\n<ol>\n<li>\n<p><strong>Azure DevOps Initial Setup</strong>:</p>\n<ul>\n<li>\n<strong>Login</strong>: Access your AzureDevOps account.</li>\n<li>\n<strong>Project Creation</strong>: If you haven't set up a project yet, create a new one by following Azure's standard project setup procedures.</li>\n</ul>\n</li>\n<li>\n<p><strong>Authentication &amp; Credentials</strong>:</p>\n<ul>\n<li>If you're accessing a private repository, AzureDevOps will prompt and generate a Personal Access Token (PAT) for authentication.</li>\n<li>For public repositories or other projects, create a PAT from the top-right drop-down menu in AzureDevOps.</li>\n</ul>\n</li>\n<li>\n<p><strong>Setting up LCP.json for CI Service</strong>:</p>\n<ul>\n<li>You'll need to edit the LCP.json to specify the CI service image and to recognize Azure DevOps as the SCM provider.</li>\n</ul>\n<div class=\"bg-black rounded-md mb-4\">\n<pre class=\"p-4 overflow-y-auto\"><code class=\"!whitespace-pre hljs language-json\"><span class=\"hljs-punctuation\">{</span>\n  <span class=\"hljs-attr\">\"image\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"liferaycloud/jenkins:specific_version\"</span><span class=\"hljs-punctuation\">,</span>\n  <span class=\"hljs-attr\">\"env\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-punctuation\">{</span>\n     <span class=\"hljs-attr\">\"LCP_CI_SCM_PROVIDER\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"azure-devops\"</span><span class=\"hljs-punctuation\">,</span>\n     <span class=\"hljs-attr\">\"LCP_CI_SCM_REPOSITORY_OWNER\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"Azure DevOps Owner/ProjectName\"</span><span class=\"hljs-punctuation\">,</span>\n     <span class=\"hljs-attr\">\"LCP_CI_SCM_REPOSITORY_NAME\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"RepositoryName\"</span><span class=\"hljs-punctuation\">,</span>\n     <span class=\"hljs-attr\">\"LCP_CI_SCM_TOKEN\"</span><span class=\"hljs-punctuation\">:</span> <span class=\"hljs-string\">\"PersonalAccessToken\"</span>\n  <span class=\"hljs-punctuation\">}</span>\n<span class=\"hljs-punctuation\">}</span></code></pre>\n</div>\n</li>\n<li>\n<p><strong>Deployment Configuration</strong>:</p>\n<ul>\n<li>Once your changes are finalized, commit them to the <code>develop</code> branch.</li>\n<li>Push the updated branch to GitHub.</li>\n<li>Configure the Azure DevOps remote settings to ensure Jenkins recognizes and interacts with your Azure repository.</li>\n<li>Lastly, deploy the most recent successful build to the designated infra environment.</li>\n</ul>\n</li>\n</ol>\n<h2 id=\"h_01HBF70BC6VSZZNW0S8VHMB6CC\">Additional Information</h2>\n<ul>\n<li>Azure DevOps Pull Requests are currently not integrated.</li>\n<li>The system will automatically poll the Azure repository every 5 minutes to check for any updates.</li>\n<li>New builds will be triggered by any detected changes in branches or tags.</li>\n<li>Personal Access Tokens (PAT) are exclusive to specific users and <strong>are set with an expiration period</strong>.</li>\n</ul>\n<h2 id=\"h_01HBF70BC63WYJB33SDJFS9P4R\">Security &amp; Best Practices</h2>\n<p>It's worth noting the importance of token management. The PAT, crucial for Jenkins to access Azure repositories, is specific to an Azure user and contains an expiry. Ensure that the token belongs to an organizational account. Also, for bolstered security, it's recommended to frequently review and manage the permissions assigned to the PAT.</p>\n<h2 id=\"h_01HBF70BC6681YXZNH607VTMYT\">Wrap-Up:</h2>\n<p>This new integration is reflective of Liferay Cloud's ongoing efforts to offer enhanced versatility to our users. By ensuring a seamless Azure DevOps experience within Jenkins, we hope to empower users with more options and streamline development processes.</p>\n<p>For a deeper dive into the nuances of this feature or to seek troubleshooting guidance, please refer to the Liferay Cloud GitHub documentation and official Azure documentation.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:44:17Z",
+  "dateModified": "2026-03-10T21:45:10Z",
+  "datePublished": "2023-09-29T00:52:00Z",
+  "description": "",
+  "externalReferenceCode": "19941015463693",
+  "friendlyUrlPath": "azure-git-repos-integration-for-liferay-cloud",
+  "id": 26146438,
+  "key": "26146436",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146438/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Azure Git Repos Integration for Liferay Cloud",
+  "uuid": "85236ff6-0366-b707-d6fe-31da361ae132"
+}

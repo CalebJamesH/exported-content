@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>We´re pleased to share the deployment schedule for the upcoming Analytics Cloud SDK Version 1.3.0.</p>\n\n<p>This new version introduces exciting enhancements and significant performance improvements designed to help you build even more powerful and efficient applications.</p>\n\n<h3 id=\"h_01K6E1C7GF9JP2QETBV4PQP1HS\">Scope of changes:</h3>\n\n<ul>\n\t<li data-list-item-id=\"e26169c390274f6b568ec9c0e41659415\"><a href=\"https://liferay.atlassian.net/browse/LPD-55939\">LPD-55939</a></li>\n\t<li data-list-item-id=\"ec6fe9133c656664464eea0c870e0cf0c\"><a href=\"https://liferay.atlassian.net/browse/LPD-10660\">LPD-10660</a></li>\n</ul>\n\n<h3 id=\"h_01K6E1EG0VJARJ4GZA9E89CKPY\">Deployment Schedule:</h3>\n\n<ul>\n\t<li data-list-item-id=\"e928480def62faa45323ac5fd7260007e\">Internal Environment Release:\n\t<ul>\n\t\t<li data-list-item-id=\"e751703cce1284d892faa64aa141d2042\">Date &amp; Time: September 30th, 5:00 PM UTC -3</li>\n\t</ul>\n\t</li>\n\t<li data-list-item-id=\"e3bdafb943c43307b9af9be87a4a3be47\">Production Enrvironment Release:\n\t<ul>\n\t\t<li data-list-item-id=\"e776990dededbcbf3e2c47b92d1235ab6\">Date &amp; Time: October 7th, 5:00 PM UTC -3</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h3 id=\"h_01K6E1GX6P1YQAKCSS3HHXRHCY\">Important Notes:</h3>\n\n<p>There is <strong>no expected downtime</strong> during either the internal or the production release. Your existing applications and services will remain fully operational throughout the process</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:45:11Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:45:00Z",
+  "description": "",
+  "externalReferenceCode": "1324e0f6-f4f7-8821-342a-c5b83b55c30f",
+  "friendlyUrlPath": "release-announcement-analytics-cloud-js-v.1.3.0",
+  "id": 26937706,
+  "key": "26937704",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937706/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.09.30 - Release Announcement: Analytics Cloud JS v.1.3.0",
+  "uuid": "3d55d8a5-33a2-e283-78eb-6ee2d1ebf3bd"
+}

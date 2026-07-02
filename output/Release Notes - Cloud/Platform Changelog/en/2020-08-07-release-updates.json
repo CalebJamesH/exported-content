@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2> </h2>\n<h2>Add</h2>\n<ul>\n<li>Add confirmation before deploy build</li>\n</ul>\n<h2>Improvements</h2>\n<ul>\n<li>Design improvements for <span>Deploy Build page</span>\n</li>\n<li>\n<span>Design improvements for Profile page</span><span></span>\n</li>\n<li><span>Design improvements for Activities</span></li>\n<li><span>Design improvements for Topbar</span></li>\n<li><span>Notify customer when image tag doesn't exist</span></li>\n</ul>\n<h2>Bugs</h2>\n<ul>\n<li>Elements were moving or blinking causing glitching effect when loading</li>\n<li>User should not be able to use the Build ID hammer icon to deploy a failed build</li>\n<li>The backup filename was not showing completely.</li>\n<li>Jenkins badge was redirecting to old Jenkins UI during Build phase</li>\n<li>Update links to Liferay Learn Site</li>\n<li><span>Invalid projectId string was not completely preserved across submission attempt</span></li>\n<li><span>Activities can't be read on IE11</span></li>\n<li><span>Service name missing in secret confirmation checkbox text</span></li>\n<li><span>The commit pill was being shown improperly when there's no commit available</span></li>\n<li><span>Some Services icon tooltips were not correct for the selected environments</span></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:16:15Z",
+  "dateModified": "2026-03-10T21:11:25Z",
+  "datePublished": "2020-08-07T19:35:00Z",
+  "description": "",
+  "externalReferenceCode": "360047521151",
+  "friendlyUrlPath": "2020-08-07-release-updates",
+  "id": 26109010,
+  "key": "26109008",
+  "keywords": [
+    "ja",
+    "mt"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109010/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2020.08.07 - Release Updates",
+  "uuid": "274a8300-0d58-d53d-eb81-dacfdb1ca1f7"
+}

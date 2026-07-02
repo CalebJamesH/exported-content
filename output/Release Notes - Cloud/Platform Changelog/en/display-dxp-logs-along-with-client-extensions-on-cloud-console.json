@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p id=\"h_01HBF8WR423DS3N1D8KZ0YGT7J\"><a href=\"/w/09-28-2023-release-updates\">Released 09/28/2023</a></p>\n\n<h2 id=\"h_01HBF8WYC3C5JZJJYQRD9TSJ43\"><strong><img alt=\"\" src=\"\" /></strong><br />\nIntroduction</h2>\n\n<p>In our ongoing commitment to providing better transparency and troubleshooting capabilities to Liferay PaaS customers, we've made improvements to the Cloud Console. Previously, users had access to logs specific to Client Extensions. Now, with this release, users can view an integrated set of logs which include both Client Extension and DXP logs within the unified Cloud Console interface.</p>\n\n<h2 id=\"h_01HBF8WR42MW7ZHBRMBQEVFXNQ\">Feature Details</h2>\n\n<ol>\n\t<li>\n\t<p><strong>Unified Logging View</strong>: Within the Cloud Console's log interface, users can now view not just Client Extension logs, but also logs related to DXP.</p>\n\t</li>\n\t<li>\n\t<p><strong>Log Interactivity</strong>: With the introduction of DXP logs into the Cloud Console, users have enhanced capabilities like filtering and sorting based on parameters such as timestamp and severity, ensuring streamlined navigation through logs.</p>\n\t</li>\n\t<li>\n\t<p><strong>Real-Time Log Update</strong>: The Cloud Console ensures real-time updates. As new log entries are made in the DXP environment, they are instantly reflected in the Cloud Console for users to view.</p>\n\t</li>\n</ol>\n\n<h2 id=\"h_01HBF8WR42YBDK5VNNH2D9ES5R\">Broader Context</h2>\n\n<p>This feature addresses the architectural nuances of Liferay PaaS. While Liferay service logs were previously visible to a select group, the enhanced view ensures a wider set of users can access a comprehensive set of logs. This move is aligned with our goal to equip users with all necessary insights, ensuring a more autonomous and efficient troubleshooting process.</p>\n\n<h2 id=\"h_01HBF8WR4294V2DA95GZNAHP8S\">Conclusion</h2>\n\n<p>The enhanced log viewing capability in the Cloud Console is aimed at simplifying the troubleshooting process for Liferay PaaS users. By providing a comprehensive log view, we're ensuring users have a holistic understanding of their environments, fostering efficiency, and reducing the need for external interventions. Further documentation and guidance are available on Liferay's official platform.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:33:57Z",
+  "dateModified": "2026-03-10T21:45:10Z",
+  "datePublished": "2023-09-29T01:28:00Z",
+  "description": "",
+  "externalReferenceCode": "19941796600845",
+  "friendlyUrlPath": "display-dxp-logs-along-with-client-extensions-on-cloud-console",
+  "id": 26137770,
+  "key": "26137768",
+  "keywords": [
+    "liferay-saas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26137770/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Display DXP logs along with Client Extensions on Cloud Console",
+  "uuid": "5730a401-c615-5c56-de3f-3e37d1e58782"
+}

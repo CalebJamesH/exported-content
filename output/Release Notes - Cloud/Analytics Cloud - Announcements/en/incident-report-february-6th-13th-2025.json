@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>&nbsp;</p>\n\n<p data-end=\"204\" data-start=\"66\">We are currently experiencing issues with our data pipeline, resulting in intermittent data ingestion failures in the following regions:</p>\n\n<ul data-end=\"281\" data-start=\"206\">\n\t<li data-end=\"227\" data-start=\"206\">São Paulo, Brazil</li>\n\t<li data-end=\"247\" data-start=\"228\">London, England</li>\n\t<li data-end=\"263\" data-start=\"248\">Oregon, USA</li>\n\t<li data-end=\"281\" data-start=\"264\">Mumbai, India</li>\n</ul>\n\n<p data-end=\"528\" data-start=\"283\">The affected data range spans from <strong data-end=\"351\" data-start=\"318\">February 6th to February 13th</strong>. While not all projects were consistently impacted, this timeframe represents the full duration in which ingestion inconsistencies were observed.</p>\n\n<p data-end=\"762\" data-start=\"530\">During this period, data ingestion was unreliable; however, <strong data-end=\"615\" data-start=\"590\">no data has been lost</strong>, as we have backups available for reprocessing. We are actively working on resolving the issue and restoring the affected data from our backups.</p>\n\n<p data-end=\"941\" data-is-last-node=\"\" data-start=\"764\">We expect this to be fully resolved within the next week and will provide another update once the restoration process is complete. Thank you for your patience and understanding.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:42:54Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:42:00Z",
+  "description": "",
+  "externalReferenceCode": "ce9a007d-deca-d1b7-1350-e95889e647a0",
+  "friendlyUrlPath": "incident-report-february-6th-13th-2025",
+  "id": 26937665,
+  "key": "26937663",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937665/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.02.13 - Incident Report - February 6th -13th, 2025",
+  "uuid": "6860b4ae-dde4-0f24-7768-3a5dfaa5f377"
+}

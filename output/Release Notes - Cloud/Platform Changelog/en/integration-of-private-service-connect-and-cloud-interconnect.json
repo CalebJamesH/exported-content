@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><a href=\"https://support.liferay.com/09-21-2023-release-updates\">Released 09/21/2023</a></p>\n<h2 id=\"h_01HBF6P0ZYTY52ZZXGB270B5JC\">Introduction</h2>\n<p>Liferay Cloud has implemented a new feature facilitating the integration of <a href=\"https://cloud.google.com/vpc/docs/private-service-connect\">Google Cloud's Private Service Connect (PSC)</a> within its platform. PSC, a tunneling solution, enables the establishment of dedicated connections involving specific Kubernetes services or namespaces.</p>\n<h2>Private Service Connect (available in shared clusters and private clusters)</h2>\n<p data-pm-slice=\"1 1 []\">Liferay Cloud now supports Private Service Connect (PSC) to provide secure, dedicated connections between services within Liferay Cloud and customer's external on-premise (self-hosted) systems such as ERPs and CRMs. PSC ensures high performance and enhanced security by leveraging Google Cloud Platform's (GCP) infrastructure. This feature requires customers to have their own GCP project and deploy their on-premise services there.</p>\n<h4 id=\"h_01HY4C1PP7154XVQQDV5GA8RWA\">Key Features of PSC in Liferay Cloud</h4>\n<ul class=\"ak-ul\">\n<li>\n<p><strong>Service-Oriented Design</strong>: Allows targeted connections to specific service IP addresses within Liferay Cloud, promoting a secure and controlled network environment.</p>\n</li>\n<li>\n<p><strong>Explicit Authorization</strong>: Built-in authorization model ensures granular control over service access, allowing only intended service endpoints to connect.</p>\n</li>\n<li>\n<p><strong>No Shared Dependencies</strong>: Utilizes Network Address Translation (NAT) to eliminate shared resource dependencies, facilitating easy deployment and scalability.</p>\n</li>\n<li>\n<p><strong>High Performance</strong>: Direct traffic flow from consumer clients to producer backends minimizes latency and maximizes bandwidth capacity.</p>\n</li>\n</ul>\n<h4 id=\"h_01HY4C1PP79S5XKK98E4WJ8DDS\">Request Flow</h4>\n<p>PSC facilitates secure communication between external systems and Liferay Cloud services through the following high-level flow:</p>\n<ol class=\"ak-ol\" start=\"1\">\n<li>\n<p><strong>External to Liferay Cloud</strong>:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>External requests are routed through the customer's gateway.</p>\n</li>\n<li>\n<p>Requests are directed to Liferay Cloud via PSC ServiceAttachment, ensuring secure and controlled access.</p>\n</li>\n<li>\n<p>Within Liferay Cloud, requests are efficiently managed and distributed to the appropriate services.</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Liferay Cloud to External Systems</strong>:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>Liferay Cloud services initiate requests to external systems.</p>\n</li>\n<li>\n<p>Requests are routed through the PSC ServiceAttachment to the customer's GCP project.</p>\n</li>\n<li>\n<p>Secure and reliable communication is maintained throughout the process.</p>\n</li>\n</ul>\n</li>\n</ol>\n<h4 id=\"h_01HY4C1PP7C6346YZPYJA208S3\">Implementation Steps</h4>\n<ol class=\"ak-ol\" start=\"1\">\n<li>\n<p><strong>Manual Setup Requirement</strong>:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>PSC setup in Liferay Cloud requires a manual process. Customers must submit a support ticket to request PSC configuration.</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Submission of a Support Ticket</strong>:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>Customers need to send a ticket to <a href=\"https://help.liferay.com/hc/requests/new\">Liferay Support</a> with the following information:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>Detailed requirements for PSC setup.</p>\n</li>\n<li>\n<p>Specific Kubernetes service or namespace details that need access.</p>\n</li>\n<li>\n<p>Any additional configuration details relevant to the setup.</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Configuration Process</strong>:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>Upon receiving the support ticket, Liferay Cloud support will initiate the setup process.</p>\n</li>\n<li>\n<p>The support team will configure PSC to establish secure connections between specified services and external systems.</p>\n</li>\n</ul>\n</li>\n<li>\n<p><strong>Verification and Testing</strong>:</p>\n<ul class=\"ak-ul\">\n<li>\n<p>After the setup, the configuration will be verified to ensure proper connectivity and security.</p>\n</li>\n<li>\n<p>The support team will perform tests to confirm that only the specified services or namespaces can access the PSC.</p>\n</li>\n</ul>\n</li>\n</ol>\n<h4 id=\"h_01HY4C1PP7QYZHPRGDBJTQR7YD\">Benefits</h4>\n<ul class=\"ak-ul\">\n<li>\n<p><strong>Secure and Reliable Connections</strong>: Establishes a secure, dedicated connection between on-premise systems and services within Liferay Cloud.</p>\n</li>\n<li>\n<p><strong>Enhanced Performance</strong>: Ensures low latency and high throughput by leveraging dedicated connections.</p>\n</li>\n<li>\n<p><strong>Granular Access Control</strong>: Limits access to specific services or namespaces, enhancing security.</p>\n</li>\n</ul>\n<h4 id=\"h_01HY4C1PP7B94PXS49RM3FWKV8\">Support and Maintenance</h4>\n<ul class=\"ak-ul\">\n<li>\n<p><strong>Ongoing Support</strong>: Liferay Cloud support will provide ongoing assistance and troubleshooting for PSC configurations.</p>\n</li>\n<li>\n<p><strong>Documentation and Updates</strong>: Detailed documentation and updates will be provided to customers to ensure they stay informed about best practices and any changes to the setup process.</p>\n</li>\n</ul>\n<h4 id=\"h_01HY4C1PP7DZWDX16D00GWA5BY\">Contact and Assistance</h4>\n<p>For any questions or additional support, customers can reach out to Liferay Cloud support by opening a ticket at <a href=\"https://help.liferay.com/hc/requests/new\">Liferay Support</a>.</p>\n<p>By following these steps and leveraging the capabilities of PSC, customers can achieve a secure, efficient, and reliable connection between their on-premise systems and services within Liferay Cloud.</p>\n<h2 id=\"01HY4C8G47Q7QRNXZ6CSANSZAF\">Cloud Interconnect Integration (available only on private cluster)</h2>\n<p><a href=\"https://cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview\">Cloud Interconnect</a> provides a dedicated connection directly from an organization's on-premises network or other cloud environments to Google Cloud Platform. This connection bypasses the public internet, yielding benefits like enhanced security, reduced latency, and predictable network performance. When combined with PSC, Cloud Interconnect serves as a bridge, facilitating more secure, efficient, and streamlined interactions between on-premises systems and Liferay Cloud.</p>\n<h2 id=\"h_01HBF6P0ZYJPXM9JN3XC1GYR4H\">How It Works</h2>\n<ol>\n<li>\n<p><strong>Establishment of PSC Connection</strong>: Liferay Cloud platform now supports PSC connections, ensuring that only specified Kubernetes services or namespaces can initiate and access this connection.</p>\n</li>\n<li>\n<p><strong>Tunneling Solutions</strong>: With PSC in place, a dedicated channel is available for specific GCP services or different GCP VPCs to connect in or out of a VPC within the Liferay Cloud platform.</p>\n</li>\n<li>\n<p><strong>Cloud Interconnect as a Bridge</strong>: For organizations looking to securely bridge their on-premises data and systems with GKE or Google Cloud Storage, the combined utility of PSC and Cloud Interconnect offers a robust solution. Data, whether sensitive or voluminous, can be securely and rapidly transferred between points.</p>\n</li>\n</ol>\n<h2 id=\"h_01HBF6P0ZYZA1F8FVWPA4ZZ3XH\">Conclusion</h2>\n<p>Through the integration of Private Service Connect and Cloud Interconnect in the Liferay Cloud platform, users can now leverage dedicated and secure channels for communication and data transfer between their on-premises systems and Liferay Cloud, capitalizing on enhanced security, reduced latency, and consistent performance.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:44:32Z",
+  "dateModified": "2026-03-10T21:45:09Z",
+  "datePublished": "2023-09-29T00:49:00Z",
+  "description": "",
+  "externalReferenceCode": "19940938857997",
+  "friendlyUrlPath": "integration-of-private-service-connect-and-cloud-interconnect",
+  "id": 26146487,
+  "key": "26146485",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146487/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Integration of Private Service Connect and Cloud Interconnect",
+  "uuid": "69fc8c50-e58c-6bae-edd9-035493ec9376"
+}

@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Welcome to an enhanced backup management experience on the Liferay Cloud Platform. We've rolled out substantial updates to both the backup download and upload functionalities via our Command Line Interface (CLI) tool. Our aim is to provide a robust, efficient, and transparent suite of options for managing your backups.</p>\n\n<p>The following capabilities are available on <strong>version 3.12</strong> and beyond.</p>\n\n<h2 id=\"h_01H95MQFB8Y0H0E37ZA27STCDF\">Backup Download</h2>\n\n<h3 id=\"h_01H95MQFB8VEXBCEMW36HCCCT5\">New and Enhanced Features</h3>\n\n<h4 id=\"h_01H95MQFB8MN09WH89EMAGKGWV\">Simultaneous Downloading of Database and Document Library</h4>\n\n<p>You can now save valuable time by downloading both the database and document library backups in a single operation. The command to initiate this is <code>lcp backup download --backupId {backupId}</code>.</p>\n\n<h4 id=\"h_01H95MQFB8TK7R4BSWWF94R98E\">Optional Flags for Granular Control</h4>\n\n<p>If you're interested in downloading just the database backup, you can easily do this by appending the <code>--database</code> flag like this: <code>lcp backup download --backupId {backupId} --database</code>.</p>\n\n<h4 id=\"h_01H95MQFB8R7KJG7YH2JXFX3Y6\">Improved Logging and Monitoring</h4>\n\n<p>We've enhanced our user activity log to provide more granular information about what's happening during the download process. This feature aids in troubleshooting and monitoring.</p>\n\n<h4 id=\"h_01H95MQFB88HBT07WSK6K60SER\">Updated Backup Route</h4>\n\n<p>We've optimized the API route for initiating backup downloads. It's designed to streamline the experience and make it more efficient.</p>\n\n<h4 id=\"h_01H95MQFB8AD4XAYSCD2F0GQ7A\">Command Example for Download</h4>\n\n<p>To download both types of backups together:</p>\n\n<div class=\"bg-black rounded-md mb-4\">\n<div class=\"p-4 overflow-y-auto\"><code class=\"!whitespace-pre hljs language-css\">lcp backup download <span class=\"hljs-attr\">--backupId</span> {backupId} </code></div>\n</div>\n\n<p>To download only the database:</p>\n\n<div class=\"bg-black rounded-md mb-4\">\n<div class=\"p-4 overflow-y-auto\"><code class=\"!whitespace-pre hljs language-css\">lcp backup download <span class=\"hljs-attr\">--backupId</span> {backupId} <span class=\"hljs-attr\">--database</span> </code></div>\n</div>\n\n<h3 id=\"h_01H95MQFB8X18PZ0CX4JHYNSW6\">Concurrency Setting</h3>\n\n<p>If you're looking to optimize the download speed, you can use the <code>--concurrency</code> flag. This allows you to set how many download streams you want to run concurrently. Please note that this only applies to document library downloads as database backups are single-file entities.</p>\n\n<hr style=\"height: 0px;\">\n<h2 id=\"h_01H95MQFB84SSC0MJQ8S26GFB6\">Backup Upload</h2>\n\n<h3 id=\"h_01H95MQFB8BC9BZCN713BHWZQ4\">Who Can Upload Backups</h3>\n\n<h4 id=\"h_01H95MQFB87PT3FCTAKWTKYVD3\">Role-Based Access Control</h4>\n\n<p>The backup upload feature is limited to users with specific roles—namely, team members, owners, or administrators.</p>\n\n<h4 id=\"h_01H95MQFB84EGTPYQMB1TFXGK6\">Project-Specific Access</h4>\n\n<p>Your access rights are further scoped to the projects to which you are assigned, ensuring robust security protocols.</p>\n\n<h3 id=\"h_01H95MQFB8NMPH8AG6GA9XM46P\">Command Syntax and Parameters</h3>\n\n<p>To upload a backup, execute:</p>\n\n<div class=\"bg-black rounded-md mb-4\">\n<div class=\"p-4 overflow-y-auto\"><code class=\"!whitespace-pre hljs language-css\">lcp backup upload <span class=\"hljs-attr\">--project</span> {ProjectName} <span class=\"hljs-attr\">--environment</span> {Environment} <span class=\"hljs-attr\">--doclib</span> {PathToDocLibFolder} <span class=\"hljs-attr\">--database</span> {PathToDatabaseFile<span class=\"hljs-selector-class\">.gz</span>} <span class=\"hljs-attr\">--concurrency</span> {NumberOfConcurrentStreams} </code></div>\n</div>\n\n<p><strong>Parameter Guidelines</strong></p>\n\n<ul>\n\t<li><code>--database</code>: The database backup must be in <code>.gz</code> format.</li>\n\t<li><code>--doclib</code>: Must point to a folder containing the document library.</li>\n\t<li><code>--concurrency</code>: Optional parameter to control parallel upload streams. The default is set to 500.</li>\n</ul>\n\n<h3 id=\"h_01H95MQFB8QSMM5ZJCH4PMNF6F\">Additional Notes on Backup Upload</h3>\n\n<ul>\n\t<li>\n\t<p><strong>Requirement for Google Cloud Storage</strong>: The upload feature is only available if Google Cloud Storage (GCS) is enabled on your environment.</p>\n\t</li>\n\t<li>\n\t<p><strong>Concurrency for Enhanced Performance</strong>: The concurrency option allows the CLI to upload multiple files in parallel, thereby reducing the total upload time.</p>\n\t</li>\n</ul>\n\n<hr style=\"height: 0px;\">\n<h2 id=\"h_01H95MQFB8W1VDP2KWMVPQS6QD\">Important Note on UI Compatibility</h2>\n\n<p><img alt=\"Screenshot_5.png\" src=\"https://support.liferay.com/documents/d/customer-portal/19056778454029-screenshot_5\"></p>\n\n<p>With the release of our latest CLI updates, we have removed the backup upload and download options from the UI. While we understand that this change may be inconvenient for some, it's driven by our commitment to provide the most robust, efficient, and secure backup solution. The CLI is better suited to manage large data sets and offers better performance.</p>\n\n<p><strong>We Value Your Feedback</strong>: We’re keen to hear how these changes are affecting your workflow. Your experiences and feedback are crucial for our ongoing efforts to fine-tune this service. If you encounter any issues, please share them with us so that we can address them promptly.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T19:44:45Z",
+  "dateModified": "2026-03-10T21:45:12Z",
+  "datePublished": "2023-06-29T12:30:00Z",
+  "description": "",
+  "externalReferenceCode": "26107637",
+  "friendlyUrlPath": "liferay-cloud-platform-cli-backup-management",
+  "id": 26107639,
+  "key": "26107637",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107639/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Cloud Platform CLI Backup Management",
+  "uuid": "5b73fd70-6549-967b-85fc-f92d089a88b3"
+}

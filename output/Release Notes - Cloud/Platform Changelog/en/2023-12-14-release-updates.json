@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HWKNFCN5HDGP94DBX8MYBV8M\"><span style=\"color: #434343;\">Bug Fixes</span></h3>\n<ul>\n<li>\n<strong>Elasticsearch Deployment Error with Uppercase Volumes: </strong>Fixed an issue where Elasticsearch deployments failed when the volume name contained uppercase characters, ensuring deployment consistency regardless of naming conventions.</li>\n<li>\n<strong>Duplicate Deployments Displayed During Build: </strong>Addressed a UI bug where the same deployment was displayed multiple times during the build process if the page was not refreshed, ensuring accurate and unique deployment records are shown.</li>\n<li>\n<strong>Memory Allocation Issue in Backup Service After Kubernetes Upgrade: </strong>Resolved a problem where the backup service node process was not allocated memory in proportion to the cgroup limit after upgrading Kubernetes nodes, ensuring appropriate resource allocation and system stability.</li>\n<li>\n<strong>Sensitive Information in Console Repository: </strong>Removed and secured sensitive information found in the console repository, enhancing security and protecting against potential data breaches.</li>\n<li>\n<strong>Project Deletion Failure Due to Cloud Storage Bucket Files: </strong>Fixed an issue where project deletions failed when trying to delete files from cloud storage buckets, improving the reliability of project cleanup operations.</li>\n<li>\n<strong>Incorrect Redirection from Build Logs Link: </strong>Corrected a navigation issue where the build logs link redirected users to the environments list page instead of displaying the logs, ensuring correct redirection and functionality.</li>\n<li>\n<strong>Security Improvement in VPN Containers: </strong>Replaced the securityContext: privileged setting in VPN containers with the NET_ADMIN capability to minimize permissions while maintaining necessary functionality, enhancing overall security.</li>\n<li>\n<strong>Ingress Deletion with Service Removal: </strong>Ensured that ingress is deleted when relevant services are deleted, preventing unnecessary IP reservation and improving resource management.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:16:04Z",
+  "dateModified": "2026-03-10T21:01:58Z",
+  "datePublished": "2024-04-29T01:01:00Z",
+  "description": "",
+  "externalReferenceCode": "26280777679629",
+  "friendlyUrlPath": "2023-12-14-release-updates",
+  "id": 26108659,
+  "key": "26108657",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108659/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.12.14 - Release Updates",
+  "uuid": "7a9f36ab-5727-dc50-55c1-f77f3c1f1cf1"
+}

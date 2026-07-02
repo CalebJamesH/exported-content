@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"background-color: #ffffff;\">On Dec 08th We've released a new major version of the Liferay PaaS Services Stack. The 5.x version is currently stable and customers are already using it. Customers who have transitioned to the Liferay PaaS 5.X Service Stack have reported decreased backup errors due to automatic retries, great reduction in downtime during restore, and a smooth upgrade process.</span></p>\n\n<h2 id=\"h_01HXH44EJSGQAZH0T7HAMEZA0E\">What’s in 5.x?</h2>\n\n<p data-renderer-start-pos=\"31\"><strong data-renderer-mark=\"true\">Reduced down-time while performing database restores</strong>: A new opt-in restore strategy is now available. Currently, as soon as the restore process begins, we take down Liferay and other services that depend on the database.</p>\n\n<p data-renderer-start-pos=\"253\">In the new <strong data-renderer-mark=\"true\">Prepare and Swap</strong> strategy, we remove this need entirely. Instead, we restore both the database and document library backups into a fresh database instance and volume, respectively - without touching the existing services. If the restore is successful, we then switch to the new database instance and volume.</p>\n\n<p data-renderer-start-pos=\"573\">During tests our team identified a reduction of 95% of the downtime window. Now the downtime will last as long as it takes for Liferay DXP to restart.</p>\n\n<p data-renderer-start-pos=\"725\"><strong data-renderer-mark=\"true\">Regional Database is now default</strong>: To minimize failover latency and improve resilience for database service, we’ve decided to upgrade all of our customers to the <em data-renderer-mark=\"true\">regional persistent disk mode</em> and move away from legacy <em data-renderer-mark=\"true\">failover replica mode</em>. Regional mode is now default on 5.x. Click <a class=\"css-tgpl01\" data-renderer-mark=\"true\" data-testid=\"link-with-safety\" href=\"/w/cloud-database-mode-migration-announcement\" title=\"/w/cloud-database-mode-migration-announcement\"><u data-renderer-mark=\"true\">here</u></a> for details.</p>\n\n<p data-renderer-start-pos=\"1027\"><strong data-renderer-mark=\"true\">Improved support for WAF</strong>: Our webserver service image now contains the ModSecurity v3 Library installation and the necessary connector to integrate with Nginx. ModSecurity is an application-level security layer (WAF - Web Application Firewall) responsible for protecting applications against XSS and SQL Injection attacks. Click <a class=\"css-tgpl01\" data-renderer-mark=\"true\" data-testid=\"link-with-safety\" href=\"https://learn.liferay.com/w/liferay-cloud/tuning-security-settings/web-application-firewall?p_l_back_url=%2Fsearch%3Fq%3Dweb%2Bapplication%2Bfirewall&amp;highlight=web%20application%20firewall\" title=\"https://learn.liferay.com/liferay-cloud/latest/en/infrastructure-and-operations/security/web-application-firewall.html\">here</a> to learn more about this feature.</p>\n\n<h2 data-renderer-start-pos=\"1396\" id=\"Upgrading-Your-LXC-SM-Services-Stack\"><strong data-renderer-mark=\"true\">Upgrading Your Liferay PaaS Services Stack</strong></h2>\n\n<p data-renderer-start-pos=\"1396\"><span class=\"heading-anchor-wrapper\" role=\"presentation\"><span aria-label=\"Copy\" class=\"css-1afrefi\" role=\"img\"></span></span>The Liferay PaaS workspace has configuration for each one of the components of a typical Liferay DXP environment. To take advantage of the new features and fixes provided by the 5.x stack of services, you must update your entire stack to the new 5.x images. <a class=\"css-tgpl01\" data-renderer-mark=\"true\" data-testid=\"link-with-safety\" href=\"https://learn.liferay.com/web/guest/w/liferay-cloud/reference/understanding-service-stack-versions?p_l_back_url=https%3A%2F%2Flearn.liferay.com%2F\" title=\"https://learn.liferay.com/liferay-cloud/latest/en/reference/understanding-service-stack-versions.html\">See our documentation</a>.&nbsp;</p>\n\n<h3 data-renderer-start-pos=\"1711\" id=\"Support-for-previous-versions\">Support for previous versions</h3>\n\n<p data-renderer-start-pos=\"1711\">While we will maintain the previous Liferay PaaS Services Stack for a while, it's important to upgrade as soon as possible in order to benefit from all the bug fixes and improvements. Once we define a timeframe to discontinue previous versions of the Liferay PaaS Services Stack we will announce a date to do so.</p>\n\n<h2 data-renderer-start-pos=\"2044\" id=\"Detailed-list-of-improvements\"><strong data-renderer-mark=\"true\">Detailed list of improvements</strong></h2>\n\n<ol class=\"ak-ol\" data-indent-level=\"1\">\n\t<li>\n\t<p data-renderer-start-pos=\"2077\">Customization of upload retry parameters to Google Storage.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2140\">Ability to export and import database data through CloudSQL Admin API.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2214\">Option to prepare restore while keeping Liferay service up.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2277\">Validation of backup restore strategy.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2319\">Fix for chown error during backup service restart.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2373\">Uploaded backup now displays in DR environment.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2424\">Improved logging for \"swap\" backup restore strategy.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2480\">Upgrading from old backup service no longer results in error trying to list files.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2566\">Ability to create multiple backup requests at the same schedule.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2634\">Faster and more straightforward directory deletion logic.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2695\">Fix for vulnerability in Backup service third-party packages.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2760\">ZIP utility now provided in service image.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2806\">Python is now installed.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2834\">First deployment no longer fails when project does not contain a 'dev' environment.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2921\">Jenkins credentials no longer reset on restart.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"2972\">CI startup process is faster due to improved logic for mounted volume.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3046\">Bumped version of BlueOcean plugin.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3085\">Build-essential now installed.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3119\">Database service now uses project environment SA.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3172\">Warning message now displayed when database service is not started.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3243\">Warning displayed when database instance disk size is bigger than requested size.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3328\">Fix for error when setting database flag.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3373\">Fix for database server not updating value of an existing MySQL flag.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3446\">Authentication errors on database service are fixed.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3502\">Vulnerabilities in Docker images for database and debian:9 packages are fixed.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3584\">Alpine version updated from 15 to 16.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3625\">Node now updated to alpine on database-service.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3676\">Improved architecture for better isolation of service account-based resources.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3758\">Ability to switch doclib format for a given project.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3814\">Log formats for TOPS-96 now available.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3856\">LIFERAY_HTTP_PERIOD_HEADER_PERIOD_VERSION_PERIOD_VERBOSITY is now modifiable.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"3937\">Improved backwards compatibility and use of DXP_VERSION in build-image.sh.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4015\">Default Metaspace for DXPC Liferay increased.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4064\">Added JVM arg required for JDK11.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4101\">Fixed mysqldump failure in Liferay-service.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4148\">Fixed query string for mariadb change.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4190\">Updated bash to alpine on Liferay-dxp.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4232\">Added Elasticsearch 7.17.1 image.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4269\">Mod_sec is now pulled and compiled into Nginx image.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4325\">Use of $http_host in default log config instead of building the prefix with environment variables.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4427\">Backend no longer displays as DOWN when HAProxy health check exceeds default value.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4514\">Added 'application/javascript' mime/type to the list of valid gzip files.</p>\n\t</li>\n\t<li>\n\t<p data-renderer-start-pos=\"4591\">Fixed Docker image vulnerability in debian:10 package.</p>\n\t</li>\n</ol>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:18:20Z",
+  "dateModified": "2026-03-10T21:45:10Z",
+  "datePublished": "2023-04-30T05:45:00Z",
+  "description": "",
+  "externalReferenceCode": "15355891426701",
+  "friendlyUrlPath": "liferay-cloud-platform-5-x-service-stack-now-available",
+  "id": 26131376,
+  "key": "26131374",
+  "keywords": [
+    "liferay-paas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131376/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Cloud Platform 5.X Service Stack Now Available",
+  "uuid": "0effef61-07d7-daf1-3955-55e7e35d3bd0"
+}

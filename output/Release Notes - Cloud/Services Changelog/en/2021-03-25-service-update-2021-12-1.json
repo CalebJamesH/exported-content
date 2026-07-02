@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h1>Service Updates for Liferay Cloud</h1>\n<p>The service updates for 2021.12.1 includes the CI service.</p>\n<h2>liferay/dxp docker image tags</h2>\n<p>The <a href=\"https://hub.docker.com/r/liferay/dxp/tags\" target=\"_self\">liferay/dxp</a> docker images provide information about the liferay version, patching level, and docker script associated with the image. The tags on Dockerhub for liferay/dxp are formatted as follows</p>\n<pre>liferay/dxp:{Liferay.DXP.Version}-{Patching-Level}-d{Docker.Script.Version}-{Timestamp}<br><span>liferay/dxp:7.2.10-dxp-11-d1.5.4-20210310143709</span></pre>\n<p>When selecting which liferay/dxp base image to utilize for your project, please consider the entire docker tag, and be sure to check out the release notes for your patching level before applying to your environment: <a href=\"https://customer.liferay.com/dxp-release-notes\" target=\"_blank\" rel=\"noopener\">DXP Release Notes</a></p>\n<p>Due to the way that docker images are cached within the platform, please always utilize the tags with the full timestamp at the end. These are snapshots and will always yield the exact image that is published. Docker tags without the timestamp are considered rolling tags and should not be used.</p>\n<h2>Deprecated Environment variables in CI service</h2>\n<p>The following environment variables should no longer be used. They are considered unsupported and may no longer function. A replacement is specified if it exists.</p>\n<pre>DEPLOY_BRANCH -&gt; replaced by LCP_CI_DEPLOY_BRANCH<br>DEPLOY_TARGET -&gt; replaced by LCP_CI_DEPLOY_TARGET<br>GITHUB_BRANCH_FILTER_EXCLUDE -&gt; replaced by LCP_CI_SCM_BRANCH_FILTER_EXCLUDE<br>GITHUB_BRANCH_FILTER_INCLUDE -&gt; replaced by LCP_CI_SCM_BRANCH_FILTER_INCLUDE<br>GITHUB_REPOSITORY -&gt; split into two LCP_CI_SCM_REPOSITORY_OWNER and LCP_CI_SCM_REPOSITORY_NAME<br>GITHUB_TOKEN -&gt; replaced by LCP_CI_SCM_TOKEN<br>JENKINS_CUSTOMER_PASSWORD -&gt; replaced by project secret<br>JENKINS_CUSTOMER_USER_NAME -&gt; replaced by project secret<br>JENKINS_EMAIL_NOTIFICATIONS_FROM -&gt; LCP_CI_EMAIL_NOTIFICATIONS_FROM<br>JENKINS_LCP_CLI_PASSWORD -&gt; replaced by project secret<br>JENKINS_LCP_CLI_USER_NAME -&gt; replaced by project secret</pre>\n<p class=\"wysiwyg-indent1\"><strong>Note: Some older projects may require DXP Cloud support to rotate the credentials used for JENKINS_LCP_CLI_PASSWORD and JENKINS_LCP_CLI_USER_NAME</strong></p>\n<h2>CI and SCM Tokens</h2>\n<p>As a convenience the CI service has been configured to manage the git web hooks for every git provider. Unfortunately this has lead to a conflict of interest between security and ease of use. The permissions that managing the git web hook requires is typically higher level permissions than recommended for a project. </p>\n<p>In order to address the security issue, the CI service now allows turning off the configuration for managing web hooks automatically. This allows much lower permissions to be assigned to the LCP_CI_SCM_TOKEN.</p>\n<p>In order to be backward compatible, the previous configuration has been left in place but it is easily turned off through setting an environment variable on the CI service</p>\n<pre>LCP_CI_SCM_MANAGE_HOOKS=false</pre>\n<h2>Liferay Cloud CLI Options</h2>\n<p>As the Liferay Cloud CLI expands its feature set, there may be times when some options are advantageous to set during the project build in the CI service. Some options are already available. However, older releases of the CI service cannot take advantage of newer options within the CLI, since they are currently being matched to a specific environment variable. To bridge the gap, there is a new, more flexible environment variable that can specify multiple options. The options are sanitized and checked against a reserved list of options that the CI must use.</p>\n<div>\n<pre><span><span>LCP_CI_CLI_OPTS=\"</span></span>quiet suppress-prompts\"</pre>\n<div>\n<span><span>The older, individual options can still be used:</span></span>\n<div>\n<pre><span><span>LCP_CI_CLI_LOG_LEVEL<br></span></span>LCP_CI_CLI_USE_EXTERNAL_GIT</pre>\n<div>\n<span>If</span> the newer environment variable it set, it will take precedence. Often investigating a build failure requires setting the `verbose` flag on the CLI. Now it is much easier to do so. If investigating a build failure try using: </div>\n<pre>LCP_CI_CLI_OPTS=\"quiet suppress-prompts <strong>verbose</strong>\"</pre>\n</div>\n</div>\n</div>\n<p> </p>\n<h2>DXP Stack 2021.10.1 </h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 727px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 148px; height: 62px;\"><strong>Previous Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 157px; height: 62px;\"><strong>Current Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 498px; height: 62px;\"><strong>Docker Images</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Backup</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.2.2</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">4.2.2</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/backup:4.2.2</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">CI</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.1.0</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>4.2.0</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>liferaycloud/jenkins:2.249.3-4.2.0</strong></p>\n</td>\n</tr>\n<tr style=\"height: 41.2222px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Database</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\">4.2.1</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\">4.2.1</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/database:4.2.1</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Liferay</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.2.1</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.2.1</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/liferay-dxp:7.3-4.2.1</p>\n<p class=\"wysiwyg-text-align-center\">liferaycloud/liferay-dxp:7.2-4.2.1</p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:</span>7.1-4.2.1</p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:</span>7.0-4.2.1</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Search</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span>4.1.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.1.1</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">li<span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\">feraycloud/elasticsearch:7.9.3-4.1.1</span></span></p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\">liferaycloud/elasticsearch:6.8.13-4.1.1</span></span></p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">li<span style=\"font-size: 15px;\">feraycloud/elasticsearch:2.4.6-4.1.1</span></span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Webserver</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.0.6</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.0.6</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/nginx:1.16.1-4.0.6<br><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;\"></span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>Update Instructions</h2>\n<p>The Liferay Cloud image is set in the liferay/LCP.json file, but the liferay/dxp image is set in the gradle.properties. This change was made in order to facilitate easier deployment using the Liferay Cloud CLI.</p>\n<p>liferay/LCP.json file would set the liferaycloud/liferay-dxp image:</p>\n<pre><span>\"image\"</span>:<span>\"liferaycloud/liferay-dxp:7.3-4.2.1\"</span></pre>\n<p>liferay/gradle.properties file would set the liferay/dxp image:</p>\n<pre><span>liferay.workspace.docker.image.liferay</span>=<span>liferay/dxp:7.3.10-ga1-d1.5.2-20210301040217</span><span style=\"font-weight: 400;\"></span></pre>\n<p>Once the LCP.json files are updated, commit the changes to your Git repository.</p>\n<pre>git add . &amp;&amp; git commit -m \"update dxp cloud stack to 2021.12.1\"</pre>\n<p>After pushing these changes to the remote repository, a build will be created in Liferay Cloud, and it is ready to deploy.</p>\n<h2>Change Log</h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 871px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Version</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 111px; height: 62px;\"><strong>Ticket Number</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 652px; height: 62px;\"><strong>Description</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"4\">\n<p class=\"wysiwyg-text-align-center\"><strong>CI</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"4\">\n<p class=\"wysiwyg-text-align-center\">4.2.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span>LCD-8545 </span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span>clear locks on startup that may exist from incomplete shutdown</span></p>\n</td>\n</tr>\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCD-10146</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span>create environment variable for managing webhooks</span></p>\n</td>\n</tr>\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCD-10539</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">only check for lcp folder in workspace root</p>\n</td>\n</tr>\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCD-10686</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">parse CLI options from environment variable</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:57Z",
+  "dateModified": "2026-03-10T21:22:47Z",
+  "datePublished": "2021-03-25T23:01:00Z",
+  "description": "",
+  "externalReferenceCode": "360058604272",
+  "friendlyUrlPath": "2021-03-25-service-update-2021-12-1",
+  "id": 26108700,
+  "key": "26108698",
+  "keywords": [
+    "ja",
+    "mt",
+    "liferay-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108700/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2021.03.25 Service Update 2021.12.1",
+  "uuid": "056a3f23-bb5d-2e60-e59a-8c4e89d72c52"
+}

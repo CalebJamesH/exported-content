@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;full-width&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;da70d881-72c7-4fcb-9a08-3ace809709e9&quot;,&quot;width&quot;:1800},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[584],&quot;background&quot;:null}]\"><em>Available from the Liferay DXP 2023.Q4 release&nbsp;</em><em>onward</em></p>\n\n<p data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;full-width&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;da70d881-72c7-4fcb-9a08-3ace809709e9&quot;,&quot;width&quot;:1800},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[584],&quot;background&quot;:null}]\">A common problem we have heard from our customers revolves around the time required to complete an AB Test. If a customer’s page receives limited traffic, the time to completion could be many weeks if not months.&nbsp; <span>Amidst the rapid changes in today's business landscape,</span> this delay potentially negates the usefulness of test results. On top of this, if a user were to terminate the test prematurely, the insights they gathered from the test and the variant they created were lost.</p>\n\n<p data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;full-width&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;da70d881-72c7-4fcb-9a08-3ace809709e9&quot;,&quot;width&quot;:1800},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[584],&quot;background&quot;:null}]\">In order to remedy this issue, we are now providing test results and the ability to publish a variant when an AB Test is terminated. Although these results cannot determine a winning variant with 100% confidence, they will give marketers a sense of how their variant was performing. Using this information, Marketers can now make educated decisions according to their specific time constraints.</p>\n\n<h1 data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;full-width&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;da70d881-72c7-4fcb-9a08-3ace809709e9&quot;,&quot;width&quot;:1800},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[584],&quot;background&quot;:null}]\" id=\"h_01HCGRFJKREV35FJ0EVQD8FPAQ\">How It Works</h1>\n\n<p data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;full-width&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;da70d881-72c7-4fcb-9a08-3ace809709e9&quot;,&quot;width&quot;:1800},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[584],&quot;background&quot;:null}]\">To use this feature first create and run an AB Test. When the results of the test are required, simply terminate the test. The Lift / Loss of the Variant will be displayed directly in the AB Testing Side Panel as well as in your Analytics Cloud Dashboard.&nbsp;</p>\n\n<p data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;full-width&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;da70d881-72c7-4fcb-9a08-3ace809709e9&quot;,&quot;width&quot;:1800},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[584],&quot;background&quot;:null}]\"><img alt=\"\" data-fileentryid=\"26937377\" src=\"/documents/d/customer-portal/terminatingabtest-gif\">&nbsp;</p>\n\n<h1 id=\"h_01HCGRH8JWJ8V430AFWKGN626W\">Other Changes</h1>\n\n<h3 id=\"h_01HCGRHC0HDB3578MDJVJZBNS9\">AB Testing now supports only 1 variant</h3>\n\n<p data-pm-slice=\"1 1 [&quot;table&quot;,{&quot;isNumberColumnEnabled&quot;:false,&quot;layout&quot;:&quot;wide&quot;,&quot;__autoSize&quot;:false,&quot;localId&quot;:&quot;48acfafa-46c9-4502-bde3-69ca8be98d8d&quot;,&quot;width&quot;:960},&quot;tableRow&quot;,null,&quot;tableCell&quot;,{&quot;colspan&quot;:1,&quot;rowspan&quot;:1,&quot;colwidth&quot;:[331],&quot;background&quot;:null}]\">Previously our AB Testing feature supported multivariate testing. With the addition of multiple variants, the time to completion and the calculations required would increase exponentially. This caused many issues for our customers. As such we have decided to pare back this functionality to provide a higher quality experience for our users. Now our AB Testing feature only supports 1 variant, in addition to the control. This makes our feature truly an AB Test rather than a Multivariate Test. There is the possibility of re-enabling multivariate testing in the future, but that will depend on the needs from our customers.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:33:34Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:33:00Z",
+  "description": "",
+  "externalReferenceCode": "4493e0b0-3c7b-7f35-a523-cb715173f846",
+  "friendlyUrlPath": "new-feature-test-results-for-terminated-ab-tests",
+  "id": 26937391,
+  "key": "26937389",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937391/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.11.01 - New Feature: Test Results for Terminated AB Tests",
+  "uuid": "710ece38-e005-4f1a-2409-b5ea27566923"
+}

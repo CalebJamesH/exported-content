@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"color: #434343;\">We would like to inform you that there is a planned maintenance window for Analytics Cloud from Wednesday, May 24th to Friday, May 26th. There are no required actions for Analytics Cloud users, however, some metrics, dashboards and workspaces may be impacted during this planned maintenance.</span></p>\n\n<h2 id=\"h_01K9EG73C84DMET4ZS59MNC6JB\"><span style=\"color: #434343;\">What outcomes may I expect from this release?</span></h2>\n\n<p><span style=\"color: #434343;\">This planned infrastructure maintenance will include changes in how data is processed and product defect resolutions including:</span></p>\n\n<ul>\n\t<li><span style=\"color: #434343;\">Enhanced reliability and improved data consistency.&nbsp;</span></li>\n\t<li><span style=\"color: #434343;\">More predictable processing times.</span></li>\n\t<li><span style=\"color: #434343;\">Improved scalability regarding high traffic volumes.</span></li>\n</ul>\n\n<h2 id=\"h_01K9EG73C8GXA0B4TT76XJT2VR\"><span style=\"color: #434343;\">How will I be impacted?</span></h2>\n\n<ul>\n\t<li><span style=\"color: #434343;\">There will be scheduled maintenance in our services from 8AM Pacific Time Wednesday, May 24th to 6PM Pacific Time Friday, May 26th.</span></li>\n\t<li><span style=\"color: #434343;\">At any point during this window, some metrics and dashboards may not work as expected.</span></li>\n\t<li><span style=\"color: #434343;\">At any point during this window, new data from data sources may be queued for later processing.</span></li>\n\t<li><span style=\"color: #434343;\">Access to workspaces and analytics.liferay.com is expected to continue during this maintenance window. If you cannot access your workspace or analytics.liferay.com,</span><span style=\"color: #434343;\">&nbsp;please </span><a href=\"https://help.liferay.com/hc/requests/new\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">open a Help Center ticket</span></a><span style=\"color: #434343;\">.</span></li>\n</ul>\n\n<p><span style=\"color: #434343;\">During the maintenance period, data from data sources will continue to be ingested and no data loss is expected. All data from data sources will finish processing after the maintenance window has completed.</span></p>\n\n<p><span style=\"color: #434343;\">If you have any questions, experience any issues beyond the impact outlined above or any issues outside of the planned maintenance window, please </span><a href=\"https://help.liferay.com/hc/requests/new\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">open a Help Center ticket</span></a><span style=\"color: #434343;\">.</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:32:30Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:32:00Z",
+  "description": "",
+  "externalReferenceCode": "be70b6af-4ebf-5bf8-707b-d27c924aee6e",
+  "friendlyUrlPath": "05/24/2023-to-05/26/2023-analytics-cloud-planned-maintenance",
+  "id": 26937365,
+  "key": "26937363",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937365/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "05/24/2023 to 05/26/2023 - Analytics Cloud Planned Maintenance",
+  "uuid": "06b87fec-25dd-bf9a-0dc4-2c5320b04777"
+}

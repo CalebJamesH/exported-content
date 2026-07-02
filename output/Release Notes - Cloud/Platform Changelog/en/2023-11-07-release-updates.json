@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HWK5CT95PYZDF66GAC3RGEJ8\"><span style=\"color: #434343;\">Bug Fixes</span></h3>\n<ul>\n<li>\n<span class=\"wysiwyg-underline\" style=\"color: #1155cc;\"></span><strong>Webserver Configuration Fix: </strong>Corrected the default webserver configuration for set_real_ip_from to ensure it uses a valid IP range, enhancing security and reliability of IP handling in webserver setups.</li>\n<li>\n<span class=\"wysiwyg-underline\" style=\"color: #1155cc;\"></span><strong>Project Route Update Fix: </strong>Resolved an issue where gcpDiskSize was incorrectly cast to an integer in project route configurations, maintaining data accuracy and preventing configuration errors during project setups.</li>\n<li>\n<strong>Autoscaling Report Logic Correction: </strong>Fixed the logic in autoscaling reports to accurately handle scale events that intersect period boundaries, ensuring that scaling activities are correctly recorded and reported, improving the accuracy of autoscaling metrics.</li>\n</ul>\n<h3 id=\"h_01HWK5CT96DPV7FS3H9X1H6SDK\"><span style=\"color: #434343;\">Tasks</span></h3>\n<ul>\n<li>\n<span class=\"wysiwyg-underline\" style=\"color: #1155cc;\"></span><strong>Curl Vulnerability Mitigation for Nginx Image: </strong>Addressed the Curl vulnerability (CVE-2023-38545) found in the nginx image of the Liferay Cloud stack, implementing necessary patches to secure the environment against potential security threats.</li>\n<li>\n<strong> Curl Vulnerability Mitigation for Database Image:</strong> Addressed the Curl vulnerability (CVE-2023-38545) found in the database image of the Liferay Cloud stack, securing database services by patching the affected Curl instances.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:06:22Z",
+  "dateModified": "2026-03-10T21:01:54Z",
+  "datePublished": "2024-04-28T20:20:00Z",
+  "description": "",
+  "externalReferenceCode": "26277408468877",
+  "friendlyUrlPath": "2023-11-07-release-updates",
+  "id": 26102272,
+  "key": "26102270",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102272/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.11.07 - Release Updates",
+  "uuid": "e7ac1d67-937e-8225-fdcc-db436a2844aa"
+}

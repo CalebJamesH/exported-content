@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"article-content\">\n<section class=\"article-body\">\n<h3 id=\"h_01HXYS9SF6KY1EAQ17VRHQQAWX\">Added</h3>\n<ul>\n<li>​<strong><a href=\"https://liferay.atlassian.net/browse/LCD-38501\">LCD-37608</a> - Improved Security for Liferay API GraphQL Server:</strong> Increased protection against common threats in GraphQL APIs, improving our security posture and following best practices.</li>\n<li>\n<strong><a href=\"https://liferay.atlassian.net/browse/LCD-38754\">LCD-38754</a> - Maintenance Mode for Storage Display:</strong> Temporarily placed the storage display on the Plans &amp; Usage page in maintenance mode in order to reassess and improve the overall user experience.</li>\n</ul>\n<h3 id=\"h_01HXYS9NRE5H6PTZ9Y99PF8QQH\">Bug Fixes</h3>\n<ul class=\"ak-ul\">\n<li>\n<strong><a href=\"https://liferay.atlassian.net/browse/LCD-36975\">LCD-36975</a> - Removed Broken Link on the Overview and Activities Pages:</strong> Removed a link to the Deploy a Build page on the Overview and Activities pages that would cause the page to hang after clicking the link.</li>\n<li>\n<strong><a href=\"https://liferay.atlassian.net/browse/LCD-38568\">LCD-38568</a> - Fixed Configuration Issue for ECK Search Service:</strong> Resolved an issue where the Elasticsearch configuration couldn't be changed using environment variables or updating elasticsearch.yml.</li>\n<li>\n<strong><a href=\"https://liferay.atlassian.net/browse/LCD-38717\">LCD-38717</a> - 20 Environment Limit:</strong> Fixed an issue where attempting to create more than 20 environments in a project would cause it to fail with a 400 Bad Request response.</li>\n</ul>\n</section>\n</div>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:10Z",
+  "dateModified": "2026-03-10T21:02:20Z",
+  "datePublished": "2024-07-19T22:27:00Z",
+  "description": "",
+  "externalReferenceCode": "28570054475021",
+  "friendlyUrlPath": "2024-06-27-release-updates",
+  "id": 26101164,
+  "key": "26101162",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101164/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2024.06.27 Release Updates",
+  "uuid": "361f3594-79f8-af7a-1312-9a1c6ec76537"
+}

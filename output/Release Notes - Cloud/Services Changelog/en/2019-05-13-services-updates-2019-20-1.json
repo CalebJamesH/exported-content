@@ -1,0 +1,133 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2>Description</h2>\n<p>As part of Liferay Cloud's ongoing commitment to provide the highest degree of support we are introducing a services suite version number. This version number details a snapshot of the officially released service docker images that should be used.</p>\n<p>Our product development and infrastructure has gone through three major phases. </p>\n<ul>\n<li>1.0.0 -&gt; home grown</li>\n<li>2.0.0 -&gt; docker swarm</li>\n<li>3.0.0 -&gt; kubernetes</li>\n</ul>\n<h2>DXP Stack 2019.20.1</h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 727px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 148px; height: 62px;\"><strong>Previous Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 157px; height: 62px;\"><strong>Current Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 498px; height: 62px;\"><strong>Docker Images</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Backup</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">2.0.4</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">3.0.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/backup:</span>3.0.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 41.2222px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Database</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\">2.0.2</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\">3.0.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/database:</span>3.0.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">CI</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">2.0.4</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.0.0</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/jenkins:</span>2.164.1-3.0.0</span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Liferay</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">2.5.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">3.0.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px;\ntext-align: center;\nvertical-align: middle;\nheight: 48px;\">\n<p><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:7.0.0-sp10-fp81-3.0.0</span></p>\n<p><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">l<span style=\"font-size: 15px;\">iferaycloud/liferay-dxp:7.1.0-ga1-fp10-3.0.0</span></span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Search</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">2.0.7</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">3.0.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">li<span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\"><span>feraycloud/elasticsearch:6.1.4-3.0.0</span></span></span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Webserver</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">2.1.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">3.0.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">l<span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\">iferaycloud/nginx:<span>1.14.1-3.0.0</span></span></span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>Change Log</h2>\n<p>Make services compatible with Kubernetes infrastructure</p>\n<div id=\"root\">\n<div id=\"layout-main\" class=\"styles__main___3qLof\" data-reactroot=\"\">\n<div id=\"module-repository\">\n<div id=\"module-repository-detail\" class=\"styles__content___3u8I1\">\n<div class=\"styles__body___T4UNY\">\n<div class=\"\">\n<div class=\"styles__newDesign___Ly9u3 styles__card___1d1uz\">\n<div class=\"styles__content___1LQdY \">\n<div class=\"styles__listItem___3AGFb\">\n<div class=\"styles__titleRow___KysRo\">\n<div id=\"root\">\n<div id=\"layout-main\" class=\"styles__main___3qLof\" data-reactroot=\"\">\n<div>\n<div id=\"module-repository\">\n<div id=\"module-repository-detail\" class=\"styles__content___3u8I1\">\n<div class=\"styles__body___T4UNY\">\n<div class=\"\">\n<div class=\"styles__newDesign___Ly9u3 styles__card___1d1uz\"></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div id=\"root\">\n<div id=\"layout-main\" class=\"styles__main___3qLof\" data-reactroot=\"\">\n<div>\n<div id=\"module-repository\">\n<div id=\"module-repository-detail\" class=\"styles__content___3u8I1\">\n<div class=\"styles__body___T4UNY\"></div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:33Z",
+  "dateModified": "2026-03-10T21:22:53Z",
+  "datePublished": "2019-08-16T18:36:00Z",
+  "description": "",
+  "externalReferenceCode": "360032553771",
+  "friendlyUrlPath": "2019-05-13-services-updates-2019-20-1",
+  "id": 26101628,
+  "key": "26101626",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "liferay-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101628/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2019.05.13 - Services Updates - 2019.20.1",
+  "uuid": "e66bc516-6f59-5976-df56-0f006d350ea8"
+}

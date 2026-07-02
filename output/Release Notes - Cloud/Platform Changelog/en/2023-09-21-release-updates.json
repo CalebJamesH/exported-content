@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HWJW8VFJK4F844TQGBSZKETB\"><span style=\"color: #434343;\">Added</span></h3>\n\n<ul>\n\t<li data-renderer-start-pos=\"121\"><span><strong>Configure Host Aliases Thorough LCP.json:</strong> Added capability for users to customize the </span><code>/etc/hosts</code><span> file of their container pods via the LCP.json configuration. This enhancement, achieved through the new </span><code>hostAliases</code><span> property, provides a seamless method for users to establish custom hostname-to-IP mappings.&nbsp;</span>\n\n\t<pre class=\"flex items-center relative text-gray-200 bg-gray-800 gizmo:dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md\">{\n   \"hostAliases\":[{\n      \"ip\":\"10.XX.XX.XXX\",\n      \"hostnames\":[\"customdomain.example.com\"]\n   }]\n}</pre>\n\t</li>\n\t<li><strong>Add Option to Restore Database Only:</strong> Introduced a feature allowing users to restore only the database component from backups, enhancing flexibility and reducing downtime during recovery.</li>\n\t<li><strong>Display Build Inspector:</strong> Integrated a build inspector within the UI, providing detailed insights into the build processes to aid in monitoring and troubleshooting.<br>\n\t<img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/26277053571725-mceclip0\"></li>\n\t<li><strong>Build Inspector Actions:</strong> Enhanced the build inspector with actionable controls, allowing users to interact directly with builds for increased management capabilities.</li>\n\t<li><strong>Programmatic Provisioning of PSC Through APIs and Securing Kubernetes Services:</strong> Automated the provisioning of Private Service Connect (PSC) through APIs and introduced security enhancements for Kubernetes services, simplifying setups and securing applications.</li>\n\t<li><strong>Consume Private Service Connect Services Published by Customers: </strong>Enabled consumption of Private Service Connect services published by customers, enhancing the integration capabilities within private networks.</li>\n\t<li><strong>Add New Environment Variable LCP_OKTA_REDIRECT_URI:</strong> Introduced a new environment variable to customize the redirect URI for Okta integrations, enabling more flexible authentication workflows.</li>\n\t<li><strong>Update CLI to List the --extension Parameter:</strong> Updated the CLI to support the '--extension' parameter, allowing users to specify extensions during command executions for greater customization.</li>\n\t<li><strong>Update API Version from HPA Liferay-autoscale Objects: </strong>Updated the apiVersion for Horizontal Pod Autoscaler (HPA) objects to ensure compatibility with newer Kubernetes versions.</li>\n\t<li><strong>Create LCP Auth Token Command on CLI:</strong> Added a command in the CLI for generating Liferay Cloud Platform authentication tokens, simplifying authentication for automated scripts and integrations.</li>\n\t<li><strong>Configure AzureDevOps SCM Source on Jenkins:</strong> Configured Jenkins to recognize AzureDevOps as a Source Code Management (SCM) source, broadening support for various version control systems.</li>\n\t<li><strong>Create 'Plan Data' Section for 'Plan &amp; Usage' Page: </strong>Introduced a 'Plan Data' section on the 'Plan &amp; Usage' page to provide users with comprehensive insights into their service plans and usage statistics.<br>\n\t<img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/26277053574669-mceclip1\"></li>\n</ul>\n\n<h3 id=\"h_01HWJW8VFJW3EMRFQHP4NXC0K4\"><span style=\"color: #434343;\">Bug Fixes</span></h3>\n\n<ul>\n\t<li><strong>LCP CLI Repeats Most Recent Log Line: </strong>Addressed an issue in the LCP CLI where the most recent log line was erroneously repeated, ensuring log accuracy and reliability.</li>\n\t<li><strong>Unreadable JSON Logs in Jenkins Console of Pull Request Test Runner: </strong>Fixed a formatting issue in the Jenkins console to display JSON logs as human-readable text, improving the usability of log data for debugging.</li>\n\t<li><strong>Concurrency Error in Orphaned Bindings Migration:</strong> Resolved a concurrency issue during the migration of orphaned bindings, ensuring a smooth and error-free migration process.</li>\n\t<li><strong>Ensure Error Cause Is Logged When Logging Errors:</strong> Enhanced error logging mechanisms to include causes of errors, providing deeper insights for quicker troubleshooting.</li>\n\t<li><strong>API Migration Deletes Needed Bindings for DR Projects: </strong>Corrected a critical issue where necessary bindings for Disaster Recovery (DR) projects were inadvertently deleted during API migrations.</li>\n\t<li><strong>On liferaycloud-development, Migration to Delete Orphaned Bindings Does Not Take into Account Multiple Mongodbs:</strong> Improved the migration script to consider multiple MongoDB instances when clearing orphaned bindings, ensuring comprehensive data integrity and system cleanup.<br>\n\t<span></span></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T18:57:56Z",
+  "dateModified": "2026-03-10T21:11:15Z",
+  "datePublished": "2023-09-29T00:46:00Z",
+  "description": "",
+  "externalReferenceCode": "26100172",
+  "friendlyUrlPath": "2023-09-21-release-updates",
+  "id": 26100174,
+  "key": "26100172",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100174/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.09.21 - Release Updates",
+  "uuid": "9a1b6232-82ed-acd6-a0cd-0ffe79068cd7"
+}

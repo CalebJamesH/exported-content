@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h1 id=\"01H8066N1X71BMWR8KPQVMTM4A\">Service Updates for Liferay Cloud</h1>\n\n<p>The services update for&nbsp;<strong>2025-09-02</strong>&nbsp;includes a&nbsp;<strong>patch</strong>&nbsp;update for <strong>CI</strong>, <strong>Database</strong>, <strong>Search</strong> and<strong> Webserver&nbsp;</strong>services.&nbsp;</p>\n\n<h2 id=\"01H8066N1X678XQSM8P38E9Q5Z\">DXP Cloud Stack&nbsp;</h2>\n\n<table style=\"border-collapse: collapse; border-color: #f7f8f9; border-spacing: 0px; margin-left: auto; margin-right: auto; width: 100%;\">\n\t<colgroup>\n\t\t<col style=\"width: 16%;\" />\n\t\t<col style=\"width: 14%;\" />\n\t\t<col style=\"width: 13%;\" />\n\t\t<col style=\"width: 57%;\" />\n\t</colgroup>\n\t<thead>\n\t\t<tr style=\"height: 62px;\">\n\t\t\t<th style=\"background-color: rgb(150, 153, 150); height: 62px; padding: 0.75rem; text-align: center; width: 84.8px;\"><strong>Service Name</strong></th>\n\t\t\t<th style=\"background-color: rgb(150, 153, 150); height: 62px; padding: 0.75rem; text-align: center; width: 68.3px;\"><strong>Previous Release</strong></th>\n\t\t\t<th style=\"background-color: rgb(150, 153, 150); height: 62px; padding: 0.75rem; text-align: center; width: 61.2833px;\"><strong>Current Release</strong></th>\n\t\t\t<th style=\"background-color: rgb(150, 153, 150); height: 62px; padding: 0.75rem; text-align: center; width: 377.617px;\"><strong>Docker Images</strong></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr style=\"height: 48px;\">\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 84.8px;\">Backup</td>\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 68.3px;\">5.25.1</td>\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 61.2833px;\">5.25.2</td>\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 10px; padding: 0.75rem; text-align: left; vertical-align: top; width: 377.617px;\">\n\t\t\t<ul>\n\t\t\t\t<li data-list-item-id=\"e36c68276b10a9ec192d98603daa472d9\">liferaycloud/backup:5.25.2</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 84.8px;\"><strong>CI</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 68.3px;\"><strong>6.1.0</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 61.2833px;\"><strong>6.1.1</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: left; vertical-align: top; width: 377.617px;\">\n\t\t\t<ul>\n\t\t\t\t<li class=\"ck-list-marker-bold\" data-list-item-id=\"e29a6115cee5e1b4a0c5e0fdaab934153\"><strong>liferaycloud/jenkins:2.492.3-lts-jdk21-6.1.1</strong></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 41.2222px;\">\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 84.8px;\"><strong>Database</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 68.3px;\"><strong>5.7.2</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: center; vertical-align: top; width: 61.2833px;\"><strong>5.7.3</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 10px; padding: 0.75rem; text-align: left; vertical-align: top; width: 377.617px;\">\n\t\t\t<ul>\n\t\t\t\t<li class=\"ck-list-marker-bold\" data-list-item-id=\"ef72d36e5458694fe597d0a813ae47b1e\"><strong>liferaycloud/database:5.7.3</strong></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 84.8px;\">Liferay</td>\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 68.3px;\">5.8.4</td>\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 61.2833px;\">5.9.0</td>\n\t\t\t<td style=\"background-color: rgb(255, 255, 255); height: 26px; padding: 0.75rem; text-align: left; vertical-align: top; width: 377.617px;\">\n\t\t\t<ul>\n\t\t\t\t<li data-list-item-id=\"e8f8bdac8c1727aea69bbabc659a92810\">liferaycloud/liferay-dxp:7.4-5.9.0</li>\n\t\t\t\t<li data-list-item-id=\"e3e8350d600cc605ba8863d6f0ee2b63d\">liferaycloud/liferay-dxp:7.3-5.9.0</li>\n\t\t\t\t<li data-list-item-id=\"e6bf4b5e55a80c956b724a078f0aa90cf\">liferaycloud/liferay-dxp:7.2-5.9.0</li>\n\t\t\t\t<li data-list-item-id=\"e7db3551f31dd8da9f2b39bb2523a94dd\">liferaycloud/liferay-dxp:7.1-5.9.0</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 84.8px;\"><strong>Search</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 68.3px;\"><strong>5.5.0</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 61.2833px;\"><strong>5.5.1</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: left; vertical-align: top; width: 377.617px;\">\n\t\t\t<ul>\n\t\t\t\t<li class=\"ck-list-marker-bold\" data-list-item-id=\"ec7416c11537c38b21ae7705cb12172d0\"><strong>liferaycloud/elasticsearch:8.18.3-5.5.1</strong></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 84.8px;\"><strong>Webserver</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 68.3px;\"><strong>6.2.1</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: center; vertical-align: top; width: 61.2833px;\"><strong>6.2.2</strong></td>\n\t\t\t<td style=\"background-color: rgb(247, 248, 249); height: 26px; padding: 0.75rem; text-align: left; vertical-align: top; width: 377.617px;\">\n\t\t\t<ul>\n\t\t\t\t<li class=\"ck-list-marker-bold\" data-list-item-id=\"ed32013769b8f35cc14e6cb655a95354d\"><strong>liferaycloud/nginx:1.26.3-6.2.2</strong></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<h2 id=\"01H8066N1YWTXV16JYNYMDV6F4\">Change Log</h2>\n\n<p> </p>\n\n<table style=\"border-collapse: collapse; border-spacing: 0px; margin-left: auto; margin-right: auto; width: 651px;\">\n\t<thead>\n\t\t<tr style=\"height: 62px;\">\n\t\t\t<th style=\"background-color: rgb(247, 248, 249); height: 62px; padding: 0.75rem; text-align: center; width: 84.4176px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>Service Name</strong></p>\n\t\t\t</th>\n\t\t\t<th style=\"background-color: rgb(247, 248, 249); height: 62px; padding: 0.75rem; text-align: center; width: 62.3722px;\"><strong>Service Version</strong></th>\n\t\t\t<th style=\"background-color: rgb(247, 248, 249); height: 62px; padding: 0.75rem; text-align: center; width: 103.608px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>Ticket No.</strong></p>\n\t\t\t</th>\n\t\t\t<th style=\"background-color: rgb(247, 248, 249); height: 62px; padding: 0.75rem; text-align: center; width: 356.051px;\"><strong>Description</strong></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>CI</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>6.1.1</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><a href=\"https://liferay.atlassian.net/browse/LCD-47562\">LCD-47562</a></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<ul>\n\t\t\t\t<li data-list-item-id=\"e3e4fc1abb9b074e5abf5ae5abf5ae5881ad1781\"><strong>Internal</strong>: Pipeline Improvements</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>Database</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>5.7.3</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><a href=\"https://liferay.atlassian.net/browse/LCD-47562\">LCD-47562</a></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<ul>\n\t\t\t\t<li data-list-item-id=\"e77dffe9822b4ea0815bdfbd4d22ec925\"><strong>Internal</strong>: Pipeline Improvements</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 81px;\">\n\t\t\t<td style=\"padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>Search</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>5.5.1</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><a href=\"https://liferay.atlassian.net/browse/LCD-47562\">LCD-47562</a></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<ul>\n\t\t\t\t<li data-list-item-id=\"e5aea4eaef3176770fd48e7e745dc8f69\"><strong>Internal</strong>: Pipeline Improvements</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\"><strong>Webserver</strong></td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>6.2.2</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><a href=\"https://liferay.atlassian.net/browse/LCD-47562\">LCD-47562</a></p>\n\n\t\t\t<p class=\"wysiwyg-text-align-center\"><a href=\"https://liferay.atlassian.net/browse/LCD-47764\">LCD-47764</a></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px;\">\n\t\t\t<ul>\n\t\t\t\t<li data-list-item-id=\"e8331bdb3efec2e7ff1554ccddad4def3\"><strong>Internal</strong>: Pipeline Improvements</li>\n\t\t\t\t<li data-list-item-id=\"e16e1704900c067b2125a767be8ebed3b\"><strong>Security</strong>: Fix Vulnerabilities</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<h2 id=\"h_01HFQQE47127T9RVN8YK7MKH4R\">Update Instructions</h2>\n\n<p><strong>Note</strong>&nbsp;: To take advantage of the new features and fixes provided by the 5.x stack of services, you must update your entire stack to the new 5.x images or above.</p>\n\n<h2 id=\"01H8066N1YDXGGCTPJ2C2XKQWE\">Image Update Instructions</h2>\n\n<p>The Liferay Cloud image versions needs to be set inside of the &lt;service&gt;/LCP.json file.</p>\n\n<p>Note, however, that the liferay service uses two image properties. The DXP Cloud image is set in the liferay/LCP.json file, but the liferay/dxp image is set in the gradle.properties. This change was made in order to facilitate easier deployment using the Liferay Cloud CLI.</p>\n\n<p>liferay/LCP.json file would set the liferaycloud/liferay-dxp image:&nbsp;</p>\n\n<p><code>\"image\":\"liferaycloud/liferay-dxp:7.4-5.X.X\"</code></p>\n\n<p>liferay/gradle.properties file would set the liferay/dxp image:</p>\n\n<p><code>liferay.workspace.docker.image.liferay=liferay/dxp:2024.q1.1</code></p>\n\n<p>For all other images, you will just need to update the LCP.json file with the intended image version.</p>\n\n<p>Once the LCP.json files are updated, commit the changes to your Git repository.</p>\n\n<p><code>git add . &amp;&amp; git commit -m \"Update dxp cloud stack to XXX\"</code></p>\n\n<p>After pushing these changes to the remote repository, a build will be created in Liferay Cloud and it is ready to deploy.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-04T23:49:42Z",
+  "dateModified": "2026-03-10T21:07:16Z",
+  "datePublished": "2025-11-04T23:53:00Z",
+  "description": "",
+  "externalReferenceCode": "113fa769-3e69-3893-748d-5aa22bbca5cc",
+  "friendlyUrlPath": "2025-09-02-services-release-updates",
+  "id": 26921636,
+  "key": "26921634",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26921636/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.09.02 - Services Release Updates",
+  "uuid": "a3f81ab1-ea26-a71e-b05a-9f1ffe2f35d4"
+}

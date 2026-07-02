@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p data-pm-slice=\"1 3 []\">We are excited to announce an update to the Builds and Deployments pages with the introduction of advanced filtering options. This new feature allows users to easily filter builds and deployments by specific parameters such as date and environment. This update is designed to significantly improve the user experience by facilitating quicker and more efficient navigation within these pages.</p>\n<h4 id=\"h_01HWNGYP6Y4DZAS6WGSNV6QWXF\">Key Features:</h4>\n<ul class=\"ak-ul\">\n<li>\n<p><strong>Date Filtering</strong>: Users can now filter the list of builds and deployments by selecting a specific date or date range. This allows for a more streamlined approach to accessing historical data and recent updates.</p>\n</li>\n<li>\n<p><strong>Environment Filtering</strong>: This feature enables users to filter builds and deployments based on the environment (e.g., development, testing, production). It simplifies the process of locating specific builds related to different stages of the deployment process.</p>\n</li>\n</ul>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/26302988392973\" alt=\"e99910ef-8939-4698-b938-39f9c694b989.png\"><img src=\"https://help.liferay.com/hc/article_attachments/26302964632973\" alt=\"b723f4de-78a4-45d9-8918-72c5ffff98f1.png\"></p>\n<p>This enhancement addresses the previous challenges of navigating through extensive lists and the time-consuming process of locating specific builds or deployments. With these new filtering capabilities, users can expect:</p>\n<ul class=\"ak-ul\">\n<li>\n<p><strong>Reduced Time to Information</strong>: Minimize the time spent scrolling through lists, allowing for quicker access to the needed builds and deployments.</p>\n</li>\n<li>\n<p><strong>Increased Operational Efficiency</strong>: Streamlined navigation leads to better productivity and less frustration among team members.</p>\n</li>\n</ul>\n<h4 id=\"h_01HWNGYP6YQTB3TCMPQ60BAPQF\">How to Use:</h4>\n<p>To utilize the new filters:</p>\n<ol class=\"ak-ol\" start=\"1\">\n<li>\n<p>Navigate to the Builds or Deployments page.</p>\n</li>\n<li>\n<p>You will find the filtering options at the top of the page. Select the desired date, date range, or environment from the dropdown menus.</p>\n</li>\n<li>\n<p>The page will automatically update to display only the builds or deployments that meet the selected criteria.</p>\n</li>\n</ol>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T19:04:15Z",
+  "dateModified": "2026-03-10T21:45:12Z",
+  "datePublished": "2024-04-29T18:13:00Z",
+  "description": "",
+  "externalReferenceCode": "26100648",
+  "friendlyUrlPath": "enhanced-builds-deployments-search-functionality",
+  "id": 26100650,
+  "key": "26100648",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100650/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Enhanced Builds & Deployments Search Functionality",
+  "uuid": "b3750438-ecbd-7d19-35a4-db86ab77be58"
+}

@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HXYS9SF6KY1EAQ17VRHQQAWX\" style=\"box-sizing: border-box; margin: 1.5rem 0px; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-weight: 600; line-height: 1.5; color: #2a303e; font-size: 1rem; text-transform: uppercase; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: #ffffff;\">Added</h3>\n<ul style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: #2a303e; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; background-color: #ffffff;\">\n<li style=\"box-sizing: border-box;\">\n<a style=\"box-sizing: border-box; color: #0b5fff; text-decoration: none; background-color: transparent;\" href=\"https://liferay.atlassian.net/browse/LCD-41298\">​</a><strong style=\"box-sizing: border-box;\"><a style=\"box-sizing: border-box; color: #0b5fff; text-decoration: none; background-color: transparent;\" href=\"https://liferay.atlassian.net/browse/LCD-36999\">LCD-36999</a><span style=\"box-sizing: border-box;\"> </span>- Display commit's author avatar on build list:</strong><span style=\"box-sizing: border-box;\"><span> </span>Now the avatar of the commit's author who generated a specific build will be shown on the build list instead of a system image everytime Jenkins is involved in the build process. Giving more clarity to the team and streamlining discussions and knowledge sharing.<br style=\"box-sizing: border-box;\"></span>\n</li>\n<li style=\"box-sizing: border-box;\">\n<strong style=\"box-sizing: border-box;\"><a style=\"box-sizing: border-box; color: #0b5fff; text-decoration: none; background-color: transparent;\" href=\"https://liferay.atlassian.net/browse/LCD-42379\">LCD-42379</a></strong><span style=\"box-sizing: border-box;\"><strong style=\"box-sizing: border-box;\"><span> </span>- Provide access to commonly used features on the services popover:</strong><span> </span>Now it's easier to access the logs, the monitoring page or the shell of a specific service. No need to click and apply filters anymore. From the overview page's popover you can jump straight to the information you want! </span>\n</li>\n</ul>\n<h3 id=\"h_01HXYS9NRE5H6PTZ9Y99PF8QQH\" style=\"box-sizing: border-box; margin: 1.5rem 0px; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-weight: 600; line-height: 1.5; color: #2a303e; font-size: 1rem; text-transform: uppercase; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: #ffffff;\">Bug Fixes</h3>\n<ul class=\"ak-ul\" style=\"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: #2a303e; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; background-color: #ffffff;\">\n<li style=\"box-sizing: border-box;\">\n<strong style=\"box-sizing: border-box;\"><a style=\"box-sizing: border-box; color: #0b5fff; text-decoration: none; background-color: transparent;\" href=\"https://liferay.atlassian.net/browse/LCD-43837\">LCD-43837</a><span> </span>- Deploy app from marketplace bug:<span> </span></strong>Fixed an issue where certain apps bought in marketplace were unable to be deployed even though they were correctly purchased.</li>\n<li>\n<strong style=\"box-sizing: border-box;\"><a style=\"box-sizing: border-box; color: #0b5fff; text-decoration: none; background-color: transparent;\" href=\"https://liferay.atlassian.net/browse/LCD-44127\">LCD-44127</a> <span>and <a style=\"box-sizing: border-box; color: #0b5fff; text-decoration: none; background-color: transparent;\" href=\"https://liferay.atlassian.net/browse/LCD-43717\">LCD-43717</a> </span>- Bugs on the storage usage representation and its relation to backup size:<span> </span></strong>Fixed issues where the value shown in the Plan&amp;Usage page visualization for storage was not matching doclib backups, not accounting for certain items, and outright not being shown to some users.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:07Z",
+  "dateModified": "2026-03-10T21:02:09Z",
+  "datePublished": "2025-02-06T21:36:00Z",
+  "description": "",
+  "externalReferenceCode": "34103056705805",
+  "friendlyUrlPath": "2025-02-04-release-updates",
+  "id": 26097863,
+  "key": "26097861",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097863/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.02.04 Release Updates",
+  "uuid": "2b41f23d-3e4b-edde-344e-a3f104f04278"
+}

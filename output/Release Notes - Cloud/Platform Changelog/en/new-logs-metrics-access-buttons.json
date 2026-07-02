@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2><span>Log Management Improvements</span></h2>\n\n<p>The Liferay Cloud team has been hard at work and focused on improving the log management user experience. Follow <a href=\"https://support.liferay.com/log-management-updates\" target=\"_self\">this article</a> for more information on a major recent release. But with these new changes there comes a need to streamline access to the logs feature and consolidate the log management and metrics experiences (previously accessible through both the services logs and metrics tabs, and through the Logs and Monitoring sibar items). Also, maintaining these both ways to access theses features generates extra development overhead. That is why we made <a href=\"https://support.liferay.com/w/06-13-2023-release-updates\" target=\"_self\">updates to these experience</a>.</p>\n\n<h2>Consolidated Logs &amp; Metrics Access</h2>\n\n<p><span>To simplify navigation and maintenance, we've removed the individual Logs and Metrics tabs from the service pages.<strong> But don't worry</strong>, you can still access these features with just a click. <strong>We've introduced new buttons on the page header - 'Go to Logs' and 'Go to Metrics'</strong>, giving you instant access to the same data you need. This change also led us to reorder the tabs on your service page to \"Environment Variables\", \"Custom Domains\", \"Scale\", \"Shell\" for a more streamlined user experience.</span><br />\n </p>\n\n<p><img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/19909457634957-mceclip0\" /></p>\n\n<p><span>We believe these updates will significantly improve your user experience and make it even easier to monitor your services' performance. As always, we're here to assist you in case of any questions or difficulties while using our system. We appreciate your feedback as we continue to improve our platform based on your needs.</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T20:56:22Z",
+  "dateModified": "2026-03-10T21:45:11Z",
+  "datePublished": "2023-06-18T20:20:00Z",
+  "description": "",
+  "externalReferenceCode": "26145547",
+  "friendlyUrlPath": "new-logs-metrics-access-buttons",
+  "id": 26145549,
+  "key": "26145547",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145549/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "New Logs & Metrics Access Buttons",
+  "uuid": "0ccf19fe-e802-9fbf-4c41-b389a6ffdd8c"
+}

@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay Cloud, has rolled out a series of significant enhancements to its VPN offerings this quarter. These updates are aimed at providing users with more control, security, and flexibility over their VPN configurations.</p>\n\n<h2 id=\"h_01HBDZGEEZWC1QY14JC5W6S34Y\">1. TCP Communication Protocol</h2>\n\n<p><img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/19916083404941-mceclip0\"></p>\n\n<p>Liferay Cloud Platform now allows users to choose between two major communication protocols: UDP and TCP.</p>\n\n<p><strong>Key Takeaways</strong>:</p>\n\n<ul>\n\t<li>The VPN service seamlessly supports both UDP and TCP protocols, paving the way for smoother communication between Liferay Cloud and the users' internal networks.</li>\n\t<li>The platform’s console interface has been refined, introducing a dropdown menu where users can effortlessly switch between the two protocols. Upon making a selection, users receive a confirmation of their updated VPN configuration.</li>\n</ul>\n\n<h2 id=\"h_01HBDZGEEZP0PZ6Y2PJ5RJ8YE1\">2. Refined VPN Client-to-Site Authentication with PreShared-key</h2>\n\n<p><img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/19916071134349-mceclip1\"></p>\n\n<p>With the recent rollout, Liferay Cloud has augmented its VPN Client-to-Site offerings, introducing the PreShared-key (PSK) authentication method.</p>\n\n<p><strong>Key Takeaways</strong>:</p>\n\n<ul>\n\t<li>The VPN service now caters to two authentication methods: the existing PublicKey+Certificate and the newly added PreShared-key.</li>\n\t<li>For reinforced security, a distinct PSK is generated for every individual client-to-site VPN connection.</li>\n\t<li>The user interface has been tailored to accommodate these changes. A dropdown menu in the VPN configuration dashboard allows users to select their preferred authentication method, with a confirmation message ensuring clarity on the applied settings.</li>\n\t<li>Beyond mere PSK generation, tools are embedded to allow users to manage and modify their keys, offering more autonomy over security configurations.</li>\n</ul>\n\n<h2 id=\"h_01HBDZGEF04M2F5SM45NC5BZ7P\">3. Upgrades to OpenVPN Peer Validation with TLS certificate</h2>\n\n<p><br>\n<img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/19916154955277-mceclip0\"><br>\n<br>\n<img alt=\"\" height=\"293\" src=\"https://support.liferay.com/documents/d/customer-portal/19916143207693-mceclip1\" width=\"694\"></p>\n\n<p>Liferay Cloud’s OpenVPN setup has seen a pivotal enhancement, providing users the flexibility to upload their client's TLS certificate and key during the OpenVPN server establishment.</p>\n\n<p><strong>Key Takeaways</strong>:</p>\n\n<ul>\n\t<li>Prior to this enhancement, the OpenVPN client wasn't configurable with a TLS certificate and key. Recognizing the frequent requirement for client-side TLS certificate authentication in many VPN setups, this gap has been addressed.</li>\n\t<li>The entire VPN ecosystem, from the backend <code>vpn-openvpn</code> to the user-facing API and Console interface, has been enhanced to support this change.</li>\n\t<li>As a result, users can now have their VPN configurations that utilize their TLS certificate and key, granting them more authentication options and a fortified connection.</li>\n</ul>\n\n<h2 id=\"h_01HBDZGEF02T22Z17ZZ932PC5C\">Conclusion:</h2>\n\n<p>Liferay Cloud's recent spate of VPN enhancements underlines the platform's commitment to optimizing user experience through technical advancements. These refined features grant users more granularity in their VPN configurations, ensuring both robust security and operational flexibility. For any clarifications or technical assistance, our dedicated support team is always at your disposal.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T17:45:31Z",
+  "dateModified": "2026-03-10T21:45:12Z",
+  "datePublished": "2023-09-28T13:18:00Z",
+  "description": "",
+  "externalReferenceCode": "26098223",
+  "friendlyUrlPath": "vpn-enhancements-in-liferay-cloud-tcp-protocol-preshared-key-and-tls-certificate",
+  "id": 26098225,
+  "key": "26098223",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098225/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "VPN Enhancements in Liferay Cloud: TCP protocol, PreShared-key and TLS certificate",
+  "uuid": "c3296fc6-269d-f2db-49fd-20031586822d"
+}

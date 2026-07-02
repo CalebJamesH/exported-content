@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>&nbsp;</p>\n\n<p>Liferay Cloud is migrating all customer databases to MySQL 8 as MySQL 5.7 has reached its end-of-life (EoL) and will no longer receive critical updates. This upgrade ensures continued security, performance, and compatibility across all environments.</p>\n\n<p>The migration for AC-PRD has been scheduled to take place this <strong>Thursday, January 30, 2025, at 7 PM PST</strong>. The expected downtime for this migration is up to 20 minutes.</p>\n\n<p>We are committed to ensuring a smooth and seamless migration process and appreciate your patience during this critical upgrade.</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:42:25Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:42:00Z",
+  "description": "",
+  "externalReferenceCode": "987683ef-ef5d-b12b-d42a-517dc109623f",
+  "friendlyUrlPath": "scheduled-database-migration-january-30",
+  "id": 26937655,
+  "key": "26937653",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937655/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.01.30 - Scheduled Database Migration , January 30",
+  "uuid": "6cea8678-7097-5b65-5784-8d69710eea50"
+}

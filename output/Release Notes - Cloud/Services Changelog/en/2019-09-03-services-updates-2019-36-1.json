@@ -1,0 +1,133 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2>Description</h2>\n<p>The services update to 2019.36.1 includes updates to Backup, Liferay, and Search services. The Backup and Search services update contained some minor bug fixes. The Liferay service now uses the latest fix packs published by Liferay. Fix pack 1 for 7.2 upgraded JGroups from 3.6 to 4.1, which allowed using  DNS_PING to simplify the clustering configuration. </p>\n<p>One special note for the Liferay service is the docker tag for 7.0 changed from 7.0.10-<strong>sp10</strong>-fp84-3.0.10 to 7.0.10-<strong>ga1</strong>-fp85-3.0.11<strong> </strong>to more accurately reflect the patching level. Fix Packs contain all of the previous fixes, so specifying both sp10 and fp85 is incorrect. Therefore the tag was altered to address the inconsistency.</p>\n<h2>DXP Stack 2019.36.1</h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 727px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 148px; height: 62px;\"><strong>Previous Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 157px; height: 62px;\"><strong>Current Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 498px; height: 62px;\"><strong>Docker Images</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Backup</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.2.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>3.2.3</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">liferaycloud/backup:3.2.3</span></p>\n</td>\n</tr>\n<tr style=\"height: 41.2222px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Database</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.2.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.2.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/database:3.2.1</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">CI</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.1.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.1.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">liferaycloud/jenkins:2.176.1-3.1.1</span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Liferay</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.0.10</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>3.0.11</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">liferaycloud/liferay-dxp:7.2.10-ga1-fp1-3.0.11</span></p>\n<p class=\"wysiwyg-text-align-center\"><span><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:</span>7.1.10-ga1-fp13-3.0.11</span></p>\n<p class=\"wysiwyg-text-align-center\"><span><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:</span>7.0.10-ga1-fp85-3.0.11</span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Search</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.0.3</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>3.0.4</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">li<span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\"><span>feraycloud/elasticsearch:6.1.4-3.0.4</span></span></span></span></p>\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">li<span style=\"font-size: 15px;\"><span>feraycloud/elasticsearch:2.6.4-3.0.4</span></span></span></span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Webserver</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.1.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">3.1.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">l<span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\">iferaycloud/nginx:<span>1.14.2-3.1.1</span></span></span></span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>Update Instructions</h2>\n<p>To apply these updates, update the gradle.properties file the project root folder with the new docker image tags. Here is an example of applying update 2019.36.1 for a 7.2 Liferay project:</p>\n<pre>liferay.workspace.lcp.backup.image=liferaycloud/backup:3.2.3<br>liferay.workspace.lcp.database.image=liferaycloud/database:3.2.1<br>liferay.workspace.lcp.search.image=liferaycloud/elasticsearch:6.1.4-3.0.4<br>liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-ga1-fp1-3.0.11<br>liferay.workspace.lcp.webserver.image=liferaycloud/nginx:1.14.2-3.1.1<br>liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1</pre>\n<p>Once the gradle.properties file contains the updates, commit the changes to your Git repository.</p>\n<pre>git add gradle.properties &amp;&amp; git commit -m \"update dxp cloud stack to 2019.36.1\"</pre>\n<p>After pushing these changes to the remote repository, a build will be created in Liferay Cloud and it is ready to deploy.</p>\n<h2>Change Log</h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 871px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Version</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 111px; height: 62px;\"><strong>Ticket Number</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 652px; height: 62px;\"><strong>Description</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"4\">\n<p class=\"wysiwyg-text-align-center\"><strong>Backup</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"3\">\n<p class=\"wysiwyg-text-align-center\">3.2.3</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCP-1844</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Check authorization header for script backwards compatibility</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCP-1835</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Avoid google authentication cache</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCP-1828</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Improve error messages for backup cleanup scheduler</p>\n</td>\n</tr>\n<tr style=\"height: 41.2222px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">3.2.2</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCP-1507</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Add cron syntax validation</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"2\">\n<p class=\"wysiwyg-text-align-center\"><strong>Liferay</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"2\">\n<p class=\"wysiwyg-text-align-center\">3.0.11</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCPE-432</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Always Include latest fixpacks in docker image build</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCP-1841</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Use DNS_PING for clustering in 7.2-fp1</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>Search</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">3.0.4</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">LCP-1463</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Update xPack monitoring flag with correct value</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:14:54Z",
+  "dateModified": "2026-03-10T21:22:53Z",
+  "datePublished": "2019-09-04T02:54:00Z",
+  "description": "",
+  "externalReferenceCode": "360032964072",
+  "friendlyUrlPath": "2019-09-03-services-updates-2019-36-1",
+  "id": 26107462,
+  "key": "26107460",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "liferay-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107462/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2019.09.03 - Services Updates - 2019.36.1",
+  "uuid": "5b52eb44-f68c-f757-8ebe-9fbe0336d0c9"
+}

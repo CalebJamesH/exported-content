@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"h_01HBD43H7017Z3VEHK7N4QDVN0\" data-renderer-start-pos=\"67\">Added</h2>\n<ul>\n<li data-renderer-start-pos=\"160\">\n<a class=\"css-tgpl01\" title=\"https://liferay.atlassian.net/browse/LCD-29755\" href=\"https://liferay.atlassian.net/browse/LCD-29755\" data-testid=\"link-with-safety\" data-renderer-mark=\"true\">LCD-29755</a> <span>In response to user feedback, we've rolled out a series of enhancements to the Console Logs page UI. These updates include the reintroduction of horizontal scrolling, a dark mode color scheme for the Log Viewer, streamlined log line presentation with reduced height and eliminated line dividers, and an optimized column layout prioritizing Level, Time, Service, and Message for better readability. Additionally, the interface now offers a \"fluid\" layout size option for a more adaptable view. These changes are designed to improve user experience.<br><img src=\"\"></span>\n</li>\n</ul>\n<h2 id=\"h_01HBD43H70C4JVAZF16CZDEMYG\" data-renderer-start-pos=\"625\">Bug Fixes</h2>\n<ul>\n<li data-renderer-start-pos=\"700\">\n<a class=\"css-tgpl01\" title=\"https://liferay.atlassian.net/browse/LCD-28127\" href=\"https://liferay.atlassian.net/browse/LCD-28127\" data-testid=\"link-with-safety\" data-renderer-mark=\"true\">LCD-28127</a> [CI] Create DXPC Build stage fails</li>\n<li data-renderer-start-pos=\"746\">\n<a class=\"css-tgpl01\" title=\"https://liferay.atlassian.net/browse/LCD-29227\" href=\"https://liferay.atlassian.net/browse/LCD-29227\" data-testid=\"link-with-safety\" data-renderer-mark=\"true\">LCD-29227</a> Query Insights should not be auto enabled for existing customers</li>\n<li data-renderer-start-pos=\"893\">\n<a class=\"css-tgpl01\" title=\"https://liferay.atlassian.net/browse/LCD-30129\" href=\"https://liferay.atlassian.net/browse/LCD-30129\" data-testid=\"link-with-safety\" data-renderer-mark=\"true\">LCD-30129</a> Builds page does not show the builds</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:59Z",
+  "dateModified": "2026-03-10T21:02:23Z",
+  "datePublished": "2023-09-28T05:51:00Z",
+  "description": "",
+  "externalReferenceCode": "19909398757005",
+  "friendlyUrlPath": "2023-08-22-release-updates",
+  "id": 26102129,
+  "key": "26102127",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102129/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.08.22 - Release Updates",
+  "uuid": "676d8539-0a39-0c6f-6d1c-d407c275ad69"
+}

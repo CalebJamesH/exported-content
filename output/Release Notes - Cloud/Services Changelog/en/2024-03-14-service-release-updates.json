@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\"><strong>Note:</strong> please note that Liferay has renamed its Liferay Experience Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).</div>\n\n<h1 class=\"wysiwyg-text-align-left\" id=\"01H8066N1X71BMWR8KPQVMTM4A\">Service Updates for Liferay Cloud</h1>\n\n<p>The services update for 03/14/2024 is a minor update for<strong> Search </strong>service.</p>\n\n<h2 id=\"01H8066N1X678XQSM8P38E9Q5Z\">DXP Cloud Stack - 03/14/2024&nbsp;</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 588px; float: left; height: 250px;\">\n\t<thead>\n\t\t<tr style=\"height: 62px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; height: 62px; background-color: #969996;\"><strong>Service Name</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; height: 62px; background-color: #969996;\"><strong>Previous Release</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; height: 62px; background-color: #969996;\"><strong>Current Release</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; height: 62px; background-color: #969996;\"><strong>Docker Images</strong></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr style=\"height: 48px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; text-align: left; vertical-align: top; height: 10px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">Backup</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; text-align: left; vertical-align: top; height: 10px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.14.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; text-align: left; vertical-align: top; height: 10px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.14.1</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; text-align: left; vertical-align: top; height: 10px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">liferaycloud/backup:5.14.1</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">CI</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.2.4</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.2.5</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">liferaycloud/jenkins:2.356-jdk8-5.2.5</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 41.2222px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">Database</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.2.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.3.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; vertical-align: top; height: 28px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">liferaycloud/database:5.3.0</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; vertical-align: top; height: 48px;\">Liferay</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; vertical-align: top; height: 48px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.4.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; vertical-align: top; height: 48px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.5.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; vertical-align: top; height: 48px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">liferaycloud/liferay-dxp:7.4-5.5.0<br />\n\t\t\tliferaycloud/liferay-dxp:7.3-5.5.0<br />\n\t\t\tliferaycloud/liferay-dxp:7.2-5.5.0<br />\n\t\t\tliferaycloud/liferay-dxp:7.1-5.5.0<br />\n\t\t\tliferaycloud/liferay-dxp:7.0-5.5.0</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; text-align: left; vertical-align: top; height: 48px; background-color: #f7f8f9;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>Search</strong></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; text-align: left; vertical-align: top; height: 48px; background-color: #f7f8f9;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.2.1</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; text-align: left; vertical-align: top; height: 48px; background-color: #f7f8f9;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>5.3.0</strong></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; text-align: left; vertical-align: top; height: 48px; background-color: #f7f8f9;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>liferaycloud/elasticsearch:8.12.1-5.3.0 liferaycloud/elasticsearch:7.17.18-5.3.0</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 80.4766px; text-align: left; vertical-align: top; height: 26px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">Webserver</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 74.4688px; text-align: left; vertical-align: top; height: 26px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.3.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 68.0391px; text-align: left; vertical-align: top; height: 26px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">5.4.0</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 320.016px; text-align: left; vertical-align: top; height: 26px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">liferaycloud/nginx:1.21.6-5.4.0<br />\n\t\t\t<span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;\"></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<h2 id=\"h_01HHMXJ7P5R5AAYGTJH56HRMTY\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5GY0CZ5PS8BF5J5WV\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5RVBVJ18S7CYNGTXE\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5ZPY1BSN55Y4QYC5H\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5P207YSD8QGRVHKHM\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5H7X4QGDRNX57R56Z\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5WDFZWS3PMJGFEQN6\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P5816SKC44SZKY7CG6\"> </h2>\n\n<h2 id=\"h_01HHMXJ7P68NF6JY3S1C4DZ119\"> </h2>\n\n<h2 id=\"h_01HR82YW7WFKWZYTVAFDVWPT6B\"> </h2>\n\n<p> </p>\n\n<h2 id=\"01H8066N1YWTXV16JYNYMDV6F4\">Change Log</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"margin-left: 0px; margin-right: auto; height: 72px; width: 673px;\">\n\t<thead>\n\t\t<tr style=\"height: 62px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 78.2656px; height: 62px;\"><strong>Service Name</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 102.336px; height: 62px;\"><strong>Service Version</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 113.367px; height: 62px;\"><strong>Ticket No.</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 334.031px; height: 62px;\"><strong>Description</strong></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td style=\"width: 78.2656px; text-align: left; vertical-align: top; height: 10px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;Search</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 102.336px; text-align: left; vertical-align: top; height: 10px;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;5.3.0</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 113.367px; vertical-align: top; height: 10px;\"><a href=\"https://liferay.atlassian.net/browse/LCD-34747\" rel=\"noopener noreferrer\" target=\"_blank\">LCD-34747</a></td>\n\t\t\t<td style=\"width: 334.031px; text-align: left; vertical-align: top; height: 10px;\">Bump Elasticsearch version 8.11.4 &gt; <strong>8.12.1</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 78.2656px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 102.336px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 113.367px; vertical-align: top;\"><a href=\"https://liferay.atlassian.net/browse/LCD-34747\" rel=\"noopener noreferrer\" target=\"_blank\">LCD-34747</a></td>\n\t\t\t<td style=\"width: 334.031px; text-align: left; vertical-align: top;\">Bump Elasticsearch version 7.17.16 &gt; <strong>7.17.18</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 78.2656px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 102.336px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><strong>&nbsp;</strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 113.367px; vertical-align: top;\"><a href=\"https://liferay.atlassian.net/browse/LCD-35039\" rel=\"noopener noreferrer\" target=\"_blank\">LCD-35039</a></td>\n\t\t\t<td style=\"width: 334.031px; text-align: left; vertical-align: top;\">Remove Image generation for elasticsearch-service 6.8.x version<strong>*</strong></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<h2 id=\"h_01HFQQE47127T9RVN8YK7MKH4R\">Update Instructions</h2>\n\n<p><strong style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;\">Note* :&nbsp;</strong>Elasticsearch 6.8x version will no longer be supported by Liferay Cloud. (Elasticsearch dropped the support for 6.8x long ago). Going forward, it is best to upgrade search version to benefit from the latest releases and avoid critical security vulnerabilities.</p>\n\n<p>For more details on this refer to this article: <a href=\"https://support.liferay.com/w/liferay-paas-elasticsearch-6-deprecation\" rel=\"noopener noreferrer\" target=\"_blank\">Liferay PaaS Elasticsearch 6 Deprecation</a></p>\n\n<p><strong style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;\">Note</strong><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;\"> : To take advantage of the new features and fixes provided by the 5.x stack of services, you must update your entire stack to the new 5.x images.</span></p>\n\n<h2 id=\"01H8066N1YDXGGCTPJ2C2XKQWE\">Image Update Instructions</h2>\n\n<p>The Liferay Cloud image versions needs to be set inside of the &lt;service&gt;/LCP.json file.</p>\n\n<p>Note, however, that the liferay service uses two image properties. The DXP Cloud image is set in the liferay/LCP.json file, but the liferay/dxp image is set in the gradle.properties. This change was made in order to facilitate easier deployment using the Liferay Cloud CLI.</p>\n\n<p>liferay/LCP.json file would set the liferaycloud/liferay-dxp image:</p>\n\n<pre>\n<span>\"image\"</span>:<span>\"liferaycloud/liferay-dxp:7.2-5.0.X\"</span></pre>\n\n<p>liferay/gradle.properties file would set the liferay/dxp image:</p>\n\n<pre>\n<span>liferay.workspace.docker.image.liferay</span>=<span>liferay/dxp:7.4-x</span><span style=\"font-weight: 400;\"></span></pre>\n\n<p>For all other images, you will just need to update the LCP.json file with the intended image version.</p>\n\n<p>Once the LCP.json files are updated, commit the changes to your Git repository.</p>\n\n<pre>\ngit add . &amp;&amp; git commit -m \"Update dxp cloud stack to XXX\"</pre>\n\n<p>After pushing these changes to the remote repository, a build will be created in Liferay Cloud and it is ready to deploy.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:44:40Z",
+  "dateModified": "2026-03-10T21:07:16Z",
+  "datePublished": "2024-03-15T14:19:00Z",
+  "description": "",
+  "externalReferenceCode": "25032516309773",
+  "friendlyUrlPath": "2024-03-14-service-release-updates",
+  "id": 26146517,
+  "key": "26146515",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146517/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2024.03.14 - Service Release Updates",
+  "uuid": "6e419438-1542-5a22-2f8a-92d6c83c615c"
+}

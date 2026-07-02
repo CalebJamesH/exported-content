@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"h_01K6JHKW1SA8KRFKJ1QDF5SCJA\"><strong>Incident 1: AC1 Event Ingestion Pipeline Errors (southamerica-east1)</strong></h2>\n\n<p>&nbsp;</p>\n\n<p>This communication covers two related incidents affecting the AC1 event ingestion pipeline in South America region:</p>\n\n<p>&nbsp;</p>\n\n<ul>\n\t<li class=\"ck-list-marker-bold\" data-list-item-id=\"e6d9f5ac4cb4a02915ec5b84aca797815\">\n\t<h4 id=\"h_01K6JHKW1WFFBMY07GVMTFPX3M\"><strong>Initial Incident: Intermittent Errors on AC1 Ingestion Pipeline</strong></h4>\n\t</li>\n</ul>\n\n<p>We experienced intermittent errors in the <strong>LiferayCloud-AC1 event ingestion pipeline</strong> in <strong>southamerica-east1</strong> on <strong>Friday, September 26th</strong>. The issue resulted in a brief period of data loss for events during the affected time.</p>\n\n<ul>\n\t<li data-list-item-id=\"e2fcb5b0965cef1b1b83cca48c63a5be4\">Impacted Service: LiferayCloud-AC1 Event Ingestion Pipeline (<code>southamerica-east1</code>)</li>\n\t<li data-list-item-id=\"e9dec54bb6a2cb73f164381919084b9dc\">Incident Time (PDT):\n\t<ul>\n\t\t<li data-list-item-id=\"efa0c4f54015d535db8a8ed74c79cc450\">Start: 2025-09-26 07:56 PDT</li>\n\t\t<li data-list-item-id=\"ee2f55ed9481117ea7e884b2e0bbed28e\">End: 2025-09-26 10:55 PDT (<strong>Approx. 3 hours</strong>)</li>\n\t</ul>\n\t</li>\n\t<li data-list-item-id=\"e8e90c8db64e55d3fc0edf88439753974\"><strong>Impact:</strong> This resulted in an event ingestion loss of <strong>less than 1%</strong> per project during the incident window.</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<ul>\n\t<li class=\"ck-list-marker-bold\" data-list-item-id=\"ed5b18f15a060f486760e895cae99642c\">\n\t<h4 id=\"h_01K6JHKW28G2VVZWPTC6VBSJX3\"><strong>Recurring Incident: AC1 Ingestion Pipeline Errors</strong></h4>\n\t</li>\n</ul>\n\n<p>The AC1 event ingestion pipeline error <strong>recurred</strong> on <strong>Monday, September 29th</strong>, with a longer duration and greater impact.</p>\n\n<ul>\n\t<li data-list-item-id=\"e47428d29e0cd6b64ea31fbfdf205ffe2\">Impacted Service: LiferayCloud-AC1 Event Ingestion Pipeline (<code>southamerica-east1</code>)</li>\n\t<li data-list-item-id=\"e8918deb903bec61555a99b35a21b9456\">Incident Time (UTC):\n\t<ul>\n\t\t<li data-list-item-id=\"e57b95abcfd10265c3cdcd278b0faa251\">Start: 2025-09-29 11:31 UTC</li>\n\t\t<li data-list-item-id=\"e6ef48aeb2964b885ced74519d8fdde8b\">End: 2025-09-29 17:55 UTC (<strong>Approx. 5.5 hours</strong>)</li>\n\t</ul>\n\t</li>\n\t<li data-list-item-id=\"ec1055f5184563f8f5b09ef341bb1761a\"><strong>Impact:</strong> The average event ingestion data loss per workspace during this period was approximately <strong>7%</strong>.</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<h3 id=\"h_01K6JHKW2FH0XSDVJBGNJ8H8JA\"><strong>Resolution and Next Steps</strong></h3>\n\n<p>&nbsp;</p>\n\n<p>A <strong>fix has been successfully deployed</strong> to resolve this recurring ingestion issue. The pipeline is now operating normally. We will continue to <strong>monitor the system closely</strong> and conduct a deeper root cause analysis to prevent future recurrence. We will update this channel if any further issues arise.</p>\n\n<p>&nbsp;</p>\n\n<hr>\n<p>&nbsp;</p>\n\n<h2 id=\"h_01K6JHKW2G6XS9QXD1S76MR63K\"><strong>Incident 2: Project Details Endpoint Errors Affecting AC3 (europe-west3) and AC4 (us-west1)</strong></h2>\n\n<p>&nbsp;</p>\n\n<p>We experienced a significant error when making requests to the <strong>Project Details endpoint</strong>, which caused failures in our downstream metric processing pipeline (\"Composing\"). This led to a halt in daily metric calculation and subsequent data gaps for <strong>LiferayCloud-AC3</strong> and <strong>LiferayCloud-AC4</strong>.</p>\n\n<p>&nbsp;</p>\n\n<h4 id=\"h_01K6JHKW2GNB507C27CG2XPWJ1\"><strong>Incident Details</strong></h4>\n\n<ul>\n\t<li data-list-item-id=\"e5254d862dd1a3aa16c77184f314a17ad\">Impacted Systems: Metric Processing for LiferayCloud-AC3 (<code>europe-west3</code>) and LiferayCloud-AC4 (<code>us-west1</code>)</li>\n\t<li data-list-item-id=\"eb923b60822441318128949b64910fe8f\">Affected Component: Project Details Endpoint</li>\n\t<li data-list-item-id=\"e15d4307fcf1dc4983c31c7d18c142c09\">Incident Window (UTC) - Processing Jobs Halted:\n\t<ul>\n\t\t<li data-list-item-id=\"e7904257231fa852861dd71420c11c206\"><strong>AC3:</strong> 2025-09-25 21:45 to 2025-09-30 21:58</li>\n\t\t<li data-list-item-id=\"ee3600e7a7576d2d39f4845b66ff47d70\"><strong>AC4:</strong> 2025-09-25 21:33 to 2025-09-30 20:32</li>\n\t</ul>\n\t</li>\n\t<li data-list-item-id=\"e113326c4829c328a49d49ed85222e2d5\"><strong>Status:</strong> The underlying endpoint issue is <strong>fixed</strong>, and the processing jobs are now running again.</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<h4 id=\"h_01K6JHKW2K193881W0RTS9EBDA\"><strong>Customer Impact</strong></h4>\n\n<p>Customers might see data gaps in specific dashboards for the period of <strong>September 25th through September 29th</strong>.</p>\n\n<ul>\n\t<li data-list-item-id=\"e06d0e2f99e02283b1d43a2a9680f93f1\"><strong>Unaffected:</strong> The <strong>Sites dashboard</strong> is unaffected, as it primarily uses session data.</li>\n\t<li data-list-item-id=\"ee8731f6730aa85d7f36f4f16dcff4401\"><strong>Affected:</strong> Users will likely see certain metrics on the <strong>Asset</strong> and <strong>Page dashboards</strong> display <strong>zero values</strong> for the impacted time frame (Sept. 25 - Sept. 29).</li>\n</ul>\n\n<p>&nbsp;</p>\n\n<h4 id=\"h_01K6JHKW2NNWRB3QYDK1TJ7TN9\"><strong>Recovery and Next Steps</strong></h4>\n\n<p>The system is now stable. We are actively performing <strong>backfilling</strong> (back-processing) of the data for the affected period of September 25th through September 29th for both AC3 and AC4.</p>\n\n<p>&nbsp;</p>\n\n<p>We apologize for the disruption and are grateful for your continued trust as we complete the backfill and restore full service integrity..</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:45:46Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:45:00Z",
+  "description": "",
+  "externalReferenceCode": "e4422e87-3610-274e-67aa-d3b4f7dfe303",
+  "friendlyUrlPath": "incident-report-service-disruption-causing-data-loss",
+  "id": 26937716,
+  "key": "26937714",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937716/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.10.02 - Incident Report: service disruption causing data loss",
+  "uuid": "24368a6c-1f9c-cb30-01f3-e6870117a06f"
+}

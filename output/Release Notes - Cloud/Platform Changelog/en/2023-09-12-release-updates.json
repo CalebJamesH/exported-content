@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HWJQQDPEDHSJ25CZRE0WEG5G\"><span style=\"color: #434343;\">Added</span></h3>\n\n<ul>\n\t<li><strong>Update Backup Upload and Creation Strategy:</strong> Transitioned from using a client library to using 'gsutil' for uploading and creating backups. This update improves the reliability and speed of backup operations, enhancing overall data management practices.</li>\n\t<li><strong>Remove \"All Logs\" Filter from Console Logs:</strong> Removed the \"All Logs\" filter from the console logs to address performance issues. This modification ensures a more responsive and efficient log viewing experience for users.<br />\n\t<img alt=\"\" src=\"https://support.liferay.com/documents/d/customer-portal/26277070392717-mceclip0\" /></li>\n</ul>\n\n<h3 id=\"h_01HWJQQDPEEXY0FMD6GWGM4ZSZ\"><span style=\"color: #434343;\">Bug Fixes</span></h3>\n\n<ul>\n\t<li><strong>Docker Image Vulnerability:</strong> Updated the backup master images to address vulnerabilities in ncurses and openssl. This crucial security enhancement ensures that the system remains protected against potential threats.</li>\n\t<li><strong>Backup Restore of User Uploaded Database Files:</strong> Fixed a critical issue where the backup restore process could fail silently and remove the lportal database without alerting the user. Improvements ensure failures are reported promptly, preserving data integrity.</li>\n\t<li><strong>Investigate Orphaned Project IAM Policy Bindings:</strong> Addressed a problem where orphaned IAM policy bindings could occur, leading to potential security risks. The fix involves implementing retries for specific error codes and cleaning up unnecessary bindings, thereby enhancing project security.</li>\n\t<li><strong>Shell Tab Visibility:</strong> Updated the console to hide the shell tab for services where it is not applicable, reducing clutter and focusing the user interface on relevant functionalities.</li>\n\t<li><strong>Custom Domains Input for Guests:</strong> Corrected an issue where guests could incorrectly access inputs for custom domains. This fix ensures that only authorized users can modify domain settings, thereby maintaining system security.</li>\n\t<li><strong>Environment Creation in Different Clusters:</strong> Resolved a bug that prevented users from creating environments in different clusters from the root project. This fix allows for greater flexibility and scalability in environment management across various clusters.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T17:21:40Z",
+  "dateModified": "2026-03-10T21:02:03Z",
+  "datePublished": "2023-09-28T19:54:00Z",
+  "description": "",
+  "externalReferenceCode": "26096050",
+  "friendlyUrlPath": "2023-09-12-release-updates",
+  "id": 26096052,
+  "key": "26096050",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26096052/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.09.12 - Release Updates",
+  "uuid": "8c4e772a-6fce-758f-7410-0c4051b92020"
+}

@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"color: #434343;\">Although Analytics Cloud provides valuable insights into the performance of content and pages, sharing this information within an organization has proven difficult for some users. To solve this problem, we are introducing a new feature that aims to enhance your sharing and reporting capabilities. With this feature, you can now effortlessly download PDFs of your dashboards and CSVs of lists (eg. segment membership), making it easier than ever to share critical insights with your stakeholders.</span></p>\n\n<h1 id=\"h_01HGY5XKJCPMKNY1R5WYFAFKYG\"><span style=\"color: #434343;\">Key Benefits:</span></h1>\n\n<ol>\n\t<li><span style=\"color: #434343;\">Time and Effort Savings: Exporting your dashboards to PDF and lists to CSV is a breeze. Say goodbye to the time-consuming task of manually extracting this information and formatting. Our platform streamlines the process for you.</span></li>\n\t<li><span style=\"color: #434343;\">Professional Reports: The PDF export feature ensures that your insights are presented in a polished and professional format, perfect for sharing with executives, clients, and colleagues.</span></li>\n</ol>\n\n<h1 id=\"h_01HGY5XF7GM5B9KCNDYXZC8768\">How it Works</h1>\n\n<p><span style=\"color: #434343;\">To use this feature, simply click on the new Download button in the top right navigation bar. From there you can select the date range for the dashboards as well as the specific cards you wish to include in your report.</span></p>\n\n<p><span style=\"color: #434343;\"><img alt=\"\" data-fileentryid=\"26937525\" src=\"/documents/d/customer-portal/downloadingreports-gif\">&nbsp;</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:35:27Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:35:00Z",
+  "description": "",
+  "externalReferenceCode": "9cadd8cb-8081-3b26-b344-413d187faae4",
+  "friendlyUrlPath": "new-feature-downloading-reports",
+  "id": 26937539,
+  "key": "26937537",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937539/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2023.12.05 - New Feature: Downloading Reports",
+  "uuid": "ee8c6370-aa53-4e51-570e-871dfe7d1db2"
+}

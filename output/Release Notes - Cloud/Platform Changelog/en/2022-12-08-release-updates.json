@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\">\n  <strong>Note:</strong> please note that Liferay has renamed its Liferay Experience\n  Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and\n  <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).\n</div>\n<h2 id=\"h_01HYXPGNHPH0ACA1CSRJ9E4W6N\">Added</h2>\n<ul>\n<li>Modify existing service account to handle db export/import</li>\n<li>Implement GCS Backup Create Strategy</li>\n<li>Create mechanism to switch doclib format for a given project</li>\n<li>Build client extensions in service-jenkins</li>\n<li> Detect if Liferay PaaS Extension needs the Extension Init Metadata volume mount</li>\n<li>VPN 1/2: make unit tests the majority of test coverage, surpassing integration tests in number and ease of use</li>\n<li>Add terms of service to the login page</li>\n<li>Add latest login timestamp column to the teams page</li>\n</ul>\n<h2 id=\"h_01HYXPGNHQGZKR161KV3TPHET5\">Bug Fixes</h2>\n<ul>\n<li>Add 'application/javascript' mime/type to the list of valid gzip files</li>\n<li>Install build-essential on Jenkins service</li>\n<li>Fixed quthentication errors on database service</li>\n<li>Fixed 404 page is unstyled</li>\n<li>Fixed backup service crashes and restarts when connected to external project</li>\n<li>Getting error 502 when send a request for autoscaling route</li>\n<li>Failed to run CI Job for Liferay-DXP service</li>\n<li>Create secret page does not allow creation of some secrets needed for services stack</li>\n<li>Duplicate key error on updating service env var</li>\n<li>Dynatrace Provisioning must be enabled by default</li>\n<li>SPA is broken for new console pages</li>\n<li>Users with SRE role are not able to load some pages on Console</li>\n<li>Update VPN documentation link</li>\n<li>Fix migration guide link on cloud console</li>\n<li>Admin client does not show provisioning entries</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:11Z",
+  "dateModified": "2026-03-10T21:02:13Z",
+  "datePublished": "2023-06-18T18:46:00Z",
+  "description": "",
+  "externalReferenceCode": "16859994861837",
+  "friendlyUrlPath": "2022-12-08-release-updates",
+  "id": 26099056,
+  "key": "26099054",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099056/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2022.12.08 - Release Updates",
+  "uuid": "5f7eed5c-7f05-556c-89e0-0e347897f35a"
+}

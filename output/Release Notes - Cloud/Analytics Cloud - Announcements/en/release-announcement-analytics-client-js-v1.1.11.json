@@ -1,0 +1,125 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696"
+    }
+  },
+  "availableLanguages": [
+    "en-US"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div>We're thrilled to announce that next week&nbsp;we’ll be launching a&nbsp;<strong data-stringify-type=\"bold\">new release path for Analytics Client JS</strong>, upgrading from&nbsp;<strong data-stringify-type=\"bold\">version 1.1.10 to 1.1.11</strong>.<br>\nAlso, we'd like to announce that today we're launching the same patch (1.1.11) for Internal customers.<br>\nThis release includes important fixes for the following tickets:&nbsp;</div>\n\n<ul data-border=\"0\" data-indent=\"0\" data-list-tree=\"true\" data-stringify-type=\"unordered-list\">\n\t<li data-list-item-id=\"ef70363a29de5db223964aba9f60929aa\" data-stringify-border=\"0\" data-stringify-indent=\"0\"><a data-sk=\"tooltip_parent\" data-stringify-link=\"https://liferay.atlassian.net/browse/LPD-59247\" href=\"https://liferay.atlassian.net/browse/LPD-59247\" rel=\"noopener noreferrer\" target=\"_blank\">LPD-59247</a></li>\n</ul>\n\n<p>&nbsp;</p>\n\n<div><span aria-label=\"&nbsp;\" data-stringify-type=\"paragraph-break\"></span><span data-qa=\"emoji\" data-sk=\"tooltip_parent\"><img alt=\":clock1:\" aria-label=\"clock1 emoji\" data-stringify-emoji=\":clock1:\" data-stringify-type=\"emoji\" height=\"22\" src=\"https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f550@2x.png\" width=\"22\"></span> <strong data-stringify-type=\"bold\">Release Schedule in PROD:</strong></div>\n\n<ul data-border=\"0\" data-indent=\"0\" data-list-tree=\"true\" data-stringify-type=\"unordered-list\">\n\t<li data-list-item-id=\"e2c12685a930bb6ce1dc182241a2a93c4\" data-stringify-border=\"0\" data-stringify-indent=\"0\">&nbsp;The release will be performed at&nbsp;<strong data-stringify-type=\"bold\">1:00 PM PST on July 17th</strong></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26951457"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-11-07T06:44:25Z",
+  "dateModified": "2026-03-10T20:58:08Z",
+  "datePublished": "2025-11-07T06:44:00Z",
+  "description": "",
+  "externalReferenceCode": "e396bb1c-7124-3e64-a192-87a414b580d8",
+  "friendlyUrlPath": "release-announcement-analytics-client-js-v1.1.11",
+  "id": 26937696,
+  "key": "26937694",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26937696/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26936458,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26939613,
+      "taxonomyCategoryName": "Liferay Analytics Cloud",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "5208daba-ae2c-a1bd-fa84-ab37fcd89afb",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26951457,
+      "taxonomyCategoryName": "Analytics Cloud - Announcements",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "f29e0ae2-6ac5-6170-c5af-889d83b925f2",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.07.09 - Release Announcement: Analytics Client JS v1.1.11",
+  "uuid": "2d650c5e-b83b-2ea8-08f5-c42b9a2f031a"
+}

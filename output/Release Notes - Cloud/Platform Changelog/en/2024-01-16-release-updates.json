@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h3 id=\"h_01HWM3ZJ39H8M6NJR1HMSABZ1K\"><span style=\"color: #434343;\">Added</span></h3>\n<ul>\n<li>\n<strong>Performance Improvements for Filtering and Sorting for Activities: </strong>Enhanced the performance of Liferay Cloud by introducing date filters for activity searches and removing unnecessary sorting and group counting operations. These changes significantly reduce latency and improve search performance, making the platform more efficient for users. </li>\n<li>\n<strong>Support for MySQL 8 in Enterprise / Enterprise Plus: </strong>Liferay Cloud now supports MySQL 8.0 for Enterprise and Enterprise Plus tiers, enhancing database performance and compatibility. This update includes API support for database version settings and improved user creation processes to prevent SQL errors, ensuring a smoother upgrade path and robust database operations.</li>\n</ul>\n<h3 id=\"h_01HWM3ZJ39XGY00YDWTGBK5J0Z\"><span style=\"color: #434343;\">Bug Fixes</span></h3>\n<ul>\n<li>\n<strong>OpenVPN Connection Issues Post-Update: </strong>Updated the OpenVPN image to resolve connectivity issues for improved VPN stability and reliability in the Liferay Cloud environment.</li>\n<li>\n<strong>Open Redirect in LiferayCloud/API lcIntendedUrl for SSO:</strong> Liferay Cloud has enhanced security by implementing a fix to prevent open redirects in the SSO login process. This update ensures that redirections are limited to local pages only, significantly improving the safety and integrity of user data.</li>\n<li>\n<strong>Inconsistency in Metrics Displayed on Liferay Cloud vs. Google Metrics Explorer: </strong>We've synchronized the metrics displayed on Liferay Cloud's console with those on Google Metrics Explorer, ensuring accuracy and consistency in data reporting for our users. This update enhances the reliability of metrics monitoring, aiding in better decision-making.</li>\n<li>\n<strong>Fullscreen Icon Correction:</strong> Updated the fullscreen icon in Liferay Cloud to match the design specifications by correcting its appearance and positioning. This enhancement ensures a consistent and intuitive user interface.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:16:18Z",
+  "dateModified": "2026-03-10T21:01:59Z",
+  "datePublished": "2024-04-29T05:11:00Z",
+  "description": "",
+  "externalReferenceCode": "26283227444109",
+  "friendlyUrlPath": "2024-01-16-release-updates",
+  "id": 26109027,
+  "key": "26109025",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26109027/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2024.01.16 - Release Updates",
+  "uuid": "be7722c4-1bc3-bb7c-1df8-c37d50b1acee"
+}

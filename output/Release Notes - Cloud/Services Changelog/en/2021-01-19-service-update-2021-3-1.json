@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h1>Service Updates for Liferay Cloud Version 4</h1>\n<p>The services update to 2021.3.1 includes updates to the Backup service.</p>\n<p> </p>\n<h2>Known Issue: Upload Backup </h2>\n<p>In version 4.2.0 uploading a database.tgz will result in a backup that is not able to be restored. The tgz file is uploaded with an incorrect extension that will process the file as a gz instead. A workaround for this issue is to upload the database file in gz format.</p>\n<p> </p>\n<h2>liferay/dxp docker image tags</h2>\n<p>In an ever evolving effort to provide the best support, the docker tags on liferay/dxp docker repository have changed. The new addition is a `-dx.y.z` designation (e.g. -d1.0.2), which provides information about any changes to the underlying docker scripts that are utilized by the image. The new tags on Dockerhub for liferay/dxp are formatted as follows</p>\n<pre>liferay/dxp:{Liferay.DXP.Version}-{Patching-Level}-{Docker.Script.Version}-{Timestamp}<br><span>liferay/dxp:7.2.10-dxp-7-d1.0.0-202009071842</span></pre>\n<p>When selecting which liferay/dxp base image to utilize for your project, please consider the entire docker tag, and be sure to check out the release notes for your patching level before applying to your environment: <a href=\"https://customer.liferay.com/dxp-release-notes\" target=\"_blank\" rel=\"noopener\">DXP Release Notes</a></p>\n<p> </p>\n<h2>Database Charset and Collation</h2>\n<p>The default charset is currently set to <strong>utf8</strong>, but since the database provider is based on mysql, this represents <strong>utf8mb3</strong>. This may pose a problem for projects that require higher order characters in the utf8 charset. The charset itself can be specified through an environment variable, but the default collation for utf8mb4 is <strong>utf8mb4_general_ci. </strong>In order to address issues with a mismatch between the recommended charset and collation, you can set the charset and collation through environment variables. If this is not specified then the charset will currently default to charset: <strong>utf8</strong> (this is interpreted in mysql as utf8mb3) and collation <strong>utf8_general_ci</strong>.</p>\n<div>\n<pre><span>LCP_GCP_DATABASE_CHARSET<br>LCP_GCP_DATABASE_COLLATION<br></span><span></span><span></span></pre>\n</div>\n<p><strong>Warning: </strong>Altering the charset and collation may have unintended consequences if done on an existing database schema. See <a href=\"https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-conversion.html\">https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-conversion.html</a> for details on converting an existing schema to utf8mb4. Changing these values is only recommended when creating a new schema, since it may incur data loss.</p>\n<p> </p>\n<h2>Version Compatibility between 3 and 4</h2>\n<p>For details on service compatibility between version 3 and 4 please see release update <a href=\"https://support.liferay.com/w/2020-06-11-services-update-2020-24-1\" target=\"_blank\" rel=\"noopener\">6/11/2020 Services Update 2020.24.1</a> or <a href=\"https://support.liferay.com/w/2020-05-28-services-update-2020-22-1\" target=\"_blank\" rel=\"noopener\">5/28/2020 Services Update 2020. 22.1</a> </p>\n<p> </p>\n<h2>Feature Exclusion in Version 3 DXP Stack</h2>\n<p>Due to the deprecation process for the Version 3 DXP Stack, the 3.x service images will no longer receive feature updates. </p>\n<p> </p>\n<h2>Version 4 DXP Stack 2021.3.1 </h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 727px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 148px; height: 62px;\"><strong>Previous Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 157px; height: 62px;\"><strong>Current Release</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 498px; height: 62px;\"><strong>Docker Images</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Backup</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.1.1</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>4.2.0</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>liferaycloud/backup:4.2.0</strong></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">CI</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.1.0</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.1.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/jenkins:2.249.3-4.1.0</p>\n</td>\n</tr>\n<tr style=\"height: 41.2222px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Database</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 148px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\">4.1.1</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 157px; text-align: left; vertical-align: top; height: 41.2222px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>4.1.2</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>liferaycloud/database:4.1.2</strong></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Liferay</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.1.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.1.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/liferay-dxp:7.3-4.1.0</p>\n<p class=\"wysiwyg-text-align-center\">liferaycloud/liferay-dxp:7.2-4.1.0</p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:</span>7.1-4.1.0</p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">liferaycloud/liferay-dxp:</span>7.0-4.1.0</p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: middle; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Search</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.0.2</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: center; vertical-align: middle; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.0.2</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">li<span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\">feraycloud/elasticsearch:7.9.3-4.0.2</span></span></p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\"><span style=\"font-size: 15px;\">liferaycloud/elasticsearch:6.8.13-4.0.2</span></span></p>\n<p class=\"wysiwyg-text-align-center\"><span class=\"styles__name___2EY6e\" style=\"font-size: 15px;\">li<span style=\"font-size: 15px;\">feraycloud/elasticsearch:2.4.6-4.0.2</span></span></p>\n</td>\n</tr>\n<tr style=\"height: 36px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Webserver</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\"><span style=\"font-weight: 400;\">4.0.5</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 36px;\">\n<p class=\"wysiwyg-text-align-center\">4.0.5</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 498px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">liferaycloud/nginx:1.16.1-4.0.5<br><span style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;\"></span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>\n<h2>Version 4 Update Instructions</h2>\n<p>After upgrading your project using this <a href=\"https://learn.liferay.com/dxp-cloud/latest/en/reference/upgrading-your-dxp-cloud-stack.html\" target=\"_blank\" rel=\"noopener\">guide</a>, the Liferay Cloud image versions are no longer set inside of the gradle.properties file. They now need to be set inside of the &lt;service&gt;/LCP.json file. Note, however, that the liferay service uses two image properties. The DXP Cloud image is set in the liferay/LCP.json file, but the liferay/dxp image is set in the gradle.properties. This change was made in order to facilitate easier deployment using the Liferay Cloud CLI.</p>\n<p>liferay/LCP.json file would set the liferaycloud/liferay-dxp image:</p>\n<pre><span>\"image\"</span>:<span>\"liferaycloud/liferay-dxp:7.3-4.1.0\"</span></pre>\n<p>liferay/gradle.properties file would set the liferay/dxp image:</p>\n<pre><span>liferay.workspace.docker.image.liferay</span>=<span>liferay/dxp:7.3.10-ga1-d1.3.1-20201217114152</span><span style=\"font-weight: 400;\"></span></pre>\n<p>Once the LCP.json files are updated, commit the changes to your Git repository.</p>\n<pre>git add . &amp;&amp; git commit -m \"update dxp cloud stack to 2021.3.1\"</pre>\n<p>After pushing these changes to the remote repository, a build will be created in Liferay Cloud, and it is ready to deploy.</p>\n<h2>Version 4 Change Log</h2>\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 871px; float: left;\">\n<thead>\n<tr style=\"height: 62px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Name</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 118px; height: 62px;\"><strong>Service Version</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 111px; height: 62px;\"><strong>Ticket Number</strong></td>\n<td class=\"wysiwyg-text-align-center\" style=\"background-color: #f7f8f9; width: 652px; height: 62px;\"><strong>Description</strong></td>\n</tr>\n</thead>\n<tbody valign=\"top\">\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"2\">\n<p class=\"wysiwyg-text-align-center\"><strong>Backup</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\" rowspan=\"2\">\n<p class=\"wysiwyg-text-align-center\">4.2.0</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span>LCD-9684</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Support database.gz files in backup service for backup uploads</p>\n</td>\n</tr>\n<tr>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span>LCH-2243</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">Use parallel implementation of gzip to speed up backup process</p>\n</td>\n</tr>\n<tr style=\"height: 48px;\">\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><strong>Database</strong></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">4.1.2</p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 118px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\"><span>LCH-2177</span></p>\n</td>\n<td class=\"wysiwyg-text-align-center\" style=\"width: 652px; text-align: left; vertical-align: top; height: 48px;\">\n<p class=\"wysiwyg-text-align-center\">add LCP_GCP_DATABASE_COLLATION to configure database collation</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p> </p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:43:44Z",
+  "dateModified": "2026-03-10T21:22:54Z",
+  "datePublished": "2021-01-20T19:03:00Z",
+  "description": "",
+  "externalReferenceCode": "360055334612",
+  "friendlyUrlPath": "2021-01-19-service-update-2021-3-1",
+  "id": 26146245,
+  "key": "26146243",
+  "keywords": [
+    "ja",
+    "mt",
+    "liferay-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146245/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2021.01.19 Service Update 2021.3.1",
+  "uuid": "a18bfec8-4080-d8bc-7c84-cbb6b3f63efb"
+}

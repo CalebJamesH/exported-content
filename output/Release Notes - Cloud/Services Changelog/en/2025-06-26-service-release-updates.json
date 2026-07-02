@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h1 id=\"01H8066N1X71BMWR8KPQVMTM4A\">Service Updates for Liferay Cloud</h1>\n\n<p>The services update for 06/26/2025 is a <strong>minor</strong> update for <strong>Database</strong> service.</p>\n\n<h2 id=\"01H8066N1X678XQSM8P38E9Q5Z\">DXP Cloud Stack&nbsp;</h2>\n\n<table style=\"border-collapse: collapse; border-color: #f7f8f9; border-spacing: 0px; margin-left: auto; margin-right: auto; width: 100%;\">\n\t<thead>\n\t\t<tr style=\"height: 62px;\">\n\t\t\t<th style=\"background-color: #969996; padding: 0.75rem; text-align: center;\"><strong>Service Name</strong></th>\n\t\t\t<th style=\"background-color: #969996; padding: 0.75rem; text-align: center;\"><strong>Previous Release</strong></th>\n\t\t\t<th style=\"background-color: #969996; padding: 0.75rem; text-align: center;\"><strong>Current Release</strong></th>\n\t\t\t<th style=\"background-color: #969996; padding: 0.75rem; text-align: center;\"><strong>Docker Images</strong></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr style=\"height: 48px;\">\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">Backup</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">5.23.1</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">5.24.0</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li>liferaycloud/backup:5.24.0</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">CI</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">6.0.2</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">6.0.3</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li>liferaycloud/jenkins:2.492.3-lts-jdk21-6.0.3</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 41.2222px;\">\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\"><strong>Database</strong></td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\"><strong>5.6.4</strong></td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\"><strong>5.7.0</strong></td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><strong>liferaycloud/database:5.7.0</strong></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">Liferay</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">5.8.3</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">5.8.4</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li>liferaycloud/liferay-dxp:7.4-5.8.4</li>\n\t\t\t\t<li>liferaycloud/liferay-dxp:7.3-5.8.4</li>\n\t\t\t\t<li>liferaycloud/liferay-dxp:7.2-5.8.4</li>\n\t\t\t\t<li>liferaycloud/liferay-dxp:7.1-5.8.4</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">Search</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">5.4.0</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">5.4.1</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li>liferaycloud/elasticsearch:8.17.5-5.4.1</li>\n\t\t\t\t<li>liferaycloud/elasticsearch:7.17.28-5.4.1</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 36px;\">\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">Webserver</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">6.2.0</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: center; vertical-align: top;\">6.2.1</td>\n\t\t\t<td style=\"background-color: #ffffff; padding: 0.75rem; text-align: left; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li>liferaycloud/nginx:1.26.3-6.2.1</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2 id=\"01H8066N1YWTXV16JYNYMDV6F4\">Change Log</h2>\n\n<p>&nbsp;</p>\n\n<table style=\"border-collapse: collapse; border-spacing: 0px; margin-left: auto; margin-right: auto; width: 651px;\">\n\t<thead>\n\t\t<tr style=\"height: 62px;\">\n\t\t\t<th style=\"background-color: #f7f8f9; padding: 0.75rem; text-align: center;\"><strong>Service Name</strong></th>\n\t\t\t<th style=\"background-color: #f7f8f9; padding: 0.75rem; text-align: center;\"><strong>Service Version</strong></th>\n\t\t\t<th style=\"background-color: #f7f8f9; padding: 0.75rem; text-align: center;\"><strong>Ticket No.</strong></th>\n\t\t\t<th style=\"background-color: #f7f8f9; padding: 0.75rem; text-align: center;\"><strong>Description</strong></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr style=\"height: 81px;\">\n\t\t\t<td style=\"border-style: solid; border-width: 1px; text-align: center; vertical-align: top; background-color: #ffffff;\"><strong>Database</strong></td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px; text-align: center; vertical-align: top; background-color: #ffffff;\"><strong>5.7.0</strong></td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px; vertical-align: top; text-align: center; background-color: #ffffff;\"><a href=\"https://liferay.atlassian.net/browse/LCD-46903\">LCD-46903</a></td>\n\t\t\t<td style=\"border-style: solid; border-width: 1px; text-align: left; vertical-align: top; background-color: #ffffff;\">Fixed an issue where unnecessary update requests were made during Database Service restarts</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2 id=\"h_01HFQQE47127T9RVN8YK7MKH4R\">Update Instructions</h2>\n\n<p><strong>Note</strong> : To take advantage of the new features and fixes provided by the 5.x stack of services, you must update your entire stack to the new 5.x images or above.</p>\n\n<h2 id=\"01H8066N1YDXGGCTPJ2C2XKQWE\">Image Update Instructions</h2>\n\n<p>The Liferay Cloud image versions needs to be set inside of the &lt;service&gt;/LCP.json file.</p>\n\n<p>Note, however, that the liferay service uses two image properties. The DXP Cloud image is set in the liferay/LCP.json file, but the liferay/dxp image is set in the gradle.properties. This change was made in order to facilitate easier deployment using the Liferay Cloud CLI.</p>\n\n<p>liferay/LCP.json file would set the liferaycloud/liferay-dxp image:&nbsp;</p>\n\n<div class=\"overflow-auto portlet-msg-info\">\"image\":\"liferaycloud/liferay-dxp:7.4-5.X.X\"</div>\n\n<p>liferay/gradle.properties file would set the liferay/dxp image:</p>\n\n<div class=\"overflow-auto portlet-msg-info\">liferay.workspace.docker.image.liferay=liferay/dxp:2024.q1.1</div>\n\n<p>For all other images, you will just need to update the LCP.json file with the intended image version.</p>\n\n<p>Once the LCP.json files are updated, commit the changes to your Git repository.</p>\n\n<div class=\"overflow-auto portlet-msg-info\">git add . &amp;&amp; git commit -m \"Update dxp cloud stack to XXX\"</div>\n\n<p>After pushing these changes to the remote repository, a build will be created in Liferay Cloud and it is ready to deploy.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988337"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:01:53Z",
+  "dateModified": "2026-03-10T21:06:52Z",
+  "datePublished": "2025-06-26T18:06:00Z",
+  "description": "",
+  "externalReferenceCode": "37648009564813",
+  "friendlyUrlPath": "2025-06-26-service-release-updates",
+  "id": 26097732,
+  "key": "26097730",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26097732/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495011,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988337,
+      "taxonomyCategoryName": "Services Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "74bad026-8bda-76b2-fde5-ceffaebf135c",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "2025.06.26 - Service Release Updates",
+  "uuid": "acc77c29-47a4-78bc-6f8e-36b128eb86d7"
+}

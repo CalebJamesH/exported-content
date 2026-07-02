@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><a href=\"https://support.liferay.com/09-21-2023-release-updates\">Released 09/21/2023</a><br><br>Liferay Cloud now supports custom hostname-to-IP mapping for your applications, providing a seamless method to update the <code>/etc/hosts</code> file of your container pods. This enhancement offers users granular control over networking aspects without compromising infrastructure stability or security.</p>\n<h2 id=\"h_01HBF6WBFK8VT5QXCPYD3Z0HVW\"><strong>How it Works</strong></h2>\n<ol>\n<li>\n<p><strong>Configurable LCP.json</strong>: Liferay Cloud's LCP.json configuration file has been expanded to include the <code>hostAliases</code> property, which lets users define custom hostname-to-IP mappings.</p>\n<div class=\"bg-black rounded-md mb-4\">\n<pre class=\"flex items-center relative text-gray-200 bg-gray-800 gizmo:dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md\">{<br>   \"hostAliases\":[{<br>      \"ip\":\"10.XX.XX.XXX\",<br>      \"hostnames\":[\"customdomain.example.com\"]<br>   }]<br>}</pre>\n<div class=\"flex items-center relative text-gray-200 bg-gray-800 gizmo:dark:bg-token-surface-primary px-4 py-2 text-xs font-sans justify-between rounded-t-md\">\n<strong>Dynamic Kubernetes Deployment</strong>: During deployment, Liferay Cloud processes the <code>hostAliases</code> configuration from LCP.json and appropriately incorporates it into the Kubernetes deployment. Resultantly, every pod arising from this deployment will have its <code>/etc/hosts</code> file updated with the custom hostname-to-IP mapping.</div>\n</div>\n</li>\n<li>\n<p><strong>Seamless Integration</strong>:</p>\n<ul>\n<li>\n<p><strong>For the Customer</strong>: This approach allows customers to map internal IPs to specific domain entries, offering flexibility akin to editing an <code>/etc/hosts</code> entry, but at the Kubernetes pod level.</p>\n</li>\n<li>\n<p><strong>For Liferay Cloud</strong>: The platform gains more adaptability, enabling users to fine-tune their deployed application's networking facets without risking the foundational security or stability.</p>\n</li>\n</ul>\n</li>\n</ol>\n<h2 id=\"h_01HBF6WBFK0NYWHXXCV1EAKR2V\"><strong>Test Scenario &amp; Validation</strong></h2>\n<p>After implementing this feature, when an application is deployed with the <code>hostAliases</code> property in its LCP.json, users can access the application's container, inspect the <code>/etc/hosts</code> file, and verify the desired mappings.</p>\n<h2 id=\"h_01HBF6WBFKC9M812XRM09089FM\"><strong>Conclusion</strong></h2>\n<p>By introducing this feature, Liferay Cloud offers an efficient solution to customize hostname-to-IP mappings without the need for other methods like public DNS or manual adjustments, ensuring that your applications run smoothly and effectively within the Liferay Cloud environment.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988333"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:41:10Z",
+  "dateModified": "2026-03-10T21:45:10Z",
+  "datePublished": "2023-09-29T00:47:00Z",
+  "description": "",
+  "externalReferenceCode": "19940896882445",
+  "friendlyUrlPath": "hostalias-customizing-etc-hosts-via-lcp-json",
+  "id": 26145611,
+  "key": "26145609",
+  "keywords": [],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145611/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27495008,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988276,
+      "taxonomyCategoryName": "Release Notes",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "24a58ae7-7f11-362a-197f-7eec241ba64d",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988329,
+      "taxonomyCategoryName": "Liferay Cloud Infrastructure",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "57cd4187-a9f7-ae13-71e9-d09cc209f206",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988333,
+      "taxonomyCategoryName": "Platform Changelog",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "9e8ef6de-d676-2fc5-52ae-2d0789d3a418",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "HostAlias: Customizing /etc/hosts via LCP.json",
+  "uuid": "609f55a3-ed0b-5328-96fb-cf422f6b3ac6"
+}
