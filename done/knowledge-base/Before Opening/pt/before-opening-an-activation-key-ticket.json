@@ -1,0 +1,143 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Este artigo fornece uma lista curta de perguntas a serem feitas e etapas a serem seguidas antes de abrir um ticket de chave de ativação na Central de Ajuda. Ao separar um momento para ler esta lista de verificação antes de abrir uma solicitação da Central de Ajuda, você garante a solução mais rápida possível para o seu problema</p>\n<h2>Resolução</h2>\n<ul>\n<li>Por favor revise o <a href=\"https://support.liferay.com/w/troubleshooting-activation-key-issues-Troubleshooting-Activation-Key-Issues\" target=\"_self\">Guia de resolução de problemas de ativação</a>\n</li>\n<li>Se o guia de solução de problemas não ajudar a resolver seu problema, por favor registre capturas de tela do erro ou problema que você encontrar para incluir em um ticket</li>\n<li>Anexe os logs do Liferay gerados a partir da inicialização e o arquivo de log do LCS, quando aplicável:</li>\n<ul>\n<li>Você pode encontrar esses arquivos de log em <code>[Liferay Home]/logs</code> (<a href=\"https://help.liferay.com/hc/articles/360028712272-Liferay-Home\" target=\"_self\">Liferay Home</a> é normalmente a pasta principal do servidor de aplicativos). Existem 2 tipos de arquivos de log nessa pasta:</li>\n<ol>\n<li>\n<strong>Arquivos de log Liferay:</strong> Os arquivos <code>liferay.[date].log</code> e <code>liferay.[date].xml</code> são os logs da sua instalação do Liferay DXP. Observe que os arquivos LOG e XML para a mesma data contêm as mesmas informações - a única diferença é o formato do arquivo.</li>\n<li>\n<strong>Arquivos de log LCS:</strong> Os arquivos <code>lcs-portlet-[date].log</code> são os logs do aplicativo do cliente LCS. Observe que, se houver apenas um único arquivo de log LCS, ele poderá aparecer sem data como lcs-portlet.log</li>\n</ol>\n</ul>\n<li>Poste o nome do host, o endereço IP e/ou o endereço MAC dos servidores em nível de produção</li>\n<ul>\n<li>Você pode fazer isso compartilhando uma captura de tela do seu gerenciador de licenças, localizado em [ex. <em>localhost:8080</em>]/c/portal/license</li>\n<li>Ambientes de trabalho de desenvolvedores locais <strong>não exigem</strong> essas informações</li>\n</ul>\n<li>Se você estiver usando o Liferay Connected Services, consulte as etapas de solução de problemas do LCS relevantes para a sua versão do Liferay DXP:</li>\n<ul>\n<li><a href=\"https://help.liferay.com/hc/articles/360028712232-Troubleshooting-Your-LCS-Connection\" target=\"_self\">Resolução de problemas 7.2 LCS</a></li>\n<li><a href=\"https://help.liferay.com/hc/articles/360018176931-Troubleshooting-Your-LCS-Connection\" target=\"_self\">Resolução de problemas 7.1 LCS</a></li>\n<li><a href=\"https://help.liferay.com/hc/articles/360018175811-Troubleshooting-Your-LCS-Connection\" target=\"_self\">Resolução de problemas 7.0 LCS</a></li>\n</ul>\n<li>Para chaves <strong>temporárias</strong>, inclua também uma descrição do seu caso de uso e finalidade da solicitação, para que seu Executivo de Contas possa revisar a solicitação e aprová-la.</li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:43:17Z",
+  "dateModified": "2026-03-10T20:47:55Z",
+  "datePublished": "2018-10-18T00:12:00Z",
+  "description": "",
+  "externalReferenceCode": "360018084532",
+  "friendlyUrlPath": "before-opening-an-activation-key-ticket",
+  "id": 26146066,
+  "key": "26146064",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "knowledge-base",
+    "cp",
+    "provisioning",
+    "licence",
+    "license-deployment",
+    "licence-deployment",
+    "license"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146066/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Serviços e Compatibilidade",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Perguntas Frequentes sobre Suporte",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Antes de Abrir um Ticket de Chave de Ativação",
+  "uuid": "e483a902-430b-26de-63ec-d3822cad5d6b"
+}

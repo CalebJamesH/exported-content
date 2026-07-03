@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"> ご覧のページは、お客様の利便性のために一部機械翻訳されています。また、ドキュメントは頻繁に更新が加えられており、翻訳は未完成の部分が含まれることをご了承ください。最新情報は都度公開されておりますため、必ず英語版をご参照ください。翻訳に問題がある場合は、<a href=\"mailto:support-content-jp@liferay.com\">こちら</a>までご連絡ください。 </span></aside>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 943px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td rowspan=\"2\" style=\"background-color: #f7f8f9; width: 165.455px;\"><span class=\"wysiwyg-font-size-medium\"><strong>IT</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 246.364px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Commerce 3.0</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 262.727px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Commerce 2.0.7+, 2.1.x</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 223.636px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Commerce 1.1.x, 2.0.x, 2.1.x</strong></span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9; width: 246.364px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay DXP 7.3</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 262.727px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay DXP 7.2</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 223.636px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay DXP 7.1</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">ドキュメントの変換</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">LibreOffice 6.2.1</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenOffice 4.1.7</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">LibreOffice 6.2.1</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenOffice 4.1.6</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">LibreOffice 5.3.5<br>\n\t\t\tMicrosoft Word 2010, 2013, 2016</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenOffice 4.1.1</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">外部リポジトリコネクター</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">シェアポイント2013<br>\n\t\t\tシェアポイント2016（オンライン）</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Alfresco 5.2</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Nuxeo 9.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Sharepoint 2013</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Sharepoint 2016（オンライン）</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Alfresco 5.2<br>\n\t\t\tDocumentum 6.6</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Nuxeo 8.x, 9.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Sharepoint 2010, 2013, 2016</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">エンタープライズサーチ</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay Enterprise Search 3.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay Enterprise Search 2.0、3.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay Enterprise Search 2.0</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">ファイルストア</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">AdvancedFileSystemStore<br>\n\t\t\tDBStore<br>\n\t\t\tFileSystemStore<br>\n\t\t\tS3Store</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">AdvancedFileSystemStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">DBStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">FileSystemStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">S3Store</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">AdvancedFileSystemStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">DBStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">FileSystemStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">S3Store</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">ファイルストア<br>\n\t\t\t(非本番)</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">CMISStore</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">JCRStore</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">自動タグ付け</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> TensorFlow 2.0.12<br>\n\t\t\tGoogle Cloud Vision<br>\n\t\t\tGoogle Cloud Natural Language</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">MS Cognitive<br>\n\t\t\tOpenNLP</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">TensorFlow 1.10</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Google Cloud Vision</span><br>\n\t\t\tGoogle Cloud Natural Language<br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">MS Cognitive<br>\n\t\t\tOpenNLP</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">LDAPサーバ</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Apache Directory Server<br>\n\t\t\tMicrosoft Active Directory Server<br>\n\t\t\tNovell eDirecrtory<br>\n\t\t\tOpenLDAP</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Apache Directory Server</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Microsoft Active Directory Server</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Novell eDirecrtory</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenLDAP</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Apache Directory Server</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Microsoft Active Directory Server</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Novell eDirecrtory</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenLDAP</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">ノードディスカバリー</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">JGroups 4.1.7</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">TCPPing</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">JDBC_Ping</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">S3_Ping</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">UDPPing</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">TCPPing</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">JDBC_Ping</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">S3_Ping</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">UDPPing</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">プレビュー世代</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Ghostscript 9.5<br>\n\t\t\tImageMagick 7.0.10-29<br>\n\t\t\tPDFBox 2.0.21<br>\n\t\t\tHTML5<br>\n\t\t\tGifsicle 1.92</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Ghostscript 9.26</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">ImageMagick 7.0.8-34</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">PDFBox 2.0.13</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Xuggler 5.4</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">HTML5</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Gifsicle 1.90+</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Ghostscript 9.23</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">ImageMagick 7.0.7-24</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">PDFBox 2.0.4</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Xuggler 5.4</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">HTML5</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Gifsicle 1.90+</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">SAML アイデンティティプロバイダ（IdP)</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">ADFS<br>\n\t\t\tLiferay DXP<br>\n\t\t\tLiferay Portal EE<br>\n\t\t\tOkta<br>\n\t\t\tOpenAM 13+<br>\n\t\t\tPingFederate<br>\n\t\t\tShibboleth<br>\n\t\t\tSiteminder</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">ADFS</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Liferay DXP<br>\n\t\t\tLiferay Portal EE</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenAM 13+</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">PingFederate</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Shibboleth</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Siteminder</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">ADFS</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Liferay DXP<br>\n\t\t\tLiferay Portal EE</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenAM 13+</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">PingFederate</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Shibboleth</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Siteminder</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">SAML アイデンティティプロバイダ（IdP）<br>\n\t\t\t（非本番）。</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">検索・索引</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p>Elasticsearch 7.9+ リモート</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x リモート<br>\n\t\t\tElasticsearch 7.3.x - 7.9.x リモート</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x リモート。</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">検索・索引<br>\n\t\t\t（ノンプロダクション）</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 7.9+ Sidecarまたはリモート</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x Embedded or Remote<br>\n\t\t\tElasticsearch 7.3.x - 7.9.x Embedded or Remote</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Elasticsearch 6.1.x - 6.8.x<br>\n\t\t\t組み込み型またはリモート型</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">SSO規格 &amp; ソリューション</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">OpenID Connect<br>\n\t\t\tSAML 2.0<br>\n\t\t\tFacebook Connect<br>\n\t\t\tKerberos<br>\n\t\t\tOpenAM 13<br>\n\t\t\tOracle Access Manager<br>\n\t\t\tトークンベース（Siteminder）。</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">SAML 2.0</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Facebook</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Kerberos</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenID Connect</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenAM 13</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Oracle Access Manager</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Siteminder</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">SAML 2.0</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> Facebook</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> Kerberos<br>\n\t\t\tNTLM v2</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> Central Authentication Service (CAS) 3.3.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> OpenID Connect</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> OpenAM 13</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> Oracle Access Manager</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> Siteminder</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">SSO標準 &amp; ソリューション<br>\n\t\t\t(非本番)</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">中央認証サービス（CAS）<br>\n\t\t\tOpenAM 12</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">中央認証サービス（CAS） 3.3.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">OpenAM 12</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><font size=\"2\">OpenID<br>\n\t\t\tOpenAM 12 </font></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 165.455px; text-align: left; vertical-align: top;\">\n\t\t\t<p><strong><span class=\"wysiwyg-font-size-medium\">WebDavクライアントOS</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 246.364px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">ウィンドウズ10</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 262.727px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> ウィンドウズ10</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 223.636px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">OSX<br>\n\t\t\tWindows 7, 8, 10<br>\n\t\t\tUbuntu 16</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span class=\"wysiwyg-font-size-small\"> 2020/09/14更新</span></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176960"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:37Z",
+  "dateModified": "2026-03-26T00:00:11Z",
+  "datePublished": "2019-04-01T16:28:00Z",
+  "description": "",
+  "externalReferenceCode": "360026127291",
+  "friendlyUrlPath": "liferay-commerce-integrated-technologies-compatibility-matrix",
+  "id": 26098562,
+  "key": "26098560",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "commerce"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098562/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27461469,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176960,
+      "taxonomyCategoryName": "Liferay Commerce Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "61db96b5-3658-d349-88eb-e0c5be268384",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Commerce 統合技術互換性マトリックス",
+  "uuid": "192042f9-cfa6-0d5d-bfd4-1d8681bdaf0b"
+}

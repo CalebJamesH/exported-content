@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay está comprometido a proporcionar la mejor experiencia posible con nuestro producto. Este artículo contiene información importante sobre el versionado de nuestra plataforma DXP y su frecuencia de publicación.&nbsp;</p>\n\n<p><strong>Comenzando el 20 de octubre de 2023 </strong>modificaremos nuestro calendario de actualizaciones, de semanales a trimestrales. Como sabemos que los cambios conllevan preguntas vamos a tratar de daros todos los detalles posibles sobre esta decisión y los beneficios que trae consigo.</p>\n\n<h4 id=\"why-the-change\"><strong><a href=\"#why-the-change\">¿Por qué este cambio?</a></strong></h4>\n\n<p>Nuestro objetivo es proporcionarte una experiencia repleta de funcionalidades y más estable. Con la transición a una cadencia trimestral podemos dedicar más tiempo a realizar un desarrollo y un testeo rigurosos, asegurando la mayor calidad posible de cada actualización. Este cambio también nos permite incorporar vuestras sugerencias e implementar nuevas funcionalidades que mejoren vuestros procesos de trabajo.</p>\n\n<h4 id=\"what-to-expect\"><strong><a href=\"#what-to-expect\">Qué esperar:</a></strong></h4>\n\n<ul>\n\t<li><strong>Actualizaciones de producto más estables:</strong> las actualizaciones trimestrales implican un testeo más exhaustivo, resultando en actualizaciones más estables.</li>\n\t<li><strong>Nuevas funcionalidades:</strong> nuestras próximas actualizaciones están repletas de nuevas funcionalidades que vas a valorar.</li>\n\t<li><strong>Soporte al cliente optimizado:</strong> con menos actualizaciones, nuestro equipo de soporte podrá concentrarse, aún más, en ayudarte con tus preguntas o incidencias.</li>\n</ul>\n\n<p>Para mantenerte informado de los detalles de la publicación de nuestra versión del 20 de octubre, visita nuestra página <a href=\"https://www.liferay.com/whats-new\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Novedades de Liferay</span></a>.</p>\n\n<h2 id=\"FAQ\"><strong><a href=\"#FAQ\">Preguntas frequentemente realizadas</a></strong></h2>\n\n<p>&nbsp;</p>\n\n<h4 id=\"why-quarterly\"><strong><a href=\"#why-quarterly\">¿Por qué se cambia el ritmo en la publicación de versiones de semanal a trimestral?</a> </strong></h4>\n\n<p class=\"wysiwyg-indent1\">Nos movemos a una cadencia trimestral para aumentar la calidad y estabilidad de nuestras versiones de productos. Este cambio nos permite invertir más tiempo en el testeo y desarrollo, asegurándonos que cada versión es más fiable y con nuevas funcionalidades.</p>\n\n<h4 id=\"quarterly-versioning\"><strong><a href=\"#quarterly-versioning\">¿Cuál será el formato de versionado para las versiones trimestrales?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Cada versión trimestral tendrá un número de versión en formato AÑO.TRIMESTRE, por ejemplo, 2023.Q3 para el tercer trimestre de 2023. Esto significa que suprimimos el número de versión 7.4 de nuestro empaquetado, marketing y documentación, aunque Liferay DXP esté basado en el código de 7.4.</p>\n\n<h4 id=\"support-coverage\"><strong><a href=\"#support-coverage\">¿Necesito actualizar mi entorno cada trimestre para poder recibir soporte?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">No, puedes actualizarte a tu propio ritmo si eres un cliente de DXP Self-Hosted o Liferay PaaS. Sin embargo a los clientes de Liferay SaaS sí se les instalará la última versión trimestral. El soporte de cualquier versión trimestral, incluyendo la resolución de defectos, se proporciona durante 1 año después de su publicación.</p>\n\n<h4 id=\"customer-impact\"><strong><a href=\"#customer-impact\">¿Cómo me afectará este cambio como cliente?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Puedes esperar versiones más robustas y testeadas en profundidad. Las publicaciones de las versiones serán menos frecuentes, pero cada versión tendrá un mayor nivel de calidad y rendimiento. También puedes esperar una mejor gestión de las funcionalidades, ya que gracias al indicador de funcionalidad beta y funcionalidad publicada podrás controlar el despliegue de las mismas.</p>\n\n<h4 id=\"take-effect\"><strong><a href=\"#take-effect\">¿Cuándo será este cambio efectivo?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">La primera versión trimestral estará disponible el 20 de octubre de 2023. De ahí en adelante todos los clientes de DXP 7.4 deberán utilizar una versión trimestral soportada en sus entornos de producción (o bien DXP 2023.Q3 o DXP 2023.Q4). Te referenciamos al siguiente artículo que explica los hitos temporales importantes: <a href=\"/w/quarterly-release-transitional-support-coverage\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">cobertura de soporte transitoria para las versiones trimestrales</span></a>.</p>\n\n<h4 id=\"last-weekly-release\"><strong><a href=\"#last-weekly-release\">¿Cuál será la última versión semanal antes de la versión trimestral?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">La última versión semanal en la que podrás recibir soporte es el Update 92 y también será la última versión semanal disponible en el portal del cliente. El cronograma detallado de Soporte se puede encontrar en el artículo <a href=\"https://help.liferay.com/hc/es/articles/19330733199501-Cobertura-de-soporte-transitoria-para-las-versiones-trimestrales\">Cobertura de soporte transitoria para las versiones trimestrales</a>. Para obtener actualizaciones y soporte continuos, deberá pasar a nuestro nuevo formato de publicación trimestral.</p>\n\n<h4 id=\"release-notification\"><strong><a href=\"#release-notification\">¿Cómo se me notificará de las nuevas versiones en el esquema trimestral?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Para cada versión trimestral recibirás notificaciones a través de nuestros canales habituales. Asegúrate de suscribirte a los <a href=\"https://www.subscribepage.com/liferay\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">anuncios de soporte</span></a> para que te lleguen por email. Adicionalmente puedes revisar nuestras notas de las publicaciones y nuestros anuncios en el portal del cliente.</p>\n\n<h4 id=\"prepare\"><strong><a href=\"#prepare\">¿Qué necesito preparar para el cambio?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Para prepararte para la transición, asegúrate que tus flujos de trabajo, despliegues y procesos de integración estén alineados con el calendario de publicación de las versiones trimestrales. Puedes revisar nuestra documentación y anuncios para obtener los detalles de las futuras funcionalidades, en especial, el <a href=\"/w/liferay-dxp-product-delivery-method\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc; background-color: #ffffff;\">método de publicación del producto Liferay DXP</span></a>.</p>\n\n<h4 id=\"product-feedback\"><strong><a href=\"#product-feedback\">¿Puedo aportar mis sugerencias o solicitar funcionalidades durante este periodo?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Tus sugerencias son muy valiosas para nosotros, por lo que te animamos a continuar compartiendo tus pensamientos, propuestas y petición de nuevas funcionalidades en esta <a href=\"https://liferay.dev/feedback/overview\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">página</span></a>. Tu aportación nos ayudará a dar forma al futuro de nuestro producto. También puedes solicitar nuevas funcionalidades a través de los tickets de Help Center.</p>\n\n<h4 id=\"-weekly-update-support\"><strong><a href=\"#weekly-update-support\">¿Se suministrará asesoramiento del producto o hotfixes para las versiones semanales?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Nuestros esfuerzos se centrarán en el soporte y desarrollo de las nuevas versiones trimestrales y por lo tanto, el asesoramiento sobre el producto o los hotfix no estará disponible para las versiones semanales. El soporte del producto, incluyendo la resolución de defectos, se facilitará exclusivamente para versiones trimestrales. Se proporcionará una <a href=\"https://help.liferay.com/hc/es/articles/19330733199501-Cobertura-de-soporte-transitoria-para-las-versiones-trimestrales\">cobertura de soporte transitoria para las versiones trimestrales</a> para el update 92 y anteriores de Liferay DXP 7.4.</p>\n\n<h4 id=\"01HD23JSGY2W9SMG8STY8PWZJ1\"><strong><a href=\"#h_01HD23HX38GMFC188WZBRQ7M8P\">¿Por cuánto tiempo recibiré soporte para una versión trimestral?</a></strong></h4>\n\n<p><span style=\"color: #2f3941; background-color: #ffffff;\">Podrás recibir correcciones para bugs durante el año siguiente a la fecha de publicación de cada versión trimestral. Después de ese tiempo, necesitarás migrar a la última versión trimestral para continuar recibiendo dichas correcciones. Puedes permanecer en versiones después de ese año y abrir incidencias vía ticket, pero tendrás que actualizarte para recibir las soluciones.</span></p>\n\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"><strong>Nota:</strong> el período de mantenimiento en el que los clientes reciben soporte está basado en la fecha de publicación de la Quarterly Release correspondiente, no en la fecha de publicación del parche.</span></aside>\n\n<h4 id=\"01HD23MHB3DTBXPRV04FFPWCYV\"><strong><a href=\"#h_01HD23HX39VH7BVW6ADHAZA4V6\">¿Podré recibir parches de seguridad fuera de la ventana de 1 año de mantenimiento?</a></strong></h4>\n\n<p id=\"h_01HD23HX391227KZGPWYFDJ48Y\"><span style=\"color: #2f3941; background-color: #ffffff;\">No, los parches de seguridad estarán disponibles para las versiones que se están manteniendo y corrigiendo de manera activa. Liferay gestiona la seguridad del producto con la máxima prioridad y, para poder centrarnos en mantener dicho nivel de seguridad, necesitamos concentrar nuestros esfuerzos en las últimas versiones. Animamos a nuestros clientes a mantenerse al día con sus versiones para poder garantizar la seguridad de sus proyectos.</span></p>\n\n<h4 id=\"weekly-update-use\"><strong><a href=\"#weekly-release-use\">Puedo usar versiones semanales publicadas entre las versiones trimestrales</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Sí, puedes utilizarlas, pero sólo para tener una vista preliminar de las futuras mejoras y nuevas funcionalidades. Recomendamos no utilizar las versiones semanales en ningún entorno de producción. Las versiones trimestrales han sido sometidas a un testeo más riguroso y están completamente soportadas por Liferay. El asesoramiento sobre el producto y la resolución de defectos sólo se facilitará para las versiones trimestrales.</p>\n\n<h4 id=\"release-info\"><strong><a href=\"#release-info\">¿Dónde puedo encontrar información sobre las versiones trimestrales y sus funcionalidades?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">La información detallada sobre las versiones trimestrales, resaltando las funcionalidades, estará disponible en nuestra página web y en nuestras notas de las publicaciones. Te recomendamos revisar estos recursos de manera regular para tener las últimas actualizaciones.</p>\n\n<h4 id=\"service-feedback\"><strong><a href=\"#service-feedback\">Durante la transición, ¿cómo puedo proporcionar sugerencias o informar de incidencias?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">Puedes continuar aportando tus sugerencias o comunicarnos incidencias <a href=\"https://support.liferay.com\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">mediante la apertura de un ticket de soporte</span></a> o contactandonos a través del email <a href=\"mailto:customer-service@liferay.com\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">customer-service@liferay.com</span></a>. Adicionalmente, puedes hablar con tu Customer Success Manager para plantearle cualquier pregunta relacionada con este cambio. Nosotros estaremos de forma activa monitorizando y atendiendo cualquier cuestión que surja.</p>\n\n<h4 id=\"upgrade\"><strong><a href=\"#upgrade\">¿Se verán afectados mis desarrollos y las integraciones existentes con este cambio?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">En la mayoría de los casos, tus integraciones y configuraciones existentes continuarán funcionando sin dificultades. No obstante, te recomendamos revisar nuestra documentación y si tienes cualquier pregunta sobre tus integraciones puedes contactar con el equipo de soporte.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:32:00Z",
+  "dateModified": "2026-03-26T20:20:14Z",
+  "datePublished": "2023-09-08T18:50:00Z",
+  "description": "",
+  "externalReferenceCode": "19324366505997",
+  "friendlyUrlPath": "liferay-dxp-quarterly-release-process",
+  "id": 26136904,
+  "key": "26136902",
+  "keywords": [
+    "cp-2-0",
+    "es",
+    "pt",
+    "ja",
+    "supportability",
+    "liferay-saas",
+    "liferay-paas",
+    "dxp-7-4",
+    "cp",
+    "quarterly-release"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Servicios y compatibilidad",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "Parches y versiones",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Proceso de publicación de la versión trimestral de Liferay DXP",
+  "uuid": "dbe0088d-b5a8-344c-4144-28ce21c690a0"
+}

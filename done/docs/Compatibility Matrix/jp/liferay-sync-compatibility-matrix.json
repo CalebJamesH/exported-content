@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay Syncでサポートされている設定の詳細は、以下の表を参照してください。</p>\n\n<h2>Sync Mobile</h2>\n\n<h3>IOS&nbsp;</h3>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Version</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Liferay Sync Connector</strong> </font> </span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>iOS Versions</strong> </font> </span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">7.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">8.x - 13.x</font></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">6.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> 8.x - 13.x</font></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> 8.x - 13.x</font></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> 8.x - 13.x</font></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<h3>&nbsp;</h3>\n\n<h3>Android</h3>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Version</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Liferay Sync Connector</strong> </font> </span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>iOS Versions</strong> </font> </span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">7.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">4.1 - 10.x</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">6.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">4.1 – 10.x</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">4.1 – 10.x</span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\"><span class=\"wysiwyg-font-size-medium\">4.1 – 10.x</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2>Sync Desktop 3.2+</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Version</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Liferay Sync Connector</strong> </font> </span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Required Apps</strong> </font> </span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>iOS Versions</strong> </font> </span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">7.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">Liferay Connector to OAuth 1.0a</span></td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">Windows Vista SP2+<br>\n\t\t\tWindows 7<br>\n\t\t\tWindows 8.x<br>\n\t\t\tWindows 10<br>\n\t\t\tMac OS X 10.8 - 10.15</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">6.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">Liferay Connector to OAuth 1.0a</span></td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">Windows Vista SP2+<br>\n\t\t\tWindows 7<br>\n\t\t\tWindows 8.x<br>\n\t\t\tWindows 10<br>\n\t\t\tMac OS X 10.8 - 10.15</span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">Liferay Connector to OAuth 1.0a</span></td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\"><span class=\"wysiwyg-font-size-medium\">Windows Vista SP2+</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 7</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 8.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 10</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Mac OS X 10.8 - 10.15</span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.x</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\"><span class=\"wysiwyg-font-size-medium\">Liferay IP Geocoder<br>\n\t\t\tLiferay Connector to OAuth 1.0a</span></td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\"><span class=\"wysiwyg-font-size-medium\">Windows Vista SP2+</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 7</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 8.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 10</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Mac OS X 10.8 - 10.15</span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay Portal 6.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">&nbsp;</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\"><span class=\"wysiwyg-font-size-medium\">Windows Vista SP2+</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 7</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 8.x</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Windows 10</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Mac OS X 10.8 - 10.15</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span class=\"wysiwyg-font-size-medium\">*Sync Connector 4.1.2+ requires Liferay DXP 7.0 Fix Pack 33+</span></p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176956"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:55Z",
+  "dateModified": "2026-03-26T00:05:19Z",
+  "datePublished": "2018-09-28T15:14:00Z",
+  "description": "",
+  "externalReferenceCode": "360016285712",
+  "friendlyUrlPath": "liferay-sync-compatibility-matrix",
+  "id": 26101983,
+  "key": "26101981",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-1",
+    "dxp-7-0"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101983/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494979,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176956,
+      "taxonomyCategoryName": "Other Liferay Products Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "81cce681-7227-d0dd-ae57-4d1e4e5ebfbc",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Sync 互換性マトリクス",
+  "uuid": "aa853f33-675b-3fa2-b1af-ee6cdca3ae15"
+}

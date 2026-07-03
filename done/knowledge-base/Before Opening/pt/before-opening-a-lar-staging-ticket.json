@@ -1,0 +1,139 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>O seguinte artigo detalha uma curta lista de respostas a serem coletadas e passos a serem definidos antes de abrir um ticket de LAR/Staging no LESA. Ao tomar o tempo de revisar todos estes itens antes de fazer sua solicitação no Help Center, você estará garantido a resolução mais rápida possível para este tema em particular.</p>\n<section id=\"resolution\">\n<h2>Resolução</h2>\n<div>\n<p>Para cada ticket, por favor anexe seu arquivo portal-ext.properties, assim como a saída do comando \"patching-tool info\" específico do ambiente.</p>\n<p>Para tickets de LAR/Staging especificamente, <strong><em> por favor revise os seguintes itens e inclua a informação resultante ao criar o ticket:</em></strong></p>\n<p class=\"alert alert-info\">Nota: Se esta é sua primeira vez fazendo staging, entenda que o site inteiro precisa estar em staging primeiramente, o que, dependendo do volume dos dados do site, pode levar um bom tempo.  Please see: <a href=\"https://help.liferay.com/hc/articles/360044214911\" target=\"_self\">Staging Publishing Takes a Long Time</a></p>\n<ol>\n<li>Quão grande é o LAR? Pode haver problemas se o tamanho ultrapassa 2GB.</li>\n<li>Se você está fazendo staging, você consegue exportar e importar os LARs?</li>\n<li>Você habilitou os logs para LARs?\n<ol>\n<li>Procure por \"lar\" no <em>Painel de Controle -&gt; Administração do Servidor -&gt; Níveis de Log</em> e configure-os para DEBUG.</li>\n</ol>\n</li>\n<li>Se você estiver recebendo um Erro de Falta de Memória (OOME), envie-nos:\n<ol>\n<li>Detalhes da JVM e ambiente do SO</li>\n<li>\n<p>Heap dump, por favor consulte <a href=\"https://help.liferay.com/hc/pt/articles/360018326192\" target=\"_self\">Como Criar Heap Dumps</a></p>\n</li>\n</ol>\n</li>\n<li>Você está recebendo um NullPointerException (NPE)?\n<ol>\n<li>Em seu portal-ext.properties, certifique-se que a propriedade <code>com.liferay.portal.upload.UploadServletRequestImpl.max.size=</code> está presente e configurada com um valor de arquivo grade (a propriedade está em bytes).</li>\n</ol>\n</li>\n<li>Você está fazendo staging de um site vazio?\n<ol>\n<li>Se você está usando um período de datas de TODOS e tem documentos e mídias ou conteúdos web selecionados, isto irá carregar o site inteiro, e não a página do site.</li>\n</ol>\n</li>\n<li>Que versão do portal você está fazendo o staging?\n<ol>\n<li>Por conta de como os dados são serializados, LARs são específicos da versão de origem do portal. Por exemplo, usuários tentando importar LARs de versão 6.1.30 em um portal 6.2 irão receber uma mensagem de erro informando que os números de versão são coincidem.</li>\n<li>Se você deseja migrar dados entre versões diferentes de portal, por favor use nossos <a href=\"https://help.liferay.com/hc/pt/articles/360018350831\" target=\"_self\">processos de upgrade</a>.</li>\n</ol>\n</li>\n<li>Anexos\n<ol>\n<li>Capturas de tela das configurações de Staging ou de Exportação.</li>\n<li>Capturas de tela de quaisquer mensagens exibidas.</li>\n<li>Anexo do LAR, se você conseguiu exportar.</li>\n<li>Logs completos com todas as exceções, do início ao fim.</li>\n</ol>\n</li>\n</ol>\n</div>\n</section>\n<section id=\"additionalInformation\">\n<h2>Informação Adicional</h2>\n<div>\n<p>Aqui estão alguns artigos que podem ajudá-lo a evitar transtornos com Staging e completar seu projeto de maneira ágil e eficiente. Sinta-se livre para usar estes recursos como guias para assistí-lo e usufruir ao máximo o Staging, seja Remoto ou Local.</p>\n<p><a href=\"https://help.liferay.com/hc/articles/360018427911\">Remote Staging Setup for Liferay Portal 6.2</a></p>\n<p> </p>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:31Z",
+  "dateModified": "2026-03-10T20:47:54Z",
+  "datePublished": "2018-10-19T05:16:00Z",
+  "description": "",
+  "externalReferenceCode": "360018424791",
+  "friendlyUrlPath": "before-opening-a-lar-staging-ticket",
+  "id": 26100486,
+  "key": "26100484",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "knowledge-base",
+    "portal-6-0",
+    "portal-6-1",
+    "cp",
+    "staging"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100486/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Serviços e Compatibilidade",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Perguntas Frequentes sobre Suporte",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Antes de Abrir um Ticket de LAR/Staging",
+  "uuid": "09082e76-2509-bcbc-48b5-4e55e2d3428b"
+}

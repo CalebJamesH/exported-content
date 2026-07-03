@@ -1,0 +1,128 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"//www.youtube-nocookie.com/embed/VkZekcCRGao\" width=\"560\"></iframe></p>\n\n<p><span style=\"color: #2a303e;\">Administrators when first accessing their project on <a href=\"https://support.liferay.com/\" rel=\"noopener noreferrer\" style=\"box-sizing: border-box; color: #0041be; text-decoration: underline; background-color: #ffffff; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;\" target=\"_blank\">Customer Portal</a> are presented with the activation form for Liferay SaaS. If this step was skipped, please navigate to the left sidebar navigation, expand Activation and select </span><strong><span style=\"color: #2a303e;\">Liferay SaaS</span></strong><span style=\"color: #2a303e;\">.&nbsp;</span></p>\n\n<p><img alt=\"\" src=\"https://help.liferay.com/hc/article_attachments/31033358416653\"></p>\n\n<p><span style=\"color: #2a303e;\"></span><span style=\"color: #2a303e;\">Upon selecting Liferay SaaS, you will see the current status of your activation form. If it has not been completed yet, the status will display </span><strong><span style=\"color: #2a303e;\">Not Activated.&nbsp;</span></strong></p>\n\n<p>&nbsp;</p>\n\n<p><strong><span style=\"color: #2a303e;\"><img alt=\"\" height=\"190\" src=\"https://help.liferay.com/hc/article_attachments/31033373484685\" width=\"563\"></span></strong><strong><span style=\"color: #2a303e;\"></span></strong><br>\n<span style=\"color: #2a303e;\">Please click the link labeled as </span><strong><span style=\"color: #2a303e;\">Finish Activation </span></strong><span style=\"color: #2a303e;\">and fill out the required information:&nbsp;</span></p>\n\n<ul>\n\t<li><span style=\"color: #2a303e;\">Project ID (Note: This Project ID cannot be changed.)&nbsp;</span></li>\n\t<li><span style=\"color: #2a303e;\">Primary Region</span></li>\n\t<li><span style=\"color: #2a303e;\">Project Admin’s First and Last Name</span></li>\n\t<li><span style=\"color: #2a303e;\">Project Admin’s Email Address</span></li>\n\t<li><span style=\"color: #2a303e;\">Appoint your Critical Incident Contact(s) , Privacy Breach Contact(s), and Security Breach Contact(s)</span>\n\t<ul>\n\t\t<li><span style=\"color: #2a303e;\">Select at least one contact for each from your current team members list</span>\n\t\t<ul>\n\t\t\t<li><span style=\"color: #2a303e;\">For more details, see </span><a href=\"/w/how-do-i-manage-my-incident-contacts\"><span style=\"color: #0b5fff;\">How do I Manage my Incident Contacts?</span></a></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"color: #2a303e;\">Once the form is submitted, your information will be sent to our Liferay team for processing and the Activation Status will change to </span><strong><span style=\"color: #2a303e;\">In Progress.&nbsp;</span></strong></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"color: #2a303e;\">Activation will be completed within 1-3 business days and Administrators will be notified via email. Your Activation Status will then change to </span><strong><span style=\"color: #2a303e;\">Active.&nbsp;</span></strong></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988295"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T20:34:13Z",
+  "dateModified": "2026-02-20T00:53:00Z",
+  "datePublished": "2024-03-28T18:16:00Z",
+  "description": "",
+  "externalReferenceCode": "26145463",
+  "friendlyUrlPath": "how-do-i-activate-my-liferay-saas-video-tutorial",
+  "id": 26145465,
+  "key": "26145463",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "liferay-saas",
+    "lxc",
+    "activate",
+    "customer-portal",
+    "saas"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145465/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988295,
+      "taxonomyCategoryName": "Cloud Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "12b8d126-99a4-87b7-83be-6ab2a28c098b",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "How do I activate my Liferay SaaS? (Video Tutorial)",
+  "uuid": "d38f5bd9-8dee-7032-52a1-098ab9579e49"
+}

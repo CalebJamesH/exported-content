@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/4zB141x-xHc?si=2SPfcJ0D9aVZsrz-\" title=\"YouTube video player\" width=\"100%\"></iframe></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">Enterprise Search製品をアクティベートしたい管理者は、サイドバーナビゲーションにある「製品のアクティベーション」タブに移動し、 </span><strong>Enterprise Search</strong><span style=\"font-weight: 400;\"> を選択します。</span></p>\n\n<p><span style=\"font-weight: 400;\">このページでは、各契約期間のライセンスをダウンロードできます。</span></p>\n\n<p><img alt=\"\" data-fileentryid=\"27298262\" src=\"/documents/d/customer-portal/8867974562445-enterprise_search\">&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">キーがまだ利用できないというエラーが表示された場合は、<a href=\"https://support.liferay.com\" rel=\"noopener\" target=\"_blank\">ヘルプセンターのチケット</a>を作成して、Liferayサポートチームまでお問い合わせください。</span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988299"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T18:27:06Z",
+  "dateModified": "2026-03-20T22:39:46Z",
+  "datePublished": "2022-08-31T21:11:00Z",
+  "description": "",
+  "externalReferenceCode": "26098682",
+  "friendlyUrlPath": "how-do-i-activate-my-enterprise-search-product-video-tutorial",
+  "id": 26098684,
+  "key": "26098682",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "supportability",
+    "enterprise-search",
+    "activate",
+    "customer-portal",
+    "provisioning"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098684/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988299,
+      "taxonomyCategoryName": "DXP Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "d9bfd249-f5c7-d830-0fb9-fe5fb9082be4",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Enterprise Search製品のアクティベーションはどのように行いますか？ （ビデオ）",
+  "uuid": "190af766-0797-3207-805d-ae27470f8996"
+}

@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>投稿日： 2019年6月7日</p>\n<p>パッチの適用は製品の正常性とメンテナンスに欠かせないものでありながらも、エンタープライズレベルでは複雑かつ大きな労力を伴います。カスタム開発との互換性に対する懸念、広範囲なテストやスケジュール調整などが、フィックスパックを最新に保つことを難しくする要素となる場合があります。</p>\n<p>お客様のニーズにお応えするために、パッチ適用のプロセス改善の一環として、新しいリリースノート機能ではLiferay DXPのビルド更新に必要な情報を容易に特定できるようになります。</p>\n<p><strong>フィックスパックの範囲を指定</strong><span></span></p>\n<p>一般的に、フィックスパックをリリースに合わせて常に最新に保つことは難しいとされています。 この新機能では、現在使用しているフィックスパックと更新したいフィックスパックを指定できます。</p>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/31033298867981\" alt=\"Select_Fixpacks_1.gif\"></p>\n<p>フィックスパックの範囲を指定すると、全ての差分のリリースハイライトが一覧で表示され、重要な変更点、既知の問題及びセキュリティで結果を絞り込めます。</p>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/31033298866445\" alt=\"Highlights_1.gif\"></p>\n<p><strong>使いやすい変更ログ</strong></p>\n<p>2つ目のタブは、指定したフィックスパックの範囲の全てのバグ修正と改善点をまとめて閲覧できる、ユーザフレンドリーな変更ログです。各パッチの概要、コンポーネント、フィックスパックバージョンに加え、クリック1つで詳細な説明を表示やLPSチケットのリンクを、ひと目で確認できます。なお、コンポーネントやキーワードの入力でさらに件数を絞り込むことができます。<img src=\"https://help.liferay.com/hc/article_attachments/31033283747469\" alt=\"Changelog__1_.gif\"></p>\n<p><strong>開発者向けのモジュールバージョン変更点</strong><span></span></p>\n<p>パッチ適用のプロセスにおける開発者にとって大きな負担は、フィックスパックのバージョンをスキップする際に、カスタマイズに影響を与える可能性があるモジュールバージョンの変更点を特定することです。</p>\n<p>新機能では、現フィックスパックから次のバージョン間で、モジュールバージョンの変更点を即座に確認できます。 指定したフィックスパックの範囲内で変更したモジュールのバージョンは、ハイライト表示されます。さらに、Liferayアーティファクトやサードパーティライブラリの条件、または特定のモジュール検索で絞り込むことができます</p>\n<center><img src=\"https://help.liferay.com/hc/article_attachments/31033298867469\" alt=\"Module_Changes__1_.gif\"></center>\n<p><span>新しいリリースノート機能はLiferay Help Centerでご利用いただけます。</span></p>\n<p> </p>\n<p><span>ご不明点などございましたら、</span><a href=\"mailto:provisioning-jp@liferay.com\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">provisioning-jp@liferay.com</a>までお問い合わせください。</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T19:39:38Z",
+  "dateModified": "2026-02-10T19:39:38Z",
+  "datePublished": "2019-06-10T12:51:00Z",
+  "description": "",
+  "externalReferenceCode": "26102240",
+  "friendlyUrlPath": "introducing-the-new-dxp-release-notes-experience",
+  "id": 26102242,
+  "key": "26102240",
+  "keywords": [
+    "ja"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "新しいLiferayリリースノート機能のご案内",
+  "uuid": "8b9fe08d-c884-c5e2-e67d-99d6334a50d7"
+}

@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"> ご覧のページは、お客様の利便性のために一部機械翻訳されています。また、ドキュメントは頻繁に更新が加えられており、翻訳は未完成の部分が含まれることをご了承ください。最新情報は都度公開されておりますため、必ず英語版をご参照ください。翻訳に問題がある場合は、<a href=\"mailto:support-content-jp@liferay.com\">こちら</a>までご連絡ください。 </span></aside>\n\n<p>Liferay Portal Enterprise Edition（EE）は、以下の構成でのみサポートされます：</p>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 700px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td class=\"wysiwyg-text-align-left\" style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>種類</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-left\" style=\"background-color: #f7f8f9; width: 388px; vertical-align: middle;\"><span class=\"wysiwyg-font-size-medium\"><strong>認証取得済み</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-left\" style=\"background-color: #f7f8f9; width: 388px; vertical-align: middle;\"><span class=\"wysiwyg-font-size-medium\"><strong>サポートされています</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">アプリケーションサーバー</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">JBoss 5.1 EAP</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">JBoss 7.1 AS**</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">グラスフィッシュv3.1</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Tcat 6.4</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Tomcat 7.0</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">トマクト6.0</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">ウェブロジック11</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">WebSphere 7.0</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">WebSphere 8.5</font></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><font size=\"2\">JBoss 6.0 EAP**</font></li>\n\t\t\t\t<li><font size=\"2\">JOnAS 5.2</font></li>\n\t\t\t\t<li><font size=\"2\">樹脂4</font></li>\n\t\t\t\t<li><font size=\"2\">tcServer 2.6</font></li>\n\t\t\t\t<li><font size=\"2\">Tomcat 8.0 (6.1 EE GA3 Portal-65+)</font></li>\n\t\t\t\t<li><font size=\"2\">ウェブロジック10</font></li>\n\t\t\t\t<li><font size=\"2\">ウェブロジック10.3</font></li>\n\t\t\t\t<li><font size=\"2\">WebSphere 6.1****</font></li>\n\t\t\t\t<li><font size=\"2\">WebSphere 8.0</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">データベース</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">DB2 9.7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">ハイパーソニック(HSQL)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MySQL 5.5</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MySQL 5.1</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">オラクル11.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">オラクル10.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 9.0</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 8.4</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2008 R2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2005</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Sybase ASE 15.5</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">DB2 10.5</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">MySQL 5.0</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクル11.1</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">SQL Server 2008</font></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">オペレーティングシステム</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">AIX7.1</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">AIX6.1</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">CentOS 6</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">CentOS 5</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">レッドハットエンタープライズ6</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">レッドハットエンタープライズ5</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">ソラリス10</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">ソラリス11</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">ウィンドウズセブン</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2008 R2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">ウィンドウズXP</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">エイチピーユーエックス</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">Mac OS X 10.5+</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクルリナックス6.1</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">その他のLinuxディストリビューション</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">ウブントゥ11</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">ウブントゥ10</font></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">ブラウザ*</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><font size=\"2\">クローム21</font></li>\n\t\t\t\t<li><font size=\"2\">ファイアフォックス14</font></li>\n\t\t\t\t<li><font size=\"2\">インターネットエクスプローラー9</font></li>\n\t\t\t\t<li><font size=\"2\">インターネットエクスプローラー8</font></li>\n\t\t\t\t<li><font size=\"2\">サファリ5.1</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><font size=\"2\">ファイアフォックス 3.6</font></li>\n\t\t\t\t<li><font size=\"2\">インターネットエクスプローラ7</font></li>\n\t\t\t\t<li><font size=\"2\">インターネットエクスプローラ6</font></li>\n\t\t\t\t<li><font size=\"2\">オペラ</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 122px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">ジェイディーケー</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 169px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクルJRockit 6</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクル JDK 7***</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクルJDK6</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクルJDK 5****</font></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 219px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM JDK 7***</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM JDK 6</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">IBM JDK 5****</font></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><font size=\"2\">オラクル JDK 8*****</font></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span class=\"wysiwyg-font-size-medium\"> </span></p>\n\n<p><strong><span class=\"wysiwyg-font-size-medium\">認定環境と対応環境の比較</span></strong><br>\n<span class=\"wysiwyg-font-size-medium\">1. Certified（認定）です：Certifiedリストの製品は、Liferayによる自動回帰テストと認証テストを受け、Liferay Enterprise Subscriptionで完全にサポートされています。</span><br>\n<span class=\"wysiwyg-font-size-medium\">2. サポートされています：Supportedリストの製品は、Liferayによる自動回帰テストを受け、Liferay Enterpriseサブスクリプションで完全にサポートされています。</span></p>\n\n<p><strong><span class=\"wysiwyg-font-size-medium\">*ブラウザのサポート対象外です：</span></strong><br>\n<span class=\"wysiwyg-font-size-medium\">1. Liferayのメジャーバージョンリリース後にリリースされたブラウザのバージョンはテストされておらず、これらの新しいブラウザリリースのサポートは商業的に合理的な努力としてのみ提供され、Liferayの裁量でその後のサービスリリースに含まれる場合があります。</span><br>\n<span class=\"wysiwyg-font-size-medium\">2. 製品ライフサイクルが終了したLiferayの初期リリースでサポートされていたブラウザのバージョンは、その後のサービスリリースではテストされなくなり、これらの古いブラウザリリースに対するサポートは、商業的に合理的な努力としてのみ提供されます。</span><br>\n<span class=\"wysiwyg-font-size-medium\">3. \"Quirksモード \"の全ブラウザ対応には対応していません。</span><br>\n<span class=\"wysiwyg-font-size-medium\">4. Internet Explorerの互換モードは、実装が不十分なため、関連するすべてのバージョンでサポートされていません。</span><br>\n<span class=\"wysiwyg-font-size-medium\">5. Internet Explorer 6については、ケースバイケースで限定的なサポートを提供する。 Internet Explorer 6の性能制限により、最新のインターネット技術を性能低下させることなく効果的に動作させることができません。</span></p>\n\n<p><strong><span class=\"wysiwyg-font-size-medium\">**JBoss 6.0 EAPおよびJBoss 7.1 AS</span></strong><br>\n<span class=\"wysiwyg-font-size-medium\">1. JBoss Domain Modeは、Liferay 6.1 EEではサポートされていません。</span></p>\n\n<p><strong><span class=\"wysiwyg-font-size-medium\">***Oracle JDK 7 および IBM JDK 7</span></strong><br>\n<span class=\"wysiwyg-font-size-medium\">1. Oracle JDK 7、IBM JDK 7は、Liferay 6.1 EE GA2、Liferay 6.1 EE GA3のみ対応です。</span><br>\n<span class=\"wysiwyg-font-size-medium\">2. Websphere 8は、Oracle JDK 7をサポートしていません。</span></p>\n\n<p><strong><span class=\"wysiwyg-font-size-medium\">****Oracle JDK 5、IBM JDK 5、Websphere 6.1</span></strong><br>\n<span class=\"wysiwyg-font-size-medium\">1. Oracle JDK 5、IBM JDK 5、Websphere 6.1 は、Liferay 6.1 EE GA3 ではサポートされません。</span><br>\n<span class=\"wysiwyg-font-size-medium\"></span></p>\n\n<p><strong><span class=\"wysiwyg-font-size-medium\">***** Oracle JDK 8</span></strong><br>\n<span class=\"wysiwyg-font-size-medium\">1. Oracle JDK 8は、6.1.20+とJDK 8対応のアプリサーバーに対応しています。 </span></p>\n\n<p><a href=\"https://www.liferay.com/documents/10182/246659966/Liferay+Portal+6.1+EE+Compatibility+Matrix.pdf/ad71b0f8-ae58-5bd2-9f73-71fa8ae1252e?t=1584747455496\" target=\"_self\">PDFダウンロード</a></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176948"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:39Z",
+  "dateModified": "2026-03-26T00:01:51Z",
+  "datePublished": "2018-10-01T18:02:00Z",
+  "description": "",
+  "externalReferenceCode": "360016363052",
+  "friendlyUrlPath": "liferay-portal-6-1-compatibility-matrix",
+  "id": 26100666,
+  "key": "26100664",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100666/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494732,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176948,
+      "taxonomyCategoryName": "Liferay Portal Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "41c34289-11dd-751b-1ed8-cc90e0f0c2ad",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Portal 6.1 互換性マトリックス",
+  "uuid": "9420a04c-21d9-738b-1154-75da01171bde"
+}

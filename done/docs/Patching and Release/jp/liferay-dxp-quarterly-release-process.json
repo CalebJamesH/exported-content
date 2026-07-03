@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferayでは、製品で可能な限り最高のエクスペリエンスを提供することに尽力しています。この記事には、DXPプラットフォームのバージョン管理とリリースサイクルに関する重要な情報が含まれています。</p>\n\n<p>&nbsp;</p>\n\n<p><strong>2023年10月20日より、</strong>毎週のリリーススケジュールから四半期ごとのリリーススケジュールに移行します。変更によって疑問が生じる場合があることを私たちは理解しており、この決断の背景にあるすべての詳細と利点をお伝えしたいと思います。</p>\n\n<h4 id=\"h_01HBE4K26SQMQ5NNH69NRM4XJF\"><strong><span style=\"color: #2a303e; background-color: #ffffff;\">なぜ変わるのか？</span></strong></h4>\n\n<p>私たちの目標は、より安定した機能豊富なエクスペリエンスを提供することです。四半期ごとのペースに移行することで、厳格なテストと開発により多くの時間を費やすことができ、各リリースが最高の品質であることが保証されます。この変更により、皆様からのフィードバックを取り入れ、ワークフローを純粋に向上させる機能を実装することも可能になります。<br>\n&nbsp;</p>\n\n<h4 id=\"h_01HBE4K26SCBF2ZGZE62CD2B9F\"><strong><span style=\"color: #2a303e; background-color: #ffffff;\">何を期待するのか:</span></strong></h4>\n\n<ul>\n\t<li><strong>より安定した製品のリリース：</strong> 四半期ごとのリリースでは、より包括的なテストが行​​われ、より信頼性の高いアップデートが提供されます。</li>\n\t<li><strong>エキサイティングな機能：</strong> 今後のリリースには、皆様に喜んでいただけるエキサイティングな機能が満載です。</li>\n\t<li><strong>カスタマーサポートの強化：</strong> リリースが少なくなったことで、サポートチームはお客様の質問や問題への対応にさらに集中できるようになります。</li>\n</ul>\n\n<p><br>\n<span style=\"color: #1d1c1d;\">10月20日の</span>リリースの詳細については、<a href=\"https://www.liferay.com/whats-new\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\"> What's New with Liferay?</span></a> ページをご参照ください。</p>\n\n<p>&nbsp;</p>\n\n<h2 id=\"FAQ\"><strong><a href=\"#FAQ\">よくある質問</a></strong></h2>\n\n<p>&nbsp;</p>\n\n<h4 id=\"why-quarterly\"><strong><a href=\"#why-quarterly\">製品リリースのサイクルが週次から四半期ごとに変わるのはなぜですか？</a> </strong></h4>\n\n<p class=\"wysiwyg-indent1\">製品リリースの品質と安定性を向上させるために、四半期ごとのリリースに移行しています。この変更により、テストと開発により多くの時間を投資できるようになり、各リリースが信頼性が高く、豊富な機能を備えていることが保証されます。</p>\n\n<h4 id=\"quarterly-versioning\"><strong><a href=\"#quarterly-versioning\">四半期ごとのリリースのバージョン管理形式はどのようなものになりますか?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">各四半期ごとのリリースにYEAR.QUARTER 形式の新しい外部バージョン番号が付与されます (例えば、2023年第3 四半期の場合は 2023.Q3 になります)。これは、パッケージ、マーケティング、ドキュメントから 7.4 バージョン番号を削除することを意味します。 Liferay DXP は 7.4 コードベースに基づいています。</p>\n\n<h4 id=\"support-coverage\"><strong><a href=\"#support-coverage\">フルサポートを受けるためには、四半期ごとに環境を更新する必要がありますか？</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">いいえ、DXP Self-HostedまたはLiferay PaaSをご利用のお客様は、自分のペースで更新できます。ただし、Liferay SaaSのお客様には最新の四半期ごとのリリースが提供されます。四半期ごとのリリースでは、欠陥解決を含む製品のフルサポートがリリースから1年間提供されます。</p>\n\n<h4 id=\"customer-impact\"><strong><a href=\"#customer-impact\">この変更はお客様にどのような影響を与えますか？</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">より堅牢で十分にテストされたリリースが期待できます。アップデートを受け取る頻度は低くなりますが、各アップデートにはより高いレベルの品質とパフォーマンスが提供されます。また、ベータ版およびリリースの機能フラグを使用して、機能のロールアウトを制御できるため、より優れた機能管理も期待できます。</p>\n\n<h4 id=\"take-effect\"><strong><a href=\"#take-effect\">この変更はいつから適用されますか？</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">最初の四半期ごとのリリースは、2023年10月20日に提供される予定です。今後、DXP 7.4をご利用のすべてのお客様は、本番環境でサポートされている四半期ごとのリリース (DXP 2023.Q3 または DXP 2023.Q4) を使用する必要があります。重要な日付については、こちらの記事をご参照ください: <a href=\"/w/quarterly-release-transitional-support-coverage\">四半期ごとのリリースの暫定的なサポート範囲</a></p>\n\n<h4 id=\"last-weekly-release\"><strong><a href=\"#last-weekly-release\">四半期ごとのリリース前に、どの週次リリースが最後になりますか?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">週次リリースU92は、サポートを受けることができる最後の週次リリースであり、カスタマーポータルで利用できる最後の週次リリースでもあります。継続的な更新とサポートのために、新しい四半期ごとのリリース形式に移行することをお勧めします。</p>\n\n<h4 id=\"release-notification\"><strong><a href=\"#release-notification\">四半期ごとの新しいリリースは、どのように通知されますか？</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">新しい四半期ごとのリリースに、通常のコミュニケーションチャネルを通じてお知らせします。メールで通知を受け取るには、必ず<a href=\"https://www.subscribepage.com/liferay\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">サポートアナウンスメント</span></a>をご購読ください。さらに、カスタマーポータルでは、リリースノートやアップデートのお知らせを確認できます。</p>\n\n<h4 id=\"prepare\"><strong><a href=\"#prepare\">この変化に備えるには何をすればよいでしょうか?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">移行に備えるには、ワークフロー、デプロイ、統合プロセスが新しい四半期ごとのリリーススケジュールに沿っていることを確認してください。今後の機能、特に <a href=\"https://support.liferay.com/w/liferay-dxp-product-delivery-method-1\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">Liferay DXP 製品の提供方法</span></a> の詳細については、ドキュメントとお知らせをご参照ください。</p>\n\n<h4 id=\"product-feedback\"><strong><a href=\"#product-feedback\">この期間中もフィードバックを提供したり、機能をリクエストしたりすることはできますか?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">お客様のフィードバックは、私たちにとって貴重です。<a href=\"https://liferay.dev/feedback/overview\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">こちらのページ</span></a>を通じて、引き続きご意見、ご提案、機能リクエストを共有していただくことをお勧めします。当社製品の将来を形作るのに役立ちます。ヘルプセンターのチケットを通じて、新機能をリクエストすることも可能です。</p>\n\n<h4 id=\"-weekly-update-support\"><strong><a href=\"#weekly-update-support\">製品ガイダンスやホットフィックスは、週次リリースで提供されますか?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">当社のサポートと開発の取り組みは、四半期ごとの新しいリリースに重点を置いているため、週次リリースでは製品ガイダンスやホットフィックスはご利用いただけません。ガイダンスや欠陥解決を含む製品のサポートは、四半期ごとのリリースに対してのみ提供されます。Liferay DXP 7.4 アップデート 92 以下に対しては、<a href=\"/w/quarterly-release-transitional-support-coverage\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">暫定的なサポート</span></a>が提供されます。</p>\n\n<p class=\"wysiwyg-indent1\">&nbsp;</p>\n\n<h4 id=\"weekly-update-use\"><strong><a href=\"#h_01HD23C0S3442FH37FJR79D8XZ\">四半期ごとのリリースのサポートはいつまで受けられますか?</a></strong></h4>\n\n<p>​​各四半期アップデートのリリース日から 1年間はバグ修正を受け取ることができます。それ以降、引き続きバグ修正を受け取るには、最新の四半期ごとのリリースにアップグレードする必要があります。1年後もバージョンを使用し続け、チケットを作成して問題を報告できますが、解決策を受け取るにはアップデートが必要になります。</p>\n\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"><strong>注意:</strong> お客様がサポートを受けるためのメンテナンス期間は、パッチバージョンのリリースではなく、対応する四半期ごとリリースのリリース日に基づいています。</span></aside>\n\n<h4 id=\"01HD23FD6WMDWSM5TN93B1AS7Y\"><strong><a href=\"#h_01HD23C0S371J319S3WZRGT30P\">1年間のメンテナンス期間外でもセキュリティパッチを受け取ることはできますか?</a></strong></h4>\n\n<p><span style=\"background-color: #ffffff;\">いいえ、セキュリティパッチは、アクティブに維持され、パッチが適用されているアップデートにのみ適用されます。 Liferayは製品のセキュリティを最優先で扱い、そのレベルのセキュリティに適切に焦点を当てて維持できるようにするために、最新のリリースに注力する必要があります。お客様のプロジェクトのセキュリティを確保するために、アップデートを常に最新の状態に保つ/更新することを推奨いたします。</span></p>\n\n<h4 id=\"01HD23CKXHVQMVKEPTWSTN1S3J\"><strong><a href=\"#weekly-release-use\">四半期ごとのリリースの間に公開された週次アップデートは、引き続き使用できますか?</a></strong></h4>\n\n<p>週次アップデートは、今後の機能強化や新機能をプレビューする場合にのみ使用できます。本番環境では週次アップデートを使用しないことをお勧めします。四半期ごとのリリースは、より厳格なテストを受けており、Liferayによって完全にサポートされています。製品ガイダンスと欠陥解決は、四半期ごとのリリースに対してのみ提供されます。</p>\n\n<h4 id=\"release-info\"><strong><a href=\"#release-info\">四半期ごとのリリースとその機能に関する詳細情報は、どこで入手できますか?</a></strong></h4>\n\n<p>機能のハイライトを含む四、半期ごとのリリースの詳細情報は、当社のWebサイトおよびリリースノートで入手できます。これらのリソースで最新のアップデートを定期的に確認することをお勧めします。</p>\n\n<h4 id=\"service-feedback\"><strong><a href=\"#service-feedback\">移行中にフィードバックを提供したり、問題を報告したりするには、どうすればよいですか?</a></strong></h4>\n\n<p class=\"wysiwyg-indent1\"><a href=\"https://support.liferay.com\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc;\">サポートチケットを作成する</span></a> か、customer-service@liferay.com までご連絡ください。<br>\nまた、この変更に関するご質問がございましたら、お気軽にカスタマーサクセスまでお問い合わせください。積極的に監視し、発生した問題に対処します。</p>\n\n<h4 id=\"upgrade\"><strong><a href=\"#upgrade\">既存の統合や設定は、この変更の影響を受けますか？ </a></strong></h4>\n\n<p class=\"wysiwyg-indent1\">ほとんどの場合、既存の統合と構成は引き続きシームレスに機能します。ただし、統合に関して具体的な懸念がある場合は、ドキュメントを確認し、サポートチームに問い合わせすることをお勧めします。</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:32:00Z",
+  "dateModified": "2026-03-26T20:20:14Z",
+  "datePublished": "2023-09-08T18:50:00Z",
+  "description": "",
+  "externalReferenceCode": "19324366505997",
+  "friendlyUrlPath": "liferay-dxp-quarterly-release-process",
+  "id": 26136904,
+  "key": "26136902",
+  "keywords": [
+    "cp-2-0",
+    "es",
+    "pt",
+    "ja",
+    "supportability",
+    "liferay-saas",
+    "liferay-paas",
+    "dxp-7-4",
+    "cp",
+    "quarterly-release"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26136904/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "パッチとリリース",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXPの四半期ごとのリリースプロセス",
+  "uuid": "dbe0088d-b5a8-344c-4144-28ce21c690a0"
+}

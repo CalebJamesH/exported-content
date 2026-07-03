@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Published: June 7, 2019</p>\n<p>We all know that patching is an important part of product health &amp; maintenance, but can be a labor-intensive and complex endeavor for many enterprise-level customers. Whether it be compatibility concerns with your custom development, or extensive testing schedules and procedures, we know that it can be difficult for you to keep up with the latest fix packs.</p>\n<p>Our team has been hard at work to improve the patching experience on Liferay Help Center for your team. We’ve heard you loud and clear, and our new Release Notes Experience is intended to help you easily identify the information you need when updating Liferay DXP from one build to another.</p>\n<p><strong>Select a Fix Pack Range</strong><span></span></p>\n<p>We know that many organizations are not able to stay up-to-date with every fix pack release. This new feature allows you to specify which fix pack level you are currently on, and which level you are looking to update to.</p>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/31033298871949\" alt=\"Select_Fixpacks_1.gif\"></p>\n<p>After selecting a fix pack range, you will see a compiled view of all the release highlights with the ability to refine the results by Important Changes, Known Issues or Security Notes.</p>\n<p><img src=\"https://help.liferay.com/hc/article_attachments/31033298869773\" alt=\"Highlights_1.gif\"></p>\n<p><strong>User-Friendly Changelog</strong></p>\n<p>The second tab displays a user-friendly changelog that lists all bug fixes and improvements that are included in your selected fix pack range. At-a-glance, you can see: a summary, component and fix pack version for each issue, click for expanded description, as well as a link to the LPS ticket for more information. You also have the option to filter down by component or text search.<img src=\"https://help.liferay.com/hc/article_attachments/31033283750029\" alt=\"Changelog__1_.gif\"></p>\n<p><strong>Module Version Changes for Developers</strong><span></span></p>\n<p>One of the biggest pain points for developers in the patching process has been identifying module version changes that might impact customizations, especially when skipping over multiple fix pack versions.</p>\n<p>You can now instantly identify which module versions have changed from your current fix pack level to the next. Any module version that has changed between the specified fix packs is highlighted. You can further narrow the list by Liferay Artifacts, or Third Party Libraries, as well as by searching for particular modules.</p>\n<center><img src=\"https://help.liferay.com/hc/article_attachments/31033298870541\" alt=\"Module_Changes__1_.gif\"></center>\n<p>The new Release Notes Experience is available now on Liferay Help Center.</p>\n<p> </p>\n<p>For any questions please contact us at:<span> </span><a href=\"mailto:provisioning-na@liferay.com\" target=\"_blank\" rel=\"noopener\" data-hs-link-id=\"0\">provisioning-na@liferay.com</a>.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T19:39:38Z",
+  "dateModified": "2026-02-10T19:39:38Z",
+  "datePublished": "2019-06-10T12:51:00Z",
+  "description": "",
+  "externalReferenceCode": "26102240",
+  "friendlyUrlPath": "introducing-the-new-dxp-release-notes-experience",
+  "id": 26102242,
+  "key": "26102240",
+  "keywords": [
+    "ja"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26102242/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Introducing the New DXP Release Notes Experience",
+  "uuid": "8b9fe08d-c884-c5e2-e67d-99d6334a50d7"
+}

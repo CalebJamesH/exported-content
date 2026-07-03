@@ -1,0 +1,120 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2><a id=\"Background-Statement\"></a><a href=\"#Background-Statement\">背景</a></h2>\n\n<p>ライフレイはエンタープライズ級の品質と機能だけではなく、セキュリティを備えたソフトウェアを提供し続けることをお約束します。<strong>ITスタックに導入するソフトウェアにおけるセキュリティ上の脆弱性は、企業として最重要の懸念事項です。</strong></p>\n\n<p>この懸念事項に取り組むためには、オープンソースコミュニティによる開発モデルが、最良の方法であり、リソースが得られると思っています。この開発モデルでは、世界中のコミュニティ開発者にアクセス権を与え、バグや脆弱性を発見し解決してもらいます。またサブスクリプションのお客様のために、セキュリティ関連の問題を素早く発見し取り組むよう、ライフレイ内部で設定したポリシーやプロセスもあります。</p>\n\n<p>まず、Liferayは業界標準や、AES、3-DES、RSAなど高度なアルゴリズムなど含む政府レベルで利用されている暗号化テクノロジーを採用しています。また、Liferayは堅牢なユーザ管理と、セキュリティ機能をデフォルトで備えています。セキュリティ機能には、パスワードポリシー、パスワードリマインダーの設定、ログインの時のセキュリティ手順、機密情報にアクセスするためのセキュリティ層設定などが含まれます。</p>\n\n<p>更に、ライフレイはクラックチームといわれるセキュリティのエキスパートを利用し、定期的にホワイトハットを行ないセキュリティを評価しています。これは、お客様にできるだけセキュリティの脆弱性が無いソフトウェアを提供するためにおこなっています。</p>\n\n<p>ライフレイは、独立したセキュリティ研究者が重要なことも認識しています。製品における脆弱性が合った場合、積極的に報告してもらうことを推奨しています。<strong>脆弱性を報告する場合、以下を参考にしてください。</strong></p>\n\n<h2><a id=\"Reporting-Security-Issues\"></a><a href=\"#Reporting-Security-Issues\">セキュリティ問題の報告</a></h2>\n\n<p>多くのオープンソース・プロジェクトと同様に、ライフレイは「責任ある情報開示（Responsible Disclosure）」を信条としています。これは、セキュリティの脆弱性にあるバグを発見し報告した場合、公に詳細を開示する前に、弊社による確認と解決をする時間を与えてもらえると思っています。</p>\n\n<p>ライフレイに脆弱性を知らせるには、ヘルプセンターでチケットを作成できます。（アクセス権のある方）</p>\n\n<p>セキュリティ脆弱性の可能性がある場合、責任ある情報開示では以下のことは<u><strong>絶対行なわない</strong></u>でください。</p>\n\n<ul>\n\t<li>脆弱性を利用した悪用の可能性について発表</li>\n\t<li>脆弱性の詳細をLiferayコミュニティフォーラム、ブログのコメント、または他の公のサイトで公表</li>\n\t<li><a href=\"https://www.liferay.com/community/security-team\">コミュニティ・セキュリティチーム</a>より修正がリリースされる前に、脆弱性について個別に公表</li>\n</ul>\n\n<h2><a id=\"Liferay-Security-Policy\"></a><a href=\"#Liferay-Security-Policy\">ライフレイのセキュリティポリシー</a></h2>\n\n<p>ライフレイは、報告された弊社のソフトウェア製品に関するセキュリティー問題を、以下のようなポリシーに沿って対応します。</p>\n\n<h4>最初の報告</h4>\n\n<p>ライフレイにはさまざまな方法でセキュリティの脆弱性について報告が上がってきます。例えば、<a href=\"https://issues.liferay.com/\">JIRA</a>や<a href=\"https://support.liferay.com\">Help Center</a>のチケットを通したり、ソーシャルメディア、外部ブログ、そして内部での発見があります。脆弱性の可能性が発見または報告された72時間以内に、まずライフレイとして提供された情報を元に再現を試みます。脆弱性が再現でき、既存のチケットで報告されていなければ、プライベートチケット（パブリックではないもの）が作成されます。このチケットは下のような重大度に振り分けられ、脆弱性の詳細はチケット内に記載されます。</p>\n\n<h4>トリアージと分類</h4>\n\n<p>セキュリティの脆弱性は、さまざまな要因をベースに重大度が分類されます。一番重要な要因は、Liferay全般に対してのリスクがあるかどうかです。</p>\n\n<ul>\n\t<li><strong>重要度1（SEV-1）：</strong>&nbsp;一番重要度が高く、脆弱性により全システムにアクセスできる可能性があり、システムのリソースまでのアクセス、データの破損や変更、またはアタッカーによる勝手なコードの実行を可能にしてしまいます。</li>\n\t<li><strong>重要度2（SEV-2）：</strong>&nbsp;この重要度では、脆弱性による全システムアクセスはありません。しかし、サービスレベルやシステムの信頼度に影響を与えたり、Liferay以外のシステムにも影響を与える可能性があります。この場合、「サービスの妨害」の脆弱性や関連した脆弱性を含みます。</li>\n\t<li><strong>重要度3（SEV-3）：</strong>&nbsp;重要度が一番低いこのレベルは、クロスサイト・スクリプティング、権限問題、情報漏えい等を含んだ脆弱性に使われます。</li>\n</ul>\n\n<h4>パッチの入手とお知らせ</h4>\n\n<div>\n<div>脆弱性の可能性が見つかった場合、そのこと自体を知ることも重要です。ライフレイのお客様には、以下のガイドラインに沿って脆弱性のお知らせとセキュリティパッチについてお知らせします。</div>\n</div>\n\n<ul>\n\t<li><strong>重要度1または2：</strong>セキュリティパッチが厳しいテストを通ってリリースできるようになった際、脆弱性の詳細、回避策の可能性、パッチの指示や他の修正方法が、セキュリティの掲示板およびCustomer Portalを通じてお知らせします。これらの修正方法は、Customer Portalの既知の脆弱性ページより入手できます。</li>\n\t<li><strong>重要度3：</strong>&nbsp;重要度3であるセキュリティ脆弱性の修正は、問題があるバージョンのFix Packで修正されます。これらの修正は、Customer Portalでのお知らせの際に、ハイライトされます。</li>\n</ul>\n\n<h2><a id=\"Disclosure-Policy\"></a><a href=\"#Disclosure-Policy\">開示に関してのポリシー</a></h2>\n\n<p>「責任のある開示」の原則に従って、ライフレイは全お客様向けたCustomer Portalの<a href=\"https://support.liferay.com/security-vulnerabilities\">Security Vulnerabilityページ</a> および、 CVE ID( 2020年5月以降、 重要度1、2の脆弱性にCVE IDが付与されます）とCVSS (v3.0)スコアと<em>Vector String</em>（2019年以降）<em>を</em>含むリリースノート（LPE)チケットに記載されたセキュリティの脆弱性に関する詳細以上のものを公開することはありません。これはご導入いただいているLiferayのセキュリティだけでなく、他のLiferayをお使いいただいているお客様のセキュリティを踏まえてのことです。</p>\n\n<p>特に個別のお客様へ、セキュリティの脆弱性の再現方法や、修正やパッチに関しての前情報を提供することはありません。ライフレイとして、既存のお客様に更なるリスクや危害を与えると独自で判断したセキュリティの脆弱性に関する情報を開示しない権利を保有します。これらのポリシーは、ライフレイのお客様やコミュニティ全てを守り、ライフレイとコミュニティのセキュリティ・エキスパートにセキュリティの問題に取り組む安全な環境を提供するために、見つかった脆弱性の軽減、制限、そして制御します。 &nbsp;</p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988279"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:02:34Z",
+  "dateModified": "2026-03-24T22:44:25Z",
+  "datePublished": "2018-10-03T21:09:00Z",
+  "description": "",
+  "externalReferenceCode": "360016700231",
+  "friendlyUrlPath": "security-overview",
+  "id": 26098515,
+  "key": "26098513",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-2",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "portal-6-0",
+    "portal-6-1",
+    "portal-5-2"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26098515/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27111977,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988279,
+      "taxonomyCategoryName": "Security",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "6e1172fa-06b1-2af0-5d4b-9edf05d88388",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferayのセキュリティ脆弱性の概要",
+  "uuid": "3f23aef0-1152-b191-5a7d-49d16beb7a18"
+}

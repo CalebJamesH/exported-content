@@ -1,0 +1,131 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content \" id=\"p_p_id_56_INSTANCE_tzW6gEEizk3N_\">\n<div class=\"portlet-body\">\n<div class=\"portlet-borderless-container\">\n<div class=\"portlet-body\">\n<div class=\"journal-content-article\" id=\"article_1_3133562_74669777_1.7\">\n<div class=\"page-heading\">\n<p>モバイルエクスペリエンスモジュールでサポートされている設定詳細は、下記の表を参照してください。&nbsp;</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n\n<h2>Mobile SDK&nbsp;</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><strong>オペレーティングシステム (OS)</strong></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 10-14<br>\n\t\t\tAndroid SDK 21-30 </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 10-12 (iOS)<br>\n\t\t\tAndroid SDK 16-27 </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 10-11 (iOS)<br>\n\t\t\tAndroid SDK 16-27 (Android) </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 8-11 (iOS)<br>\n\t\t\tAndroidSDK 15-27 (Android) </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2>Liferay Screens*</h2>\n\n<h3>iOS</h3>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Screens<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><strong>開発環境 </strong></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><strong>本番稼働環境</strong></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><span class=\"wysiwyg-font-size-medium\"><strong>iOS/OSX</strong></span></span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"><strong>バージョン</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.2.x**</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS SDK 10-14<br>\n\t\t\tSwift 5.0<br>\n\t\t\tCocoapods 1.9.x<br>\n\t\t\tXcode 12.x </font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iPhone<br>\n\t\t\tiPad<br>\n\t\t\tiPod Touch </font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iOS 10, 11, 12, 13, 14</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.0.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS SDK 10-12<br>\n\t\t\tSwift 5.0<br>\n\t\t\tCocoapods 1.6.x<br>\n\t\t\tXcode 10.2.x </font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iPhone<br>\n\t\t\tiPad<br>\n\t\t\tiPod Touch </font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iOS 9, 10, 11</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.0.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS SDK 9.0-11.4<br>\n\t\t\tSwift 4.1<br>\n\t\t\tCocoapods 1.3.1<br>\n\t\t\tXcode 9.x </font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iPhone<br>\n\t\t\tiPad<br>\n\t\t\tiPod Touch </font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iOS 9, 10, 11</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">3.0.x</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iOS SDK 9.0-11.1</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Swift 3.2</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Cocoapods 1.3.1<br>\n\t\t\tXcode 9.x</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iPhone</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">iPad</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">iPod Touch</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\"><span class=\"wysiwyg-font-size-medium\">iOS 9, 10, 11</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h3>Android</h3>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 694px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9; width: 170px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferayバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 145px;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Screens<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 175px;\"><strong>開発環境 </strong></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 190px;\"><strong>本番稼働環境</strong></td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 170px;\"><strong>iOS/OSXバージョン</strong></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.3</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 145px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.1.x**</font> </span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 175px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android Studio 4.0<br>\n\t\t\tAndroid SDK 21-30<br>\n\t\t\tGradle 6.5</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 190px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android phone<br>\n\t\t\tAndroid tablet</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">SDK 21-30</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 145px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">5.0.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 175px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android Studio 3.4<br>\n\t\t\tAndroid SDK 21-30<br>\n\t\t\tGradle 5.1.1-6.5</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 190px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android phone<br>\n\t\t\tAndroid tablet</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">SDK 21-28</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 145px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.0.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 175px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android Studio 3.0</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Android SDK 16-27</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Gradle 3.0.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 190px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android phone</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Android tablet</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">SDK 16-27</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 145px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">3.0.x</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 175px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android Studio 3.0</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Android SDK 15-27</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Gradle 3.0.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 190px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Android phone</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Android tablet</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\"><span class=\"wysiwyg-font-size-medium\">SDK 15-27</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<h3>Xamarin</h3>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay Screens<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><strong>開発環境 </strong></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"> <span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>Visual Studio</strong></font></span></span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> <strong>バージョン</strong> </font> </span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2<br>\n\t\t\tLiferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">4.0.x</font></span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iOS SDK 9.x-11.4</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Android SDK 16-25</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Mono .NET 5.4.1.6</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">Visual Studio 7.2</font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">3.0.x</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">iOS SDK 9.x-11.1</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Android SDK 15-25</span><br>\n\t\t\t<span class=\"wysiwyg-font-size-medium\">Mono .NET 5.4.1.6</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\">Visual Studio 7.2</font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>* LiferayのWebScreenletsは、ネイティブモバイルブラウザを活用しています。 これらのブラウザの機能が限定されているため、Liferay DXPとの完全な互換性を保証することはできません。 モバイルアプリケーションに実装されている機能に関するブラウザのサポートポリシーを確認してください。<br>\n** <span>最終バージョン。Liferay Screensでは新しいバージョンは提供されません。</span></p>\n\n<h2>Liferay Push***</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; float: left;\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td style=\"background-color: #f7f8f9;\"><span class=\"wysiwyg-font-size-medium\"><strong>Liferay<br>\n\t\t\tバージョン</strong></span></td>\n\t\t\t<td style=\"background-color: #f7f8f9;\"><strong>オペレーティングシステム (OS)</strong></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.2</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 10-11<br>\n\t\t\tAndroid SDK 16-29 </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.1</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 10-11<br>\n\t\t\tAndroid SDK 16-27 </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXP 7.0</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 170px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\"> <font size=\"2\"> iOS 8-11<br>\n\t\t\tAndroid SDK 15-27 </font> </span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span class=\"wysiwyg-font-size-medium\">&nbsp;</span></p>\n\n<p>*** クライアントサイドライブラリ</p>\n\n<p><span class=\"wysiwyg-font-size-medium\">&nbsp;</span></p>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176956"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:44Z",
+  "dateModified": "2026-03-26T00:05:42Z",
+  "datePublished": "2018-09-27T18:21:00Z",
+  "description": "",
+  "externalReferenceCode": "360016244112",
+  "friendlyUrlPath": "mobile-experience-platform-compatibility-matrix",
+  "id": 26108472,
+  "key": "26108470",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-1",
+    "dxp-7-0"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108472/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494979,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176956,
+      "taxonomyCategoryName": "Other Liferay Products Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "81cce681-7227-d0dd-ae57-4d1e4e5ebfbc",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Mobile Experience Platform互換性マトリクス",
+  "uuid": "c3cf4280-f36c-3ddc-003d-a10d65997039"
+}

@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"> ご覧のページは、お客様の利便性のために一部機械翻訳されています。また、ドキュメントは頻繁に更新が加えられており、翻訳は未完成の部分が含まれることをご了承ください。最新情報は都度公開されておりますため、必ず英語版をご参照ください。翻訳に問題がある場合は、<a href=\"mailto:support-content-jp@liferay.com\">こちら</a>までご連絡ください。 </span></aside>\n\n<p>Liferay Developer Studioを使用してコードを開発します。</p>\n\n<h2>Liferay Portal EEバージョン</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; margin-left: auto; margin-right: auto;\">\n\t<thead>\n\t\t<tr style=\"height: 21px; background-color: #f7f8f9;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>スタジオ版</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><font size=\"2\"><strong>6.0 EE SP1</strong></font></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><font size=\"2\"><strong>6.0 EE SP2</strong></font></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>6.1 EE GA1</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>6.1 EE GA2</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>6.1 EE GA3</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>6.2 EE </strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">1.2.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.3.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.4.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.5.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.6.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">2.0.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">2.2.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<h2>Liferay Portal CEバージョン</h2>\n\n<table class=\"table table-autofit table-list table-nowrap\" style=\"width: 697px; margin-left: auto; margin-right: auto;\">\n\t<thead>\n\t\t<tr style=\"height: 21px; background-color: #f7f8f9;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>IDEバージョン</strong></span></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><font size=\"2\"><strong>6.0.x CE</strong></font></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><font size=\"2\"><strong>6.1.x CE</strong></font></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top; height: 21px;\"><span class=\"wysiwyg-font-size-medium\"><strong>6.2.x CE</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">1.0.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">1.1.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">1.2.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.3.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.4.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.5.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">1.6.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\">&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">2.0.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">2.1.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">2.2.x</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 170px; text-align: left; vertical-align: top;\">\n\t\t\t<p class=\"wysiwyg-text-align-center\"><span class=\"wysiwyg-font-size-medium\">+</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176956"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:15:41Z",
+  "dateModified": "2026-03-26T00:03:57Z",
+  "datePublished": "2018-11-14T23:10:00Z",
+  "description": "",
+  "externalReferenceCode": "360019823951",
+  "friendlyUrlPath": "liferay-developer-studio-2-2-x-and-below",
+  "id": 26108424,
+  "key": "26108422",
+  "keywords": [
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "portal-6-1"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26108424/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494979,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176956,
+      "taxonomyCategoryName": "Other Liferay Products Compatibility",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "81cce681-7227-d0dd-ae57-4d1e4e5ebfbc",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay Developer Studio 2.2.x およびそれ以下",
+  "uuid": "531db583-11b5-d2b7-cd5f-79a8ae8a0f7f"
+}

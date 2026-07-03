@@ -1,0 +1,126 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/YdDQKAokylo?si=AGbdun997vyITYW2\" title=\"YouTube video player\" width=\"100%\"></iframe></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">Liferay DXPまたはPortal製品をアクティベートしたい管理者は、サイドバー・ナビゲーションから製品のアクティベーションタブに移動し、 </span><strong>DXP </strong><span style=\"font-weight: 400;\">または </span><strong>Portal </strong><span style=\"font-weight: 400;\">を選択します。</span></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">既に発行済みのキーがある場合は、右端の </span><strong>アクション </strong><span style=\"font-weight: 400;\">ボタンをクリックし、 </span><strong>新規作成 </strong><span style=\"font-weight: 400;\">を選択します。その後、以下の項目の入力画面が表示されます。&nbsp;</span></p>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">製品</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">バージョン</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">キーのタイプ</span>\n\t<ul>\n\t\t<li aria-level=\"1\" style=\"font-weight: 400;\">物理サーバーまたは仮想サーバーの本番、非本番、またはバックアップキーのタイプ:\n\t\t<ul>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">サブスクリプション期間&nbsp;</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">ホスト名&nbsp;</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">IPアドレス&nbsp;</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">MACアドレス</span></li>\n\t\t</ul>\n\t\t</li>\n\t\t<li aria-level=\"2\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">バーチャルクラスターキータイプ：</span>\n\t\t<ul>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">環境名&nbsp;</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">説明</span></li>\n\t\t\t<li aria-level=\"3\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">クラスターノード</span><span style=\"font-weight: 400;\"></span></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"font-weight: 400;\">関連記事&nbsp;</span><a href=\"https://support.liferay.com/w/how-do-i-download-my-liferay-dxp-portal-activation-keys-How-do-I-download-my-Liferay-DXP-Portal-Activation-Keys\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\"></span></a></p>\n\n<ul>\n\t<li aria-level=\"1\"><a href=\"https://support.liferay.com/w/how-do-i-download-my-liferay-dxp-portal-activation-keys\" rel=\"noopener\" target=\"_blank\">How do I download my Liferay DXP/ Portal Activation Keys?&nbsp;</a></li>\n\t<li aria-level=\"1\"><a href=\"https://support.liferay.com/w/how-do-i-view-all-generated-liferay-dxp-portal-activation-keys\" rel=\"noopener\" target=\"_blank\">How do I view all Liferay DXP/Portal generated activation keys?&nbsp;</a></li>\n\t<li aria-level=\"1\"><a href=\"https://support.liferay.com/w/can-i-download-a-file-with-all-my-activation-keys\" rel=\"noopener\" target=\"_blank\">Can I download a file with all my activation keys?</a>&nbsp;</li>\n\t<li aria-level=\"1\"><a href=\"https://learn.liferay.com/kb-article/deploying-activation-keys\">Deploying Activation Keys</a></li>\n\t<li aria-level=\"1\"><a href=\"https://support.liferay.com/w/activation-keys-faq-for-liferay-dxp-and-liferay-commerce\">Activation Keys FAQ</a></li>\n</ul>\n\n<p>&nbsp;</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988299"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:42:09Z",
+  "dateModified": "2026-03-20T22:44:37Z",
+  "datePublished": "2022-08-31T21:14:00Z",
+  "description": "",
+  "externalReferenceCode": "8835835104013",
+  "friendlyUrlPath": "how-do-i-activate-my-self-hosted-liferay-dxp-portal-product-video-tutorial",
+  "id": 26145744,
+  "key": "26145742",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "activate",
+    "customer-portal",
+    "provisioning",
+    "dxp",
+    "portal"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145744/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988299,
+      "taxonomyCategoryName": "DXP Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "d9bfd249-f5c7-d830-0fb9-fe5fb9082be4",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXP / Portal製品のアクティベーションはどのように行いますか？ （ビデオ）",
+  "uuid": "59f3af3b-8b2d-7f47-cbb1-1f32ecd18466"
+}

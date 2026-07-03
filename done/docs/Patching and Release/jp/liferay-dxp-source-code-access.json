@@ -1,0 +1,127 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"> ご覧のページは、お客様の利便性のために一部機械翻訳されています。また、ドキュメントは頻繁に更新が加えられており、翻訳は未完成の部分が含まれることをご了承ください。最新情報は都度公開されておりますため、必ず英語版をご参照ください。翻訳に問題がある場合は、<a href=\"mailto:support-content-jp@liferay.com\">こちら</a>までご連絡ください。 </span></aside>\n\n<aside class=\"alert alert-warning\"><strong data-stringify-type=\"bold\" style=\"box-sizing: inherit;\">注意:</strong><span>&nbsp;</span>リポジトリにアクセスするには、<a class=\"c-link\" data-sk=\"tooltip_parent\" data-stringify-link=\"https://github.com/liferay/liferay-dxp\" href=\"https://github.com/liferay/liferay-dxp\" rel=\"noopener noreferrer\" style=\"box-sizing: inherit; color: rgba(var(--sk_highlight,18,100,163),1); text-decoration: none;\" target=\"_blank\">https://github.com/liferay/liferay-dxp</a><span>&nbsp;</span>をクリックしてください。</aside>\n\n<p class=\"alert alert-warning\"><span class=\"wysiwyg-color-black\">この記事で紹介されている一部のリポジトリやページにアクセスするには、アクティブなサブスクリプションが必要な場合があることにご注意ください。 </span></p>\n\n<p>Liferayのサブスクライバーは、Liferay DXPのソースコードとFix Packのソースコードへ、GitHubのプライベートリポジトリからアクセスできるようになりました。</p>\n\n<p class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"> このリポジトリは、Liferay DXP 7.3およびLiferay Commerce 3.0で利用できなくなった <a href=\"https://help.liferay.com/hc/articles/360038246011-Patching-Tool-Working-with-Patches#comparing\" rel=\"undefined\" target=\"_self\">ソースパッチモード</a>を置き換えるものです。 </span></p>\n\n<h2 id=\"h_01HGJQ5893F5PW1QST9RZ78SBY\">アクセスの取得方法</h2>\n\n<p>Liferay DXPのソースコードにアクセスする方法。</p>\n\n<p><img alt=\"ソースコード_アクセス_追加.gif\" height=\"372\" src=\"https://support.liferay.com/documents/d/customer-portal/360060408671-source_code_access_add\" width=\"1000\"></p>\n\n<ol>\n\t<li><a href=\"https://customer.liferay.com/project-details\" rel=\"noopener\" target=\"_blank\">プロジェクト詳細</a>&nbsp;へ移動します\n\n\t<ul>\n\t\t<li>複数のプロジェクトに追加されている場合は、リストから目的のプロジェクトを選択します</li>\n\t</ul>\n\t</li>\n\t<li><span>Source Code Access</span> タブを開きます</li>\n\t<li>＋ボタンをクリックします</li>\n\t<li>必要事項を入力してください\n\t<ul>\n\t\t<li>名前</li>\n\t\t<li>メールアドレス</li>\n\t\t<li>GitHubでのユーザー名</li>\n\t</ul>\n\t</li>\n\t<li>送信ボタンをクリックします</li>\n\t<li>GitHubユーザーに対して、Liferay DXPのソースコードリポジトリにアクセスするための招待状がメールで届きます。</li>\n</ol>\n\n<p>その後も、他のプロジェクトチームのメンバーに代わってリクエストするために、複数のエントリを追加することができます。</p>\n\n<p>毎日のリクエスト数が制限されているため、<span>Source Code Access</span>ページから送信されたすべてのユーザー名をすぐに招待できない場合があります。数時間後、あるいは数日後に、リクエストをキューに入れて、可能な限り速やかに新しいユーザーを追加しますので、ご安心ください。</p>\n\n<p>Liferay DXPのソースコードリポジトリへのアクセスは、Liferay DXPのサブスクリプションが有効である限り維持されます。 さらに、チームメンバーの1人が&nbsp;<a href=\"https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/changing-your-github-username\" rel=\"undefined\" target=\"_self\">GitHubのユーザー名</a>を変更すると、リポジトリへのアクセスができなくなります。</p>\n\n<p>GitHub のユーザー名を変更するには、以下の手順で既存のユーザー名を削除してから、新しいユーザー名でのアクセスをリクエストする必要があります。</p>\n\n<p><strong>招待状を紛失してしまった場合</strong></p>\n\n<p>招待メールを紛失してしまった場合でも、招待されたユーザーはGitHubで招待状を閲覧し、承認することができます。 <a href=\"https://github.com/liferay/liferay-dxp/invitations\" target=\"_self\">github.com/liferay/liferay-dxp/invitations</a></p>\n\n<h2 id=\"h_01HGJQ5893E5EXSQX56VVS646S\">アクセスの削除</h2>\n\n<p>Liferay DXPプロジェクトに参加しなくなったチームメンバーを削除するには、以下の手順で行います。</p>\n\n<ol>\n\t<li><a href=\"https://customer.liferay.com/project-details\" rel=\"noopener\" target=\"_blank\">プロジェクト詳細</a>&nbsp;へ移動します\n\n\t<ul>\n\t\t<li>複数のプロジェクトに追加されている場合は、リストから目的のプロジェクトを選択します</li>\n\t</ul>\n\t</li>\n\t<li><span>Source Code Access</span> タブを開きます</li>\n\t<li>削除されるチームメンバーを確認します</li>\n\t<li>チームメンバーのGitHub情報を展開します</li>\n\t<li>削除をクリックします</li>\n</ol>\n\n<p><img alt=\"source_code_access_delete.jpg\" height=\"526\" src=\"https://support.liferay.com/documents/d/customer-portal/360060408711-source_code_access_delete\" width=\"1000\"></p>\n\n<p><strong>注意：</strong> 招待状は7日間有効で、ヘルプセンターのプロジェクト詳細ページからチームメンバーが削除されても、招待を受けることができます。 例えば、GitHubのユーザー名にタイプミスがあっても、他人のアカウントとしてシステムに存在していれば、知らない人がアクセスしてしまう可能性があります。 これを防ぐために、システムは毎週、アクティブなプロジェクトに登録されていない新しい共同作業者をチェックして、自動的にアクセス権を無効にしています。</p>\n\n<h2 id=\"h_01HGJQ5894W77BGCQSN10ZM9DQ\">フィックスパックのソースコード検索</h2>\n\n<p class=\"wysiwyg-text-align-center\"><img alt=\"repo_tags.jpg\" height=\"560\" src=\"https://support.liferay.com/documents/d/customer-portal/360062339631-repo_tags\" width=\"600\"></p>\n\n<p>Liferay DXPのリポジトリはフィックスパックタグで更新されており、フィックスパックごとにコードがどのように変化するかを詳しく見ることができます。 これらのタグを使用して、プロジェクトやカスタムコードに関連するフィックスパックの変更点を特定したり、既存のフィックスパックのベースラインのソースコードを確認したりすることができます。</p>\n\n<p><strong>重要：</strong> Liferay DXP 7.0および7.1のソースコードでは、これらのフィックスパックベースラインからのみフィックスパックタグが利用できます。</p>\n\n<ul>\n\t<li>Liferay DXP 7.1 Fix Pack 19</li>\n\t<li>Liferay DXP 7.0 Fix Pack 96</li>\n</ul>\n\n<h2 id=\"h_01HGJQ5894XB0CQ74PMSJ9EWS2\">ビルドファイル</h2>\n\n<p>Liferay DXPは、開発者が機能を追加したり、インストールをカスタマイズできるように、複数の拡張ポイントを提供しています。 拡張ポイントが存在しない場合は、拡張ポイントや特定の機能を追加するための機能要求を提出することができます。</p>\n\n<p>拡張ポイントの使用は、Liferay DXPをカスタマイズするための唯一のサポートされた方法であり、これがビルドファイルがソースコードリポジトリから除外されている理由です。</p>\n\n<p>カスタム開発のサポートや機能のリクエストについては、担当のアカウント・エグゼクティブまたはカスタマー・エクスペリエンス・マネージャーにお問い合わせください。</p>\n\n<h2 id=\"h_01HGJQ5894A9VCCYPRBGHSSXWK\">パーミション</h2>\n\n<p>Liferay DXPのソースコードリポジトリにアクセスするお客様は、 <em>Read</em>レベルのアクセス権を持つことになります。</p>\n\n<p>最も関連性の高い許可されたアクションは以下です：</p>\n\n<ul>\n\t<li>リポジトリからの取り出し</li>\n\t<li>リポジトリのフォーク</li>\n\t<li>公開されたリリースを見る</li>\n</ul>\n\n<h2 id=\"h_01HGJQ5894V3XW2CD9AGZD52PN\">プライバシー</h2>\n\n<p>お客様のプライバシーを第一に考えています。 Liferay DXPのソースコードにアクセスする際、あなたのユーザー名、名前、メールアドレス、フォークは非公開となりますのでご安心ください。 すべてのお客様が同じリポジトリにアクセスできるようになっても、デフォルトではお互いに見えません。</p>\n\n<p>しかし、<em>Read</em>権限レベルの一部として許可された他のアクションは、他のすべてのユーザーに表示されます。 プライバシーを守るために、Liferay DXPリポジトリでは以下のような行為は避けてください。</p>\n\n<ul>\n\t<li>自分のコメントの編集・削除 (1)</li>\n\t<li>問題のオープン (1)</li>\n\t<li>オープンした問題を閉じる(1)</li>\n\t<li>クローズした問題を再開する (1)</li>\n\t<li>自分に割り当てられた問題がある（1）</li>\n\t<li>フォークからのプルリクエスト送信 (2)</li>\n\t<li>プルリクエストに対するレビューの提出 (2)</li>\n\t<li>Wikiの編集 (3)</li>\n</ul>\n\n<p>上記の作業を行う場合は、以下の3つの公式チャンネルのいずれかをご利用ください。</p>\n\n<p><strong>(1) 問題やコメントについて</strong><br>\nLiferayソフトウェアの問題を報告したい場合は、ヘルプセンターで<a href=\"https://support.liferay.com\" target=\"_self\">サポートチケット</a>を作成してLiferayサポートチームに連絡してください。 ソースコードレポジトリに提起された問題は回答されず、Liferayによってクローズされます。</p>\n\n<p><strong>(2) コードコントリビューションの場合</strong><br>\nオープンソース企業として、Liferayはコミュニティへの貢献に価値を置き、繁栄しています。 これらはLiferay Portalの公開リポジトリに提出することができ、承認されればLiferay DXPの次のリリースに含まれることになります。 もしあなたがLiferayのソースコードに貢献したいのであれば、<a href=\"https://discuss.liferay.com/\" rel=\"undefined\" target=\"_self\">コミュニティガイドライン</a>に従ってください。</p>\n\n<p><strong>(3) Wikiの場合</strong><br>\nLiferay DXPのドキュメントとそのナレッジベースは、ヘルプセンターにあります。 Liferayはドキュメントの保存にプライベートリポジトリのwikiを使用しません。 記事の編集を提案したり、新しいトピックの文書化を要求したい場合は、記事のフィードバックボタンを使用するか、ヘルプセンターで<a href=\"https://support.liferay.com\" target=\"_self\">サポートチケット</a>を作成してLiferayサポートチームに連絡してください。</p>\n\n<h2 id=\"h_01HGJQ5894NGG4MSTV88G46BFE\">便利なリソース</h2>\n\n<ul>\n\t<li><a href=\"https://support.liferay.com/release-notes\" target=\"_self\">Liferay DXP リリースノート</a></li>\n\t<li><a href=\"https://liferay.dev/open-source\" target=\"_self\">Liferayのオープンソースについて</a></li>\n\t<li><a href=\"https://help.github.com/en/github/getting-started-with-github\" target=\"_self\">GitHubとGitを使いこなそう</a></li>\n\t<li><a href=\"https://help.github.com/en/github/searching-for-information-on-github\" target=\"_self\">GitHubで情報を検索する</a></li>\n\t<li><a href=\"https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github\" target=\"_self\">GitHubからリポジトリをクローンする</a></li>\n\t<li><a href=\"https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks\" target=\"_self\">フォークでの作業</a></li>\n\t<li><a href=\"https://guides.github.com/activities/forking/\" target=\"_self\">プロジェクトのフォーク - GitHub Guide</a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988350"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "279def49-d81a-45fc-e2ba-d9372d957115",
+    "familyName": "Schuhler",
+    "givenName": "Ryan",
+    "id": 2029042,
+    "name": "Ryan Schuhler"
+  },
+  "customFields": [],
+  "dateCreated": "2026-02-10T20:17:58Z",
+  "dateModified": "2026-03-26T20:40:13Z",
+  "datePublished": "2020-06-24T10:06:00Z",
+  "description": "",
+  "externalReferenceCode": "26107817",
+  "friendlyUrlPath": "liferay-dxp-source-code-access",
+  "id": 26107819,
+  "key": "26107817",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "dxp-7-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "cp",
+    "provisioning",
+    "migration-1"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26107819/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494982,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988350,
+      "taxonomyCategoryName": "パッチとリリース",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "70c9402c-7632-62ae-d6fc-4fcf3e1c0f08",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXPソースコードアクセス",
+  "uuid": "65c1e5f3-9c9a-2ace-f52f-d540bdfea593"
+}

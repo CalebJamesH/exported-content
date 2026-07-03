@@ -1,0 +1,132 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p>Liferay DXP 7.4とDXP 2025.Q1 (LTS) 四半期リリースは、次の認定された構成でのみサポートされます:</p>\n\n<h2 id=\"h_01HBXJYQT85RMBCS8C4CVXBGCZ\"><a href=\"#application-server\" id=\"application-server\">アプリケーション サーバー</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Apache Tomcat 9.0.x</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">IBM Websphere 9.0*</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Wildfly 18.0**</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Wildfly 23.0**</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\"><span>Wildfly 26.1</span></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Weblogic 14c</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.3**</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">JBoss EAP 7.4</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span style=\"font-weight: 400;\">Liferay DXPと互換性のあるアプリケーションサーバーの設定と制限の詳細については、</span><a href=\"https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay\"><span style=\"font-weight: 400;\">Liferayユーザーガイド</span></a><span style=\"font-weight: 400;\">と</span><a href=\"/w/Application-Servers\"><span style=\"font-weight: 400;\">サポートポリシー</span></a><span style=\"font-weight: 400;\">をご参照ください。</span></p>\n\n<p><span class=\"wysiwyg-font-size-medium\">* IBM WebSphereアプリケーションサーバーとの互換性は、2024.Q2以降のリリースで削除されました。</span><br>\n<span class=\"wysiwyg-font-size-medium\">** Wildfly 18.0、Wildfly 23.0、およびJBoss EAP 7.3との互換性は、2024.Q2で非推奨となり、2024.Q3で削除されました。これらの製品は、ベンダーにより製造終了となっています。</span></p>\n\n<h2 id=\"h_01HBXJYQT8NJQKHT9GK1Z6G7NB\"><a href=\"#database\" id=\"database\">データベース</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Aurora</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">DB2 11.1</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">DB2 11.5</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MariaDB 10.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MariaDB 10.4</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MariaDB 10.6</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MySQL 5.7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MySQL 8.0</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">MySQL 8.4*</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle 19c</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 12.x</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 13.x</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 14.x</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 15.x</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">PostgreSQL 16.x</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2017</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2019</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SQL Server 2022</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span style=\"font-weight: 400;\">Liferay DXPと互換性のあるデータベースの設定と制限の詳細については、</span><a href=\"https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay\"><span style=\"font-weight: 400;\">Liferayユーザーガイド</span></a><span style=\"font-weight: 400;\">と</span><a href=\"/w/Databases\"><span style=\"font-weight: 400;\">サポートポリシー</span></a><span style=\"font-weight: 400;\">をご参照ください。</span></p>\n\n<p><span style=\"font-weight: 400;\">*&nbsp;</span>DXP 2024.Q1 (LTS)と、DXP 2025.Q1以降のバージョンで動作が保証されています。</p>\n\n<p><span style=\"font-weight: 400;\"></span></p>\n\n<h2 id=\"h_01HBXJYQT8Y4RXSW693PJQSRHQ\"><a href=\"#operating-system\" id=\"operating-system\">オペレーティング システム</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Alpine Linux 3.13</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Linux 2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Linux 2023</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">CentOS 7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">CentOS 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Debian 10</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Debian 11</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Debian 12*</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Fedora Linux</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">IBM AIX 7.2</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Linux 7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Linux 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Linux 9</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle Solaris 11</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise Linux 7</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise Linux 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Red Hat Enterprise Linux 9</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Rocky Linux 9</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SUSE Enterprise Linux 12</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">SUSE Enterprise Linux 15</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 18.04</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 20.04</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Ubuntu LTS 22.04</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2016</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2019</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Windows Server 2022</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>* Debian 12はDXP 2025.Q1以降で認証されています。</p>\n\n<h2 id=\"h_01HBXJYQT9PQMYDYHGX2T19HT8\"><a href=\"#desktop-browser\" id=\"desktop-browser\">デスクトップブラウザ</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Chrome (最新)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Edge (最新)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Firefox ESR (最新)</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Firefox (最新)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Safari (最新)</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span style=\"font-weight: 400;\">Liferay DXPと互換性のあるデスクトップブラウザでの設定や制限については、</span><a href=\"/w/Browsers\" rel=\"noopener noreferrer\" target=\"_blank\">サポートポリシー</a><span style=\"font-weight: 400;\">を参照してください。</span></p>\n\n<h2 id=\"h_01HBXJYQT9ATP9T8ASMRY7BMXF\"><a href=\"#mobile-browser\" id=\"mobile-browser\">モバイルブラウザ</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Chrome (最新)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Safari (最新)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Edge (最新)</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span style=\"font-weight: 400;\">Liferayでは、最新バージョンのモバイルブラウザに限り、情報へのアクセス（コンテンツの閲覧やページのナビゲーションなど）、ナビゲーションメニュー、モジュールの基本的な応答性をサポートします。Liferayのモバイルサポートポリシーの詳細については、 </span><a href=\"https://support.liferay.com/w/mobile-device-support-policy\"><span style=\"font-weight: 400;\">ヘルプセンター</span></a><span style=\"font-weight: 400;\">をご参照ください。</span></p>\n\n<h2 id=\"h_01HBXJYQT94SJQCKPT9WYCRD0D\"><a href=\"#jdk\" id=\"jdk\">JDK</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">IBM J9 JDK 8</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 8*</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 11**&nbsp;</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li>それぞれのJavaメジャーバージョンのすべてのJava Technical Compatibility Kit (TCK) 準拠ビルドが認定されています</li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 17***</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Oracle JDK 21***</span><span class=\"wysiwyg-font-size-medium\" style=\"font-weight: 400;\"></span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span class=\"wysiwyg-font-size-medium\">*Java JDK 8 runtimeとの互換性は、2024.Q2 以降のリリースでは削除されました。</span><br>\n<span class=\"wysiwyg-font-size-medium\">**Java JDK 11ランタイムは、2024.Q1で非推奨となり、2024.Q3以降のリリースでは削除されました。</span><br>\n<span class=\"wysiwyg-font-size-medium\">***Java JDK 17 および JDK 21 runtimeは、2024.Q2 以降で認定されています。推奨されるruntimeは、JDK 21です。</span></p>\n\n<h2 id=\"h_01HBXJYQT9N46HY2QW4FCKZFAK\"><a href=\"#cloud-services\" id=\"cloud-services\">クラウドサービス </a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Elastic Compute Cloud (EC2)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon Relational Database Service (RDS)</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Amazon S3 (Object Storage)</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t\t<li>Azure Blob Storage</li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Azure Files</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Azure SQL Databases</span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Azure Virtual Machines</span></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Google Cloud Compute Engine (GCE)</span></li>\n\t\t\t\t<li><font size=\"2\">Google Cloud SQL</font></li>\n\t\t\t\t<li><font size=\"2\">Google Cloud Object Storage</font></li>\n\t\t\t\t<li><font size=\"2\">Red Hat OpenShift (IBM Cloud)</font></li>\n\t\t\t\t<li><font size=\"2\">IBM Cloud File Storage</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span style=\"font-weight: 400;\">Matrix</span><span style=\"font-weight: 400;\">Amazon EC2とRDSは<span>Liferay DXPの四半期ごとのリリース</span>互換性マトリックス上の環境でのみサポートされています。</span></p>\n\n<h2 id=\"h_01HBXJYQT9F5C0PDX8WQ2908QA\"><a href=\"#search-engines\" id=\"search-engines\">サーチエンジン</a></h2>\n\n<table border=\"0\" style=\"border-collapse: collapse; width: 98.8545%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 50%; vertical-align: top;\">\n\t\t\t<ul>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Elasticsearch 8</span><span class=\"wysiwyg-font-size-medium\"></span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Elasticsearch 7 </span></li>\n\t\t\t\t<li><span class=\"wysiwyg-font-size-medium\">Solr 8</span></li>\n\t\t\t\t<li>OpenSearch 2*</li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 100.86%; vertical-align: top;\">&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p><span style=\"font-weight: 400;\">互換性のあるコネクタのバージョンや必要なパッチレベルなどの互換性については、</span> <a href=\"https://support.liferay.com/w/search-engine-compatibility-matrix\"><span style=\"font-weight: 400;\">Search Engine Compatibility Matrix</span></a><span style=\"font-weight: 400;\">を参照してください。</span></p>\n\n<p>* OpenSearch 2との互換性は、<a href=\"https://marketplace.liferay.com/\">Marketplace</a>でリリースされたLiferay Connector to OpenSearch 2を介して、DXP 2025.Q1以降のバージョンでご利用いただけます。</p>\n\n<h2 id=\"h_01HBXJYQT9CHWX623H0NZVBNTG\"><a href=\"#notes\" id=\"notes\"><span style=\"font-weight: 400;\">メモ</span></a></h2>\n\n<p><span style=\"font-weight: 400;\">Liferay DXPは、アプリケーションサーバー、データベース、JDK、およびオペレーティングシステムが上記の互換性マトリックスに示されているように、使用が認定されている限り、VM/コンテナストラテジーの使用を制限しません。サブスクライバーは、VM/コンテナを適切に構成する責任があります。</span></p>\n\n<p>&nbsp;</p>\n\n<p><span class=\"wysiwyg-font-size-small\">Updated 5/22/2026</span></p>\n\n<p><a href=\"https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.4+%E4%BA%92%E6%8F%9B%E6%80%A7%E3%83%9E%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9+%28JP%29.pdf/8503c5ed-2557-f468-bf6b-bc785c86c409?\" target=\"_self\"><span class=\"wysiwyg-font-size-medium\">Download PDF</span></a></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176952"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:43:11Z",
+  "dateModified": "2026-05-25T07:20:50Z",
+  "datePublished": "2025-11-05T14:15:00Z",
+  "description": "",
+  "externalReferenceCode": "4411310034829",
+  "friendlyUrlPath": "liferay-dxp-7-4-through-dxp-2025-q1-lts-quarterly-release-compatibility-matrix",
+  "id": 26145994,
+  "key": "26145992",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-4",
+    "zh-cn",
+    "dxp-quarterly-releases-7-4"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145994/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27492454,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176952,
+      "taxonomyCategoryName": "Liferay DXP Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "7fb6a48c-585c-075f-5ad7-28fe4cd53a2d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXP 7.4と2025.Q1 (LTS) 四半期リリースの互換性マトリックス",
+  "uuid": "a03a7f02-9754-4245-9e75-42ff5ea18324"
+}

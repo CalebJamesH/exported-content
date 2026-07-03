@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<div class=\"alert alert-warning\"><strong>Note:</strong> please note that Liferay has renamed its Liferay Experience Could offerings to <i><strong>Liferay SaaS</strong></i> (formerly LXC) and <i><strong>Liferay PaaS</strong></i> (formerly LXC-SM).</div>\n\n<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/8mug3Sv-jjo?si=c1cpOFN5MG2RRRUI\" title=\"YouTube video player\" width=\"100%\"></iframe></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">管理者がプロジェクトに初めてアクセスすると、Liferay PaaS 製品用のアクティベーションフォームが表示されます。 この手順をスキップしたい場合は、サイドバー・ナビゲーションから </span><strong>製品のアクティベーション</strong><span style=\"font-weight: 400;\"> に移動し、 </span><strong>Liferay PaaS </strong><span style=\"font-weight: 400;\">を選択してください。&nbsp;</span></p>\n\n<p><strong>アクティベーションステータス</strong><span style=\"font-weight: 400;\"> の下に、 </span><strong>無効化 </strong><span style=\"font-weight: 400;\">状態の場合のみ、アクティベーションフォームを完了するためのリンクが表示されます。 リンクをクリックし、必要事項をご記入ください。&nbsp;</span></p>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">プロジェクトID（注：このプロジェクトIDは変更できません。)&nbsp;</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">プライマリーデータセンターの地域</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Liferay PaaSシステム管理者のメールアドレス</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">システム管理者の名</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">システム管理者の姓&nbsp;</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">システム管理者のGithubユーザー名</span></li>\n\t<li><span style=\"color: #2f3941; background-color: #ffffff;\">重大インシデントのコンタクト</span>\n\t<ul>\n\t\t<li><span style=\"color: #2f3941; background-color: #ffffff;\">現在のチームメンバーリストからインシデントの連絡先を少なくとも1人を選択します。</span></li>\n\t\t<li>詳細についてはこちらをご参照ください: <a href=\"/w/how-do-i-manage-my-incident-contacts\" style=\"background-color: #ffffff;\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc; background-color: #ffffff;\">インシデントの連絡先を管理するにはどうすればよいですか?</span></a></li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"font-weight: 400;\">フォームが送信されると、お客様の情報がLiferayチームに送信され、アクティベーションステータスが </span><strong>進行中 </strong><span style=\"font-weight: 400;\">に変更されます。</span><strong>&nbsp;</strong></p>\n\n<p><span style=\"font-weight: 400;\">アクティベーションは1-3営業日で完了し、管理者にメールで通知されます。 アクティベーションステータスは、 </span><strong>有効化済み </strong><span style=\"font-weight: 400;\">に変更されます。&nbsp;</span></p>\n\n<p><strong><span style=\"color: #2a303e; background-color: #ffffff;\">注意: </span></strong><a href=\"https://learn.liferay.com/w/liferay-cloud/getting-started/initial-setup-overview\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc; background-color: #ffffff;\">Liferay PaaSの初期設定</span></a><span style=\"color: #2a303e; background-color: #ffffff;\"> を参照して、Liferayによってアクティベーションが行われた後、何が期待され、どのようなステップを踏むべきかについてご理解ください。</span></p>\n\n<h2 id=\"h_01HDM08R7NSYECJ9MWN8RT0GR8\"><strong>デベロッパーキー</strong></h2>\n\n<p><span style=\"font-weight: 400;\">デベロッパーキーをダウンロードしたい場合は、次のページに進んでください：<a href=\"https://support.liferay.com/w/how-do-i-download-a-developer-key-How-do-I-download-a-Developer-Key\" rel=\"noopener\" target=\"_blank\"> デベロッパーキーのダウンロード方法を教えてください?</a></span></p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988295"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:42:45Z",
+  "dateModified": "2026-02-20T00:53:00Z",
+  "datePublished": "2022-08-31T20:44:00Z",
+  "description": "",
+  "externalReferenceCode": "8835015084429",
+  "friendlyUrlPath": "how-do-i-activate-my-liferay-paas-product-video-tutorial",
+  "id": 26145932,
+  "key": "26145930",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "supportability",
+    "liferay-paas",
+    "liferay-experience-cloud---self-managed",
+    "lxc-sm",
+    "activate",
+    "customer-portal",
+    "provisioning"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26145932/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988295,
+      "taxonomyCategoryName": "Cloud Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "12b8d126-99a4-87b7-83be-6ab2a28c098b",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay PaaS製品のアクティベーションはどのように行いますか？（ビデオ）",
+  "uuid": "8b1e230b-3060-67e7-0dbd-3d93660dd580"
+}

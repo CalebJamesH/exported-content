@@ -1,0 +1,140 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<section class=\"description\">\n<p>O seguinte artigo detalha uma curta lista de respostas a serem coletadas e passos a serem definidos antes de abrir um ticket de performance no LESA. Ao tomar o tempo de revisar todos estes itens antes de fazer sua solicitação no LESA, você estará garantido a resolução mais rápida possível para este tema em particular.</p>\n</section>\n<section id=\"resolution\">\n<h2>Resolução</h2>\n<div>\n<p>Para cada ticket, por favor anexe seu arquivo portal-ext.properties, assim como a saída do comando \"patching-tool info\" específico do ambiente.</p>\n<p>Especificamente para tickets de performance, <strong><em> por favor revise os seguintes itens e inclua a informação resultante ao criar o ticket: </em></strong></p>\n<p><u><strong>Erro de Falta de Memória (Out of Memory)</strong></u></p>\n<ol>\n<li>Seus servidores estão em cluster? Em caso positivo, quantos nós receberam um OutOfMemoryError (OOME)?</li>\n<li>Se o servidor cai:\n<ol>\n<li>Logs completos do momento em que o servidor de produção caiu</li>\n<li>Tipo/versão da aplicação, tipo/versão do banco de dados, tipo/versão do SO, tipo/versão da JDK, versão do Liferay, portal.properties</li>\n<li>Detalhes do ambiente de cluster e arquivos relevantes</li>\n<li>Quantos dias o seu servidor esteve operacional antes deste incidente de queda em produção?</li>\n<li>Que mudanças foram feitas em seu ambiente entre os momentos em que o servidor de produção esteve operacional e caído?</li>\n<li>Quais as instruções para reproduzir este incidente em produção?</li>\n</ol>\n</li>\n<li>Envie-nos heap dumps e logs do servidor gerados quando a exceção de OOME ocorreu (Consulte <a href=\"https://help.liferay.com/hc/pt/articles/360018326192\" target=\"_self\" data-cke-saved-href=\"https://www.liferay.com/group/customer/kbase/-/knowledge_base/article/14262526\">Como Gerar Heap Dumps</a>)</li>\n<li>Configurações da JVM</li>\n</ol>\n<p><u><strong>Bloqueio de CPU ou Pico de Consumo</strong></u></p>\n<ol>\n<li>Revise as mesmas questões acima com uma modificação:</li>\n<li>Ao invés de heap dumps, <a href=\"https://help.liferay.com/hc/pt/articles/360018662991\" target=\"_self\" data-cke-saved-href=\"https://www.liferay.com/group/customer/kbase/-/knowledge_base/article/14262850\">forneça uma série de thread dumps</a> de seu sistema tirados enquanto o evento de lentidão estiver ocorrendo.</li>\n</ol>\n</div>\n</section>\n<section id=\"additionalInformation\">\n<h2>Informação Adicional</h2>\n<div>\n<p><strong>Nota</strong>: a análise da performance de uma instalação em particular depende de muitos fatores, nem todos estritamente relacionados ao Portal Liferay. Porém, se você acredita que há uma questão de performance no Portal Liferay, por favor inclua a análise que você realizou para apontar que a causa-raiz do comportamento está no produto, para que o Serviço de Suporte possa iniciar os trabalhos com base em sua análise.</p>\n<p>A Liferay oferece outros tipos de serviços que podem ser mais apropriados para sua solicitação. Por favor contate seu gerente de contas para mais detalhes.</p>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:49Z",
+  "dateModified": "2026-03-10T20:47:54Z",
+  "datePublished": "2018-10-19T05:17:00Z",
+  "description": "",
+  "externalReferenceCode": "360018151112",
+  "friendlyUrlPath": "before-opening-a-liferay-performance-ticket",
+  "id": 26099750,
+  "key": "26099748",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "knowledge-base",
+    "portal-6-0",
+    "migration-2",
+    "core-infrastructure",
+    "portal-6-1",
+    "cp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099750/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Serviços e Compatibilidade",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Perguntas Frequentes sobre Suporte",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Antes de Abrir um Ticket Liferay de Performance",
+  "uuid": "9db4059e-25d2-274d-a0ed-ff6400ce635e"
+}

@@ -1,0 +1,138 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101830/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101830/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101830"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"h_01HZ5QPWX5Z5VPETKJ8VE773M8\">O que está mudando?</h2>\n<p>A partir de 17 de junho de 2024, a Liferay mudará os nomes das suas ofertas comerciais como mostrado abaixo:</p>\n<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\">\n<tbody>\n<tr>\n<td style=\"width: 50%;\"><strong>Nome atual</strong></td>\n<td style=\"width: 50%;\"><strong>Novo nome</strong></td>\n</tr>\n<tr>\n<td style=\"width: 50%;\">Liferay Experience Cloud</td>\n<td style=\"width: 50%;\">Liferay SaaS</td>\n</tr>\n<tr>\n<td style=\"width: 50%;\">Liferay Experience Cloud Self-Managed <br>(anteriormente DXP Cloud)</td>\n<td style=\"width: 50%;\">Liferay PaaS</td>\n</tr>\n<tr>\n<td style=\"width: 50%;\">Digital Experience Platform Self-Hosted</td>\n<td style=\"width: 50%;\">Liferay Self-Hosted</td>\n</tr>\n</tbody>\n</table>\n<div>\n<br>O nome do produto de software, Liferay Digital Experience Platform, permanece inalterado.<br><br>\n</div>\n<h2 id=\"h_01HZ5QPWX5E95STDJBMGDT9TW2\">Por que a Liferay está fazendo essa mudança?</h2>\n<p>O principal motivo da atualização é usar nomes que refletem claramente o que cada subscrição oferece. Com os novos nomes, qualquer pessoa pode entender imediatamente o que é cada oferta (subscrição).</p>\n<h2 id=\"h_01HZ5QPWX5MDZSCM9TAPJHZ6CS\">Nada mais está mudando</h2>\n<p>Para cada uma das ofertas listadas acima, o nome é a única coisa que muda. Os serviços, escopo, benefícios e todos os outros componentes incluídos em cada oferta permanecem exatamente os mesmos de antes da mudança de nome.</p>\n<h2 id=\"h_01HZ5QPWX5JCRNMTMN6VXFNPH4\">Como estamos manejando a mudança</h2>\n<p>Durante os 15 meses seguintes a 17 de junho de 2024, usaremos os novos nomes, mas também faremos referência aos nomes das ofertas antigas na maioria dos materiais para facilitar a transição para os clientes existentes. Isso significa que você pode ver textos como “Subscrição Liferay SaaS (anteriormente Liferay Experience Cloud)” nestes locais – por exemplo, em:</p>\n<ul>\n<li>Formulários de pedido</li>\n<li>Documentação</li>\n<li>Materiais de treinamento</li>\n<li>Customer Portal (Portal do Cliente)</li>\n<li>Partner Portal (Portal do Parceiro})</li>\n</ul>\n<p>Ao final deste período de 15 meses, a Liferay fará a transição completa para usar exclusivamente os novos nomes.</p>\n<p>Para materiais destinados principalmente a novos clientes, usaremos apenas os novos nomes de ofertas. Isso pode incluir: </p>\n<ul>\n<li>Materiais de marketing</li>\n<li>Apresentações de vendas</li>\n<li>A maior parte do Liferay.com</li>\n</ul>\n<h2 id=\"h_01HZ5QPWX5WSDGW8T9N4F53ZF7\">Formulários de pedido de renovação </h2>\n<p>Usaremos os novos nomes nos Formulários de Pedido de Renovação, mas sua primeira renovação também incluirá referências aos nomes antigos, para que fique claro como os novos nomes correspondem às ofertas que você comprou originalmente.</p>\n<h2 id=\"h_01HZ5QPWX5CFR11YP9XEC6KMKH\">Dúvidas? </h2>\n<p>Fique à vontade para nos contatar por meio do e-mail <a href=\"mailto:customer-service@liferay.com\"><span class=\"wysiwyg-underline\" style=\"color: #1155cc; background-color: #ffffff;\">customer-service@liferay.com</span></a> ou nos nossos canais de suporte<span style=\"color: #ff0000;\"> </span>em caso de dúvidas!</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "AnnouncementContent58660756",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {},
+      "dataType": "",
+      "fieldReference": "button",
+      "label": "Button",
+      "name": "Fieldset45259720",
+      "nestedContentFields": [
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonText",
+          "inputControl": "text",
+          "label": "Button text",
+          "name": "Text53249580",
+          "nestedContentFields": [],
+          "repeatable": false
+        },
+        {
+          "contentFieldValue": {
+            "data": ""
+          },
+          "dataType": "string",
+          "fieldReference": "buttonURL",
+          "inputControl": "text",
+          "label": "Button URL",
+          "name": "Text62767056",
+          "nestedContentFields": [],
+          "repeatable": false
+        }
+      ],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988267"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text47137751",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987964,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:05:48Z",
+  "dateModified": "2025-11-13T23:40:07Z",
+  "datePublished": "2024-05-28T21:23:00Z",
+  "description": "",
+  "externalReferenceCode": "27114210743437",
+  "friendlyUrlPath": "liferay-is-updating-the-names-of-its-offerings",
+  "id": 26101830,
+  "key": "26101828",
+  "keywords": [
+    "es",
+    "pt",
+    "ja",
+    "lxc-sm",
+    "lxc",
+    "zh-cn",
+    "offering",
+    "name-change",
+    "dxp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "announcement",
+      "contentTemplateName": "Announcement",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26101830/rendered-content-by-display-page/announcement"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 26973435,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988267,
+      "taxonomyCategoryName": "Customer Portal Updates",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "80b6345e-3196-bf54-548f-edec41bb3b65",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "A Liferay está atualizando os nomes de suas Subscrições",
+  "uuid": "2d04d44a-e986-7b0c-8dc4-e8afc1a9f835"
+}

@@ -1,0 +1,140 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p class=\"alert alert-info\">This article is a <em>legacy article</em>. It applies to previous versions of the Liferay product. While the article is no longer maintained, the information may still be applicable.</p>\n<section class=\"description\">\n<p>O seguinte artigo detalha uma curta lista de respostas a serem coletadas e passos a serem definidos antes de abrir um ticket de interface de usuário (UI) no Help Center. Ao tomar o tempo de revisar todos estes itens antes de fazer sua solicitação no Help Center, você estará garantido a resolução mais rápida possível para este tema em particular.</p>\n</section>\n<section id=\"resolution\">\n<h2>Resolução</h2>\n<div>\n<p>Para cada ticket, por favor anexe seu arquivo portal-ext.properties, assim como a saída do comando \"patching-tool info\" específico do ambiente.</p>\n<p>Para tickets de implantação do portal especificamente, <strong><em> por favor revise os seguintes itens e inclua a informação resultante ao criar o ticket: </em></strong></p>\n<ol>\n<li>Por favor revise o <a href=\"https://www.liferay.com/documents/10182/1645493/Liferay+Portal+6_1+EE+Deployment+Checklist/13a6f5dd-0276-4e00-89eb-e96dd73cffdd\" target=\"_self\" data-cke-saved-href=\"https://www.liferay.com/group/customer/downloads/-/asset_publisher/YtYHVPRKNO6z/content/2012-03-12-6-1-document-deployment-checklist\">Checklist de Implantação</a>, se você ainda não o tiver feito</li>\n<li>Este componente inclui os estágios iniciais de implantação do portal</li>\n<li>Esta é uma nova instalação do Liferay ou um upgrade?\n<ol>\n<li>Se este é um upgrade, por favor consulte o artigo <a href=\"/w/before-opening-an-upgrade-ticket\" target=\"_self\" data-cke-saved-href=\"https://customer.liferay.com/documentation/knowledge-base/-/kb/11097\">Antes de Abrir um Ticket de Upgrade</a>\n</li>\n</ol>\n</li>\n<li>Esta implantação é de um pacote obtido do <a href=\"https://web.liferay.com/pt/group/customer/\" data-cke-saved-href=\"https://web.liferay.com/pt/group/customer/\">Portal do Cliente</a>?</li>\n<li>O banco de dados, servidor de aplicação e sistema operacional usados estão listados na Matriz de Suporte para esta versão de JDK do Liferay?</li>\n<li>Em caso negativo, que passos foram usados para implantar o portal?</li>\n<li>Os passos do guia do usuário para implantação manual do portal com este servidor de aplicação foram seguidos? Consulte as <a href=\"https://help.liferay.com/hc/articles/360018425511\" target=\"_self\" data-cke-saved-href=\"https://www.liferay.com/group/customer/kbase/-/knowledge_base/article/22415638\"> Boas Práticas do Portal</a>\n<ol>\n<li>Consulte a sessão Instalação e Configuração do guia do usuário para a sua versão apropriada do Liferay</li>\n</ol>\n</li>\n</ol>\n</div>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26066836"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:04:20Z",
+  "dateModified": "2026-03-10T20:47:54Z",
+  "datePublished": "2018-10-19T02:51:00Z",
+  "description": "",
+  "externalReferenceCode": "360018145632",
+  "friendlyUrlPath": "before-opening-a-portal-deployment-ticket",
+  "id": 26100303,
+  "key": "26100301",
+  "keywords": [
+    "pt",
+    "ja",
+    "mt",
+    "supportability",
+    "portal-6-2",
+    "knowledge-base",
+    "portal-6-0",
+    "migration-2",
+    "core-infrastructure",
+    "portal-6-1",
+    "cp"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26100303/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494992,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "Serviços e Compatibilidade",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988362,
+      "taxonomyCategoryName": "Perguntas Frequentes sobre Suporte",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "1e05f51c-b3be-9d25-49ef-0c67787e191f",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26066836,
+      "taxonomyCategoryName": "Before Opening",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "28b393be-ed08-15b1-5cc8-cec7d6808e72",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Antes de Abrir um Ticket de Implantação do Portal",
+  "uuid": "19503ab6-194b-43f6-2549-d76b9c0a99ee"
+}

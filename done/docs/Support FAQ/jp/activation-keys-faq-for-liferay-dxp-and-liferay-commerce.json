@@ -1,0 +1,130 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<style type=\"text/css\">.fixed-table {\n    width: 100% !important;\n    table-layout: fixed !important;\n  }\n  .fixed-table td {\n    white-space: normal !important;\n    word-break: break-word !important;\n    overflow-wrap: break-word !important;\n    vertical-align: top;\n  }\n  .w-20 { width: 20% !important; }\n  .w-30 { width: 30% !important; }\n  .w-40 { width: 40% !important; }\n  .w-50 { width: 50% !important; }\n  .w-60 { width: 60% !important; }\n  .w-70 { width: 70% !important; }\n</style>\n<aside class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\"> ご覧のページは、お客様の利便性のために一部機械翻訳されています。また、ドキュメントは頻繁に更新が加えられており、翻訳は未完成の部分が含まれることをご了承ください。最新情報は都度公開されておりますため、必ず英語版をご参照ください。翻訳に問題がある場合は、<a href=\"mailto:support-content-jp@liferay.com\">こちら</a>までご連絡ください。 </span></aside>\n\n<ul>\n\t<li><a href=\"#h_149626eb-7b72-4cd8-a50d-f56a85b12d43\" target=\"_self\">アクティベーション・キーの種類は何ですか？</a></li>\n\t<li><a href=\"#h_37d9a6cf-6240-4bbc-9389-41d9c38041d5\" target=\"_self\">Liferay DXPインスタンスの.xmlアクティベーションキーはどのように取得するのですか？</a></li>\n\t<li><a href=\"#h_732db143-d3b3-4c68-b452-6e0f3f319953\" target=\"_self\">アクティベーション・キーを申請するには、どのような情報が必要ですか？</a></li>\n\t<li><span class=\"wysiwyg-color-blue\"><a href=\"#h_01H4GJ7METGD5CK9A5V7QN2H6R\" rel=\"undefined\" target=\"_self\">インスタンスのサイジング値は何ですか？</a></span></li>\n\t<li><a href=\"#h_a339f9f3-b0a7-43c1-88aa-2ba36fb6d69f\" target=\"_self\">新しいアクティベーション・キーは、いつまでに申請すればよいですか？</a></li>\n\t<li><a href=\"#h_339e2a66-35c8-4420-98bb-5e3e89263bce\" target=\"_self\">Liferay DXP と Liferay Commerce のアクティベーションキーに違いはありますか？</a></li>\n\t<li><a href=\"#h_339e2a66-35c8-4420-98bb-5e3e89263bcf\" target=\"_self\">アクティベーション・キーはどのように展開するのですか？</a></li>\n\t<li><a href=\"#h_edd341a2-25db-4cd1-b022-6500f7cc8aaf\" target=\"_self\">アクティベーション・キーは持っているのですが、使えません。 どうしたらいいのでしょうか？</a></li>\n</ul>\n\n<hr>\n<section id=\"resolution\">\n<h2 id=\"h_149626eb-7b72-4cd8-a50d-f56a85b12d43\"><a href=\"#different-types\" id=\"different-types\">Q：アクティベーション・キーの種類は何ですか？</a></h2>\n\n<p><strong>開発者</strong></p>\n\n<p><span style=\"font-weight: 400;\">デベロッパーキーは、 </span><em><span style=\"font-weight: 400;\">ローカル開発者用ワークステーション</span></em><span style=\"font-weight: 400;\"> のみを対象とし、同時ユーザー接続数は5つに制限されています。 この </span><span style=\"font-weight: 400;\">は、Liferay DXP または Liferay Commerce インスタンスが最小限のリクエストにしか対応できず、この制限を超えるトラフィックを処理できないことを意味します。</span></p>\n\n<p><span style=\"font-weight: 400;\">デベロッパーキーは、Liferayエンタープライズサブスクリプションを購入することで補完されます。 Developerキーのコピー数には制限がありません。</span></p>\n\n<p><strong>サーバ</strong></p>\n\n<p><span style=\"font-weight: 400;\">Server Keyは、無制限の同時ユーザー接続数を必要とする </span><span style=\"font-weight: 400;\">サーバー環境を対象としています。</span></p>\n\n<p><span style=\"font-weight: 400;\">サーバータイプのアクティベーションキーは、インスタンス単位で発行されます。 Liferay DXP または Liferay Commerce ソフトウェアの各インストール（および明確化のため、各クラスターノード）には、1 つのアクティベーションキーが必要で、1 つの Liferay DXP または Liferay Commerce インスタンスに相当します。</span></p>\n\n<p><span style=\"font-weight: 400;\">環境に応じて、2種類のサーバーアクティベーションキーがあります。</span></p>\n\n<p><strong>物理サーバーまたは仮想サーバー</strong></p>\n\n<ul>\n\t<li><span style=\"font-weight: 400;\">固定IPアドレスなど、サーバーが静的な識別子を持つ場合 </span></li>\n</ul>\n\n<p><strong>仮想クラスター</strong></p>\n\n<ul>\n\t<li>高度に仮想化された環境において、サーバーの識別子を事前に決定できない場合。</li>\n</ul>\n\n<p class=\"alert alert-info\"><span class=\"wysiwyg-color-blue120\">仮想クラスタ起動キーは、 <span class=\"wysiwyg-underline\">複数の</span> Liferay DXP インスタンスのクラスタと、 <span class=\"wysiwyg-underline\">単一の</span> インスタンスを起動するために使用されます。 この2番目のシナリオでは、 <em>仮想アクティベーションキー</em>と呼ぶことができます。</span></p>\n\n<p><span style=\"font-weight: 400;\">サーバーの用途に応じて、3種類のサーバーアクティベーションキーがあります。</span></p>\n\n<ul>\n\t<li><strong>本番環境</strong>\n\n\t<ul>\n\t\t<li>ユーザーのライブリクエストに対応</li>\n\t</ul>\n\t</li>\n\t<li><strong>バックアップ</strong>\n\t<ul>\n\t\t<li>ライブユーザーのリクエストに対応しない</li>\n\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">プロダクションシステムが機能していない間、期間限定でプロダクションで使用することができる</span></li>\n\t</ul>\n\t</li>\n\t<li><strong>ノンプロダクション</strong>\n\t<ul>\n\t\t<li>ライブユーザーのリクエストに対応しない</li>\n\t\t<li>テストまたは統合の目的で使用される</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2 id=\"h_37d9a6cf-6240-4bbc-9389-41d9c38041d5\"><a href=\"#xml-key\" id=\"xml-key\">Q: Liferay DXP または Liferay Commerce インスタンスの .xml アクティベーションキーはどのように取得するのですか？</a></h2>\n\n<p><span style=\"font-weight: 400;\"> Server 環境の場合、Gold または Platinum 加入者は、 <a href=\"https://support.liferay.com\" target=\"_self\">チケットを送信し、 </a></span><em><span style=\"font-weight: 400;\">アクティブ化キー &amp; プロジェクト管理</span></em><span style=\"font-weight: 400;\"> コンポーネントを選択することで、アクティブ化キーを要求することができま す。 </span></p>\n\n<p>Liferay DXP または Liferay Commerce の開発者向けコピーのアクティベーションキーは、この <a href=\"https://customer.liferay.com/activation-key\" target=\"_self\">ページからダウンロードできます</a>。</p>\n\n<h2 id=\"h_732db143-d3b3-4c68-b452-6e0f3f319953\"><a href=\"#what-info\" id=\"what-info\">Q: アクティベーション・キーを申請するには、どのような情報が必要ですか？</a></h2>\n\n<table border=\"1\" cellpadding=\"3\" cellspacing=\"3\" class=\"fixed-table\">\n\t<thead>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td class=\"w-40\">&nbsp;</td>\n\t\t\t<td style=\"background-color: #f7f8f9; width: 165.5px;\"><span class=\"wysiwyg-font-size-medium\"><strong>開発者</strong></span></td>\n\t\t\t<td class=\"w-20\"><span class=\"wysiwyg-font-size-medium\"><strong>物理サーバーまたは仮想サーバー</strong></span></td>\n\t\t\t<td class=\"w-20\"><span class=\"wysiwyg-font-size-medium\"><strong>仮想クラスター</strong></span></td>\n\t\t</tr>\n\t</thead>\n\t<tbody valign=\"top\">\n\t\t<tr>\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferayプロジェクト</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><span class=\"wysiwyg-font-size-medium\">Liferay DXPバージョン</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">\n\t\t\t<p>X</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><font size=\"2\">お客様のサブスクリプションに関連するインスタンスサイジング（*）。</font></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>該当なし</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top; height: 84px;\">X</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">X</td>\n\t\t</tr>\n\t\t<tr style=\"height: 84px;\">\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p><font size=\"2\">Liferay DXP または Liferay Commerce インスタンスごとに、以下のサーバー識別子のうち少なくとも 1 つを指定します。 </font></p>\n\n\t\t\t<ul>\n\t\t\t\t<li><font size=\"2\">MACアドレス</font></li>\n\t\t\t\t<li><font size=\"2\">IPアドレス</font></li>\n\t\t\t\t<li><font size=\"2\">ホスト名</font></li>\n\t\t\t</ul>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top; height: 84px;\">\n\t\t\t<p>該当なし</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top; height: 84px;\">X</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">該当なし</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 169.512px; text-align: left; vertical-align: top;\">\n\t\t\t<p><font size=\"2\">Liferay DXP または Liferay Commerce のインスタンスの数です。 </font></p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 165.5px; text-align: left; vertical-align: top;\">\n\t\t\t<p>該当なし</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 189.575px; text-align: left; vertical-align: top;\">該当なし</td>\n\t\t\t<td style=\"width: 126.412px; text-align: left; vertical-align: top;\">X</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>(*) Instance Sizing は、Liferay インスタンスにアクセスできるプロセッサコア、CPU、または vCPU の許容数を決定します。</p>\n\n<h2 id=\"h_01H4GJ7METGD5CK9A5V7QN2H6R\"><span class=\"wysiwyg-color-blue\"><a href=\"/w/activation-keys-faq-for-liferay-dxp-and-liferay-commerce#different-types\"><span style=\"color: #2a303e; background-color: #ffffff;\">Q: インスタンスのサイジング値は何ですか？</span></a></span></h2>\n\n<p><span style=\"color: #2a303e; background-color: #ffffff;\">インスタンスのサイジングは、Liferay DXPサブスクリプションを購入する際に、プロジェクトのアーキテクチャとリソースのニーズに基づいて選択されます。これは、Liferayインスタンスにアクセス可能なプロセッサコア、CPUまたはvCPUの許容数を決定します。</span></p>\n\n<p><span style=\"color: #2a303e; background-color: #ffffff;\">各インスタンスでアクセス可能なコア数またはvCPU数は以下の通りです：</span></p>\n\n<table style=\"width: 696px; margin-left: 0px; margin-right: auto;\">\n\t<tbody>\n\t\t<tr style=\"height: 44px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 44px;\"><strong><span style=\"color: #2a303e; background-color: #ffffff;\">インスタンスのサイジング</span></strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 44px;\"><strong><span style=\"color: #2a303e; background-color: #ffffff;\">各インスタンスがアクセス可能なコア数またはvCPU数</span></strong></td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">1</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\"><span style=\"color: #2a303e; background-color: #ffffff;\">最大8</span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">2</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\"><span style=\"color: #2a303e; background-color: #ffffff;\">最大12</span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 21px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 21px;\">3</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 21px;\"><span style=\"color: #2a303e; background-color: #ffffff;\">最大16</span></td>\n\t\t</tr>\n\t\t<tr style=\"height: 22px;\">\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\">4</td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 50%; height: 22px;\"><span style=\"color: #2a303e; background-color: #ffffff;\">17以上</span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<h2>&nbsp;</h2>\n\n<h2 id=\"h_a339f9f3-b0a7-43c1-88aa-2ba36fb6d69f\"><a href=\"#when-request\" id=\"when-request\">Q：新しいアクティベーション・キーはいつまでに申請すればよいですか？</a></h2>\n\n<p>新しいアクティベーションキーは、お客様のLiferayプロジェクトで購入されたサブスクリプションの数および種類の範囲内であれば、無料でご利用いただけます。</p>\n\n<p>これらの作業を行うには、1つまたは複数の新しいアクティベーション・キーをリクエストする必要があります。</p>\n\n<ul>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Liferay DXPのメジャーバージョンにアップグレードする。</span></li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Liferay DXP または Liferay Commerce クラスターに新しいノードを追加します。</span></li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">期限切れ間近のアクティベーションキーを延長する</span></li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">物理サーバー、仮想サーバーのアクティベーションキーの場合。</span>\n\t<ul>\n\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">新しいサーバーに Liferay DXP または Liferay Commerce のインスタンスをインストールします。</span>\n\t\t<ul>\n\t\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">本番システムが利用できなくなり、すでに稼働しているバックアップインスタンスがない場合に適用されます。</span></li>\n\t\t\t<li><span style=\"font-weight: 400;\">サーバーを新環境に移行する </span><span style=\"font-weight: 400;\"></span></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"font-weight: 400;\">必要であれば、新しいアクティベーション・キーを要求する必要はありません。</span></p>\n\n<ul>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">新しいフィックスパックまたはサービスパックへのアップグレード</span></li>\n\t<li><span style=\"font-weight: 400;\">Liferay Commerce</span>のメジャーバージョンにアップグレードする。<span style=\"font-weight: 400;\"></span></li>\n\t<li><span style=\"font-weight: 400;\">本番系をバックアップ系に一時的に置き換える</span></li>\n\t<li>開発者アクティベーション・キーを使用して、新しいインスタンスのインストールや既存のインスタンスの起動を行うことができます。\n\t<ul>\n\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">過去に生成したLiferay DXPまたはLiferay Commerceの開発者キーは、いくつものローカル環境で使用することができます。</span></li>\n\t</ul>\n\t</li>\n\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">仮想クラスタのアクティベーションキーの場合。</span>\n\t<ul>\n\t\t<li><span style=\"font-weight: 400;\">新しいサーバーに Liferay DXP または Liferay Commerce のインスタンスをインストールします。</span>\n\t\t<ul>\n\t\t\t<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">本番システムが利用できなくなり、すでに稼働しているバックアップインスタンスがない場合に適用されます。</span></li>\n\t\t\t<li>既存サーバーを廃止し、新環境に移行する。 <span style=\"font-weight: 400;\"></span></li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2 id=\"h_339e2a66-35c8-4420-98bb-5e3e89263bce\"><a href=\"#differences-commerce\" id=\"differences-commerce\">Q：Liferay DXP と Liferay Commerce のアクティベーションキーに違いはありますか？ </a></h2>\n\n<p>Liferay DXP 7.4 GA1では、すべてのCommerceモジュールがデフォルトで有効になっており、すぐに使用できます。 DXP 7.3 FP3/SP2+ では、Commerce はポータルプロパティを使用してアクティブ化されますが、以前のバージョンでは Commerce アクティベーションキーファイルが使用されます。 詳細は、 <a href=\"https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/activating-liferay-commerce-enterprise.html\" target=\"_self\">Liferay Commerce Enterprise のアクティベーション</a>を参照してください。</p>\n\n<p>Liferay DXP 7.3 以下の場合、Liferay DXP と Liferay Commerce のアクティベーションキーは非常によく似ています。 唯一の違いは、Liferay Commerce のアクティベーション・キーはバージョンに依存しないことです。 同じアクティベーションキーは、すべてのLiferay Commerceのバージョンで使用できます。</p>\n\n<p>Liferay DXP 7.3 および Liferay Commerce 3.0 (FP3/SP2 まで) では、同一インスタンスのアクティベーションキーは同じタイプである必要があります。 例えば、同じインスタンスで Liferay DXP の開発者キーと Liferay Commerce の開発者キーを使用することができます。 ただし、Liferay DXP の本番キーと Liferay Commerce の開発者キーは使用できません。</p>\n\n<h2 id=\"h_339e2a66-35c8-4420-98bb-5e3e89263bcf\"><a href=\"#how-deploy\" id=\"how-deploy\">Q：アクティベーション・キーはどのように展開するのですか？</a></h2>\n\n<p>アクティベーション・キーは、このナレッジベース <a href=\"https://learn.liferay.com/kb-article/deploying-activation-keys\" target=\"_self\">の記事</a>に記載されている手順に従って配備することができます。</p>\n\n<h2 id=\"h_edd341a2-25db-4cd1-b022-6500f7cc8aaf\"><a href=\"#not-working\" id=\"not-working\">Q：アクティベーション・キーは持っているのですが、使えません。 どうしたらいいのでしょうか？</a></h2>\n\n<p>次のステップとして、 <a href=\"https://support.liferay.com/w/troubleshooting-activation-key-issues\" target=\"_self\">Troubleshooting Activation Key Issues</a> の記事をご覧になるか、 <a href=\"https://support.liferay.com\" target=\"_self\">Help Center のチケット</a> を送信して、Liferay サポートチームからの支援を求めてください。</p>\n</section>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "27753915"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:19:12Z",
+  "dateModified": "2026-07-02T17:43:26Z",
+  "datePublished": "2019-03-29T15:24:00Z",
+  "description": "",
+  "externalReferenceCode": "360025762932",
+  "friendlyUrlPath": "activation-keys-faq-for-liferay-dxp-and-liferay-commerce",
+  "id": 26131870,
+  "key": "26131868",
+  "keywords": [
+    "ja",
+    "portal-6-2",
+    "dxp-7-1",
+    "dxp-7-0",
+    "knowledge-base",
+    "portal-6-0",
+    "portal-6-1",
+    "portal-5-2",
+    "cp",
+    "commerce",
+    "migration-1"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26131870/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27494989,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 27753915,
+      "taxonomyCategoryName": "Activation Keys FAQs",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "de66e7ea-9d83-120b-afaa-c0868028331d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "Liferay DXPとLiferay Commerceのアクティベーションキーに関するFAQです。",
+  "uuid": "23d82c78-f62c-47d7-6908-6eb230a5078e"
+}

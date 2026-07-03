@@ -1,0 +1,124 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><span style=\"font-weight: 400;\">左側のサイドバー・ナビゲーションで、製品のアクティベーションを選択すると、有効化できる購入済み製品のリストが表示されます。 製品のアクティベートするには、該当する製品のアクティベーションページに移動してください。&nbsp;</span></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">特定の製品のアクティベーション方法については、以下の記事をご覧ください。&nbsp;</span></p>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-liferay-paas-product-video-tutorial\" rel=\"noopener noreferrer\" target=\"_blank\">Liferay PaaS製品のアクティベーションはどのように行いますか？</a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-analytics-cloud-product-video-tutorial\" target=\"_self\"><span style=\"font-weight: 400;\">Analytics Cloud製品のアクティベーションはどのように行いますか？</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-commerce-product-video-tutorial\" target=\"_self\"><span style=\"font-weight: 400;\">Commerce製品のアクティベーションはどのように行いますか？</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-self-hosted-liferay-dxp-portal-product-video-tutorial\" target=\"_self\"><span style=\"font-weight: 400;\">DXPやPortal製品のアクティベーションはどのように行いますか？</span></a></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><a href=\"https://support.liferay.com/w/how-do-i-activate-my-enterprise-search-product-video-tutorial\" target=\"_self\"><span style=\"font-weight: 400;\">Enterprise Searchを有効にする方法を教えてください?</span></a></li>\n</ul>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988307"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-16T23:03:50Z",
+  "dateModified": "2026-02-20T00:56:22Z",
+  "datePublished": "2022-08-31T18:54:00Z",
+  "description": "",
+  "externalReferenceCode": "8831682516621",
+  "friendlyUrlPath": "about-product-activation",
+  "id": 26099766,
+  "key": "26099764",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "liferay-paas",
+    "customer-portal",
+    "product-activation"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26099766/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408744,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988307,
+      "taxonomyCategoryName": "Overview",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "cc952ee8-fd7f-e172-8bfe-169940ffee2e",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "製品のアクティベーションについて",
+  "uuid": "30ebc789-f822-2122-8561-8734e0453ef2"
+}

@@ -1,0 +1,129 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "es-ES",
+    "ja-JP",
+    "pt-BR"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/GkUbJQRyT7Y?si=_M-T66zvMy6BGKdy\" title=\"YouTube video player\" width=\"100%\"></iframe></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-weight: 400;\">Administrators when first accessing their project on <a href=\"https://support.liferay.com/\" rel=\"noopener noreferrer\" style=\"box-sizing: border-box; color: #0041be; text-decoration: underline; background-color: #ffffff; font-family: ' Source Sans Pro' , ' Source Serif Pro' , -apple-system, BlinkMacSystemFont, ' Segoe UI' , Roboto, ' Helvetica Neue' , Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;\" target=\"_blank\">Customer Portal</a> are presented with the activation form for their Analytics Cloud product. If this step was skipped, please navigate to </span><strong>Product Activation</strong><span style=\"font-weight: 400;\"> on the sidebar navigation and select </span><strong>Analytics Cloud.</strong></p>\n\n<p><span style=\"font-weight: 400;\">Under </span><strong>Activation Status</strong><span style=\"font-weight: 400;\"> you will see a link to complete your activation form only if the status is </span><strong>Not Activated. </strong><span style=\"font-weight: 400;\">Please click the link and fill out the required information:&nbsp;</span></p>\n\n<ul>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Owner Email</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Workspace Name</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Data Center Location</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Workspace Friendly URL</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Allowed Email Domains</span></li>\n\t<li aria-level=\"1\" style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Time Zone</span></li>\n\t<li><span style=\"font-weight: 400;\">Critical Incident Contacts</span>\n\t<ul>\n\t\t<li><span style=\"font-weight: 400;\">select at least one incident contact from your current team members list</span></li>\n\t\t<li><span style=\"font-weight: 400;\">more details:&nbsp;</span><a class=\"article-list-link\" href=\"/w/how-do-i-manage-my-incident-contacts\">How do I Manage my Incident Contacts?</a><span style=\"font-weight: 400;\"></span></li>\n\t</ul>\n\t</li>\n</ul>\n\n<p><span style=\"font-weight: 400;\">Once the form is submitted, your information will be sent to our Liferay team for processing and the Activation Status will change to </span><strong>In Progress.&nbsp;</strong></p>\n\n<p><span style=\"font-weight: 400;\">Activation will be completed in 1-3 business days and Administrators will be notified via email. Your Activation Status will then change to </span><strong>Activated.&nbsp;</strong></p>\n\n<p><strong>Note: </strong>please refer to <a href=\"https://learn.liferay.com/w/analytics-cloud/getting-started/connecting-liferay-dxp-to-analytics-cloud\">AC initial steps</a> to understand what is expected and steps to follow after the activation is done by Liferay</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "25988295"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-18T15:44:20Z",
+  "dateModified": "2026-02-20T00:53:00Z",
+  "datePublished": "2022-08-31T20:48:00Z",
+  "description": "",
+  "externalReferenceCode": "8835131681805",
+  "friendlyUrlPath": "how-do-i-activate-my-analytics-cloud-product-video-tutorial",
+  "id": 26146470,
+  "key": "26146468",
+  "keywords": [
+    "cp-2-0",
+    "ja",
+    "supportability",
+    "activate",
+    "customer-portal",
+    "provisioning",
+    "ac",
+    "analytics-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26146470/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27408742,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988264,
+      "taxonomyCategoryName": "Customer Portal Help",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "e591685b-2a50-23ad-38f1-07508043c8c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988295,
+      "taxonomyCategoryName": "Cloud Activation",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "12b8d126-99a4-87b7-83be-6ab2a28c098b",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "How do I activate my Analytics Cloud product? (Video Tutorial)",
+  "uuid": "4cb12954-1b2c-c3e3-b9e2-0fbff61d4b35"
+}

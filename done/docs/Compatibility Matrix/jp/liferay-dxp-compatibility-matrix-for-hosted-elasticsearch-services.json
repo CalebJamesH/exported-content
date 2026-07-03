@@ -1,0 +1,137 @@
+{
+  "actions": {
+    "get-rendered-content": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content/{contentTemplateId}"
+    },
+    "get-rendered-content-by-display-page": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/{displayPageKey}"
+    },
+    "get": {
+      "method": "GET",
+      "href": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330"
+    }
+  },
+  "availableLanguages": [
+    "en-US",
+    "ja-JP"
+  ],
+  "contentFields": [
+    {
+      "contentFieldValue": {
+        "data": "<h2 id=\"general-compatibility-note\"><a href=\"#general-compatibility-note\" id=\"general-compatibility-note\">一般的な互換性ノート</a></h2>\n\n<p>この記事は、Liferay DXPと市場に出回っている様々なホスト型Elasticsearchオプションとの互換性を明記しています。</p>\n\n<p><a href=\"https://www.elastic.co\">Elastic</a>のOEMパートナーであるLiferayは、Elastic自身のElasticsearchリリースやサービスとの互換性を提供することを目的としています。Liferay DXPは他のElasticsearchプロバイダやサービスとの互換性はありません。</p>\n\n<h2><a href=\"#matrix\" id=\"matrix\">互換性マトリクス</a></h2>\n\n<table border=\"1\" style=\"border-collapse: collapse; width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>サービス/クラウドプロバイダー名</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.3-7.4</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.2</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.1</strong></td>\n\t\t\t<td class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><strong>Liferay DXP 7.0</strong></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><strong><a href=\"https://www.elastic.co/cloud\">ElasticCloud上のElasticsearchサービス*について</a></strong></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><strong><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.3\">はい**</a></strong></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.0-7.2\">はい** (ライフレイ制限あり)</a></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.0-7.2\">はい** (ライフレイ制限あり)</a></td>\n\t\t\t<td align=\"center\" style=\"width: 20%;\"><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud#Environment-DXP-7.0-7.2\">はい** (ライフレイ制限あり)</a></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://aiven.io/elasticsearch\">Aiven for Elasticsearch</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://bonsai.io/\">Bonsai Hosted Elasticsearch</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://www.compose.com/databases/elasticsearch\">Compose Elasticsearch Hosting</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\"><a href=\"https://www.ibm.com/cloud/databases-for-elasticsearch\">IBM Cloud Databases for Elasticsearch</a></td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t\t<td align=\"center\" class=\"wysiwyg-text-align-center\" style=\"width: 20%;\">いいえ</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n\n<p>* * また、これらのElastic Cloudデプロイメントは<a href=\"https://cloud.elastic.co/\">Elasticのクラウドコンソール</a>を通じて管理されるため、利用可能なクラウドプロバイダー(<a href=\"https://aws.amazon.com/marketplace/pp/Elasticsearch-Inc-Elasticsearch-Service-on-Elastic/B01N6YCISK\">Amazon Web Services (AWS)、</a><a href=\"https://console.cloud.google.com/marketplace/product/endpoints/elasticsearch-service.gcpmarketplace.elastic.co\">Google Cloud Platform (GCP)、</a><a href=\"https://azuremarketplace.microsoft.com/en-us/marketplace/apps/elastic.elasticsearch_service?\">Microsoft Azure</a>) のマーケットプレイスを通じて請求されたElastic Cloudサブスクリプションにも適用されます。</p>\n\n<p>** Elastic Stack for Liferay DXPをElastic Cloudでホストする計画を立てる際に考慮すべきElastic Cloudの<a href=\"https://www.elastic.co/guide/en/cloud/current/ec-restrictions.html\" target=\"_self\">追加の制限や既知の問題</a>があります。Elasticsearchサービスで利用可能な<a href=\"https://www.elastic.co/guide/en/cloud/current/ec-add-user-settings.html#ec-es-elasticsearch-settings\" target=\"_self\">ユーザー設定</a>を確認し、Elastic Cloudで利用可能なElasticsearch設定やElasticsearchベースの機能とLiferay DXPで必要とされる機能との間に競合がないことを確認するために、Liferay DXPのドキュメントを確認してください。Liferay DXPのユースケースによっては、Elastic Cloudで利用できない設定や機能を必要とする場合があります。</p>\n\n<h2 id=\"explanation\"><a href=\"#explanation\" id=\"explanation\">詳細</a></h2>\n\n<p>なぜElastic CloudだけがLiferay DXPに対応したサービスなのですか？</p>\n\n<p><span class=\"wysiwyg-color-black\">機能格差：AmazonのElasticsearchサービスは、ElasticのX-Packモジュールを含まないオープンソース（OSS）版ElasticsearchのフォークであるAmazon's Open Distro for Elasticsearch上に構築されています(<a href=\"https://www.elastic.co/subscriptions\">https://www.elastic.co/subscriptions</a>)。</span></p>\n\n<p>つまり、Liferay DXPが統合しているセキュリティやその他の(商用の)Elasticsearch機能(Monitoring -&gt; KibanaやCross-Cluster Replication -近日公開予定)はAWSのElasticsearchサービスでは利用できません。また、Liferay DXPでは、ElasticのX-Pack Security以外のセキュリティに関するベンダー固有の統合機能は提供されていません。この機能の非互換性は他のベンダーのElasticsearchサービスにも存在する可能性があるため、LiferayのコネクタやElasticsearchと統合する機能は、Elasticが直接提供するバイナリやサービスでのみテストされます。</p>\n\n<ul>\n\t<li><strong>ライセンスの制限</strong>：<a href=\"https://github.com/elastic/elasticsearch/tree/master/x-pack\">ElasticのX-Pack モジュール</a>は<a href=\"https://github.com/elastic/elasticsearch/blob/master/licenses/ELASTIC-LICENSE.txt\">Elastic License</a>の対象となり、クラウドプロバイダーがこれらの製品を使用してSaaSオファリングを構築することを禁止しています。この制限は、機能の格差とともに、Liferay DXPのElasticsearchサービスとの互換性を大きく左右します。</li>\n\t<li><strong>技術的な制限</strong>:\n\t<ul>\n\t\t<li>トランスポートレベルの接続はAWSや他の多くのElasticsearchサービスではサポートされていません。これはLiferay DXP 7.2とそれ以前のバージョンではTransportプロトコルのみでElasticsearchと通信するために必要となります。注意: Liferay DXP 7.3にバンドルされているElasticsearch 7コネクタは、デフォルトでElasticsearchとHTTPで通信する<a href=\"https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.9/java-rest-overview.html\">Java REST Client</a>を使用しています。</li>\n\t\t<li>DXP 7.2以前のバージョンではJDKが必要です。ElasticsearchとLiferay DXPは同じJavaバージョンとディストリビューションを使用しなければなりません。これは<a href=\"https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html\" target=\"_self\">トランスポートクライアント</a>(これらのLiferay DXPバージョンで使用されている)がJavaのシリアライズに依存しているためです。注: Liferay DXP 7.3-7.4のRESTクライアントはHTTPを使用します。この通信プロトコルは、DXPとElasticsearchの間でJavaシリアライズを必要としません。そのため、Liferay DXP 7.3-7.4のデプロイメントでは、Elasticsearchノードを異なるJDK上で実行することができます。</li>\n\t</ul>\n\t</li>\n</ul>\n\n<h2 id=\"Related-Articles\"><a href=\"#Related-Articles\">関連記事</a></h2>\n\n<ul>\n\t<li><a href=\"https://help.liferay.com/hc/sections/360002103292\" rel=\"undefined\" target=\"_self\">Liferay DXP Compatibility Matrix</a></li>\n\t<li><a href=\"/w/liferay-dxp-compatibility-with-elasticsearch-service-on-elastic-cloud\" target=\"_self\">Liferay DXP Compatibility with Elasticsearch Service on Elastic Cloud</a></li>\n\t<li><a href=\"https://help.liferay.com/hc/en-us/articles/360046478452\" target=\"_self\">Liferay DXP Elasticsearch Connectors: Technical Data Sheet</a></li>\n</ul>\n\n<hr>\n<p style=\"font-size: 12px;\">Elastic, Elasticsearch, and X-Pack are trademarks of Elasticsearch BV, registered in the U.S. and in other countries.</p>"
+      },
+      "dataType": "string",
+      "fieldReference": "content",
+      "label": "Content",
+      "name": "content27681514",
+      "nestedContentFields": [],
+      "repeatable": false
+    },
+    {
+      "contentFieldValue": {
+        "data": "26176952"
+      },
+      "dataType": "string",
+      "fieldReference": "category",
+      "inputControl": "text",
+      "label": "Category",
+      "name": "Text72945361",
+      "nestedContentFields": [],
+      "repeatable": false
+    }
+  ],
+  "contentStructureId": 25987956,
+  "creator": {
+    "additionalName": "",
+    "contentType": "UserAccount",
+    "externalReferenceCode": "8dda249c-eb49-dadf-d48f-40c20bc91ad1",
+    "familyName": "Lee",
+    "givenName": "Jay",
+    "id": 2029768,
+    "name": "Jay Lee"
+  },
+  "customFields": [],
+  "dateCreated": "2025-09-17T22:22:19Z",
+  "dateModified": "2026-03-25T23:54:42Z",
+  "datePublished": "2020-10-02T09:48:00Z",
+  "description": "",
+  "externalReferenceCode": "360050021872",
+  "friendlyUrlPath": "liferay-dxp-compatibility-matrix-for-hosted-elasticsearch-services",
+  "id": 26133330,
+  "key": "26133328",
+  "keywords": [
+    "ja",
+    "supportability",
+    "dxp-7-2",
+    "dxp-7-3",
+    "dxp-7-1",
+    "dxp-7-0",
+    "zh-cn",
+    "elasticsearch",
+    "search",
+    "elastic-cloud"
+  ],
+  "neverExpire": true,
+  "numberOfComments": 0,
+  "priority": 0,
+  "relatedContents": [],
+  "renderedContents": [
+    {
+      "contentTemplateId": "article",
+      "contentTemplateName": "Article",
+      "markedAsDefault": true,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article"
+    },
+    {
+      "contentTemplateId": "article---left-nav-only",
+      "contentTemplateName": "Article - Left Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article---left-nav-only"
+    },
+    {
+      "contentTemplateId": "article---no-nav",
+      "contentTemplateName": "Article - No Nav",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article---no-nav"
+    },
+    {
+      "contentTemplateId": "article---right-nav-only",
+      "contentTemplateName": "Article - Right Nav Only",
+      "markedAsDefault": false,
+      "renderedContentURL": "https://support.liferay.com/o/headless-delivery/v1.0/structured-contents/26133330/rendered-content-by-display-page/article---right-nav-only"
+    }
+  ],
+  "siteId": 2013383,
+  "structuredContentFolderId": 27492454,
+  "subscribed": false,
+  "taxonomyCategoryBriefs": [
+    {
+      "taxonomyCategoryId": 25988282,
+      "taxonomyCategoryName": "サービスと互換性",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "a48dd638-be04-f063-1d2a-ed996a92b532",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 25988346,
+      "taxonomyCategoryName": "互換性マトリクス",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "eb164cef-255e-371d-fae8-65fdb58d73c6",
+        "siteKey": "Customer Portal"
+      }
+    },
+    {
+      "taxonomyCategoryId": 26176952,
+      "taxonomyCategoryName": "Liferay DXP Compatibility Matrix",
+      "taxonomyCategoryReference": {
+        "externalReferenceCode": "7fb6a48c-585c-075f-5ad7-28fe4cd53a2d",
+        "siteKey": "Customer Portal"
+      }
+    }
+  ],
+  "title": "ホスト型ElasticsearchサービスのLiferay DXP互換性マトリックス",
+  "uuid": "3884d4b0-4820-4931-d0d7-33a71ddf861e"
+}
