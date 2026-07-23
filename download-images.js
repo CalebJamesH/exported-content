@@ -16,7 +16,9 @@ function parseUrl(url) {
     return url.split("/").pop().split("?")[0];
   }
   const hc = url.match(/article_attachments\/(\d+)/);
-  if (hc) return hc[1];
+  if (hc) {
+    return hc[1]; 
+  }
   return "unknown";
 }
 
@@ -54,7 +56,8 @@ async function main() {
   const entries = JSON.parse(fs.readFileSync(IMAGES_JSON, "utf8"));
 
   const toDownload = entries.filter(
-    (e) => e.url.includes("support.liferay.com") || e.url.startsWith("/documents/")
+    (e) =>
+      e.url.includes("support.liferay.com") || e.url.startsWith("/documents/"),
   );
 
   console.log(`Total entries: ${entries.length}`);
